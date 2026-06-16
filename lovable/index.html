@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De mens — Johan O. Smith</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50">
+  <div id="root"></div>
+  <script type="module">
+    import React from "https://esm.sh/react@18";
+    import { createRoot } from "https://esm.sh/react-dom@18/client";
+
+    function Diagram() {
+      return React.createElement("div", { className: "min-h-screen py-10 px-4 font-sans" },
+        React.createElement("div", { className: "max-w-3xl mx-auto" },
+          React.createElement("header", { className: "text-center mb-8" },
+            React.createElement("h1", { className: "text-2xl font-bold text-stone-900" }, "De mens volgens Johan O. Smith"),
+            React.createElement("p", { className: "text-stone-500 mt-1 text-sm" }, "Geest · Ziel · Lichaam — Proctor-stijl")
+          ),
+          React.createElement("div", { className: "bg-white rounded-2xl border p-4" },
+            React.createElement("img", {
+              src: "../assets/jos-stickman-diagram.svg",
+              alt: "Stickman diagram",
+              className: "w-full"
+            })
+          )
+        )
+      );
+    }
+
+    createRoot(document.getElementById("root")).render(React.createElement(Diagram));
+  </script>
+</body>
+</html>

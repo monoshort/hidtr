@@ -1,0 +1,48 @@
+---
+description: Vragen beantwoorden via Hidden Treasures (zoeken in Verborgen Schatten), niet uit algemene kennis
+alwaysApply: true
+---
+
+# Hidden Treasures — vragen stellen en beantwoorden
+
+## Gouden regel
+
+Beantwoord theologische/spirituele vragen **altijd eerst** uit Hidden Treasures-content. Geen algemeen bijbelantwoord zonder HT-bron, tenzij de gebruiker expliciet om iets anders vraagt.
+
+## Niet gebruiken voor vragen
+
+- `POST profile.hiddentreasures.org/rest/v1/events` → alleen analytics, geen Q&A
+- Algemene kennis / ChatGPT-standaardantwoorden over geloof
+
+## Zoeken (Elasticsearch)
+
+- **URL**: `https://search.hiddentreasures.org/elasticsearch/search-nl/_search`
+- **Auth**: `Authorization: ApiKey MEVCX1NwSUI5bklnQTlEMDRRakU6TVFEc3kyOWVTMldlRlF6dWUzY0VEZw==`
+- **Taal**: `search-nl` (Nederlands), `search-en` (Engels)
+- **Script**: `scripts/search-ht.ps1 -Query "overwinning" -Size 5`
+
+Query-bouw (vereenvoudigd):
+- `simple_query_string` op `public_section_lang_body_plain` + `public_section_lang_title`
+- Filter: `public_section_lang_access_level <= 2`
+- Volledig artikel: `match_phrase` op `public_section_lang_title`
+
+## Antwoordformaat
+
+1. Korte samenvatting in het Nederlands
+2. Bron vermelden: **titel | auteur | publicatie | datum**
+3. Korte citaten uit de tekst waar nuttig
+4. Expliciet zeggen als iets **niet** in HT gevonden is
+
+## Vraagformulering (voor de gebruiker)
+
+Goede vragen:
+- "Wat zegt Hidden Treasures over [onderwerp]?"
+- "Zoek in Verborgen Schatten naar [onderwerp] en vat samen"
+- "Welke stappen beschrijft HT van bekering tot [doel]?"
+- "Hoe doe je [dagelijkse praktijk] volgens Hidden Treasures?"
+
+Vermijd: alleen HTTP-headers plakken zonder vraag of request body.
+
+## Kern van HT-leer (context, niet als vervanging van bronnen)
+
+Weg: verzoening → bekering → geloof/Geest → dagelijks kruis (zelfverloochening) → Woord vasthouden → bidden uit nood → overwinning → gelijk aan Christus.

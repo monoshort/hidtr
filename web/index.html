@@ -1,0 +1,2936 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Interactieve gids over geest, ziel, hart en lichaam volgens Johan O. Smith ? met citaten uit Verborgen Schatten." />
+  <meta name="theme-color" content="#6366f1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta property="og:title" content="De mens volgens Johan O. Smith" />
+  <meta property="og:description" content="Visuele gids over de mens, verlossing en de discipelweg ? Verborgen Schatten." />
+  <meta property="og:type" content="website" />
+  <title>De mens volgens Johan O. Smith ? interactief</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Naar inhoud</a>
+
+  <header class="app-bar" id="app-bar">
+    <div class="app-bar-inner">
+      <div class="app-bar-lead">
+        <button type="button" class="app-btn app-btn-back" id="nav-back" disabled aria-label="Terug naar vorige plek">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span class="app-btn-label nav-back-label">Terug</span>
+        </button>
+        <a class="app-brand" href="#" id="app-brand" aria-label="Naar start">
+          <span class="app-brand-mark" aria-hidden="true">?</span>
+          <span class="app-brand-text">J.O. Smith</span>
+        </a>
+      </div>
+      <div class="app-bar-actions">
+        <div class="app-progress-wrap" title="Onderwerpen bekeken">
+          <div class="app-progress-track"><div class="app-progress-fill" id="progress-fill"></div></div>
+          <span class="app-progress-label" id="progress-label">0 / 0</span>
+        </div>
+        <button type="button" class="app-btn app-btn-map" id="open-atlas" aria-label="Modelkaart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          <span class="app-btn-label">Kaart</span>
+          <kbd class="app-kbd">M</kbd>
+        </button>
+        <button type="button" class="app-btn app-btn-bron" id="open-bron" aria-label="Bronnen en citaten">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span class="app-btn-label">Bronnen</span>
+          <kbd class="app-kbd">B</kbd>
+        </button>
+        <button type="button" class="app-btn app-btn-search" id="open-search" aria-label="Zoeken">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <span class="app-btn-label">Zoeken</span>
+          <kbd class="app-kbd">Ctrl K</kbd>
+        </button>
+        <button type="button" class="app-btn app-btn-icon" id="open-drawer" aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="bron-rail" id="bron-rail" aria-hidden="true" role="dialog" aria-labelledby="bron-rail-title">
+    <div class="bron-rail-backdrop"></div>
+    <div class="bron-rail-dialog">
+      <div class="bron-rail-header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <div class="bron-rail-head-text">
+          <h2 id="bron-rail-title">Bronnen</h2>
+          <p>Citaten uit <em>Verborgen Schatten</em></p>
+        </div>
+        <kbd class="app-kbd">Esc</kbd>
+      </div>
+      <div class="bron-rail-body" id="bron-rail-body"></div>
+      <div class="bron-rail-footer">
+        <a href="https://www.hiddentreasures.org" target="_blank" rel="noopener">www.hiddentreasures.org</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-overlay" id="search-overlay" aria-hidden="true" role="dialog" aria-label="Zoeken">
+    <div class="search-backdrop"></div>
+    <div class="search-dialog">
+      <div class="search-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" id="search-input" placeholder="Zoek onderwerpen en citaten uit Verborgen Schatten?" autocomplete="off" spellcheck="false" />
+        <kbd class="app-kbd">Esc</kbd>
+      </div>
+      <div class="search-results" id="search-results" role="listbox"></div>
+      <p class="search-hint">?? navigeren ? Enter openen ? <kbd>/</kbd> snel zoeken</p>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Hoofdmenu">
+    <div class="drawer-head">
+      <strong>Alle onderdelen</strong>
+      <button type="button" class="drawer-close" id="close-drawer" aria-label="Sluiten">&times;</button>
+    </div>
+    <div class="drawer-groups">
+      <button type="button" class="drawer-link drawer-link-start" data-hub="start">? Start ? overzicht</button>
+      <div class="drawer-group">
+        <span class="drawer-group-label">Fundament</span>
+        <button type="button" class="drawer-link" data-tab="structuur">? Bouw</button>
+        <button type="button" class="drawer-link" data-tab="proces">? Verloop</button>
+        <button type="button" class="drawer-link" data-tab="rom7">? Rom. 7</button>
+        <button type="button" class="drawer-link" data-tab="verschil">? Onderscheid</button>
+      </div>
+      <div class="drawer-group">
+        <span class="drawer-group-label">Innerlijk leven</span>
+        <button type="button" class="drawer-link" data-tab="verzoeking">? Verzoeking</button>
+        <button type="button" class="drawer-link" data-tab="verstand">? Verstand</button>
+        <button type="button" class="drawer-link" data-tab="geweten">? Geweten</button>
+        <button type="button" class="drawer-link" data-tab="gevoel">? Gevoel</button>
+        <button type="button" class="drawer-link" data-tab="tong">? Tong</button>
+      </div>
+      <div class="drawer-group">
+        <span class="drawer-group-label">Weg des geloofs</span>
+        <button type="button" class="drawer-link" data-tab="woord">? Het Woord</button>
+        <button type="button" class="drawer-link" data-tab="geloof">? Geloof</button>
+        <button type="button" class="drawer-link" data-tab="ootmoed">? Ootmoed</button>
+        <button type="button" class="drawer-link" data-tab="kruis">? Kruis</button>
+        <button type="button" class="drawer-link" data-tab="weg">? Weg</button>
+      </div>
+    </div>
+    <button type="button" class="drawer-bron" id="open-bron-mobile">Bronnen uit Verborgen Schatten</button>
+    <button type="button" class="drawer-search" id="open-search-mobile">Zoeken in alle onderwerpen</button>
+  </nav>
+
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-mesh"></div>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="page" id="main-content">
+
+    <header class="hero">
+      <div class="hero-inner">
+        <figure class="hero-portrait">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Johan_o_smith.jpg/292px-Johan_o_smith.jpg"
+            alt="Johan Oscar Smith (1871?1943), oprichter van Verborgen Schatten"
+            width="146"
+            height="200"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption>Johan Oscar Smith ? 1871?1943</figcaption>
+        </figure>
+
+        <div class="hero-content">
+      <span class="hero-eyebrow">Verborgen Schatten ? interactief</span>
+      <h1>De mens volgens Johan O. Smith</h1>
+      <p class="hero-lead">
+        Een visuele gids over geest, ziel, hart en lichaam ? volgens het onderwijs uit
+        <em>Verborgen Schatten</em>. Klik je weg door het model ? elk onderdeel opent de volgende pagina.
+      </p>
+      <div class="hero-actions">
+        <button type="button" class="hero-btn hero-btn-primary" id="hero-start">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Verken de mens
+        </button>
+        <button type="button" class="hero-btn hero-btn-ghost" id="hero-verzoeking">
+          Verzoeking
+        </button>
+        <button type="button" class="hero-btn hero-btn-ghost" id="hero-weg">
+          Discipelweg
+        </button>
+      </div>
+      <div class="hero-pills">
+        <span class="hero-pill">Hebr. 4:12</span>
+        <span class="hero-pill hero-pill-tap tap" data-goto-tab="rom7" role="button" tabindex="0">Rom. 7</span>
+        <span class="hero-pill">Rom. 6?8</span>
+        <span class="hero-pill">190+ onderwerpen</span>
+        <span class="hero-pill hero-pill-accent">Ctrl K zoeken</span>
+      </div>
+      <div class="hero-preview" aria-hidden="true">
+        <span style="background:#6366f1"></span>
+        <span style="background:#3b82f6"></span>
+        <span style="background:#a78bfa"></span>
+        <span style="background:#22d3ee"></span>
+        <span style="background:#fb923c"></span>
+      </div>
+        </div>
+      </div>
+      <button type="button" class="scroll-cue" id="scroll-to-mens" aria-label="Naar het mens-model">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        Naar de mens
+      </button>
+    </header>
+
+    <div class="nav-wrap" id="nav-wrap">
+      <nav class="nav-hub" role="navigation" aria-label="Hoofdonderdelen">
+        <button type="button" class="nav-hub-btn active" data-hub="start" aria-current="page">
+          <span class="nav-icon" aria-hidden="true">&#9675;</span> De mens
+        </button>
+        <button type="button" class="nav-hub-btn" data-hub="innerlijk">
+          <span class="nav-icon" aria-hidden="true">&#9670;</span> Verzoeking
+        </button>
+        <button type="button" class="nav-hub-btn" data-hub="fundament">
+          <span class="nav-icon" aria-hidden="true">&#9671;</span> Verloop
+        </button>
+        <button type="button" class="nav-hub-btn" data-hub="geloof">
+          <span class="nav-icon" aria-hidden="true">&#10023;</span> Geloof
+        </button>
+        <button type="button" class="nav-hub-btn" data-hub="weg">
+          <span class="nav-icon" aria-hidden="true">&#8594;</span> Weg
+        </button>
+      </nav>
+      <nav class="nav-sub" id="nav-sub" role="tablist" aria-label="Subonderdelen" hidden></nav>
+      <nav class="nav nav-registry" aria-hidden="true" hidden>
+        <button data-tab="structuur">Bouw</button>
+        <button data-tab="proces">Verloop</button>
+        <button data-tab="rom7">Rom. 7</button>
+        <button data-tab="verzoeking">Verzoeking</button>
+        <button data-tab="verstand">Verstand</button>
+        <button data-tab="geweten">Geweten</button>
+        <button data-tab="gevoel">Gevoel</button>
+        <button data-tab="tong">Tong</button>
+        <button data-tab="verschil">Onderscheid</button>
+        <button data-tab="woord">Het Woord</button>
+        <button data-tab="geloof">Geloof</button>
+        <button data-tab="ootmoed">Ootmoed</button>
+        <button data-tab="kruis">Kruis</button>
+        <button data-tab="weg">Weg</button>
+      </nav>
+    </div>
+
+    
+    <section id="start" class="active mens-home-scene">
+      <div class="section-head section-head-start">
+        <span class="section-eyebrow">Jouw uitgangspunt</span>
+        <h2 class="section-title">De mens</h2>
+        <p class="section-sub">Klik op jezelf in het model ? van <strong>God</strong> tot de <strong>leden</strong>. Eerst zie je waar het in de mens zit; klik nogmaals of op <strong>Verdiep</strong> voor artikelen. <kbd class="inline-kbd">Ctrl K</kbd> om te zoeken.</p>
+      </div>
+
+      <div class="mens-home-layout reveal" id="mens-start">
+        <div class="mens-diagram-stage">
+          <div class="mens-diagram-ambient" aria-hidden="true">
+            <span class="mens-orb mens-orb-god"></span>
+            <span class="mens-orb mens-orb-ziel"></span>
+            <span class="mens-orb mens-orb-body"></span>
+          </div>
+          <div class="mens-diagram-card">
+            <div class="mens-home-diagram-wrap" id="mens-home-diagram" aria-label="Klikbare mens volgens J.O. Smith"></div>
+          </div>
+          <p class="mens-diagram-caption">Klik op een zone in de mens</p>
+        </div>
+        <aside class="mens-home-aside">
+          <div class="mens-zone-hint" id="mens-zone-hint" aria-live="polite">
+            <p class="mens-hint-label">Kies een plek</p>
+            <p class="mens-hint-text">Tik op God, geest, ziel of lichaam om te beginnen.</p>
+          </div>
+          <div class="mens-flows">
+            <p class="mens-flows-label">Stromen door de mens</p>
+            <p class="mens-flows-sub">Thema's die <em>door</em> het model lopen ? niet losse hoofdstukken.</p>
+            <div class="mens-flow-chips">
+              <button type="button" class="mens-flow-chip" data-goto-tab="verzoeking" data-goto-topic="vz-overzicht">Verzoeking</button>
+              <button type="button" class="mens-flow-chip" data-goto-tab="proces" data-goto-topic="gevallen-zintuigen">Val &amp; verloop</button>
+              <button type="button" class="mens-flow-chip" data-goto-tab="rom7" data-goto-topic="r7-overzicht">Rom. 7</button>
+              <button type="button" class="mens-flow-chip" data-goto-tab="woord" data-goto-topic="gst-overzicht">Het Woord</button>
+              <button type="button" class="mens-flow-chip" data-goto-tab="geloof" data-goto-topic="geloof-overzicht">Geloof</button>
+              <button type="button" class="mens-flow-chip" data-goto-tab="kruis" data-goto-topic="kr-overzicht">Kruis</button>
+              <button type="button" class="mens-flow-chip" data-goto-tab="weg" data-goto-topic="dw-overzicht">Discipelweg</button>
+            </div>
+          </div>
+          <div class="mens-situaties">
+            <p class="mens-flows-label">Wat gebeurt er in mij?</p>
+            <div class="mens-situatie-chips">
+              <button type="button" class="mens-situatie-chip" data-goto-topic="vz-overzicht">Begeerte</button>
+              <button type="button" class="mens-situatie-chip" data-goto-topic="gw-overzicht">Schuldgevoel</button>
+              <button type="button" class="mens-situatie-chip" data-goto-topic="vs-fantasie">Beelden in mijn hoofd</button>
+              <button type="button" class="mens-situatie-chip" data-goto-topic="r7-overzicht">Innerlijke strijd</button>
+              <button type="button" class="mens-situatie-chip" data-goto-topic="geloof-overzicht">Twijfel</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <details class="mens-themes-collapsed reveal">
+        <summary class="mens-themes-summary">Thema-overzicht (klassieke indeling)</summary>
+        <div class="hub-grid mens-themes-grid">
+        <button type="button" class="hub-card hub-card-fundament tap" data-goto-hub="fundament" data-goto-tab="structuur">
+          <span class="hub-card-num">1</span>
+          <span class="hub-card-icon" aria-hidden="true">?</span>
+          <h3>Fundament</h3>
+          <p>De bouw van de mens, het verloop van verzoeking, Romeinen 7 en het onderscheid tussen ziel en geest.</p>
+          <span class="hub-card-topics">Bouw ? Verloop ? Rom. 7 ? Onderscheid</span>
+        </button>
+        <button type="button" class="hub-card hub-card-innerlijk tap" data-goto-hub="innerlijk" data-goto-tab="verzoeking">
+          <span class="hub-card-num">2</span>
+          <span class="hub-card-icon" aria-hidden="true">?</span>
+          <h3>Innerlijk leven</h3>
+          <p>Waar verzoeking binnenkomt en hoe verstand, geweten, gevoel en tong reageren.</p>
+          <span class="hub-card-topics">Verzoeking ? Verstand ? Geweten ? Gevoel ? Tong</span>
+        </button>
+        <button type="button" class="hub-card hub-card-geloof tap" data-goto-hub="geloof" data-goto-tab="woord">
+          <span class="hub-card-num">3</span>
+          <span class="hub-card-icon" aria-hidden="true">?</span>
+          <h3>Geloof &amp; Woord</h3>
+          <p>Hoe God spreekt, wat geloof is, rechtvaardiging en de zeven geesten van God.</p>
+          <span class="hub-card-topics">Het Woord ? Geloof</span>
+        </button>
+        <button type="button" class="hub-card hub-card-weg tap" data-goto-hub="weg" data-goto-tab="ootmoed">
+          <span class="hub-card-num">4</span>
+          <span class="hub-card-icon" aria-hidden="true">?</span>
+          <h3>Weg des levens</h3>
+          <p>Ootmoed, het kruis, hemelse plaatsing en dagelijkse discipelschap.</p>
+          <span class="hub-card-topics">Ootmoed ? Kruis ? Weg</span>
+        </button>
+        </div>
+      </details>
+
+      <details class="mens-themes-collapsed mens-quick-collapsed reveal">
+        <summary class="mens-themes-summary">Snel naar</summary>
+        <div class="start-quick mens-quick-inner">
+          <button type="button" class="start-chip start-chip-atlas" id="open-atlas-start">Modelkaart</button>
+          <button type="button" class="start-chip" data-goto-tab="structuur">Diagram mens</button>
+          <button type="button" class="start-chip" data-goto-tab="rom7">Rom. 7</button>
+          <button type="button" class="start-chip" data-goto-tab="woord" data-goto-topic="gst-overzicht">God spreekt</button>
+          <button type="button" class="start-chip" data-goto-tab="geloof">Geloof</button>
+          <button type="button" class="start-chip" data-goto-tab="weg" data-goto-topic="bz-overzicht">Bezoedeling</button>
+          <button type="button" class="start-chip" data-goto-tab="weg" data-goto-topic="hm-overzicht">In de hemel</button>
+          <button type="button" class="start-chip" data-goto-tab="weg">Discipelweg</button>
+        </div>
+      </details>
+    </section>
+
+    <!-- STRUCTUUR -->
+    <section id="structuur" class="structuur-scene">
+      <div class="structuur-ambient" aria-hidden="true">
+        <span class="structuur-orb structuur-orb-god"></span>
+        <span class="structuur-orb structuur-orb-ziel"></span>
+        <span class="structuur-orb structuur-orb-lichaam"></span>
+      </div>
+
+      <div class="section-head structuur-head reveal">
+        <span class="section-eyebrow">Structuur</span>
+        <h2 class="section-title">De bouw van de mens</h2>
+        <p class="section-sub">Ontdek laag voor laag wie de mens is ? van <strong>God</strong> tot de <strong>leden</strong>. Alles is klikbaar; volg je nieuwsgierigheid.</p>
+      </div>
+
+      <div class="diagram-row structuur-diagram reveal">
+        <div class="stack structuur-stack">
+          <div class="layer layer-god tap" data-topic="god" tabindex="0" role="button" aria-label="God - klik voor uitleg">
+            <span class="layer-shine" aria-hidden="true"></span>
+            <span class="layer-badge" style="color:#e0e7ff">? Bron</span>
+            <h3>GOD</h3>
+            <p class="desc">Bron van leven, licht en de Geest des levens</p>
+          </div>
+
+          <div class="connector structuur-connector">
+            <div class="connector-line"></div>
+            <span class="connector-label">verbinding via de menselijke geest</span>
+          </div>
+
+          <div class="layer layer-geest tap" data-topic="geest" tabindex="0" role="button">
+            <span class="layer-shine" aria-hidden="true"></span>
+            <span class="layer-badge" style="color:#93c5fd">? Geest</span>
+            <h3>GEEST (pneuma)</h3>
+            <p class="ref">1 Kor. 2:11</p>
+            <p class="desc"><strong>Godsbewustzijn.</strong> Contact met God. Na de val verduisterd; na verlossing vernieuwd door de Heilige Geest.</p>
+          </div>
+
+          <div class="connector structuur-connector">
+            <div class="connector-line"></div>
+            <span class="connector-label">geest en lichaam ontmoeten elkaar via de ziel</span>
+          </div>
+
+          <div class="layer layer-ziel tap" data-topic="ziel" tabindex="0" role="button">
+            <span class="layer-shine" aria-hidden="true"></span>
+            <span class="layer-badge" style="color:#c4b5fd">? Ziel</span>
+            <h3>ZIEL (psyche)</h3>
+            <p class="ref">Zelfbewustzijn ? ontmoetingsplaats</p>
+            <p class="desc">Macht om te kiezen wie de hele mens beheerst: geest of vlees.</p>
+
+            <div class="ziel-grid">
+              <div class="ziel-box verstand tap" data-topic="verstand" tabindex="0" role="button">
+                <h4>Verstand</h4>
+                <p>Verwerkt wat de zintuigen binnenbrengen.</p>
+              </div>
+              <div class="ziel-box fantasie tap" data-topic="fantasie" tabindex="0" role="button">
+                <h4>Fantasie</h4>
+                <p>Innerlijk zien ? beelden voor je geestesoog vormen.</p>
+              </div>
+              <div class="ziel-box hart tap" data-topic="hart" tabindex="0" role="button">
+                <h4>Hart</h4>
+                <p>Overleggingen en gedachten. Het Woord dringt hier door.</p>
+              </div>
+              <div class="ziel-box wil tap" data-topic="wil" tabindex="0" role="button">
+                <h4>Wil / gezindheid</h4>
+                <p>Kiest geest of vlees. Bepaalt of zonde volgroeit.</p>
+              </div>
+            </div>
+
+            <div class="ziel-flow structuur-flow">
+              <span class="ziel-flow-label tap" data-topic="zintuigen" tabindex="0" role="button">Waar "iets voor je zien" gebeurt</span>
+              <span class="ziel-flow-node tap" data-topic="zintuigen" tabindex="0" role="button">zintuigen</span>
+              <span class="ziel-flow-arrow" aria-hidden="true"></span>
+              <span class="ziel-flow-node tap" data-topic="verstand" tabindex="0" role="button">verstand</span>
+              <span class="ziel-flow-arrow" aria-hidden="true"></span>
+              <span class="ziel-flow-node fantasie-node tap" data-topic="fantasie" tabindex="0" role="button">
+                <svg class="eye-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                fantasie<br><small style="opacity:.8">innerlijk zien</small>
+              </span>
+              <span class="ziel-flow-arrow" aria-hidden="true"></span>
+              <span class="ziel-flow-node tap" data-topic="hart" tabindex="0" role="button">hart</span>
+              <span class="ziel-flow-arrow" aria-hidden="true"></span>
+              <span class="ziel-flow-node tap" data-topic="wil" tabindex="0" role="button">wil</span>
+            </div>
+
+            <div class="fantasie-callout structuur-fork">
+              <div class="fc danger tap" data-topic="fantasie-gevaar" tabindex="0" role="button">
+                <strong class="tap" data-topic="fantasie-gevaar" tabindex="0" role="button">Ziels ? niet nuttig</strong>
+                Zelf beelden opwekken, in denkbeelden verliezen. Voer voor verzoeking en duisternis.
+              </div>
+              <div class="fc good tap" data-topic="fantasie-geest" tabindex="0" role="button">
+                <strong class="tap" data-topic="fantasie-geest" tabindex="0" role="button">Geestelijk ? door Woord</strong>
+                Geen eigen visualisatie, maar geloof. De Geest verlicht verstand en fantasie.
+              </div>
+            </div>
+
+            <div class="chips structuur-senses">
+              <span class="chip chip-zien tap" data-topic="zintuigen" tabindex="0" role="button">Zien</span>
+              <span class="chip chip-horen tap" data-topic="zintuigen" tabindex="0" role="button">Horen</span>
+              <span class="chip chip-ruiken tap" data-topic="zintuigen" tabindex="0" role="button">Ruiken</span>
+              <span class="chip chip-proeven tap" data-topic="zintuigen" tabindex="0" role="button">Proeven</span>
+              <span class="chip chip-voelen tap" data-topic="zintuigen" tabindex="0" role="button">Voelen</span>
+            </div>
+          </div>
+
+          <div class="connector structuur-connector">
+            <div class="connector-line"></div>
+            <span class="connector-label">ziel verbindt met het lichaam</span>
+          </div>
+
+          <div class="layer layer-lichaam tap" data-topic="lichaam" tabindex="0" role="button">
+            <span class="layer-shine" aria-hidden="true"></span>
+            <span class="layer-badge" style="color:#fdba74">? Lichaam</span>
+            <h3>LICHAAM (soma / sarx)</h3>
+            <p class="ref">Gods woord maakt scheiding, 1922</p>
+            <p class="desc">Zintuiglijk bewustzijn ? contact met de buitenwereld.</p>
+
+            <div class="body-rows">
+              <div class="body-row vlezes tap" data-topic="lichaam-vlezes" tabindex="0" role="button">
+                <strong class="tap" data-topic="lichaam-vlezes" tabindex="0" role="button">Lichaam des vlezes</strong> <span class="tap" data-topic="lichaam-vlezes" tabindex="0" role="button" style="opacity:.55">? Kol. 2:11</span>
+                <p class="tap" data-topic="lichaam-vlezes" tabindex="0" role="button" style="font-size:.82rem;margin-top:.35rem;opacity:.85">Werktuig voor de zonde. Afgelegd in de besnijdenis van Christus.</p>
+                <span class="status tap" data-topic="lichaam-vlezes" tabindex="0" role="button">afgelegd bij bekering</span>
+              </div>
+              <div class="body-row zonde tap" data-topic="lichaam-zonde" tabindex="0" role="button">
+                <strong class="tap" data-topic="lichaam-zonde" tabindex="0" role="button">Lichaam der zonde</strong> <span class="tap" data-topic="lichaam-zonde" tabindex="0" role="button" style="opacity:.55">? Rom. 6:6</span>
+                <p class="tap" data-topic="lichaam-zonde" tabindex="0" role="button" style="font-size:.82rem;margin-top:.35rem;opacity:.85">Inwonende zonde + lichaam. Oude mens gekruisigd.</p>
+                <span class="status tap" data-topic="lichaam-zonde" tabindex="0" role="button">actieve strijd</span>
+              </div>
+              <div class="body-row doods tap" data-topic="lichaam-doods" tabindex="0" role="button">
+                <strong class="tap" data-topic="lichaam-doods" tabindex="0" role="button">Lichaam des doods</strong> <span class="tap" data-topic="lichaam-doods" tabindex="0" role="button" style="opacity:.55">? Rom. 7:24</span>
+                <p class="tap" data-topic="lichaam-doods" tabindex="0" role="button" style="font-size:.82rem;margin-top:.35rem;opacity:.85">Sterfelijk vlees dat wij nu dragen.</p>
+                <span class="status tap" data-topic="lichaam-doods" tabindex="0" role="button">dragen tot sterven</span>
+              </div>
+            </div>
+
+            <p class="tap" data-topic="leden" tabindex="0" role="button" style="margin-top:.85rem;font-size:.88rem;opacity:.88;padding:.5rem;border-radius:8px;background:rgba(0,0,0,.15)">
+              <strong>Leden</strong> ? "Ik zie een andere wet in mijn leden" (Rom. 7:23)
+            </p>
+          </div>
+        </div>
+
+        <!-- Human silhouette -->
+        <aside class="human-viz human-viz-premium" aria-label="Interactieve kaart van de mens">
+          <p class="human-viz-title">Kaart</p>
+          <div class="human-viz-diagram" id="structuur-mens-viz"></div>
+          <div class="human-viz-tabs" role="navigation" aria-label="Snel naar tab">
+            <button type="button" class="human-viz-tab" data-goto-tab="proces">Verloop</button>
+            <button type="button" class="human-viz-tab" data-goto-tab="rom7">Rom. 7</button>
+            <button type="button" class="human-viz-tab" data-goto-tab="verzoeking" data-goto-topic="zintuigen">Verzoeking</button>
+            <button type="button" class="human-viz-tab" data-goto-tab="geloof">Geloof</button>
+            <button type="button" class="human-viz-tab" data-goto-tab="weg">Weg</button>
+          </div>
+        </aside>
+      </div>
+
+      <div class="structuur-footer reveal">
+        <p class="structuur-footer-label">Wat volgt uit de bouw?</p>
+      <div class="outcomes structuur-outcomes">
+        <div class="outcome werking tap" data-topic="werkingen-lichaam" tabindex="0" role="button">
+          <h4 class="tap" data-topic="werkingen-lichaam" tabindex="0" role="button">Werkingen des lichaams</h4>
+          <p class="tap" data-topic="werkingen-lichaam" tabindex="0" role="button" style="font-size:.72rem;opacity:.65">Rom. 8:13</p>
+          <ul>
+            <li class="tap" data-topic="werkingen-lichaam" tabindex="0" role="button">Tegen <strong>beter weten</strong></li>
+            <li class="tap" data-topic="cmp-werkingen" tabindex="0" role="button">Onbewust ? waar nog geen licht is</li>
+            <li class="tap" data-topic="dw-heiligmaking" tabindex="0" role="button"><strong>Doden door de Geest</strong></li>
+          </ul>
+        </div>
+        <div class="outcome zonde tap" data-topic="zondige-werking" tabindex="0" role="button">
+          <h4 class="tap" data-topic="zondige-werking" tabindex="0" role="button">Zondige werking</h4>
+          <p class="tap" data-topic="zondige-werking" tabindex="0" role="button" style="font-size:.72rem;opacity:.65">Gal. 5:19 ? Rom. 7:17</p>
+          <ul>
+            <li class="tap" data-topic="wil" tabindex="0" role="button">Gezindheid <strong>stemt in</strong></li>
+            <li class="tap" data-topic="zondige-werking" tabindex="0" role="button">Bewuste zonde ? werken van het vlees</li>
+            <li class="tap" data-topic="wet-zonde" tabindex="0" role="button">? wet der zonde en des doods</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="laws structuur-laws">
+        <div class="law green tap" data-topic="wet-geest" tabindex="0" role="button">
+          <strong class="tap" data-topic="wet-geest" tabindex="0" role="button">1. Geest des levens</strong>
+          <p class="tap" data-topic="wet-geest" tabindex="0" role="button" style="font-size:.82rem;color:var(--muted);margin-top:.4rem">Bevrijdt (Rom. 8:2)</p>
+        </div>
+        <div class="law red tap" data-topic="wet-zonde" tabindex="0" role="button">
+          <strong class="tap" data-topic="wet-zonde" tabindex="0" role="button">2. Wet der zonde</strong>
+          <p class="tap" data-topic="wet-zonde" tabindex="0" role="button" style="font-size:.82rem;color:var(--muted);margin-top:.4rem">Dwingt tot zondigen</p>
+        </div>
+        <div class="law gray tap" data-topic="wet-doods" tabindex="0" role="button">
+          <strong class="tap" data-topic="wet-doods" tabindex="0" role="button">3. Wet des doods</strong>
+          <p class="tap" data-topic="wet-doods" tabindex="0" role="button" style="font-size:.82rem;color:var(--muted);margin-top:.4rem">Verlamt het geweten</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section id="proces">
+      <div class="section-head">
+        <span class="section-eyebrow">Proces</span>
+        <h2 class="section-title">Hoe het werkt</h2>
+        <p class="section-sub">Twee paden ? klik elke stap voor uitleg uit Verborgen Schatten.</p>
+      </div>
+
+
+      <div class="illus-row illus-row-proces">
+        <aside class="illus-panel illus-panel-proces reveal" aria-label="Klik op het verloop">
+          <p class="illus-title">Klik op het verloop</p>
+          <svg class="illus-svg illus-svg-tall" viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gevallen en verlost verloop">
+            <text x="72" y="16" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="700">GEVALLEN</text>
+            <text x="208" y="16" text-anchor="middle" fill="#6ee7b7" font-size="9" font-weight="700">VERLOST</text>
+            <rect class="illus-zone" data-topic="gevallen-zintuigen" x="22" y="26" width="100" height="26" rx="8" fill="rgba(234,88,12,.45)" stroke="rgba(251,146,60,.5)"/>
+            <text x="72" y="42" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">1 Zintuigen</text>
+            <rect class="illus-zone" data-topic="gevallen-verstand" x="22" y="58" width="100" height="26" rx="8" fill="rgba(245,158,11,.4)" stroke="rgba(251,191,36,.45)"/>
+            <text x="72" y="74" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">2 Verstand</text>
+            <rect class="illus-zone" data-topic="gevallen-hart" x="22" y="90" width="100" height="26" rx="8" fill="rgba(220,38,38,.35)" stroke="rgba(248,113,113,.45)"/>
+            <text x="72" y="106" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">3 Hart</text>
+            <rect class="illus-zone" data-topic="gevallen-gezindheid" x="22" y="122" width="100" height="26" rx="8" fill="rgba(234,179,8,.35)" stroke="rgba(250,204,21,.4)"/>
+            <text x="72" y="138" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">4 Gezindheid</text>
+            <rect class="illus-zone" data-topic="gevallen-lichaam" x="22" y="154" width="100" height="26" rx="8" fill="rgba(234,88,12,.4)" stroke="rgba(251,146,60,.45)"/>
+            <text x="72" y="170" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">5 Lichaam</text>
+            <rect class="illus-zone" data-topic="gevallen-gevolg" x="22" y="186" width="100" height="26" rx="8" fill="rgba(239,68,68,.35)" stroke="rgba(248,113,113,.5)"/>
+            <text x="72" y="202" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">6 Gevolg</text>
+            <path d="M122 198 Q170 120 122 42" fill="none" stroke="rgba(248,113,113,.45)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <text x="168" y="118" fill="#fca5a5" font-size="6" pointer-events="none">kringloop</text>
+            <rect class="illus-zone" data-topic="verlost-woord" x="158" y="26" width="100" height="26" rx="8" fill="rgba(52,211,153,.25)" stroke="rgba(110,231,183,.45)"/>
+            <text x="208" y="42" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">1 Woord</text>
+            <rect class="illus-zone" data-topic="verlost-geest" x="158" y="58" width="100" height="26" rx="8" fill="rgba(37,99,235,.35)" stroke="rgba(96,165,250,.45)"/>
+            <text x="208" y="74" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">2 Geest</text>
+            <rect class="illus-zone" data-topic="verlost-hart" x="158" y="90" width="100" height="26" rx="8" fill="rgba(220,38,38,.3)" stroke="rgba(248,113,113,.4)"/>
+            <text x="208" y="106" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">3 Hart</text>
+            <rect class="illus-zone" data-topic="verlost-gezindheid" x="158" y="122" width="100" height="26" rx="8" fill="rgba(167,139,250,.3)" stroke="rgba(196,181,253,.45)"/>
+            <text x="208" y="138" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">4 Gezindheid</text>
+            <rect class="illus-zone" data-topic="verlost-lichaam" x="158" y="154" width="100" height="26" rx="8" fill="rgba(234,88,12,.3)" stroke="rgba(251,146,60,.4)"/>
+            <text x="208" y="170" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">5 Lichaam</text>
+            <rect class="illus-zone" data-topic="verlost-gevolg" x="158" y="186" width="100" height="26" rx="8" fill="rgba(34,197,94,.3)" stroke="rgba(134,239,172,.5)"/>
+            <text x="208" y="202" text-anchor="middle" fill="#fff" font-size="7" pointer-events="none">6 Vrucht</text>
+            <line x1="140" y1="150" x2="158" y2="150" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+          </svg>
+        </aside>
+        <div class="illus-main">
+      <div class="process-grid">
+        <div class="process-card fallen">
+          <h3>Gevallen mens</h3>
+          <div class="fallen">
+            <div class="step tap" data-topic="gevallen-zintuigen" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">1</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Zintuigen</h4><p>Indrukken van de buitenwereld</p></div>
+            </div>
+            <div class="step tap" data-topic="gevallen-verstand" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">2</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Verstand</h4><p>Verzoeking via kennis en trots</p></div>
+            </div>
+            <div class="step tap" data-topic="gevallen-hart" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">3</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Hart</h4><p>Overleggingen worden boos</p></div>
+            </div>
+            <div class="step tap" data-topic="gevallen-gezindheid" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">4</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Gezindheid</h4><p>Stemt in met begeerte</p></div>
+            </div>
+            <div class="step tap" data-topic="gevallen-lichaam" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">5</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Lichaam</h4><p>Zondige werking ? bewuste zonde</p></div>
+            </div>
+            <div class="step tap" data-topic="gevallen-gevolg" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">6</div></div>
+              <div class="step-content"><h4>Gevolg</h4><p>Geest verduisterd ? ziel slaaf van vlees</p></div>
+            </div>
+          </div>
+          <p class="process-note tap" data-topic="gevallen-gevolg" tabindex="0" role="button">
+            "De ziel is een slaaf van het vlees geworden, in plaats van dienstknecht van de geest." ? De val van de mens, 1927
+          </p>
+        </div>
+
+        <div class="process-card redeemed">
+          <h3>Verloste mens</h3>
+          <div class="redeemed">
+            <div class="step tap" data-topic="verlost-woord" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">1</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Woord Gods</h4><p>Scheidt ziel en geest ? Hebr. 4:12</p></div>
+            </div>
+            <div class="step tap" data-topic="verlost-geest" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">2</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Geest vernieuwd</h4><p>Heilige Geest in de innerlijke mens</p></div>
+            </div>
+            <div class="step tap" data-topic="verlost-hart" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">3</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Hart</h4><p>Ontvangt oordeel ? echte bekering</p></div>
+            </div>
+            <div class="step tap" data-topic="verlost-gezindheid" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">4</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Gezindheid</h4><p>Dient de wet Gods (Rom. 7:25)</p></div>
+            </div>
+            <div class="step tap" data-topic="verlost-lichaam" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">5</div><div class="step-line"></div></div>
+              <div class="step-content"><h4>Lichaam</h4><p>Werkingen des lichaams ? doden door Geest</p></div>
+            </div>
+            <div class="step tap" data-topic="verlost-gevolg" tabindex="0" role="button">
+              <div class="step-wrap"><div class="step-num">6</div></div>
+              <div class="step-content"><h4>Gevolg</h4><p>Geen veroordeling ? vrucht des Geestes</p></div>
+            </div>
+          </div>
+          <p class="process-note tap" data-topic="verlost-gevolg" tabindex="0" role="button">
+            "Al wie volleerd is, zal zijn als zijn meester." ? Discipel-opwekking, Aksel J. Smith
+          </p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROMEINEN 7 -->
+    <section id="rom7">
+      <div class="section-head">
+        <span class="section-eyebrow">Romeinen 7</span>
+        <h2 class="section-title">Hoe Rom. 7 werkt</h2>
+        <p class="section-sub">
+          Twee wetten in ??n mens ? klik op elk onderdeel voor citaten uit <strong>Verborgen Schatten</strong>.
+        </p>
+      </div>
+
+      <div class="r7-scene">
+        <div class="r7-key tap" data-topic="r7-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> De man in Rom. 7 staat buiten de volle genade ? maar Paulus beschrijft de strijd
+          tussen Gods wet in het innerlijk en de wet der zonde in de leden. ??n mens, twee wetten (Rom. 7:25).
+        </div>
+
+        <div class="r7-context" role="navigation" aria-label="Context Rom. 7">
+          <button type="button" class="r7-chip tap" data-topic="r7-man" tabindex="0">De man in Rom. 7</button>
+          <button type="button" class="r7-chip tap" data-topic="r7-bekering" tabindex="0">Geweten wordt wakker</button>
+        </div>
+
+
+        <div class="illus-row illus-row-rom7">
+          <aside class="illus-panel illus-panel-rom7 reveal" aria-label="Klik op Rom. 7">
+            <p class="illus-title">Rom. 7 in een plaatje</p>
+            <svg class="illus-svg illus-svg-tall" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rom. 7 twee wetten">
+              <text x="55" y="16" text-anchor="middle" fill="#c4b5fd" font-size="7" font-weight="700">ZIEL</text>
+              <rect class="illus-zone" data-topic="r7-verstand" x="10" y="22" width="90" height="30" rx="8" fill="rgba(245,158,11,.3)" stroke="rgba(251,191,36,.4)"/>
+              <text x="55" y="40" text-anchor="middle" fill="#fff" font-size="6" pointer-events="none">Verstand</text>
+              <rect class="illus-zone" data-topic="r7-innerlijk" x="10" y="56" width="90" height="30" rx="8" fill="rgba(129,140,248,.25)" stroke="rgba(165,180,252,.4)"/>
+              <text x="55" y="74" text-anchor="middle" fill="#fff" font-size="6" pointer-events="none">Innerlijk</text>
+              <rect class="illus-zone" data-topic="r7-gezindheid" x="10" y="90" width="90" height="30" rx="8" fill="rgba(167,139,250,.25)" stroke="rgba(196,181,253,.4)"/>
+              <text x="55" y="108" text-anchor="middle" fill="#fff" font-size="6" pointer-events="none">Gezindheid</text>
+              <rect class="illus-zone" data-topic="r7-strijd" x="70" y="128" width="60" height="44" rx="10" fill="rgba(239,68,68,.2)" stroke="rgba(248,113,113,.5)"/>
+              <text x="100" y="148" text-anchor="middle" fill="#fecaca" font-size="6" font-weight="700" pointer-events="none">STRIJD</text>
+              <text x="100" y="160" text-anchor="middle" fill="#fca5a5" font-size="5" pointer-events="none">Rom. 7:15</text>
+              <text x="145" y="16" text-anchor="middle" fill="#fdba74" font-size="7" font-weight="700">LICHAAM</text>
+              <rect class="illus-zone" data-topic="r7-zonde-vlees" x="100" y="22" width="90" height="28" rx="8" fill="rgba(168,85,247,.25)" stroke="rgba(192,132,252,.4)"/>
+              <text x="145" y="38" text-anchor="middle" fill="#fff" font-size="5.5" pointer-events="none">Zonde in vlees</text>
+              <rect class="illus-zone" data-topic="r7-leden" x="100" y="54" width="90" height="28" rx="8" fill="rgba(234,88,12,.25)" stroke="rgba(251,146,60,.4)"/>
+              <text x="145" y="70" text-anchor="middle" fill="#fff" font-size="5.5" pointer-events="none">Leden</text>
+              <rect class="illus-zone" data-topic="r7-vlees" x="100" y="86" width="90" height="28" rx="8" fill="rgba(234,88,12,.3)" stroke="rgba(251,146,60,.45)"/>
+              <text x="145" y="102" text-anchor="middle" fill="#fff" font-size="5.5" pointer-events="none">Vlees</text>
+              <rect class="illus-zone" data-topic="r7-lichaam-doods" x="100" y="118" width="90" height="28" rx="8" fill="rgba(100,116,139,.3)" stroke="rgba(148,163,184,.4)"/>
+              <text x="145" y="134" text-anchor="middle" fill="#fff" font-size="5.5" pointer-events="none">Lichaam des doods</text>
+              <rect class="illus-zone" data-topic="r7-twee-wetten" x="20" y="188" width="160" height="32" rx="10" fill="rgba(99,102,241,.15)" stroke="rgba(129,140,248,.4)"/>
+              <text x="100" y="206" text-anchor="middle" fill="#c7d2fe" font-size="6" pointer-events="none">Twee wetten ? Rom. 7:25</text>
+              <rect class="illus-zone" data-topic="r7-naar-rom8" x="20" y="228" width="160" height="32" rx="10" fill="rgba(34,197,94,.15)" stroke="rgba(134,239,172,.4)"/>
+              <text x="100" y="246" text-anchor="middle" fill="#bbf7d0" font-size="6" pointer-events="none">Naar Rom. 8 ?</text>
+            </svg>
+          </aside>
+          <div class="illus-main">
+        <div class="r7-split">
+          <div class="r7-zone r7-zone-ziel">
+            <span class="r7-zone-badge">Ziel</span>
+            <button type="button" class="r7-node tap" data-topic="r7-verstand" tabindex="0">
+              <span class="r7-node-title">Verstand</span>
+              <span class="r7-node-desc">Dient de wet van God ? Rom. 7:23, 7:25</span>
+            </button>
+            <button type="button" class="r7-node tap" data-topic="r7-innerlijk" tabindex="0">
+              <span class="r7-node-title">Innerlijke mens</span>
+              <span class="r7-node-desc">Verblijd in Gods wet ? Rom. 7:22</span>
+            </button>
+            <button type="button" class="r7-node tap" data-topic="r7-gezindheid" tabindex="0">
+              <span class="r7-node-title">Gezindheid</span>
+              <span class="r7-node-desc">Dienstbaar aan Gods wet ? Rom. 7:25</span>
+            </button>
+          </div>
+
+          <div class="r7-struggle">
+            <button type="button" class="r7-struggle-label tap" data-topic="r7-strijd" tabindex="0">
+              <span class="r7-struggle-icon" aria-hidden="true">?</span>
+              <span class="r7-node-title">Strijd</span>
+              <span class="r7-node-desc">"Wat ik wil, doe ik niet" ? Rom. 7:15?19</span>
+            </button>
+            <svg class="r7-struggle-svg" viewBox="0 0 48 120" aria-hidden="true">
+              <path d="M24 4v112" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+              <path d="M8 30 L24 44 L40 30" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 90 L24 76 L40 90" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="r7-zone r7-zone-lichaam">
+            <span class="r7-zone-badge">Lichaam</span>
+            <button type="button" class="r7-node tap" data-topic="r7-zonde-vlees" tabindex="0">
+              <span class="r7-node-title">Zonde in het vlees</span>
+              <span class="r7-node-desc">Niet ik, maar zonde in mij ? Rom. 7:17, 7:20</span>
+            </button>
+            <button type="button" class="r7-node tap" data-topic="r7-leden" tabindex="0">
+              <span class="r7-node-title">Leden</span>
+              <span class="r7-node-desc">Andere wet ? wet der zonde ? Rom. 7:23</span>
+            </button>
+            <button type="button" class="r7-node tap" data-topic="r7-vlees" tabindex="0">
+              <span class="r7-node-title">Vlees</span>
+              <span class="r7-node-desc">Dienstbaar aan wet der zonde ? Rom. 7:25</span>
+            </button>
+            <button type="button" class="r7-node r7-node-doods tap" data-topic="r7-lichaam-doods" tabindex="0">
+              <span class="r7-node-title">Lichaam des doods</span>
+              <span class="r7-node-desc">"Wie zal mij verlossen?" ? Rom. 7:24</span>
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+        <div class="scene-divider">
+          <h3 class="scene-divider-title">Twee wetten ? Rom. 7:25</h3>
+        </div>
+
+        <button type="button" class="r7-twee-wetten tap" data-topic="r7-twee-wetten" tabindex="0">
+          <span class="r7-law r7-law-god">
+            <span class="r7-law-label">Wet Gods</span>
+            <span class="r7-law-text">Gezindheid en verstand</span>
+          </span>
+          <span class="r7-law-vs" aria-hidden="true">?</span>
+          <span class="r7-law r7-law-zonde">
+            <span class="r7-law-label">Wet der zonde</span>
+            <span class="r7-law-text">Vlees en leden</span>
+          </span>
+        </button>
+
+        <div class="scene-divider">
+          <h3 class="scene-divider-title">Door naar Rom. 8</h3>
+        </div>
+
+        <button type="button" class="r7-bridge tap" data-topic="r7-naar-rom8" tabindex="0">
+          <span class="r7-bridge-label">Rom. 8:2</span>
+          <span class="r7-bridge-title">Dank zij God ? de wet van de Geest des levens maakt vrij</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- VERZOEKING -->
+    <section id="verzoeking">
+      <div class="section-head">
+        <span class="section-eyebrow">Verzoeking</span>
+        <h2 class="section-title">Waar komt verzoeking binnen?</h2>
+        <p class="section-sub">
+          Via de zintuigen naar het <strong>verstand</strong>, dan fantasie en hart ?
+          klik elke stap voor citaten.
+        </p>
+      </div>
+
+      <div class="vz-scene">
+        <div class="vz-key tap" data-topic="vz-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Verzoeking is nog geen zonde ?
+          pas als de <strong>gezindheid toegeeft</strong>, volgt zondige werking.
+          De begeerte ligt verborgen in het lichaam en laait op in verzoekingen.
+        </div>
+
+        <div class="vz-layout">
+          <!-- Links: bron -->
+          <div class="vz-external">
+            <div class="vz-node vz-satan tap" data-topic="vz-bron" tabindex="0" role="button">
+              <h4>Satan / de Slang</h4>
+              <p>Plant idee?n ? "gij zult als God zijn"</p>
+            </div>
+            <svg class="vz-arrows-svg" viewBox="0 0 120 48" aria-hidden="true">
+              <path d="M60 4 L60 44 M50 34 L60 44 L70 34"/>
+            </svg>
+            <div class="vz-node vz-wereld tap" data-topic="vz-wereld" tabindex="0" role="button">
+              <h4>Buitenwereld</h4>
+              <p>Woorden, beelden, indrukken via de zintuigen</p>
+            </div>
+          </div>
+
+          <!-- Midden: pipeline -->
+          <div class="vz-pipeline">
+            <div class="vz-step tap" data-topic="vz-zintuigen" tabindex="0" role="button">
+              <div class="vz-step-marker">
+                <div class="vz-step-num" style="background:#ea580c">1</div>
+                <div class="vz-step-line"></div>
+              </div>
+              <div class="vz-step-card entry">
+                <div class="vz-where">Lichaam ? zintuigen</div>
+                <h4>Zintuigen ontvangen</h4>
+                <p>Zien, horen, ruiken, proeven, voelen ? de buitenwereld komt binnen.</p>
+              </div>
+            </div>
+
+            <div class="vz-step tap" data-topic="vz-verstand" tabindex="0" role="button">
+              <div class="vz-step-marker">
+                <div class="vz-step-num" style="background:#f59e0b">2</div>
+                <div class="vz-step-line"></div>
+              </div>
+              <div class="vz-step-card entry ziel-step">
+                <div class="vz-where">Ziel ? verstand</div>
+                <h4>Verstand verwerkt</h4>
+                <p><strong>Hier komt verzoeking eerst tot uiting.</strong> Kennis, trots, "begeerlijk om verstandig te worden."</p>
+              </div>
+            </div>
+
+            <div class="vz-step tap" data-topic="vz-fantasie" tabindex="0" role="button">
+              <div class="vz-step-marker">
+                <div class="vz-step-num" style="background:#06b6d4">3</div>
+                <div class="vz-step-line"></div>
+              </div>
+              <div class="vz-step-card" style="border-color:#06b6d4;background:rgba(6,182,212,.1)">
+                <div class="vz-where">Ziel ? fantasie</div>
+                <h4>Innerlijk zien</h4>
+                <p>Beelden voor je geestesoog ? de boom wordt "begeerlijk". Satan plant; begeerte trekt mee.</p>
+              </div>
+            </div>
+
+            <div class="vz-step tap" data-topic="vz-hart" tabindex="0" role="button">
+              <div class="vz-step-marker">
+                <div class="vz-step-num" style="background:#dc2626">4</div>
+                <div class="vz-step-line"></div>
+              </div>
+              <div class="vz-step-card hart-step">
+                <div class="vz-where">Ziel ? hart</div>
+                <h4>Hart overlegt</h4>
+                <p>Overleggingen en gedachten ? getrokken door eigen begeerte.</p>
+              </div>
+            </div>
+
+            <div class="vz-step tap" data-topic="vz-gezindheid" tabindex="0" role="button">
+              <div class="vz-step-marker">
+                <div class="vz-step-num" style="background:#eab308;color:#000">5</div>
+              </div>
+              <div class="vz-step-card wil-step">
+                <div class="vz-where">Ziel ? gezindheid</div>
+                <h4>Beslissend moment</h4>
+                <p>Toegeven of weerstaan? <strong>Geen zonde v??r instemming.</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rechts: begeerte in lichaam -->
+          <div class="vz-begeerte-box tap" data-topic="vz-begeerte" tabindex="0" role="button">
+            <h4>Begeerte in het lichaam</h4>
+            <p>Verborgen in het vlees ? laait op in verzoekingen, maar mag niet heersen. Rom. 6:12</p>
+            <svg width="80" height="60" viewBox="0 0 80 60" style="margin-top:.75rem;opacity:.7" aria-hidden="true">
+              <ellipse cx="40" cy="30" rx="28" ry="22" fill="none" stroke="#ea580c" stroke-width="2" stroke-dasharray="4 3"/>
+              <circle cx="40" cy="30" r="8" fill="#ea580c" opacity=".6">
+                <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+              </circle>
+            </svg>
+          </div>
+        </div>
+
+        <p class="vz-fork-label">Wat doet de gezindheid?</p>
+
+        <div class="vz-fork">
+          <div class="vz-fork-card fall tap" data-topic="vz-toegeven" tabindex="0" role="button">
+            <h4>Toegeven</h4>
+            <p>Gezindheid stemt in met begeerte ? zondige werking ? zonde in het vlees</p>
+          </div>
+          <div class="vz-fork-card win tap" data-topic="vz-weerstaan" tabindex="0" role="button">
+            <h4>Weerstaan</h4>
+            <p>Woord + Geest ? nee zeggen ? overwinnen ? geen veroordeling</p>
+          </div>
+        </div>
+
+        <div class="vz-legend">
+          <div class="vz-legend-item tap" data-topic="vz-zintuigen" tabindex="0" role="button" style="border-color:#ea580c">
+            <strong>Ingang:</strong> lichaam / zintuigen
+          </div>
+          <div class="vz-legend-item tap" data-topic="vz-verstand" tabindex="0" role="button" style="border-color:#f59e0b">
+            <strong>Eerste uiting:</strong> verstand van de ziel
+          </div>
+          <div class="vz-legend-item tap" data-topic="vz-fantasie" tabindex="0" role="button" style="border-color:#06b6d4">
+            <strong>Innerlijk zien:</strong> fantasie in de ziel
+          </div>
+          <div class="vz-legend-item tap" data-topic="vz-gezindheid" tabindex="0" role="button" style="border-color:#eab308">
+            <strong>Keerpunt:</strong> gezindheid toegeven of niet
+          </div>
+          <div class="vz-legend-item tap" data-topic="vz-begeerte" tabindex="0" role="button" style="border-color:#ea580c">
+            <strong>Brandstof:</strong> begeerte in het lichaam
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERSTAND -->
+    <section id="verstand">
+      <div class="section-head">
+        <span class="section-eyebrow">Verstand</span>
+        <h2 class="section-title">Wat is je verstand en waar vindt dat plaats?</h2>
+        <p class="section-sub">
+          Het verstand is een <strong>faculteit van de ziel</strong> ? het verwerkt wat de zintuigen binnenbrengen.
+          Hier komt verzoeking eerst tot uiting; door geloof en de Geest kan het verlicht worden.
+        </p>
+      </div>
+
+      <div class="vs-scene reveal">
+        <div class="vs-key tap" data-topic="vs-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Het lichaam geeft de vijf zintuigen; de <strong>ziel geeft verstand</strong>
+          en hulp bij elke indruk. Het verstand is geen geest ? maar kan door de Geest geleid en verlicht worden.
+        </div>
+
+        <div class="vs-diagram">
+          <div class="vs-body-source tap" data-topic="vs-zintuigen" tabindex="0" role="button">
+            <h4>LICHAAM</h4>
+            <p>Vijf zintuigen brengen indrukken binnen</p>
+            <div class="vs-senses">
+              <span>zien</span>
+              <span>horen</span>
+              <span>ruiken</span>
+              <span>proeven</span>
+              <span>voelen</span>
+            </div>
+          </div>
+
+          <div class="vs-arrow-col" aria-hidden="true">
+            <span>indrukken</span>
+            <svg viewBox="0 0 24 48" width="24" height="48"><path d="M12 4v36M6 30l6 10 6-10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+
+          <div class="vs-hub tap" data-topic="vs-plaats" tabindex="0" role="button">
+            <span class="vs-hub-badge">HIER WOONT VERSTAND</span>
+            <h4>ZIEL</h4>
+            <p>Verstand + gevoelens + zelfbewustzijn</p>
+            <div class="vs-hub-traits">
+              <span class="tap" data-topic="vs-verwerkt" tabindex="0" role="button">verwerkt</span>
+              <span class="tap" data-topic="vs-zelfbewust" tabindex="0" role="button">zelfbewust</span>
+              <span class="tap" data-topic="vs-oordeelt" tabindex="0" role="button">oordeelt</span>
+            </div>
+          </div>
+
+          <div class="vs-side">
+            <div class="vs-card not tap" data-topic="vs-gevallen" tabindex="0" role="button">
+              <h4>Gevallen: eigen verstand</h4>
+              Kennis, trots, "gij zult als God zijn" ? verzoeking richt zich hier eerst. Gen. 3:5?6
+            </div>
+            <div class="vs-card yes tap" data-topic="vs-verlicht" tabindex="0" role="button">
+              <h4>Verlicht: door geloof</h4>
+              Geloof zet eigen verstand opzij ? neemt Gods verstand aan. Het verstand wordt verlicht.
+            </div>
+          </div>
+        </div>
+
+        <div class="vs-pipeline">
+          <div class="vs-step tap" data-topic="vs-zintuigen" tabindex="0" role="button">
+            <div class="vs-step-num">1</div>
+            <div class="vs-where">Lichaam</div>
+            <h4>Zintuigen</h4>
+            <p>Buitenwereld komt binnen</p>
+          </div>
+          <div class="vs-step tap" data-topic="vs-verwerkt" tabindex="0" role="button">
+            <div class="vs-step-num">2</div>
+            <div class="vs-where">Ziel ? verstand</div>
+            <h4>Verstand verwerkt</h4>
+            <p>Eerste uiting van verzoeking</p>
+          </div>
+          <div class="vs-step tap" data-topic="vs-fantasie" tabindex="0" role="button">
+            <div class="vs-step-num">3</div>
+            <div class="vs-where">Ziel ? fantasie</div>
+            <h4>Innerlijk zien</h4>
+            <p>Beelden vormen zich</p>
+          </div>
+          <div class="vs-step tap" data-topic="vs-hart" tabindex="0" role="button">
+            <div class="vs-step-num">4</div>
+            <div class="vs-where">Ziel ? hart</div>
+            <h4>Hart overlegt</h4>
+            <p>Gedachten en overleggingen</p>
+          </div>
+          <div class="vs-step tap" data-topic="vs-geest-leidt" tabindex="0" role="button">
+            <div class="vs-step-num">5</div>
+            <div class="vs-where">Geest leidt</div>
+            <h4>Verlicht & geleid</h4>
+            <p>Vat van de ziel gevuld door de Geest</p>
+          </div>
+        </div>
+
+        <div class="vs-outcomes">
+          <div class="vs-outcome tap" data-topic="vs-eerste-uiting" tabindex="0" role="button">
+            <h4>Eerste verzoeking</h4>
+            <p>Val kwam tot uiting in het verstand van de ziel</p>
+          </div>
+          <div class="vs-outcome tap" data-topic="vs-dient-wet" tabindex="0" role="button">
+            <h4>Dient Gods wet</h4>
+            <p>Paulus diende de wet met zijn verstand ? Rom. 7</p>
+          </div>
+          <div class="vs-outcome tap" data-topic="vs-geloof-verstand" tabindex="0" role="button">
+            <h4>Verlicht door geloof</h4>
+            <p>Geloof eigent zich het verstand van God toe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEWETEN -->
+    <section id="geweten">
+      <div class="section-head">
+        <span class="section-eyebrow">Geweten</span>
+        <h2 class="section-title">Wat is je geweten en waar vindt dat plaats?</h2>
+        <p class="section-sub">
+          Het geweten is Gods <strong>oordeel over zonde</strong> dat je voelt ? gevormd door het licht dat je hebt.
+          Het woont in het <strong>hart</strong> en getuigt over geest, ziel en lichaam.
+        </p>
+      </div>
+
+      <div class="gw-scene reveal">
+        <div class="gw-key tap" data-topic="gw-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Het geweten bestaat uit het <strong>licht dat je hebt</strong> ? het oordeelt of je leeft naar dat licht.
+          Bij zonde voel je Gods oordeel; met een rein geweten bewaar je het geheimenis des geloofs.
+        </div>
+
+        <div class="gw-diagram">
+          <div class="gw-light-source tap" data-topic="gw-licht" tabindex="0" role="button">
+            <h4>LICHT / WOORD</h4>
+            <p>Verkondiging vormt het geweten</p>
+            <div class="gw-light-tags">
+              <span>Woord</span>
+              <span>waar licht</span>
+              <span>Rom. 2:15</span>
+            </div>
+          </div>
+
+          <div class="gw-arrow-col" aria-hidden="true">
+            <span>vormt</span>
+            <svg viewBox="0 0 24 48" width="24" height="48"><path d="M12 4v36M6 30l6 10 6-10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+
+          <div class="gw-hub tap" data-topic="gw-plaats" tabindex="0" role="button">
+            <span class="gw-hub-badge">HIER WOONT GEWETEN</span>
+            <h4>HART</h4>
+            <p>Gods oordeel over zonde ? wetten in het hart</p>
+            <div class="gw-hub-traits">
+              <span class="tap" data-topic="gw-oordeelt" tabindex="0" role="button">oordeelt</span>
+              <span class="tap" data-topic="gw-waarschuwt" tabindex="0" role="button">waarschuwt</span>
+              <span class="tap" data-topic="gw-getuigt" tabindex="0" role="button">getuigt</span>
+            </div>
+          </div>
+
+          <div class="gw-side">
+            <div class="gw-card not tap" data-topic="gw-slecht" tabindex="0" role="button">
+              <h4>Slecht / verlamd</h4>
+              Zonde maakt onrein ? geweten verlamd als je verder zondigt zonder bekering. Wet des doods.
+            </div>
+            <div class="gw-card yes tap" data-topic="gw-rein" tabindex="0" role="button">
+              <h4>Rein geweten</h4>
+              Wandelen in het licht ? geheimenis des geloofs bewaren. 1 Tim. 3:9
+            </div>
+          </div>
+        </div>
+
+        <div class="gw-span tap" data-topic="gw-hele-mens" tabindex="0" role="button">
+          <strong>Getuigt over de hele mens:</strong> geest, ziel en lichaam moeten onberispelijk blijven voor het geweten
+        </div>
+
+        <div class="gw-pipeline">
+          <div class="gw-step tap" data-topic="gw-licht" tabindex="0" role="button">
+            <div class="gw-step-num">1</div>
+            <div class="gw-where">Licht</div>
+            <h4>Licht ontvangen</h4>
+            <p>Woord en verkondiging vormen</p>
+          </div>
+          <div class="gw-step tap" data-topic="gw-hart-wetten" tabindex="0" role="button">
+            <div class="gw-step-num">2</div>
+            <div class="gw-where">Hart</div>
+            <h4>Wetten geschreven</h4>
+            <p>God schrijft in het hart</p>
+          </div>
+          <div class="gw-step tap" data-topic="gw-gezindheid" tabindex="0" role="button">
+            <div class="gw-step-num">3</div>
+            <div class="gw-where">Gezindheid</div>
+            <h4>Keuze</h4>
+            <p>Toegeven of weerstaan</p>
+          </div>
+          <div class="gw-step tap" data-topic="gw-oordeelt" tabindex="0" role="button">
+            <div class="gw-step-num">4</div>
+            <div class="gw-where">Geweten</div>
+            <h4>Oordeel voelen</h4>
+            <p>Gods oordeel over zonde</p>
+          </div>
+          <div class="gw-step tap" data-topic="gw-bekering" tabindex="0" role="button">
+            <div class="gw-step-num">5</div>
+            <div class="gw-where">Resultaat</div>
+            <h4>Reinig of verhard</h4>
+            <p>Bekering ? rein ? of verlamd</p>
+          </div>
+        </div>
+
+        <div class="gw-outcomes">
+          <div class="gw-outcome tap" data-topic="gw-geloof" tabindex="0" role="button">
+            <h4>Fundament van geloof</h4>
+            <p>Geheimenis des geloofs in een rein geweten</p>
+          </div>
+          <div class="gw-outcome tap" data-topic="gw-vrede" tabindex="0" role="button">
+            <h4>Vrede met God</h4>
+            <p>Goed geweten ? geen vrede zonder het</p>
+          </div>
+          <div class="gw-outcome tap" data-topic="gw-levende-god" tabindex="0" role="button">
+            <h4>Levende God dienen</h4>
+            <p>Niet alleen het geweten ? maar God zelf</p>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Oordeel</span>
+          <h3 class="scene-divider-title">Wat is het oordeel en hoe oordeel je jezelf?</h3>
+        </div>
+
+        <div class="od-key tap" data-topic="od-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> <strong>Gods oordeel</strong> over zonde voel je in het geweten ?
+          het <strong>Woord</strong> oordeelt overleggingen des harten ?
+          <strong>zelf oordelen</strong> = instemmen met Gods oordeel, niet anderen beoordelen.
+        </div>
+
+        <div class="od-fork">
+          <div class="od-path bad tap" data-topic="od-anderen" tabindex="0" role="button">
+            <span class="od-path-label">Niet zo</span>
+            <h4>Anderen oordelen</h4>
+            <p>Tong, beschuldiging, onrecht in oordeel over anderen</p>
+          </div>
+          <div class="od-wil tap" data-topic="od-zelf" tabindex="0" role="button">
+            <span class="od-wil-badge">HOE</span>
+            <h4>ZELF OORDELEN</h4>
+            <p>1 Kor. 11:31</p>
+          </div>
+          <div class="od-path good tap" data-topic="od-zelf" tabindex="0" role="button">
+            <span class="od-path-label">Wel zo</span>
+            <h4>Instemmen</h4>
+            <p>Met Gods oordeel in geweten ? tuchtigen tot bekering</p>
+          </div>
+        </div>
+
+        <div class="od-diagram">
+          <div class="od-hub tap" data-topic="od-geweten" tabindex="0" role="button">
+            <span class="od-hub-badge">GEWETEN ? HART</span>
+            <h4>GODS OORDEEL VOELEN</h4>
+            <p>Licht vormt geweten ? oordeelt of je naar dat licht leeft</p>
+            <div class="od-hub-traits">
+              <span class="tap" data-topic="od-geweten" tabindex="0" role="button">geweten</span>
+              <span class="tap" data-topic="od-licht" tabindex="0" role="button">oordeel des lichts</span>
+              <span class="tap" data-topic="od-woord" tabindex="0" role="button">Woord oordeelt</span>
+            </div>
+            <p class="od-hub-ref">Rom. 2:15 ? Hebr. 4:12</p>
+          </div>
+          <div class="od-side">
+            <div class="od-card not tap" data-topic="od-anderen" tabindex="0" role="button">
+              <h4>Oordeel negeren</h4>
+              Geen bekering ? geweten verlamd. Gods oordeel blijft wel bestaan.
+            </div>
+            <div class="od-card yes tap" data-topic="od-zelf" tabindex="0" role="button">
+              <h4>Stem in met oordeel</h4>
+              Rein geweten ? vrede met God. Woord bereikt het hart.
+            </div>
+          </div>
+        </div>
+
+        <div class="od-pipeline">
+          <div class="od-step tap" data-topic="od-geweten" tabindex="0" role="button">
+            <div class="od-step-num">1</div>
+            <div class="od-where">Geweten</div>
+            <h4>Oordeel voelen</h4>
+            <p>Bij zonde in het hart</p>
+          </div>
+          <div class="od-step tap" data-topic="od-zelf" tabindex="0" role="button">
+            <div class="od-step-num">2</div>
+            <div class="od-where">Keuze</div>
+            <h4>Instemmen</h4>
+            <p>Niet verdedigen ? zelf oordelen</p>
+          </div>
+          <div class="od-step tap" data-topic="od-woord" tabindex="0" role="button">
+            <div class="od-step-num">3</div>
+            <div class="od-where">Geest</div>
+            <h4>Woord oordeelt</h4>
+            <p>Overleggingen des harten</p>
+          </div>
+          <div class="od-step tap" data-topic="od-licht" tabindex="0" role="button">
+            <div class="od-step-num">4</div>
+            <div class="od-where">Licht</div>
+            <h4>Oordeelslicht</h4>
+            <p>Reinigen naar eis des lichts</p>
+          </div>
+          <div class="od-step tap" data-topic="gw-rein" tabindex="0" role="button">
+            <div class="od-step-num">5</div>
+            <div class="od-where">Resultaat</div>
+            <h4>Rein geweten</h4>
+            <p>Bekering ? vrede met God</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEVOEL -->
+    <section id="gevoel">
+      <div class="section-head">
+        <span class="section-eyebrow">Gevoel</span>
+        <h2 class="section-title">Wat is gevoel en waar vindt dat plaats?</h2>
+        <p class="section-sub">
+          Gevoelens horen bij de <strong>ziel</strong> ? &ldquo;ik voel me zo&rdquo; of &ldquo;ik voel me zus&rdquo;.
+          Ze zijn niet hetzelfde als geloof; begeerte in het lichaam en verstand in de ziel kunnen ze in beweging zetten.
+        </p>
+      </div>
+
+      <div class="gv-scene reveal">
+        <div class="gv-key tap" data-topic="gv-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> De ziel omvat <strong>verstand en gevoelens</strong> ? daar ervaar je stemming, onrust, blijdschap of verdriet.
+          &ldquo;Ik voel me zo&rdquo; is zielse taal; geloof hoort de Geest, niet je gevoel.
+        </div>
+
+        <div class="gv-callout tap" data-topic="gv-ik-voel" tabindex="0" role="button">
+          <span class="gv-callout-label">Herken je dit?</span>
+          <p>&ldquo;Ik voel me down&rdquo; &middot; &ldquo;Ik voel me niet op mijn gemak&rdquo; &middot; &ldquo;Ik voel aan dat&hellip;&rdquo;</p>
+          <p class="gv-callout-sub">Dat komt uit de <strong>ziel</strong> ? niet uit de geest. Niet blind vertrouwen.</p>
+        </div>
+
+        <div class="gv-diagram">
+          <div class="gv-body-source tap" data-topic="gv-lichaam-trigger" tabindex="0" role="button">
+            <h4>LICHAAM</h4>
+            <p>Begeerte en zintuigen wekken reacties</p>
+            <div class="gv-body-tags">
+              <span>begeerte</span>
+              <span>zintuigen</span>
+              <span>vlees</span>
+            </div>
+          </div>
+
+          <div class="gv-arrow-col" aria-hidden="true">
+            <span>trekt mee</span>
+            <svg viewBox="0 0 24 48" width="24" height="48"><path d="M12 4v36M6 30l6 10 6-10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+
+          <div class="gv-hub tap" data-topic="gv-plaats" tabindex="0" role="button">
+            <span class="gv-hub-badge">HIER WOONT GEVOEL</span>
+            <h4>ZIEL</h4>
+            <p>Gevoelens + verstand + zelfbewustzijn</p>
+            <div class="gv-hub-traits">
+              <span class="tap" data-topic="gv-voelt" tabindex="0" role="button">voelt</span>
+              <span class="tap" data-topic="gv-reageert" tabindex="0" role="button">reageert</span>
+              <span class="tap" data-topic="gv-beweegt" tabindex="0" role="button">beweegt</span>
+            </div>
+          </div>
+
+          <div class="gv-side">
+            <div class="gv-card not tap" data-topic="gv-zielse" tabindex="0" role="button">
+              <h4>Zielse gevoelens</h4>
+              Opwekking, &ldquo;ik voel me&rdquo;, brandende ziel ? geen geloof. Niet erop vertrouwen.
+            </div>
+            <div class="gv-card yes tap" data-topic="gv-geestelijk" tabindex="0" role="button">
+              <h4>Geleid door Geest</h4>
+              Ziel uitgegoten ? verstand en gevoelens geleidelijk verlicht. Niet naar gevoelens leven.
+            </div>
+          </div>
+        </div>
+
+        <div class="gv-span tap" data-topic="gv-hart-overleg" tabindex="0" role="button">
+          <strong>In het hart:</strong> overleg volgens <em>gevoel en verstand</em> ? het Woord beoordeelt die overleggingen
+        </div>
+
+        <div class="gv-pipeline">
+          <div class="gv-step tap" data-topic="gv-lichaam-trigger" tabindex="0" role="button">
+            <div class="gv-step-num">1</div>
+            <div class="gv-where">Lichaam</div>
+            <h4>Prikkel</h4>
+            <p>Begeerte of indruk</p>
+          </div>
+          <div class="gv-step tap" data-topic="gv-voelt" tabindex="0" role="button">
+            <div class="gv-step-num">2</div>
+            <div class="gv-where">Ziel ? gevoel</div>
+            <h4>&ldquo;Ik voel me&hellip;&rdquo;</h4>
+            <p>Stemming, onrust, welbehagen</p>
+          </div>
+          <div class="gv-step tap" data-topic="gv-hart-overleg" tabindex="0" role="button">
+            <div class="gv-step-num">3</div>
+            <div class="gv-where">Hart</div>
+            <h4>Overleg</h4>
+            <p>Gevoel + verstand samen</p>
+          </div>
+          <div class="gv-step tap" data-topic="gv-gezindheid" tabindex="0" role="button">
+            <div class="gv-step-num">4</div>
+            <div class="gv-where">Gezindheid</div>
+            <h4>Keuze</h4>
+            <p>Meegaan of weerstaan</p>
+          </div>
+          <div class="gv-step tap" data-topic="gv-uitgieten" tabindex="0" role="button">
+            <div class="gv-step-num">5</div>
+            <div class="gv-where">Geest leidt</div>
+            <h4>Ziel uitgegoten</h4>
+            <p>Gevuld en geleid door de Geest</p>
+          </div>
+        </div>
+
+        <div class="gv-outcomes">
+          <div class="gv-outcome tap" data-topic="gv-niet-geloof" tabindex="0" role="button">
+            <h4>Niet hetzelfde als geloof</h4>
+            <p>Zielse opwekking is geen geestelijk geloof</p>
+          </div>
+          <div class="gv-outcome tap" data-topic="gv-niet-vertrouwen" tabindex="0" role="button">
+            <h4>Niet op gevoel vertrouwen</h4>
+            <p>&ldquo;Ik voel aan dat&hellip;&rdquo; ? reinig de ziel</p>
+          </div>
+          <div class="gv-outcome tap" data-topic="gv-reinigen" tabindex="0" role="button">
+            <h4>Ziel reinigen</h4>
+            <p>Gehoorzaamheid aan de waarheid ? 1 Pet. 1:22</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TONG -->
+    <section id="tong">
+      <div class="section-head">
+        <span class="section-eyebrow">Tong</span>
+        <h2 class="section-title">Wat is er speciaal aan de tong en hoe spreekt hij goed?</h2>
+        <p class="section-sub">
+          De tong is een <strong>klein lichaamsdeel</strong> met grote macht ? een vuur onder de leden.
+          Goed spreken begint in hart en geest; je kunt zondige gedachten weigeren uit te spreken.
+        </p>
+      </div>
+
+      <div class="tg-scene reveal">
+        <div class="tg-key tap" data-topic="tg-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Jakobus noemt de tong een <strong>vuur</strong> en de <strong>wereld der ongerechtigheid</strong> ?
+          ze besmet het hele lichaam. Wie in zijn spreken niet struikelt, kan zelfs het hele lichaam in toom houden.
+        </div>
+
+        <div class="tg-callout tap" data-topic="tg-hele-lichaam" tabindex="0" role="button">
+          <span class="tg-callout-label">Waarom speciaal?</span>
+          <p>Een kleine vlam steekt een groot bos in brand ? zo is de tong onder onze leden. Jak. 3:5?6</p>
+        </div>
+
+        <div class="tg-diagram">
+          <div class="tg-inner-source tap" data-topic="tg-gedachten" tabindex="0" role="button">
+            <h4>ZIEL ? HART</h4>
+            <p>Gedachten en overleggingen</p>
+            <div class="tg-inner-tags">
+              <span>gedachten</span>
+              <span>gevoel</span>
+              <span>gezindheid</span>
+            </div>
+          </div>
+
+          <div class="tg-arrow-col" aria-hidden="true">
+            <span>uitstroom</span>
+            <svg viewBox="0 0 24 48" width="24" height="48"><path d="M12 4v36M6 30l6 10 6-10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+
+          <div class="tg-hub tap" data-topic="tg-plaats" tabindex="0" role="button">
+            <span class="tg-hub-badge">HIER WOONT DE TONG</span>
+            <h4>LICHAAM</h4>
+            <p>Onder de leden ? uitgang naar de buitenwereld</p>
+            <div class="tg-hub-traits">
+              <span class="tap" data-topic="tg-vuur" tabindex="0" role="button">vuur</span>
+              <span class="tap" data-topic="tg-spreekt" tabindex="0" role="button">spreekt</span>
+              <span class="tap" data-topic="tg-besmet" tabindex="0" role="button">besmet</span>
+            </div>
+          </div>
+
+          <div class="tg-side">
+            <div class="tg-card not tap" data-topic="tg-kwaad" tabindex="0" role="button">
+              <h4>Kwaad spreken</h4>
+              Kwaadspreken = kwaad schrijven. Door de hel in vlam gezet. Beschuldiging, bedrog.
+            </div>
+            <div class="tg-card yes tap" data-topic="tg-goed" tabindex="0" role="button">
+              <h4>Goed spreken</h4>
+              Milde tong, woorden als van God. Tong weerhouden van het kwade. 1 Pet. 3:10
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-span tap" data-topic="tg-geest-kracht" tabindex="0" role="button">
+          <strong>Geen mens bedwingt de tong alleen</strong> ? enorme kracht van God nodig. Wie de tong beheerst, kan alle geboden houden.
+        </div>
+
+        <div class="tg-pipeline">
+          <div class="tg-step tap" data-topic="tg-gedachten" tabindex="0" role="button">
+            <div class="tg-step-num">1</div>
+            <div class="tg-where">Hart / ziel</div>
+            <h4>Gedacht ontstaat</h4>
+            <p>Overleg in hart en ziel</p>
+          </div>
+          <div class="tg-step tap" data-topic="tg-weigeren" tabindex="0" role="button">
+            <div class="tg-step-num">2</div>
+            <div class="tg-where">Keuze</div>
+            <h4>Weigeren of toestaan</h4>
+            <p>Zondige gedachten niet uitspreken</p>
+          </div>
+          <div class="tg-step tap" data-topic="tg-spreekt" tabindex="0" role="button">
+            <div class="tg-step-num">3</div>
+            <div class="tg-where">Tong</div>
+            <h4>Tong spreekt</h4>
+            <p>Woorden naar buiten</p>
+          </div>
+          <div class="tg-step tap" data-topic="tg-geest-kracht" tabindex="0" role="button">
+            <div class="tg-step-num">4</div>
+            <div class="tg-where">Geest</div>
+            <h4>Kracht van God</h4>
+            <p>Tong bedwingen ? niet alleen eigen kracht</p>
+          </div>
+          <div class="tg-step tap" data-topic="tg-goed" tabindex="0" role="button">
+            <div class="tg-step-num">5</div>
+            <div class="tg-where">Resultaat</div>
+            <h4>Milde tong</h4>
+            <p>Heel lichaam in toom ? goede dagen</p>
+          </div>
+        </div>
+
+        <div class="tg-outcomes">
+          <div class="tg-outcome tap" data-topic="tg-1pet" tabindex="0" role="button">
+            <h4>Tong weerhouden</h4>
+            <p>Van het kwade en bedrog ? leven liefhebben</p>
+          </div>
+          <div class="tg-outcome tap" data-topic="tg-god-woorden" tabindex="0" role="button">
+            <h4>Woorden als van God</h4>
+            <p>In de gemeente spreken als van God</p>
+          </div>
+          <div class="tg-outcome tap" data-topic="tg-mild" tabindex="0" role="button">
+            <h4>Milde tong</h4>
+            <p>Uit een rein hart ? meer dan muziek</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERSCHIL -->
+    <section id="verschil">
+      <div class="section-head">
+        <span class="section-eyebrow">Onderscheid</span>
+        <h2 class="section-title">Belangrijke onderscheidingen</h2>
+        <p class="section-sub">J.O. Smith benadrukt: verwar deze begrippen niet ? klik op een rij.</p>
+      </div>
+
+
+      <div class="illus-panel illus-panel-verschil reveal" aria-label="Klik op de lichamen">
+        <p class="illus-title">Klik op elk lichaam en type mens</p>
+        <svg class="illus-svg illus-svg-wide" viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Onderscheid lichamen en mensen">
+          <text x="90" y="18" text-anchor="middle" fill="#86efac" font-size="8" font-weight="700">LICHAMEN</text>
+          <rect class="illus-zone" data-topic="cmp-vlezes" x="10" y="28" width="150" height="72" rx="12" fill="rgba(52,211,153,.12)" stroke="rgba(134,239,172,.4)"/>
+          <ellipse cx="85" cy="52" rx="22" ry="14" fill="rgba(52,211,153,.25)" pointer-events="none"/>
+          <line x1="85" y1="66" x2="85" y2="82" stroke="rgba(134,239,172,.6)" stroke-width="2" pointer-events="none"/>
+          <text x="85" y="92" text-anchor="middle" fill="#a7f3d0" font-size="7" font-weight="700" pointer-events="none">des vlezes</text>
+          <text x="85" y="102" text-anchor="middle" fill="#6ee7b7" font-size="6" pointer-events="none">afgelegd</text>
+          <rect class="illus-zone" data-topic="cmp-zonde" x="185" y="28" width="150" height="72" rx="12" fill="rgba(245,158,11,.1)" stroke="rgba(251,191,36,.4)"/>
+          <ellipse cx="260" cy="52" rx="22" ry="14" fill="rgba(245,158,11,.2)" pointer-events="none"/>
+          <line x1="260" y1="66" x2="260" y2="82" stroke="rgba(251,191,36,.5)" stroke-width="2" pointer-events="none"/>
+          <text x="260" y="92" text-anchor="middle" fill="#fde68a" font-size="7" font-weight="700" pointer-events="none">der zonde</text>
+          <text x="260" y="102" text-anchor="middle" fill="#fbbf24" font-size="6" pointer-events="none">kruis</text>
+          <rect class="illus-zone" data-topic="cmp-doods" x="360" y="28" width="150" height="72" rx="12" fill="rgba(100,116,139,.15)" stroke="rgba(148,163,184,.35)"/>
+          <ellipse cx="435" cy="52" rx="22" ry="14" fill="rgba(148,163,184,.25)" pointer-events="none"/>
+          <line x1="435" y1="66" x2="435" y2="82" stroke="rgba(148,163,184,.5)" stroke-width="2" pointer-events="none"/>
+          <text x="435" y="92" text-anchor="middle" fill="#cbd5e1" font-size="7" font-weight="700" pointer-events="none">des doods</text>
+          <text x="435" y="102" text-anchor="middle" fill="#94a3b8" font-size="6" pointer-events="none">dragen</text>
+          <rect class="illus-zone" data-topic="cmp-werkingen" x="60" y="118" width="180" height="36" rx="10" fill="rgba(99,102,241,.15)" stroke="rgba(129,140,248,.35)"/>
+          <text x="150" y="138" text-anchor="middle" fill="#c7d2fe" font-size="7" pointer-events="none">Werkingen des lichaams</text>
+          <rect class="illus-zone" data-topic="cmp-vlees-werken" x="280" y="118" width="180" height="36" rx="10" fill="rgba(239,68,68,.12)" stroke="rgba(248,113,113,.35)"/>
+          <text x="370" y="138" text-anchor="middle" fill="#fecaca" font-size="7" pointer-events="none">Werken van het vlees</text>
+          <text x="260" y="168" text-anchor="middle" fill="#a5b4fc" font-size="8" font-weight="700">MENSEN</text>
+          <rect class="illus-zone" data-topic="cmp-zielse" x="60" y="176" width="180" height="36" rx="10" fill="rgba(245,158,11,.12)" stroke="rgba(251,191,36,.35)"/>
+          <text x="150" y="196" text-anchor="middle" fill="#fde68a" font-size="7" pointer-events="none">Zielse christen</text>
+          <rect class="illus-zone" data-topic="cmp-geestelijk" x="280" y="176" width="180" height="36" rx="10" fill="rgba(34,197,94,.12)" stroke="rgba(134,239,172,.4)"/>
+          <text x="370" y="196" text-anchor="middle" fill="#bbf7d0" font-size="7" pointer-events="none">Geestelijke mens</text>
+        </svg>
+      </div>
+
+      <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr><th>Begrip</th><th>Wat het is</th><th>Wat te doen</th></tr>
+        </thead>
+        <tbody>
+          <tr class="tap" data-topic="cmp-vlezes" tabindex="0" role="button">
+            <td><strong>Lichaam des vlezes</strong></td>
+            <td>Lichaam dat diende als werktuig voor zonde</td>
+            <td style="color:#86efac">Afgelegd in Christus</td>
+          </tr>
+          <tr class="tap" data-topic="cmp-zonde" tabindex="0" role="button">
+            <td><strong>Lichaam der zonde</strong></td>
+            <td>Inwonende zonde verbonden met lichaam</td>
+            <td style="color:#fbbf24">Teniet doen ? oude mens gekruisigd</td>
+          </tr>
+          <tr class="tap" data-topic="cmp-doods" tabindex="0" role="button">
+            <td><strong>Lichaam des doods</strong></td>
+            <td>Sterfelijk vlees dat wij dragen</td>
+            <td style="color:var(--muted)">Dragen tot de dood</td>
+          </tr>
+          <tr class="tap" data-topic="cmp-werkingen" tabindex="0" role="button">
+            <td><strong>Werkingen des lichaams</strong></td>
+            <td>Tegen beter weten ? onbewust</td>
+            <td style="color:#86efac">Doden door de Geest</td>
+          </tr>
+          <tr class="tap" data-topic="cmp-vlees-werken" tabindex="0" role="button">
+            <td><strong>Werken van het vlees</strong></td>
+            <td>Bewuste zonde door de goddeloze</td>
+            <td style="color:#fca5a5">Kruis ? bekering</td>
+          </tr>
+          <tr class="tap" data-topic="cmp-zielse" tabindex="0" role="button">
+            <td><strong>Zielse christen</strong></td>
+            <td>Gevoelens, opwekking ? geen geestelijke groei</td>
+            <td style="color:#fbbf24">Word geestelijk mens</td>
+          </tr>
+          <tr class="tap" data-topic="cmp-geestelijk" tabindex="0" role="button">
+            <td><strong>Geestelijke mens</strong></td>
+            <td>Geest regeert ziel en lichaam</td>
+            <td style="color:#86efac">Volwassen in Christus</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <!-- WOORD -->
+    <section id="woord">
+      <div class="section-head">
+        <span class="section-eyebrow">Sleutel</span>
+        <h2 class="section-title">De sleutel: het Woord</h2>
+        <p class="section-sub">Hoe ziel en geest gescheiden worden ? en het hart bereikt wordt.</p>
+      </div>
+
+      <div class="highlight-box tap" data-topic="woord" tabindex="0" role="button">
+        <p style="color:var(--muted);font-size:.82rem">Hebr. 4:12</p>
+        <blockquote>
+          "Het woord Gods is levend en krachtig en scherper dan enig tweesnijdend zwaard
+          en het dringt door, zo diep, dat het vaneen scheidt ziel en geest,
+          gewrichten en merg, en het schift de overleggingen en gedachten des harten."
+        </blockquote>
+        <p style="font-size:.88rem;opacity:.85;max-width:34rem;margin:0 auto">
+          Christus als hogepriester neemt het offermes ter hand en scheidt het zieleleven
+          van zijn oude verbindingen.
+        </p>
+      </div>
+
+      <div class="scene-divider" style="margin-top:2rem">
+        <span class="scene-divider-eyebrow">Openbaring</span>
+        <h3 class="scene-divider-title">Hoe spreekt God tot een mens?</h3>
+      </div>
+
+      <div class="gst-scene reveal">
+        <div class="gst-key tap" data-topic="gst-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> God spreekt door <strong>het Woord</strong> ?n <strong>de Geest</strong> ?
+          niet via zielse gevoelens of eigen beelden. Het <strong>geestelijk oor</strong> hoort wat de Geest zegt;
+          het Woord dringt door tot het <strong>hart</strong> en werkt uit in <strong>gehoorzaamheid</strong>.
+        </div>
+
+        <div class="gst-diagram">
+          <div class="gst-main">
+            <button type="button" class="gst-node gst-god tap" data-topic="geloof-god-spreekt" tabindex="0">
+              <span class="gst-node-eyebrow">Bron</span>
+              <span class="gst-node-title">GOD spreekt</span>
+              <span class="gst-node-desc">Woord + Geest ? Rom. 10:17</span>
+            </button>
+
+            <svg class="gst-fork-svg" viewBox="0 0 280 56" aria-hidden="true">
+              <path d="M140 4v20" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M140 24 L52 52" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M140 24 L228 52" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="140" cy="4" r="3" fill="currentColor"/>
+              <circle cx="52" cy="52" r="3" fill="currentColor"/>
+              <circle cx="228" cy="52" r="3" fill="currentColor"/>
+            </svg>
+
+            <div class="gst-fork">
+              <button type="button" class="gst-node gst-woord tap" data-topic="woord" tabindex="0">
+                <span class="gst-node-eyebrow">Kanaal 1</span>
+                <span class="gst-node-title">Het Woord</span>
+                <span class="gst-node-desc">Levend en krachtig ? Hebr. 4:12</span>
+              </button>
+              <button type="button" class="gst-node gst-geest-kanaal tap" data-topic="geloof-geest" tabindex="0">
+                <span class="gst-node-eyebrow">Kanaal 2</span>
+                <span class="gst-node-title">De Geest</span>
+                <span class="gst-node-desc">Wat de Geest zegt ? Openb. 2:7</span>
+              </button>
+            </div>
+
+            <div class="gst-merge-label">Geloof hoort in de geest ? niet in het gevoel</div>
+
+            <svg class="gst-merge-svg" viewBox="0 0 280 40" aria-hidden="true">
+              <path d="M52 4 L140 36" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M228 4 L140 36" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="140" cy="36" r="4" fill="currentColor"/>
+            </svg>
+
+            <div class="gst-node gst-human tap" data-topic="geloof-hoort" tabindex="0" role="button">
+              <span class="gst-badge">Menselijke geest</span>
+              <span class="gst-node-title">Geestelijk oor hoort</span>
+              <span class="gst-node-desc">Gezalfde ogen zien ? geloof onderzoekt ? Openb. 2:7</span>
+              <span class="gst-traits">
+                <span class="tap" data-topic="geloof-hoort" tabindex="0" role="button">oor</span>
+                <span class="tap" data-topic="geloof-ziet" tabindex="0" role="button">ogen</span>
+                <span class="tap" data-topic="geloof-onderzoekt" tabindex="0" role="button">onderzoekt</span>
+              </span>
+            </div>
+
+            <div class="gst-pierce">
+              <svg class="gst-pierce-svg" viewBox="0 0 24 80" aria-hidden="true">
+                <path d="M12 4v52" stroke="currentColor" stroke-width="2"/>
+                <path d="M6 56 L12 72 L18 56 Z" fill="currentColor"/>
+              </svg>
+              <span class="gst-pierce-label">Woord dringt door ? scheidt ziel en geest</span>
+            </div>
+
+            <div class="gst-ladder" role="list" aria-label="Van hart tot gehoorzaamheid">
+              <button type="button" class="gst-rung tap" data-topic="geloof-hart" tabindex="0">
+                <span class="gst-rung-num">1</span>
+                <span class="gst-rung-body">
+                  <span class="gst-rung-where">Hart</span>
+                  <span class="gst-rung-title">Woord bereikt het hart</span>
+                  <span class="gst-rung-desc">Verlichte ogen ? overleggingen beoordeeld ? Ef. 1:18</span>
+                </span>
+              </button>
+              <button type="button" class="gst-rung tap" data-topic="geloof-gezindheid" tabindex="0">
+                <span class="gst-rung-num">2</span>
+                <span class="gst-rung-body">
+                  <span class="gst-rung-where">Gezindheid</span>
+                  <span class="gst-rung-title">Instemmen met Gods wil</span>
+                  <span class="gst-rung-desc">Woord en geloof smelten samen in het hart</span>
+                </span>
+              </button>
+              <button type="button" class="gst-rung tap gst-rung-out" data-topic="geloof-gehoorzaamheid" tabindex="0">
+                <span class="gst-rung-num">3</span>
+                <span class="gst-rung-body">
+                  <span class="gst-rung-where">Hele mens</span>
+                  <span class="gst-rung-title">Gehoorzaamheid des geloofs</span>
+                  <span class="gst-rung-desc">Wat God in ons bewerkt ? Jak. 2:17</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <aside class="gst-aside" aria-label="Niet zo spreekt God">
+            <span class="gst-aside-label">Niet via</span>
+            <button type="button" class="gst-aside-card gst-aside-no tap" data-topic="geloof-zielse" tabindex="0">
+              <span class="gst-aside-title">Zielse mens</span>
+              <span class="gst-aside-desc">Gevoelens, opwekking, natuurlijk verstand aanvaardt geestelijke dingen niet ? 1 Kor. 2:14</span>
+            </button>
+            <button type="button" class="gst-aside-card gst-aside-no tap" data-topic="fantasie-gevaar" tabindex="0">
+              <span class="gst-aside-title">Eigen beelden</span>
+              <span class="gst-aside-desc">Zelf visualiseren, in denkbeelden verliezen ? voer voor verzoeking</span>
+            </button>
+            <button type="button" class="gst-aside-card gst-aside-yes tap" data-topic="fantasie-geest" tabindex="0">
+              <span class="gst-aside-title">Wel: door Woord</span>
+              <span class="gst-aside-desc">Geen eigen visualisatie ? de Geest verlicht verstand en fantasie</span>
+            </button>
+          </aside>
+        </div>
+      </div>
+
+      <div class="laws" style="margin-top:1.75rem">
+        <div class="law green tap" data-topic="woord-licht" tabindex="0" role="button">
+          <strong>1. Ontvang licht</strong>
+          <p style="font-size:.82rem;color:var(--muted);margin-top:.4rem">Woord dringt door tot het hart</p>
+        </div>
+        <div class="law green tap" data-topic="woord-instem" tabindex="0" role="button">
+          <strong>2. Stem in</strong>
+          <p style="font-size:.82rem;color:var(--muted);margin-top:.4rem">Gezindheid aan Gods kant</p>
+        </div>
+        <div class="law green tap" data-topic="woord-doen" tabindex="0" role="button">
+          <strong>3. Doe het</strong>
+          <p style="font-size:.82rem;color:var(--muted);margin-top:.4rem">Dood werkingen ? wandel in Geest</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GELOOF -->
+    <section id="geloof">
+      <div class="section-head">
+        <span class="section-eyebrow">Geloof</span>
+        <h2 class="section-title">Wat is geloof en waar vindt het plaats?</h2>
+        <p class="section-sub">
+          Geloof is geen zielse gevoelens ? het <strong>hoort de Geest</strong>, neemt het Woord in de geest aan,
+          en werkt uit in gehoorzaamheid. Klik elk onderdeel voor citaten.
+        </p>
+      </div>
+
+      <div class="gl-scene reveal">
+        <div class="gl-key tap" data-topic="geloof-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Geloof woont in de <strong>geest</strong> ? niet in zielse opwekking.
+          Het hoort wat de Geest zegt, neemt het Woord aan, bereikt het hart, en werkt uit in gehoorzaamheid en overwinning.
+        </div>
+
+        <div class="gl-diagram">
+          <div class="gl-god-source tap" data-topic="geloof-god-spreekt" tabindex="0" role="button">
+            <h4>GOD spreekt</h4>
+            <p>Woord + Geest ? bron van geloof</p>
+            <div class="gl-god-arrows">
+              <span>? Woord</span>
+              <span>? Geest</span>
+            </div>
+          </div>
+
+          <div class="gl-hub tap" data-topic="geloof-geest" tabindex="0" role="button">
+            <span class="gl-hub-badge">HIER WOONT GELOOF</span>
+            <h4>GEEST</h4>
+            <p>Geestelijk oor hoort ? gezalfde ogen zien ? geloof onderzoekt Gods diepten</p>
+            <div class="gl-hub-traits">
+              <span class="tap gl-trait-ear" data-topic="geloof-hoort" tabindex="0" role="button" title="Openb. 2:7">geestelijk oor</span>
+              <span class="tap" data-topic="geloof-ziet" tabindex="0" role="button">gezalfde ogen</span>
+              <span class="tap" data-topic="geloof-onderzoekt" tabindex="0" role="button">onderzoekt</span>
+            </div>
+            <p class="gl-hub-ref">Openb. 2:7 ? Rom. 10:17</p>
+          </div>
+
+          <div class="gl-side">
+            <div class="gl-card not tap" data-topic="geloof-zielse" tabindex="0" role="button">
+              <h4>Niet: zielse mens</h4>
+              Gevoelens, opwekking, natuurlijk verstand ? aanvaardt geestelijke dingen niet. 1 Kor. 2:14
+            </div>
+            <div class="gl-card yes tap" data-topic="geloof-geestelijk" tabindex="0" role="button">
+              <h4>Wel: geest van geloof</h4>
+              Rein hart + vaste geest ? overwint wereld en vlees
+            </div>
+          </div>
+        </div>
+
+        <div class="gl-flow-down">
+          <span class="gl-flow-label">Woord dringt door ? Hebr. 4:12</span>
+          <div class="gl-hart-hub tap" data-topic="geloof-verlichte-ogen" tabindex="0" role="button">
+            <span class="gl-hub-badge gl-hub-badge-hart">HART</span>
+            <h4>Verlichte ogen des harte</h4>
+            <p>Begrijpt hoop, erfenis en Gods kracht ? Ef. 1:18</p>
+            <div class="gl-hub-traits">
+              <span class="tap gl-trait-eye" data-topic="geloof-verlichte-ogen" tabindex="0" role="button" title="Ef. 1:18">verlichte ogen</span>
+              <span class="tap" data-topic="geloof-hart" tabindex="0" role="button">Woord bereikt hart</span>
+            </div>
+            <p class="gl-hub-ref">Ef. 1:17-18 ? geest van wijsheid en openbaring</p>
+          </div>
+        </div>
+
+        <div class="gl-pipeline">
+          <div class="gl-step tap" data-topic="geloof-woord" tabindex="0" role="button">
+            <div class="gl-step-num">1</div>
+            <div class="gl-where">Geest</div>
+            <h4>Woord aannemen</h4>
+            <p>Door geloof het woord in uw geest</p>
+          </div>
+          <div class="gl-step tap" data-topic="geloof-hart" tabindex="0" role="button">
+            <div class="gl-step-num">2</div>
+            <div class="gl-where">Hart</div>
+            <h4>Hart bereikt</h4>
+            <p>Verlichte ogen ? overleggingen beoordeeld</p>
+          </div>
+          <div class="gl-step tap" data-topic="geloof-gezindheid" tabindex="0" role="button">
+            <div class="gl-step-num">3</div>
+            <div class="gl-where">Gezindheid</div>
+            <h4>Instemmen</h4>
+            <p>Woord en Geest samensmelten in het hart</p>
+          </div>
+          <div class="gl-step tap" data-topic="geloof-gehoorzaamheid" tabindex="0" role="button">
+            <div class="gl-step-num">4</div>
+            <div class="gl-where">Hele mens</div>
+            <h4>Gehoorzaamheid</h4>
+            <p>Werken des geloofs ? wat God bewerkt</p>
+          </div>
+          <div class="gl-step tap" data-topic="geloof-overwinning" tabindex="0" role="button">
+            <div class="gl-step-num">5</div>
+            <div class="gl-where">Resultaat</div>
+            <h4>Overwinning</h4>
+            <p>Wereld, vlees, zonde overwonnen</p>
+          </div>
+        </div>
+
+        <div class="gl-outcomes">
+          <div class="gl-outcome tap" data-topic="geloof-overwinning" tabindex="0" role="button">
+            <h4>Overwint de wereld</h4>
+            <p>1 Joh. 5:4 ? geloof grijpt het onzichtbare</p>
+          </div>
+          <div class="gl-outcome tap" data-topic="geloof-vlees" tabindex="0" role="button">
+            <h4>Overwint het vlees</h4>
+            <p>Werkingen des lichaams doden door de Geest</p>
+          </div>
+          <div class="gl-outcome tap" data-topic="geloof-god-behagen" tabindex="0" role="button">
+            <h4>Behaget God</h4>
+            <p>Zonder geloof onmogelijk ? met geloof diepten Gods</p>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Heilige Geest</span>
+          <h3 class="scene-divider-title">De zeven Geesten Gods</h3>
+        </div>
+
+        <div class="zg-block reveal">
+          <div class="zg-key tap" data-topic="zg-overzicht" tabindex="0" role="button">
+            <strong>Kern:</strong> De <strong>zeven Geesten Gods</strong> zijn de volheid van Gods Geest ?
+            zoals die op <strong>Christus</strong> rustte (Jes. 11:2) en in de Openbaring als zeven vurige fakkels
+            en zeven ogen op het Lam verschijnen (Openb. 4:5; 5:6).
+          </div>
+
+          <button type="button" class="zg-christus tap" data-topic="zg-christus" tabindex="0">
+            <span class="zg-christus-label">Op de Meester</span>
+            <span class="zg-christus-text">Op Hem rust de Geest des Heren ? alle zeven Geesten in ??n</span>
+            <span class="zg-christus-ref">Jes. 11:2 ? Openb. 5:6</span>
+          </button>
+
+          <div class="zg-grid" role="list" aria-label="De zeven Geesten Gods volgens Jesaja 11">
+            <button type="button" class="zg-spirit tap" data-topic="zg-heren" tabindex="0">
+              <span class="zg-spirit-num">1</span>
+              <span class="zg-spirit-name">Geest des Heren</span>
+            </button>
+            <button type="button" class="zg-spirit tap" data-topic="zg-wijsheid" tabindex="0">
+              <span class="zg-spirit-num">2</span>
+              <span class="zg-spirit-name">Wijsheid</span>
+            </button>
+            <button type="button" class="zg-spirit tap" data-topic="zg-verstand" tabindex="0">
+              <span class="zg-spirit-num">3</span>
+              <span class="zg-spirit-name">Verstand</span>
+            </button>
+            <button type="button" class="zg-spirit tap" data-topic="zg-raad" tabindex="0">
+              <span class="zg-spirit-num">4</span>
+              <span class="zg-spirit-name">Raad</span>
+            </button>
+            <button type="button" class="zg-spirit tap" data-topic="zg-sterkte" tabindex="0">
+              <span class="zg-spirit-num">5</span>
+              <span class="zg-spirit-name">Sterkte</span>
+            </button>
+            <button type="button" class="zg-spirit tap" data-topic="zg-kennis" tabindex="0">
+              <span class="zg-spirit-num">6</span>
+              <span class="zg-spirit-name">Kennis</span>
+            </button>
+            <button type="button" class="zg-spirit tap" data-topic="zg-vreze" tabindex="0">
+              <span class="zg-spirit-num">7</span>
+              <span class="zg-spirit-name">Vreze des Heren</span>
+            </button>
+          </div>
+
+          <button type="button" class="zg-voor-ons tap" data-topic="zg-voor-ons" tabindex="0">
+            <span class="zg-voor-ons-label">Voor de discipel</span>
+            <span class="zg-voor-ons-text">De zeven Geesten kunnen hart en denken vervullen ? bid om Geest en wijsheid</span>
+            <span class="zg-voor-ons-ref">Ef. 1:17 ? Jak. 1:5</span>
+          </button>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Rechtvaardiging</span>
+          <h3 class="scene-divider-title">Gerechtvaardigd door geloof ? de wet en Abraham</h3>
+        </div>
+
+        <div class="rv-key tap" data-topic="rv-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> <strong>Gerechtvaardigd door geloof, zonder werken der wet</strong> (Rom. 3:28) ?
+          vergeving door <strong>Christus' werk</strong>, daarna verlossing door <strong>zijn leven</strong> ?
+          <strong>werken des geloofs</strong>, niet werken der wet uit het vlees.
+        </div>
+
+        <div class="rv-two-phase">
+          <div class="rv-phase tap" data-topic="rv-rechtvaardiging" tabindex="0" role="button">
+            <span class="rv-phase-num">1</span>
+            <h4>Door zijn dood</h4>
+            <p>Gerechtvaardigd ? vergeving ? zonder jouw werken</p>
+            <span class="rv-phase-ref">Rom. 5:9-10</span>
+          </div>
+          <div class="rv-phase-arrow" aria-hidden="true">?</div>
+          <div class="rv-phase tap" data-topic="rv-verlossing" tabindex="0" role="button">
+            <span class="rv-phase-num">2</span>
+            <h4>Door zijn leven</h4>
+            <p>Werken des geloofs ? wet vervuld in ons</p>
+            <span class="rv-phase-ref">Rom. 8:4</span>
+          </div>
+        </div>
+
+        <div class="rv-fork">
+          <div class="rv-path bad tap" data-topic="rv-werken-wet" tabindex="0" role="button">
+            <span class="rv-path-label">Niet</span>
+            <h4>Werken der wet</h4>
+            <p>Vlees wil God behagen ? schaduw, oud verbond</p>
+          </div>
+          <div class="rv-wil tap" data-topic="rv-wet-overzicht" tabindex="0" role="button">
+            <span class="rv-wil-badge">WET</span>
+            <h4>WAAR?</h4>
+            <p>Vier wetten</p>
+          </div>
+          <div class="rv-path good tap" data-topic="rv-werken-geloof" tabindex="0" role="button">
+            <span class="rv-path-label">Wel</span>
+            <h4>Werken des geloofs</h4>
+            <p>God werkt in mij ? door de Geest</p>
+          </div>
+        </div>
+
+        <div class="rv-law-grid">
+          <div class="rv-law tap" data-topic="rv-wet-schaduw" tabindex="0" role="button">
+            <h4>Schaduw</h4>
+            <p>Moza&iuml;sche wet ? buiten, Hebr. 10</p>
+          </div>
+          <div class="rv-law tap" data-topic="rv-wet-hart" tabindex="0" role="button">
+            <h4>Hart + verstand</h4>
+            <p>Gods wil geschreven</p>
+          </div>
+          <div class="rv-law tap" data-topic="rv-wet-leden" tabindex="0" role="button">
+            <h4>Leden</h4>
+            <p>Wet der zonde</p>
+          </div>
+          <div class="rv-law tap" data-topic="rv-wet-geest" tabindex="0" role="button">
+            <h4>Geest</h4>
+            <p>Wet des levens</p>
+          </div>
+        </div>
+
+        <div class="rv-abraham">
+          <div class="rv-abraham-head tap" data-topic="rv-abraham" tabindex="0" role="button">
+            <h4>Geloof van Abraham</h4>
+            <p>Geloofde Gods belofte ? werd hem tot gerechtigheid gerekend ? echte zoon uit eigen lichaam</p>
+          </div>
+          <div class="rv-abraham-steps">
+            <div class="rv-ab-step tap" data-topic="rv-abraham" tabindex="0" role="button">
+              <span>Gen. 15</span>
+              <h5>Geloof</h5>
+              <p>Zonder werken ? gerechtvaardigd</p>
+            </div>
+            <div class="rv-ab-step tap" data-topic="rv-abraham-isaak" tabindex="0" role="button">
+              <span>Gen. 22</span>
+              <h5>Werken</h5>
+              <p>Isaak offeren ? geloof volmaakt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OOTMOED -->
+    <section id="ootmoed">
+      <div class="section-head">
+        <span class="section-eyebrow">Ootmoed</span>
+        <h2 class="section-title">Wat is ootmoed en waar vindt het plaats?</h2>
+        <p class="section-sub">
+          Ootmoed is <strong>Gods wil kiezen</strong> in plaats van de eigen wil ? geschreven in <strong>hart en verstand</strong>,
+          zichtbaar in <strong>gehoorzaamheid</strong>. De tegenpool is hoogmoed (slang-route).
+        </p>
+      </div>
+
+      <div class="om-scene reveal">
+        <div class="om-key tap" data-topic="om-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Ootmoed is de <strong>grondwet</strong> voor verlossing en de <strong>enige weg</strong> tot heiligmaking.
+          Niet schijn voor mensen, maar van harte: erkennen wie je bent en Gods wil doen.
+        </div>
+
+        <div class="illus-panel illus-panel-om reveal" aria-label="Klik op ootmoed">
+          <p class="illus-title">Ootmoed of hoogmoed?</p>
+          <svg class="illus-svg illus-svg-wide" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ootmoed keuze">
+            <rect class="illus-zone" data-topic="om-hoogmoed" x="8" y="20" width="115" height="88" rx="12" fill="rgba(239,68,68,.12)" stroke="rgba(248,113,113,.4)"/>
+            <text x="65" y="42" text-anchor="middle" fill="#fca5a5" font-size="8" font-weight="700" pointer-events="none">Hoogmoed</text>
+            <text x="65" y="58" text-anchor="middle" fill="#fecaca" font-size="6" pointer-events="none">eigen wil</text>
+            <text x="65" y="72" text-anchor="middle" fill="#fecaca" font-size="6" pointer-events="none">als God zijn</text>
+            <rect class="illus-zone" data-topic="om-gezindheid" x="142" y="28" width="116" height="72" rx="12" fill="rgba(167,139,250,.2)" stroke="rgba(196,181,253,.45)"/>
+            <text x="200" y="52" text-anchor="middle" fill="#e9d5ff" font-size="8" font-weight="700" pointer-events="none">GEZINDHEID</text>
+            <text x="200" y="68" text-anchor="middle" fill="#ddd6fe" font-size="6" pointer-events="none">wie regeert?</text>
+            <rect class="illus-zone" data-topic="om-wat" x="277" y="20" width="115" height="88" rx="12" fill="rgba(45,212,191,.12)" stroke="rgba(94,234,212,.4)"/>
+            <text x="334" y="42" text-anchor="middle" fill="#5eead4" font-size="8" font-weight="700" pointer-events="none">Ootmoed</text>
+            <text x="334" y="58" text-anchor="middle" fill="#99f6e4" font-size="6" pointer-events="none">Gods wil</text>
+            <text x="334" y="72" text-anchor="middle" fill="#99f6e4" font-size="6" pointer-events="none">gehoorzaam</text>
+            <rect class="illus-zone" data-topic="om-plaats" x="80" y="4" width="240" height="14" rx="6" fill="rgba(99,102,241,.12)" stroke="rgba(129,140,248,.3)"/>
+            <text x="200" y="13" text-anchor="middle" fill="#a5b4fc" font-size="6" pointer-events="none">hart + verstand</text>
+          </svg>
+        </div>
+
+        <div class="om-god-source tap" data-topic="om-gods-wil" tabindex="0" role="button">
+          <h4>GODS WIL</h4>
+          <p>Jezus had de Vader voor ogen ? deed in alles diens wil</p>
+          <div class="om-god-tags">
+            <span>Fil. 2:8</span>
+            <span>Joh. 5:30</span>
+          </div>
+        </div>
+
+        <div class="om-fork" aria-hidden="false">
+          <div class="om-fork-line"></div>
+          <div class="om-path bad tap" data-topic="om-hoogmoed" tabindex="0" role="button">
+            <span class="om-path-label">Tegenpool</span>
+            <h4>Hoogmoed</h4>
+            <p>Eigen wil, trots, &ldquo;gij zult als God zijn&rdquo;</p>
+            <ul>
+              <li>Verstand verleid</li>
+              <li>Hoge gedachten over jezelf</li>
+              <li>Geen genade</li>
+            </ul>
+          </div>
+          <div class="om-wil tap" data-topic="om-gezindheid" tabindex="0" role="button">
+            <span class="om-wil-badge">KEUZE</span>
+            <h4>GEZINDHEID / WIL</h4>
+            <p>Wie bestuurt de hele mens?</p>
+          </div>
+          <div class="om-path good tap" data-topic="om-wat" tabindex="0" role="button">
+            <span class="om-path-label">Ware weg</span>
+            <h4>Ootmoed</h4>
+            <p>Gods wil kiezen ? gehoorzaamheid</p>
+            <ul>
+              <li>Erkennen + plaats innemen</li>
+              <li>Van harte, voor God</li>
+              <li>Genade ontvangen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="om-diagram">
+          <div class="om-hub tap" data-topic="om-plaats" tabindex="0" role="button">
+            <span class="om-hub-badge">HIER WOONT OOTMOED</span>
+            <h4>HART + VERSTAND</h4>
+            <p>God schrijft de wet der ootmoed ? niet uiterlijke schijn</p>
+            <div class="om-hub-traits">
+              <span class="tap" data-topic="om-wat" tabindex="0" role="button">erkennen</span>
+              <span class="tap" data-topic="om-gehoorzaamheid" tabindex="0" role="button">gehoorzaam</span>
+              <span class="tap" data-topic="om-jezus" tabindex="0" role="button">voorbeeld Jezus</span>
+            </div>
+            <p class="om-hub-ref">Hebr. 8:10 ? Jak. 4:6</p>
+          </div>
+
+          <div class="om-side">
+            <div class="om-card not tap" data-topic="om-valse" tabindex="0" role="button">
+              <h4>Valse nederigheid</h4>
+              Schijn voor mensen, om eer te krijgen. Kol. 2:18 ? niet verbonden met Christus als Hoofd.
+            </div>
+            <div class="om-card yes tap" data-topic="om-genade" tabindex="0" role="button">
+              <h4>Ware ootmoed</h4>
+              Verbonden met Christus. God geeft genade aan de nederigen ? weg tot groei.
+            </div>
+          </div>
+        </div>
+
+        <div class="om-pipeline">
+          <div class="om-step tap" data-topic="om-wat" tabindex="0" role="button">
+            <div class="om-step-num">1</div>
+            <div class="om-where">Hart</div>
+            <h4>Erkennen</h4>
+            <p>Wie je bent voor God</p>
+          </div>
+          <div class="om-step tap" data-topic="om-plaats" tabindex="0" role="button">
+            <div class="om-step-num">2</div>
+            <div class="om-where">Plaats</div>
+            <h4>Innemen</h4>
+            <p>De juiste plaats onder God</p>
+          </div>
+          <div class="om-step tap" data-topic="om-gods-wil" tabindex="0" role="button">
+            <div class="om-step-num">3</div>
+            <div class="om-where">Wil</div>
+            <h4>Gods wil kiezen</h4>
+            <p>Eigen wil neerleggen</p>
+          </div>
+          <div class="om-step tap" data-topic="om-gehoorzaamheid" tabindex="0" role="button">
+            <div class="om-step-num">4</div>
+            <div class="om-where">Hele mens</div>
+            <h4>Gehoorzaamheid</h4>
+            <p>Dienaar van de Geest</p>
+          </div>
+          <div class="om-step tap" data-topic="om-genade" tabindex="0" role="button">
+            <div class="om-step-num">5</div>
+            <div class="om-where">Resultaat</div>
+            <h4>Genade &amp; groei</h4>
+            <p>Heiligmaking en vrijheid</p>
+          </div>
+        </div>
+
+        <div class="om-outcomes">
+          <div class="om-outcome tap" data-topic="om-genade" tabindex="0" role="button">
+            <h4>Genade</h4>
+            <p>God geeft genade aan de nederigen ? Jak. 4:6</p>
+          </div>
+          <div class="om-outcome tap" data-topic="om-jezus" tabindex="0" role="button">
+            <h4>Voorbeeld Christus</h4>
+            <p>Ootmoed tot de dood des kruises</p>
+          </div>
+          <div class="om-outcome tap" data-topic="om-gehoorzaamheid" tabindex="0" role="button">
+            <h4>Dienaar van Geest</h4>
+            <p>Ziel niet slaaf van vlees maar van God</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KRUIS -->
+    <section id="kruis">
+      <div class="section-head">
+        <span class="section-eyebrow">Kruis</span>
+        <h2 class="section-title">Wat is het kruis en hoe en waar draag je het?</h2>
+        <p class="section-sub">
+          <strong>Christus' kruis</strong> heeft de oude mens medegekruisigd ? <strong>jouw kruis</strong> is dagelijks de eigen wil verloochenen
+          en Gods wil doen ? in <strong>gezindheid en hart</strong>, in elke beproeving.
+        </p>
+      </div>
+
+      <div class="kr-scene reveal">
+        <div class="kr-key tap" data-topic="kr-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Twee kruisen horen bij elkaar ? <strong>Christus aan het kruishout</strong> (verlossing, Rom. 6:6)
+          en <strong>dagelijks je kruis opnemen</strong> (navolging, Luk. 9:23). Zonder het tweede is alle vrijheid vals.
+        </div>
+
+        <div class="kr-christus tap" data-topic="kr-christus" tabindex="0" role="button">
+          <h4>KRUIS VAN CHRISTUS</h4>
+          <p>Oude mens medegekruisigd ? zonde in het vlees teniet gedaan</p>
+          <div class="kr-christus-tags">
+            <span>Rom. 6:6</span>
+            <span>Gal. 2:20</span>
+            <span>Rom. 8:3</span>
+          </div>
+        </div>
+
+        <div class="kr-fork" aria-hidden="false">
+          <div class="kr-fork-line"></div>
+          <div class="kr-path bad tap" data-topic="kr-wat" tabindex="0" role="button">
+            <span class="kr-path-label">Wat sterft</span>
+            <h4>Eigen wil / ik</h4>
+            <p>Zelfleven, eigen begeerte, trots</p>
+            <ul>
+              <li>Genageld aan het kruis</li>
+              <li>Leven verliezen</li>
+              <li>Niet mijn wil</li>
+            </ul>
+          </div>
+          <div class="kr-wil tap" data-topic="kr-waar" tabindex="0" role="button">
+            <span class="kr-wil-badge">WAAR</span>
+            <h4>GEZINDHEID / WIL</h4>
+            <p>Elke dag, elke beproeving</p>
+          </div>
+          <div class="kr-path good tap" data-topic="kr-hoe" tabindex="0" role="button">
+            <span class="kr-path-label">Hoe</span>
+            <h4>Kruis opnemen</h4>
+            <p>Verloochenen ? volgen ? door de Geest</p>
+            <ul>
+              <li>Luk. 9:23 dagelijks</li>
+              <li>Waarheid onder ogen</li>
+              <li>Voetsporen van Jezus</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="kr-diagram">
+          <div class="kr-hub tap" data-topic="kr-dagelijks" tabindex="0" role="button">
+            <span class="kr-hub-badge">DAGELIJKS KRUIS</span>
+            <h4>VERLOOCHENEN + OPNEMEN</h4>
+            <p>Eigen wil genageld ? de wil van God doen in de tijd die rest</p>
+            <div class="kr-hub-traits">
+              <span class="tap" data-topic="kr-verloochenen" tabindex="0" role="button">verloochenen</span>
+              <span class="tap" data-topic="kr-leven-verliezen" tabindex="0" role="button">leven verliezen</span>
+              <span class="tap" data-topic="kr-geest" tabindex="0" role="button">door de Geest</span>
+            </div>
+            <p class="kr-hub-ref">Luk. 9:23 ? Mat. 16:24</p>
+          </div>
+
+          <div class="kr-side">
+            <div class="kr-card not tap" data-topic="kr-valse" tabindex="0" role="button">
+              <h4>Zonder kruis</h4>
+              Valse vrijheid, valse liefde, valse blijdschap ? om het kruis heen lopen.
+            </div>
+            <div class="kr-card yes tap" data-topic="kr-kruisweg" tabindex="0" role="button">
+              <h4>Heerlijke kruisweg</h4>
+              Smalle weg ? Christus leeft in hen die gekruisigd zijn voor de wereld.
+            </div>
+          </div>
+        </div>
+
+        <div class="kr-pipeline">
+          <div class="kr-step tap" data-topic="kr-wat" tabindex="0" role="button">
+            <div class="kr-step-num">1</div>
+            <div class="kr-where">Herkennen</div>
+            <h4>Eigen wil zien</h4>
+            <p>Tegen Gods wil ingaan</p>
+          </div>
+          <div class="kr-step tap" data-topic="kr-verloochenen" tabindex="0" role="button">
+            <div class="kr-step-num">2</div>
+            <div class="kr-where">Gezindheid</div>
+            <h4>Zelf verloochenen</h4>
+            <p>Niet mijn wil maar de uwe</p>
+          </div>
+          <div class="kr-step tap" data-topic="kr-dagelijks" tabindex="0" role="button">
+            <div class="kr-step-num">3</div>
+            <div class="kr-where">Kruis</div>
+            <h4>Kruis opnemen</h4>
+            <p>Dagelijks ? aan het kruis</p>
+          </div>
+          <div class="kr-step tap" data-topic="kr-hoe" tabindex="0" role="button">
+            <div class="kr-step-num">4</div>
+            <div class="kr-where">Hele mens</div>
+            <h4>Jezus volgen</h4>
+            <p>Voetsporen ? gehoorzaamheid</p>
+          </div>
+          <div class="kr-step tap" data-topic="kr-christus-leeft" tabindex="0" role="button">
+            <div class="kr-step-num">5</div>
+            <div class="kr-where">Resultaat</div>
+            <h4>Christus leeft</h4>
+            <p>Leven van Jezus in het lichaam</p>
+          </div>
+        </div>
+
+        <div class="kr-outcomes">
+          <div class="kr-outcome tap" data-topic="kr-oude-mens" tabindex="0" role="button">
+            <h4>Oude mens dood</h4>
+            <p>Medegekruisigd ? niet langer slaven der zonde</p>
+          </div>
+          <div class="kr-outcome tap" data-topic="bp-overzicht" tabindex="0" role="button">
+            <h4>In beproeving</h4>
+            <p>Elke situatie maakt inhoud openbaar ? grijp het eeuwige leven</p>
+          </div>
+          <div class="kr-outcome tap" data-topic="kr-christus-leeft" tabindex="0" role="button">
+            <h4>Opstandingsleven</h4>
+            <p>Dood van Jezus werkt ? leven van Jezus openbaar ? 2 Kor. 4:10</p>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Beproeving</span>
+          <h3 class="scene-divider-title">Wat is een beproeving?</h3>
+        </div>
+
+        <div class="bp-scene reveal">
+          <div class="bp-key tap" data-topic="bp-overzicht" tabindex="0" role="button">
+            <strong>Kern:</strong> Een beproeving is een <strong>echte situatie</strong> die je <strong>inhoud openbaart</strong> ?
+            niet een gedachte in je hoofd, maar het dagelijkse leven waar eigen wil en Gods wil botsen.
+            De weg van beproeving is de weg des levens.
+          </div>
+
+          <div class="bp-compare">
+            <div class="bp-compare-card vz-side tap" data-topic="bp-vs-verzoeking" tabindex="0" role="button">
+              <span class="bp-compare-label">Verzoeking</span>
+              <h4>In de ziel</h4>
+              <p>Idee, begeerte, innerlijke drang ? nog geen zonde v&oacute;&oacute;r instemming</p>
+              <button type="button" class="bp-compare-link" data-goto-tab="verzoeking">zie tab Verzoeking &rarr;</button>
+            </div>
+            <div class="bp-compare-mid" aria-hidden="true">
+              <span>vs</span>
+            </div>
+            <div class="bp-compare-card bp-side tap" data-topic="bp-wat" tabindex="0" role="button">
+              <span class="bp-compare-label">Beproeving</span>
+              <h4>In het leven</h4>
+              <p>Situatie, omstandigheid, mensen ? maakt zichtbaar wat er <em>in</em> je leeft</p>
+              <span class="bp-compare-ref">Jak. 1:2-3</span>
+            </div>
+          </div>
+
+          <div class="bp-situatie tap" data-topic="bp-waar" tabindex="0" role="button">
+            <h4>WAAR KOMT HET BINNEN?</h4>
+            <p>Tong, relaties, werk, teleurstelling, onrecht, vernedering ? grotere of kleinere beproevingen <strong>dagelijks</strong></p>
+            <div class="bp-situatie-tags">
+              <span>gezindheid</span>
+              <span>hart</span>
+              <span>leden</span>
+              <span>echte situaties</span>
+            </div>
+          </div>
+
+          <p class="bp-fork-label">Wat wordt er openbaar?</p>
+          <div class="bp-fork">
+            <div class="bp-fork-line"></div>
+            <div class="bp-path bad tap" data-topic="bp-ik" tabindex="0" role="button">
+              <span class="bp-path-label">Komt aan het licht</span>
+              <h4>Het ik</h4>
+              <p>Eigen leven, trots, ongeduld, eigen wil</p>
+              <ul>
+                <li>Als gewone mensen</li>
+                <li>Verbinding met God weg</li>
+                <li>Orpa keert terug</li>
+              </ul>
+            </div>
+            <div class="bp-center tap" data-topic="bp-inhoud" tabindex="0" role="button">
+              <span class="bp-center-badge">OPENBARING</span>
+              <h4>INHOUD</h4>
+              <p>Wie regeert?</p>
+            </div>
+            <div class="bp-path good tap" data-topic="bp-christus" tabindex="0" role="button">
+              <span class="bp-path-label">Komt aan het licht</span>
+              <h4>Christus</h4>
+              <p>Deugden, liefde, geduld, ootmoed</p>
+              <ul>
+                <li>Leven van Jezus zichtbaar</li>
+                <li>Door de Geest</li>
+                <li>Grijp het eeuwige leven</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bp-pipeline">
+            <div class="bp-step tap" data-topic="bp-waar" tabindex="0" role="button">
+              <div class="bp-step-num">1</div>
+              <div class="bp-where">Situatie</div>
+              <h4>Beproeving komt</h4>
+              <p>Echt leven ? niet fantasie</p>
+            </div>
+            <div class="bp-step tap" data-topic="bp-inhoud" tabindex="0" role="button">
+              <div class="bp-step-num">2</div>
+              <div class="bp-where">Openbaring</div>
+              <h4>Inhoud zichtbaar</h4>
+              <p>Ik of Christus?</p>
+            </div>
+            <div class="bp-step tap" data-topic="bp-geloof" tabindex="0" role="button">
+              <div class="bp-step-num">3</div>
+              <div class="bp-where">Geloof</div>
+              <h4>Proef doorstaan</h4>
+              <p>Volharding werkt</p>
+            </div>
+            <div class="bp-step tap" data-topic="bp-doorstaan" tabindex="0" role="button">
+              <div class="bp-step-num">4</div>
+              <div class="bp-where">Kruis</div>
+              <h4>Doorstaan</h4>
+              <p>Eigen wil verloochenen</p>
+            </div>
+            <div class="bp-step tap" data-topic="bp-kroon" tabindex="0" role="button">
+              <div class="bp-step-num">5</div>
+              <div class="bp-where">Resultaat</div>
+              <h4>Groei / kroon</h4>
+              <p>Louteren en reinigen</p>
+            </div>
+          </div>
+
+          <div class="bp-hub-row">
+            <div class="bp-hub tap" data-topic="bp-god" tabindex="0" role="button">
+              <span class="bp-hub-badge">GODS DOEL</span>
+              <h4>VUUR DER BEPROEVING</h4>
+              <p>Beproefd worden is genade ? God loutert en reinigt, geloof wordt beproefd</p>
+              <div class="bp-hub-traits">
+                <span class="tap" data-topic="bp-geloof" tabindex="0" role="button">geloof beproefd</span>
+                <span class="tap" data-topic="bp-god" tabindex="0" role="button">louteren</span>
+                <span class="tap" data-topic="bp-vuur" tabindex="0" role="button">vuur</span>
+              </div>
+              <p class="bp-hub-ref">Jak. 1:12 ? Job 23:10</p>
+            </div>
+            <div class="bp-side">
+              <div class="bp-card yes tap" data-topic="bp-doorstaan" tabindex="0" role="button">
+                <h4>Doorstaan</h4>
+                Houd het voor vreugde ? na de proef schiet je minder tekort. Volkomen worden.
+              </div>
+              <div class="bp-card not tap" data-topic="bp-ik" tabindex="0" role="button">
+                <h4>Afvallen</h4>
+                In de beproeving voedingssappen opnemen ? dichter bij God komen, niet afvallen.
+              </div>
+            </div>
+          </div>
+
+          <div class="bp-outcomes">
+            <div class="bp-outcome tap" data-topic="bp-geloof" tabindex="0" role="button">
+              <h4>Geloof beproefd</h4>
+              <p>Verzoeking is beproeving van ons geloof ? volharding uitwerken</p>
+            </div>
+            <div class="bp-outcome tap" data-topic="bp-god" tabindex="0" role="button">
+              <h4>Loutering</h4>
+              <p>God reinigt en opent ogen voor Zijn almacht ? als Job</p>
+            </div>
+            <div class="bp-outcome tap" data-topic="bp-kroon" tabindex="0" role="button">
+              <h4>Kroon des levens</h4>
+              <p>Wie volhardt, ontvangt wat Hij beloofd heeft</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Gal. 3:1</span>
+          <h3 class="scene-divider-title">Christus als gekruisigd geschilderd</h3>
+        </div>
+
+        <div class="gs-scene reveal">
+          <div class="gs-key tap" data-topic="gs-overzicht" tabindex="0" role="button">
+            <strong>Kern:</strong> &ldquo;Voor de ogen geschilderd&rdquo; is <strong>geen visuele kracht</strong> of martelaarsbeeld ?
+            Paulus predikte het kruis zodat de Galaten <strong>zichzelf gekruisigd zagen</strong> ? oude mens dood, vlees gekruisigd.
+          </div>
+          <div class="gs-compare">
+            <div class="gs-card not tap" data-topic="gs-niet" tabindex="0" role="button">
+              <span class="gs-label">Niet Paulus</span>
+              <h4>Martelaar op Golgota</h4>
+              <p>Emotie, gevoel, innerlijk beeld ? betovering</p>
+            </div>
+            <div class="gs-card yes tap" data-topic="gs-wel" tabindex="0" role="button">
+              <span class="gs-label">Wel Paulus</span>
+              <h4>Woord des kruises</h4>
+              <p>Oude mens medegekruisigd ? niet meer voor jezelf leven</p>
+            </div>
+          </div>
+          <div class="gs-hub tap" data-topic="gs-overzicht" tabindex="0" role="button">
+            <span class="gs-hub-badge">WAT ZAGEN ZIJ?</span>
+            <h4>GEKRUISIGD MET CHRISTUS</h4>
+            <div class="gs-hub-traits">
+              <span class="tap" data-topic="gs-oude-mens" tabindex="0" role="button">oude mens</span>
+              <span class="tap" data-topic="gs-vlees" tabindex="0" role="button">vlees gekruisigd</span>
+              <span class="tap" data-topic="gs-wereld" tabindex="0" role="button">wereld gekruisigd</span>
+            </div>
+            <p class="gs-hub-ref">Rom. 6:6 ? Gal. 2:20 ? Gal. 6:14</p>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Wijnpers</span>
+          <h3 class="scene-divider-title">De wijnpers treden ? alleen met Jezus</h3>
+        </div>
+
+        <div class="wp-key tap" data-topic="wp-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Jezus trad de wijnpers <strong>alleen</strong> ?
+          jij moet je <strong>eigen wijnpers alleen</strong> treden: ziel uitgieten, eigen wil offeren ?
+          niet mentaal vechten, maar in <strong>echte situaties</strong> Gods wil doen.
+        </div>
+
+        <div class="wp-alone tap" data-topic="wp-alleen" tabindex="0" role="button">
+          <h4>ALLEEN MET JEZUS</h4>
+          <p>Abraham liet de knechten achter ? alleen hij en Isaak naar Moria. Gemeenschap: enkeling + Jezus.</p>
+          <div class="wp-alone-tags">
+            <span>Gen. 22</span>
+            <span>Een ieder afzonderlijk</span>
+            <span>Luk. 9:23</span>
+          </div>
+        </div>
+
+        <div class="wp-diagram">
+          <div class="wp-hub tap" data-topic="wp-waar" tabindex="0" role="button">
+            <span class="wp-hub-badge">WAAR</span>
+            <h4>GEZINDHEID / HART</h4>
+            <p>Elke beproeving ? eigen wil vs Gods wil</p>
+            <div class="wp-hub-traits">
+              <span class="tap" data-topic="wp-isaak" tabindex="0" role="button">Isaak offeren</span>
+              <span class="tap" data-topic="wp-ziel" tabindex="0" role="button">ziel uitgieten</span>
+              <span class="tap" data-topic="wp-vrucht" tabindex="0" role="button">vrucht verbrijzeld</span>
+            </div>
+          </div>
+          <div class="wp-side">
+            <div class="wp-card not tap" data-topic="wp-niet" tabindex="0" role="button">
+              <h4>Niet mentaal vechten</h4>
+              Geen fantasie-strijd ? maar gehoorzaamheid in het echte leven.
+            </div>
+            <div class="wp-card yes tap" data-topic="wp-hoe" tabindex="0" role="button">
+              <h4>Wel: doorstaan</h4>
+              Lijden met Christus ? geloof doorstaan tot het af is.
+            </div>
+          </div>
+        </div>
+
+        <div class="wp-pipeline">
+          <div class="wp-step tap" data-topic="wp-waar" tabindex="0" role="button">
+            <div class="wp-step-num">1</div>
+            <div class="wp-where">Herkennen</div>
+            <h4>Eigen wil zien</h4>
+            <p>Strijd in het hart</p>
+          </div>
+          <div class="wp-step tap" data-topic="wp-alleen" tabindex="0" role="button">
+            <div class="wp-step-num">2</div>
+            <div class="wp-where">Alleen</div>
+            <h4>Wijnpers betreden</h4>
+            <p>Niemand volgt mee</p>
+          </div>
+          <div class="wp-step tap" data-topic="wp-ziel" tabindex="0" role="button">
+            <div class="wp-step-num">3</div>
+            <div class="wp-where">Offer</div>
+            <h4>Ziel uitgieten</h4>
+            <p>Jouw Isaak offeren</p>
+          </div>
+          <div class="wp-step tap" data-topic="wp-hoe" tabindex="0" role="button">
+            <div class="wp-step-num">4</div>
+            <div class="wp-where">Gehoorzaam</div>
+            <h4>Gods wil doen</h4>
+            <p>Koste wat het kost</p>
+          </div>
+          <div class="wp-step tap" data-topic="wp-vrucht" tabindex="0" role="button">
+            <div class="wp-step-num">5</div>
+            <div class="wp-where">Resultaat</div>
+            <h4>Sterken als buit</h4>
+            <p>Vrucht verbrijzeld ? nieuwe wijn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEG / DISCIPEL -->
+    <section id="weg">
+      <div class="section-head">
+        <span class="section-eyebrow">Discipelweg</span>
+        <h2 class="section-title">De volledige weg volgens Verborgen Schatten</h2>
+        <p class="section-sub">
+          Meer dan alleen vergeving: <strong>bekering</strong>, <strong>doop</strong>, dagelijks <strong>kruis</strong>,
+          <strong>overwinning</strong> en <strong>heiligmaking</strong> ? tot gelijkvormigheid aan Christus.
+        </p>
+      </div>
+
+      <div class="dw-scene reveal">
+        <div class="dw-key tap" data-topic="dw-overzicht" tabindex="0" role="button">
+          <strong>Kern:</strong> Het evangelie is een <strong>weg</strong> ? niet alleen verzoening als geschenk,
+          maar voortgaan tot de mens <strong>als zijn Meester wordt</strong>. Dagelijks: bidden, Woord vasthouden, gehoorzaam zijn.
+        </div>
+
+        <div class="dw-fork" aria-hidden="false">
+          <div class="dw-fork-line"></div>
+          <div class="dw-path bad tap" data-topic="dw-halve" tabindex="0" role="button">
+            <span class="dw-path-label">Veel christenen</span>
+            <h4>Halve weg</h4>
+            <p>Vergeving zoeken ? niet overwinnen</p>
+            <ul>
+              <li>Tot Hem komen zonder discipel</li>
+              <li>Eigen leven behouden</li>
+              <li>Geen kruisweg</li>
+            </ul>
+          </div>
+          <div class="dw-center tap" data-topic="dw-discipel" tabindex="0" role="button">
+            <span class="dw-center-badge">DOEL</span>
+            <h4>DISCIPEL</h4>
+            <p>Volgen en leren van de Meester</p>
+          </div>
+          <div class="dw-path good tap" data-topic="dw-doel" tabindex="0" role="button">
+            <span class="dw-path-label">Ware weg</span>
+            <h4>Gelijk aan Christus</h4>
+            <p>Van licht tot licht ? volmaakte rijpheid</p>
+            <ul>
+              <li>Luc. 6:40 als de Meester</li>
+              <li>Verborgen leven met Christus</li>
+              <li>Gehoorzaamheid leren</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dw-journey-label">Het pad ? klik elke stap</div>
+        <div class="dw-journey">
+          <div class="dw-jstep tap" data-topic="dw-verzoening" tabindex="0" role="button">
+            <div class="dw-jnum">1</div>
+            <h4>Verzoening</h4>
+            <p>Genadegeschenk ? begin</p>
+          </div>
+          <div class="dw-jarrow" aria-hidden="true"></div>
+          <div class="dw-jstep tap" data-topic="dw-bekering" tabindex="0" role="button">
+            <div class="dw-jnum">2</div>
+            <h4>Bekering</h4>
+            <p>Hart ontvangt oordeel</p>
+          </div>
+          <div class="dw-jarrow" aria-hidden="true"></div>
+          <div class="dw-jstep tap" data-topic="dw-geloof-geest" tabindex="0" role="button">
+            <div class="dw-jnum">3</div>
+            <h4>Geloof + Geest</h4>
+            <p>Kracht ontvangen</p>
+          </div>
+          <div class="dw-jarrow" aria-hidden="true"></div>
+          <div class="dw-jstep tap" data-topic="dw-doop" tabindex="0" role="button">
+            <div class="dw-jnum">4</div>
+            <h4>Doop</h4>
+            <p>Lichaam des vlezes afgelegd</p>
+          </div>
+          <div class="dw-jarrow" aria-hidden="true"></div>
+          <div class="dw-jstep tap" data-topic="dw-kruisweg" tabindex="0" role="button">
+            <div class="dw-jnum">5</div>
+            <h4>Kruisweg</h4>
+            <p>Dagelijks zelfverloochening</p>
+          </div>
+          <div class="dw-jarrow" aria-hidden="true"></div>
+          <div class="dw-jstep tap" data-topic="dw-overwinning" tabindex="0" role="button">
+            <div class="dw-jnum">6</div>
+            <h4>Overwinning</h4>
+            <p>Over bewuste zonde</p>
+          </div>
+          <div class="dw-jarrow" aria-hidden="true"></div>
+          <div class="dw-jstep tap" data-topic="dw-heiligmaking" tabindex="0" role="button">
+            <div class="dw-jnum">7</div>
+            <h4>Heiligmaking</h4>
+            <p>Van licht tot licht</p>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Heiligmaking</span>
+          <h3 class="scene-divider-title">Bezoedeling des vleses en des geestes</h3>
+        </div>
+
+        <div class="bz-scene reveal">
+          <div class="bz-key tap" data-topic="bz-overzicht" tabindex="0" role="button">
+            <strong>Kern (2 Kor. 7:1):</strong> Reinig je van <strong>alle bezoedeling des vleses</strong>
+            (lichaam, begeerte, wereld) ?n <strong>des geestes</strong> (leer, leugen, verkeerde geest) ?
+            en <strong>volmaak je heiligheid</strong> in de vreze Gods.
+          </div>
+
+          <div class="bz-split">
+            <div class="bz-col bz-col-vlees">
+              <div class="bz-col-head">
+                <span class="bz-col-icon" aria-hidden="true">?</span>
+                <div>
+                  <h4>Bezoedeling des vlezes</h4>
+                  <p class="bz-col-sub">Lichaam ? begeerte ? wereld</p>
+                </div>
+              </div>
+              <button type="button" class="bz-node tap" data-topic="bz-vlees" tabindex="0">
+                <span class="bz-node-title">Wat is het?</span>
+                <span class="bz-node-desc">Vleselijke natuur, leden, zinnelijkheid</span>
+              </button>
+              <button type="button" class="bz-node tap" data-topic="bz-ongelijk-span" tabindex="0">
+                <span class="bz-node-title">Ongelijk span</span>
+                <span class="bz-node-desc">2 Kor. 6:14 ? besmetting door de wereld</span>
+              </button>
+              <button type="button" class="bz-node tap" data-topic="bz-tong" tabindex="0">
+                <span class="bz-node-title">Tong &amp; lichaam</span>
+                <span class="bz-node-desc">Jak. 3:6 ? het hele lichaam bezoedelen</span>
+              </button>
+            </div>
+
+            <div class="bz-center">
+              <div class="bz-verse-badge">2 Kor. 7:1</div>
+              <p class="bz-center-text">Reinigen van <strong>alle</strong> bezoedeling</p>
+              <svg class="bz-center-arrows" viewBox="0 0 120 80" aria-hidden="true">
+                <path d="M10 40 H45 M38 33 L45 40 L38 47" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M110 40 H75 M82 33 L75 40 L82 47" fill="none" stroke="currentColor" stroke-width="2"/>
+                <rect x="46" y="22" width="28" height="36" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <p class="bz-center-goal">Heiligheid volmaken<br /><span>in de vreze Gods</span></p>
+              <button type="button" class="bz-reinigen tap" data-topic="bz-reinigen" tabindex="0">
+                Hoe reinigen? ?
+              </button>
+            </div>
+
+            <div class="bz-col bz-col-geest">
+              <div class="bz-col-head">
+                <span class="bz-col-icon" aria-hidden="true">?</span>
+                <div>
+                  <h4>Bezoedeling des geestes</h4>
+                  <p class="bz-col-sub">Leer ? houding ? leugen</p>
+                </div>
+              </div>
+              <button type="button" class="bz-node tap" data-topic="bz-geest" tabindex="0">
+                <span class="bz-node-title">Wat is het?</span>
+                <span class="bz-node-desc">Geestelijke onreinheid, niet lichaam</span>
+              </button>
+              <button type="button" class="bz-node tap" data-topic="bz-leer" tabindex="0">
+                <span class="bz-node-title">Vreemde leer</span>
+                <span class="bz-node-desc">Afdrijven van de waarheid</span>
+              </button>
+              <button type="button" class="bz-node tap" data-topic="bz-leugen" tabindex="0">
+                <span class="bz-node-title">Wereld van leugen</span>
+                <span class="bz-node-desc">Gevoelens, achterdocht, leugen</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="bz-bridge tap" data-topic="dw-heiligmaking" tabindex="0" role="button">
+            <span class="bz-bridge-label">Op de discipelweg</span>
+            <strong>Stap 7: Heiligmaking</strong> ? van licht tot licht, geleidelijk gereinigd
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Hemelse plaats</span>
+          <h3 class="scene-divider-title">Met God in de hemel geplaatst ? wat gebeurt er?</h3>
+        </div>
+
+        <div class="hm-scene reveal">
+          <div class="hm-key tap" data-topic="hm-overzicht" tabindex="0" role="button">
+            <strong>Kern:</strong> Met Christus <strong>opgewekt en in de hemel geplaatst</strong> (Ef. 2:6) ?
+            niet de oude mens, maar <strong>hart en gezindheid</strong>. Het leven is
+            <strong>verborgen met Christus in God</strong> (Kol. 3:3) en werkt uit op aarde door de Geest.
+          </div>
+
+          <div class="hm-diagram">
+            <div class="hm-main">
+              <button type="button" class="hm-node hm-heaven tap" data-topic="hm-christus" tabindex="0">
+                <span class="hm-node-eyebrow">Boven</span>
+                <span class="hm-node-title">Christus in de hemel</span>
+                <span class="hm-node-desc">Opgewekt ? gezeten aan Gods rechterhand ? Ef. 2:6</span>
+              </button>
+
+              <svg class="hm-beam-svg" viewBox="0 0 280 48" aria-hidden="true">
+                <path d="M140 4v16" stroke="currentColor" stroke-width="2"/>
+                <path d="M72 20 L140 44" stroke="currentColor" stroke-width="2"/>
+                <path d="M208 20 L140 44" stroke="currentColor" stroke-width="2"/>
+                <circle cx="140" cy="4" r="3" fill="currentColor"/>
+                <circle cx="140" cy="44" r="4" fill="currentColor"/>
+              </svg>
+
+              <p class="hm-placed-label">In de hemel geplaatst</p>
+
+              <div class="hm-placed-grid">
+                <button type="button" class="hm-placed tap" data-topic="hm-hart" tabindex="0">
+                  <span class="hm-placed-icon" aria-hidden="true">?</span>
+                  <span class="hm-placed-name">Hart</span>
+                  <span class="hm-placed-desc">Overleggingen ? Woord smelt samen</span>
+                </button>
+                <button type="button" class="hm-placed tap" data-topic="hm-gezindheid" tabindex="0">
+                  <span class="hm-placed-icon" aria-hidden="true">?</span>
+                  <span class="hm-placed-name">Gezindheid</span>
+                  <span class="hm-placed-desc">Wil ? instemmen met Gods wet</span>
+                </button>
+              </div>
+
+              <button type="button" class="hm-node hm-hidden tap" data-topic="hm-verborgen" tabindex="0">
+                <span class="hm-node-eyebrow">Verborgen</span>
+                <span class="hm-node-title">Leven met Christus in God</span>
+                <span class="hm-node-desc">Niet zichtbaar voor de wereld ? Kol. 3:3</span>
+              </button>
+
+              <div class="hm-earth-bridge">
+                <svg class="hm-earth-svg" viewBox="0 0 24 64" aria-hidden="true">
+                  <path d="M12 4v44" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
+                  <path d="M6 52 L12 60 L18 52 Z" fill="currentColor"/>
+                </svg>
+                <span class="hm-earth-label">Praktisch op aarde</span>
+              </div>
+
+              <button type="button" class="hm-node hm-earth tap" data-topic="hm-aarde" tabindex="0">
+                <span class="hm-node-eyebrow">Hier</span>
+                <span class="hm-node-title">Geest leidt ziel en lichaam</span>
+                <span class="hm-node-desc">Zoek wat boven is ? lichaam als werktuig der gerechtigheid ? Kol. 3:1</span>
+                <span class="hm-traits">
+                  <span class="tap" data-topic="geest" tabindex="0" role="button">geest</span>
+                  <span class="tap" data-topic="dw-discipel" tabindex="0" role="button">discipel</span>
+                </span>
+              </button>
+            </div>
+
+            <aside class="hm-aside" aria-label="Niet in de hemel">
+              <span class="hm-aside-label">Niet geplaatst</span>
+              <button type="button" class="hm-aside-card hm-aside-no tap" data-topic="hm-oude-mens" tabindex="0">
+                <span class="hm-aside-title">Oude mens</span>
+                <span class="hm-aside-desc">Geen plaats in de hemel ? terecht aan het kruis ? Rom. 6:6</span>
+              </button>
+              <button type="button" class="hm-aside-card hm-aside-no tap" data-topic="lichaam-vlezes" tabindex="0">
+                <span class="hm-aside-title">Lichaam des vlezes</span>
+                <span class="hm-aside-desc">Afgelegd in de doop ? niet wat boven regeert ? Kol. 2:11</span>
+              </button>
+              <button type="button" class="hm-aside-card hm-aside-yes tap" data-topic="dw-doel" tabindex="0">
+                <span class="hm-aside-title">Wel: gelijk aan Christus</span>
+                <span class="hm-aside-desc">Van licht tot licht ? volmaakte rijpheid ? 2 Kor. 3:18</span>
+              </button>
+            </aside>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span class="scene-divider-eyebrow">Elke dag</span>
+          <h3 class="scene-divider-title">Dagelijkse praktijk op de weg</h3>
+        </div>
+
+        <div class="dw-daily-key tap" data-topic="dw-dagelijks" tabindex="0" role="button">
+          Geen vast ritueel, maar drie dingen die <strong>elke dag samen horen</strong> op de weg des levens.
+        </div>
+
+        <div class="dw-triad">
+          <div class="dw-triad-card tap" data-topic="dw-gebed" tabindex="0" role="button">
+            <span class="dw-triad-icon" aria-hidden="true">&#x1F64F;</span>
+            <h4>Gebed</h4>
+            <p>Uit nood en honger ? niet lege woorden. Om Geest en wijsheid.</p>
+            <span class="dw-triad-ref">Luc. 11 ? Jak. 1:5</span>
+          </div>
+          <div class="dw-triad-card tap" data-topic="dw-woord" tabindex="0" role="button">
+            <span class="dw-triad-icon" aria-hidden="true">&#x1F4D6;</span>
+            <h4>Woord vasthouden</h4>
+            <p>Grijpen op het moment dat het je raakt ? richting in situaties.</p>
+            <span class="dw-triad-ref">Hebr. 4:12</span>
+          </div>
+          <div class="dw-triad-card tap" data-topic="dw-gehoorzaam" tabindex="0" role="button">
+            <span class="dw-triad-icon" aria-hidden="true">&#x2714;</span>
+            <h4>Gehoorzaamheid</h4>
+            <p>Nee tegen eigen wil, ja tegen Gods wil ? in het echte leven.</p>
+            <span class="dw-triad-ref">Rom. 1:5</span>
+          </div>
+        </div>
+
+        <div class="dw-hub-row">
+          <div class="dw-hub tap" data-topic="dw-licht" tabindex="0" role="button">
+            <span class="dw-hub-badge">GROEI</span>
+            <h4>VAN LICHT TOT LICHT</h4>
+            <p>Nieuwe en levende weg door het vlees ? reiniging in het bloed van Jezus</p>
+            <div class="dw-hub-traits">
+              <span class="tap" data-topic="dw-heiligmaking" tabindex="0" role="button">heiligmaking</span>
+              <span class="tap" data-topic="dw-overwinning" tabindex="0" role="button">overwinning</span>
+              <span class="tap" data-topic="dw-doel" tabindex="0" role="button">gelijk aan Christus</span>
+            </div>
+            <p class="dw-hub-ref">Hebr. 10:20 ? 2 Kor. 3:18</p>
+          </div>
+          <div class="dw-side">
+            <div class="dw-card yes tap" data-topic="dw-discipel" tabindex="0" role="button">
+              <h4>Ware discipel</h4>
+              Komt om bij Hem te blijven en van Hem te leren ? Hem gelijk worden.
+            </div>
+            <div class="dw-card not tap" data-topic="dw-halve" tabindex="0" role="button">
+              <h4>Doorsnee gelovige</h4>
+              Vergeving en genezing ? maar weinig interesse om van de Meester te leren.
+            </div>
+          </div>
+        </div>
+
+        <div class="dw-outcomes">
+          <div class="dw-outcome tap" data-topic="dw-overwinning" tabindex="0" role="button">
+            <h4>Overwinning</h4>
+            <p>Christus zegeviert over het ik door de Heilige Geest</p>
+          </div>
+          <div class="dw-outcome tap" data-topic="dw-heiligmaking" tabindex="0" role="button">
+            <h4>Heiligmaking</h4>
+            <p>Zonde doden waar licht komt ? wandelen in de Geest</p>
+          </div>
+          <div class="dw-outcome tap" data-topic="dw-doel" tabindex="0" role="button">
+            <h4>Volmaakte discipel</h4>
+            <p>Al wie volleerd is, zal zijn als zijn meester</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      Bronnen: Johan O. Smith en medewerkers ? tijdschrift <strong>Verborgen Schatten</strong> (Hidden Treasures)<br />
+      Portret J.O. Smith: publiek domein via <a href="https://commons.wikimedia.org/wiki/File:Johan_o_smith.jpg" target="_blank" rel="noopener">Wikimedia Commons</a><br />
+      Alle citaten uit <a href="https://www.hiddentreasures.org" target="_blank" rel="noopener">Verborgen Schatten</a> ? klik op onderdelen voor de originele teksten
+    </footer>
+  </div>
+
+
+  <div class="ux-context" id="ux-context" aria-live="polite" hidden>
+    <div class="ux-context-mens" id="ux-context-mens" aria-hidden="true"></div>
+    <button type="button" class="ux-context-back" id="ux-context-back" hidden aria-label="Terug">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </button>
+    <span class="ux-context-pulse" aria-hidden="true"></span>
+    <span class="ux-context-dot" id="ux-context-dot" aria-hidden="true"></span>
+    <span class="ux-context-text" id="ux-context-text"></span>
+    <button type="button" class="ux-context-deepen" id="ux-context-deepen" hidden aria-label="Verdiep met uitleg en artikelen" title="Verdiep (V)">
+      <span>Verdiep</span>
+      <span aria-hidden="true">?</span>
+    </button>
+    <button type="button" class="ux-context-bron" id="ux-context-bron" hidden aria-label="Citaten openen" title="Bronnen (B)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Bron</span>
+    </button>
+  </div>
+
+  <div class="ux-toast-stack" id="ux-toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+  <button type="button" class="ux-map-fab" id="ux-map-fab" aria-label="Modelkaart openen" title="Modelkaart (M)">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+  </button>
+
+  <button type="button" class="mens-fab" id="mens-fab" hidden aria-label="Terug naar de mens" title="Terug naar de mens">
+    <span class="mens-fab-icon" aria-hidden="true">?</span>
+    <span class="mens-fab-label">De mens</span>
+  </button>
+
+  <button type="button" class="ux-help-fab" id="ux-help-fab" aria-label="Hulp en sneltoetsen" title="Hulp">
+    <span aria-hidden="true">?</span>
+  </button>
+
+  <div class="ux-welcome" id="ux-welcome" role="dialog" aria-modal="true" aria-labelledby="ux-welcome-title" hidden>
+    <div class="ux-welcome-backdrop" id="ux-welcome-backdrop"></div>
+    <div class="ux-welcome-card">
+      <div class="ux-welcome-glow" aria-hidden="true"></div>
+      <span class="ux-welcome-eyebrow">Welkom</span>
+      <h2 id="ux-welcome-title">Ontdek de mens ? visueel</h2>
+      <p class="ux-welcome-lead">Een interactieve reis door geest, ziel, hart en lichaam. Alles is klikbaar ? volg het model zoals een kaart.</p>
+      <ul class="ux-welcome-tips">
+        <li><strong>Klik</strong> op elk onderdeel ? eigen visuele uitlegpagina</li>
+        <li><strong>Bronnen</strong> (<kbd>B</kbd>) of boek-icoon ? citaten uit Verborgen Schatten</li>
+        <li><strong>Model</strong> rechtsonder ? altijd verder navigeren</li>
+        <li><strong>Terug</strong> (<kbd>Alt</kbd>+<kbd>?</kbd>) ? naar waar je net was</li>
+        <li><strong>Kaart</strong> (<kbd>M</kbd>) ? alle onderdelen met kruisverwijzingen</li>
+        <li><kbd>Ctrl</kbd>+<kbd>K</kbd> ? direct zoeken in 190+ onderwerpen</li>
+      </ul>
+      <div class="ux-welcome-actions">
+        <button type="button" class="ux-welcome-primary" id="ux-welcome-go">Start met het diagram</button>
+        <button type="button" class="ux-welcome-ghost" id="ux-welcome-dismiss">Verken zelf</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="ux-shortcuts" id="ux-shortcuts" role="dialog" aria-modal="true" aria-label="Sneltoetsen" hidden>
+    <div class="ux-shortcuts-backdrop" id="ux-shortcuts-backdrop"></div>
+    <div class="ux-shortcuts-card">
+      <h2>Sneltoetsen</h2>
+      <dl class="ux-shortcuts-list">
+        <div><dt><kbd>Ctrl</kbd> <kbd>K</kbd></dt><dd>Zoeken</dd></div>
+        <div><dt><kbd>/</kbd></dt><dd>Snel zoeken</dd></div>
+        <div><dt><kbd>Alt</kbd> <kbd>?</kbd></dt><dd>Terug naar vorige plek</dd></div>
+        <div><dt><kbd>V</kbd></dt><dd>Verdiep ? uitleg en artikelen</dd></div>
+        <div><dt><kbd>B</kbd></dt><dd>Bronnen en citaten</dd></div>
+        <div><dt><kbd>M</kbd></dt><dd>Modelkaart met kruisverwijzingen</dd></div>
+        <div><dt><kbd>?</kbd></dt><dd>Dit overzicht</dd></div>
+        <div><dt><kbd>Esc</kbd></dt><dd>Sluit uitlegpagina, bronnen of zoeken</dd></div>
+        <div><dt>Klik</dt><dd>Eerst naar de visuele plek in het model</dd></div>
+        <div><dt>Nogmaals klikken</dt><dd>Verdiepen met uitleg en artikelen</dd></div>
+        <div><dt><kbd>Alt</kbd>+klik</dt><dd>Direct naar citaten</dd></div>
+      </dl>
+      <button type="button" class="ux-shortcuts-close" id="ux-shortcuts-close">Sluiten</button>
+    </div>
+  </div>
+
+  <!-- Onderwerp-pagina (volledig scherm) -->
+  <div class="topic-page" id="topic-page" hidden aria-hidden="true">
+    <div class="topic-page-scroll" id="topic-page-inner"></div>
+  </div>
+
+  <!-- Artikel-lezer popup -->
+  <div class="ht-article-reader" id="ht-article-reader" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="ht-reader-title">
+    <div class="ht-reader-backdrop"></div>
+    <div class="ht-reader-dialog">
+      <header class="ht-reader-header">
+        <button type="button" class="ht-reader-close" aria-label="Sluiten">&times;</button>
+        <h2 id="ht-reader-title"></h2>
+        <p class="ht-reader-meta"></p>
+      </header>
+      <div class="ht-reader-scroll">
+        <p class="ht-reader-loading">Artikel laden uit Verborgen Schatten?</p>
+        <p class="ht-reader-error" hidden></p>
+        <article class="ht-reader-body" hidden></article>
+      </div>
+      <footer class="ht-reader-footer">
+        <a class="ht-reader-ext" href="#" target="_blank" rel="noopener">Open op hiddentreasures.org ?</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Panel -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+    <div class="panel-header">
+      <div class="panel-dot" id="panel-dot"></div>
+      <h2 id="panel-title"></h2>
+      <button class="panel-close" id="panel-close" aria-label="Sluiten">&times;</button>
+    </div>
+    <div class="panel-body" id="panel-body"></div>
+    <div class="panel-footer">
+      Bron: <a href="https://www.hiddentreasures.org" target="_blank" rel="noopener">Verborgen Schatten</a>
+      <span class="panel-footer-note">? tijdschrift Hidden Treasures ? citaten J.O. Smith e.a.</span>
+    </div>
+  </aside>
+
+  <script src="content.js"></script>
+  <script src="ht-links.js"></script>
+  <script src="ht-article-reader.js"></script>
+  <script src="search-index.js"></script>
+  <script src="topic-illustrations.js"></script>
+  <script src="mens-diagram.js"></script>
+  <script src="topic-page.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

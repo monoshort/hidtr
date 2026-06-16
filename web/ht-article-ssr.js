@@ -1,0 +1,1 @@
+import{z as e}from"./jsx-runtime-BxEcO52w.js";import{r as t,t as n}from"./article-M1YxwXg5.js";function r({currentParams:e,nextParams:t}){return e.chapter!==t.chapter}var i=e(n);export{i as default,t as meta,r as shouldRevalidate};
