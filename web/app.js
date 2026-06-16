@@ -342,7 +342,7 @@
         const dest = ANATOMY_NAV[btn.dataset.anatomy];
         if (!dest) return;
         closeAtlas();
-        openTopicPage(btn.dataset.anatomy, null, null);
+        handleTopicClick(btn.dataset.anatomy, btn, null);
       });
     });
   }
@@ -1113,7 +1113,10 @@
 
   function buildUrlFromSnap(snap) {
     if (snap.panelOpen && snap.panelTopic) {
-      return `#/topic/${encodeURIComponent(snap.panelTopic)}`;
+      return `#/topic/${encodeURIComponent(snap.panelTopic)}/verdiep`;
+    }
+    if (snap.topic) {
+      return `#/topic/${encodeURIComponent(snap.topic)}`;
     }
     if (!snap.tab || snap.tab === "start") return "#/start";
     return `#/${encodeURIComponent(snap.tab)}`;
@@ -1256,7 +1259,14 @@
     const raw = location.hash.replace(/^#\/?/, "");
     if (!raw) return {};
     if (raw.startsWith("topic/")) {
-      return { topic: decodeURIComponent(raw.slice(6)) };
+      const rest = raw.slice(6);
+      const slash = rest.indexOf("/");
+      if (slash >= 0) {
+        const topic = decodeURIComponent(rest.slice(0, slash));
+        const tail = rest.slice(slash + 1);
+        return { topic, verdiep: tail === "verdiep" };
+      }
+      return { topic: decodeURIComponent(rest) };
     }
     return { tab: decodeURIComponent(raw) };
   }
@@ -1564,7 +1574,7 @@
       const panelTopic = resolvePanelTopic(topicId);
       const topic = window.HT_TOPICS[panelTopic];
       if (topic?.title) {
-        showToast("Nogmaals klikken of «Verdiep» voor uitleg en artikelen", { type: "nav", duration: 2800 });
+        showToast("Klik op «Verdiep» voor uitleg en artikelen", { type: "nav", duration: 2800 });
       }
       if (sourceEl) {
         if (activeEl) activeEl.classList.remove("active-topic");
@@ -1579,14 +1589,6 @@
     return !!(e?.shiftKey || e?.altKey || e?.target?.closest?.(".cite-btn"));
   }
 
-  function isRepeatVisualClick(topicId) {
-    if (!activeVisualTopic) return false;
-    if (activeVisualTopic === topicId) return true;
-    const a = resolvePanelTopic(activeVisualTopic);
-    const b = resolvePanelTopic(topicId);
-    return !!(a && b && a === b);
-  }
-
   function handleTopicClick(topicId, el, e) {
     const panelTopic = resolvePanelTopic(topicId);
     const hasTopicPage = !!(panelTopic && window.HT_TOPICS[panelTopic]);
@@ -1597,12 +1599,6 @@
     if (hasTopicPage && wantsCitePanel(e)) {
       if (e?.type === "click" && e.clientX && el) ripple(e, el);
       openTopicPage(topicId, el, e, { scrollTo: "bron" });
-      return;
-    }
-
-    if (hasTopicPage && isRepeatVisualClick(topicId) && el?.classList?.contains("active-topic")) {
-      if (e?.type === "click" && e.clientX && el) ripple(e, el);
-      openTopicPage(topicId, el, e);
       return;
     }
 
@@ -1997,7 +1993,7 @@
       html += `</div></div>`;
     }
 
-    const shareUrl = `${location.origin}${location.pathname}#/topic/${encodeURIComponent(rawTopicId || topicId)}`;
+    const shareUrl = `${location.origin}${location.pathname}#/topic/${encodeURIComponent(rawTopicId || topicId)}/verdiep`;
     html += `<button type="button" class="panel-share" id="panel-share" data-url="${escapeHtml(shareUrl)}">Link kopiëren</button>`;
 
     panelBody.innerHTML = html;
@@ -2401,7 +2397,7 @@
       if (!zone) return;
       e.preventDefault();
       e.stopPropagation();
-      openTopicPage(zone.dataset.topic, zone, e);
+      handleTopicClick(zone.dataset.topic, zone, e);
     });
 
     document.querySelectorAll(".mens-situatie-chip[data-goto-topic]").forEach((el) => {
@@ -2437,7 +2433,7 @@
       if (isTopicPageOpen()) closeTopicPage({ updateUrl: false });
       if (searchOverlay?.classList.contains("open")) closeSearch();
       if (el.dataset.gotoTopic) {
-        openTopicPage(el.dataset.gotoTopic, null, null);
+        handleTopicClick(el.dataset.gotoTopic, el, e);
       } else goToTab(el.dataset.gotoTab);
     });
   });
@@ -2894,8 +2890,15 @@
     const route = parseHash();
     if (route.topic) {
       const panelTopic = resolvePanelTopic(route.topic);
-      if (window.HT_TOPICS[panelTopic]) {
-        const tab = tabForTopic(route.topic);
+      const tab = tabForTopic(route.topic);
+      if (route.verdiep && window.HT_TOPICS[panelTopic]) {
+        if (tab) goToTab(tab, { scroll: true, flash: false, updateUrl: false });
+        openTopicPage(route.topic, null, null, { updateUrl: false });
+      } else if (getVisualNav(route.topic)) {
+        if (tab && tab !== "start") goToTab(tab, { scroll: false, flash: false, updateUrl: false });
+        else if (tab === "start" || isOnStart()) goToStart({ scroll: false, updateUrl: false, toast: false });
+        navigateVisual(route.topic, null, { updateUrl: false });
+      } else if (window.HT_TOPICS[panelTopic]) {
         if (tab) goToTab(tab, { scroll: true, flash: false, updateUrl: false });
         openTopicPage(route.topic, null, null, { updateUrl: false });
       }
@@ -2962,12 +2965,21 @@
   const route = parseHash();
   let initial = captureNavSnapshot();
   if (route.topic) {
-    initial = captureNavSnapshot({
-      tab: tabForTopic(route.topic) || "start",
-      topic: route.topic,
-      panelOpen: true,
-      panelTopic: resolvePanelTopic(route.topic),
-    });
+    if (route.verdiep) {
+      initial = captureNavSnapshot({
+        tab: tabForTopic(route.topic) || "start",
+        topic: route.topic,
+        panelOpen: true,
+        panelTopic: resolvePanelTopic(route.topic),
+      });
+    } else {
+      initial = captureNavSnapshot({
+        tab: tabForTopic(route.topic) || "start",
+        topic: route.topic,
+        panelOpen: false,
+        panelTopic: null,
+      });
+    }
   } else if (route.tab) {
     initial = captureNavSnapshot({ tab: route.tab });
   }

@@ -284,7 +284,7 @@
       <div>
         <p class="mens-hint-label">${esc(meta.label)}</p>
         <p class="mens-hint-text">${esc(meta.sub)}</p>
-        <p class="mens-hint-cta">Klik om in het model te zien · nogmaals om te verdiepen</p>
+        <p class="mens-hint-cta">Klik om in het model te zien · Verdiep voor artikelen</p>
       </div>
     </div>`;
   }

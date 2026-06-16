@@ -365,7 +365,7 @@
 
         <footer class="tp-actions">
           ${contextBtn}
-          <button type="button" class="tp-btn tp-btn-ghost tp-share" data-url="${escapeHtml(`${location.origin}${location.pathname}#/topic/${encodeURIComponent(rawTopicId || panelTopic)}`)}">Link kopiëren</button>
+          <button type="button" class="tp-btn tp-btn-ghost tp-share" data-url="${escapeHtml(`${location.origin}${location.pathname}#/topic/${encodeURIComponent(rawTopicId || panelTopic)}/verdiep`)}">Link kopiëren</button>
           <a class="tp-btn tp-btn-ghost tp-ext" href="https://www.hiddentreasures.org" target="_blank" rel="noopener">hiddentreasures.org</a>
         </footer>
         ${walkNav ? `<div class="tp-mens-walk-sticky" aria-hidden="true">${walkNav}</div>` : ""}
