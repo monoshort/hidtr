@@ -2654,8 +2654,8 @@
       const panel = resolvePanelTopic(el.dataset.topic);
       const hasDeepen = !!(panel && window.HT_TOPICS[panel]);
       if (nav && TAB_LABELS[nav.tab]) {
-        let hint = `Klik = in ${TAB_LABELS[nav.tab]}`;
-        if (hasDeepen) hint += " · nogmaals = verdiep";
+        let hint = `Tik = plek in ${TAB_LABELS[nav.tab]}`;
+        if (hasDeepen) hint += " · Verdiep = artikelen";
         hint += " · Alt = citaten";
         el.setAttribute("title", hint);
       }
