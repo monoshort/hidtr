@@ -296,7 +296,7 @@
       const parsed = parseSource(quote.source, quote.date);
       if (!parsed?.title) continue;
       try {
-        const hit = await findArticle(parsed);
+        const hit = await findArticle({ ...parsed, author: quote.author });
         if (!hit) continue;
         const article = articleFromHit(hit);
         const key = article.title.toLowerCase();
@@ -428,11 +428,12 @@
     return explanations;
   }
 
-  async function lookupArticle(source, quoteDate) {
+  async function lookupArticle(source, quoteDate, author) {
     const parsed = parseSource(source, quoteDate);
     if (!parsed) return buildSearchUrl(source || "");
+    if (author) parsed.author = author;
 
-    const cacheKey = `${parsed.title}|${parsed.issueDate || ""}|${quoteDate || ""}`;
+    const cacheKey = `${parsed.title}|${parsed.issueDate || ""}|${quoteDate || ""}|${author || ""}`;
     if (urlCache.has(cacheKey)) return urlCache.get(cacheKey);
 
     let url;
@@ -534,36 +535,112 @@
     }
   }
 
+  function scoreArticleHit(hit, parsed) {
+    const s = hit._source || {};
+    const title = String(s.public_section_lang_title || "").toLowerCase();
+    const authors = (s.public_section_lang_author_full_name || []).join(" ").toLowerCase();
+    const htDate = String(s.public_section_lang_combined_date || "");
+    const wantTitle = String(parsed.title || "").toLowerCase();
+    const wantAuthor = String(parsed.author || "").toLowerCase();
+    const wantDate = parsed.issueDate || "";
+    let score = 0;
+
+    if (wantTitle && title === wantTitle) score += 8;
+    else if (wantTitle && (title.startsWith(`${wantTitle} (`) || title.startsWith(`${wantTitle} —`) || title.startsWith(`${wantTitle} -`))) score += 7;
+    else if (wantTitle && title.includes(wantTitle)) score += 4;
+    else if (wantTitle && wantTitle.includes(title) && title.length > 8) score += 3;
+
+    if (wantAuthor) {
+      const parts = wantAuthor.split(/\s+/).filter((w) => w.length > 1);
+      const first = parts[0];
+      const last = parts[parts.length - 1];
+      if (first && authors.includes(first)) score += 8;
+      if (last && last !== first && authors.includes(last)) score += 6;
+    }
+
+    if (wantDate && htDate) {
+      if (htDate.startsWith(wantDate)) score += 10;
+      else if (htDate.slice(0, 4) === wantDate.slice(0, 4)) score += 2;
+    }
+
+    const authorIds = [].concat(s.public_section_lang_author_id || []);
+    if (authorIds.some((id) => JOS_AUTHOR_IDS.includes(id))) score += 1;
+
+    return score;
+  }
+
+  function pickBestHit(hits, parsed) {
+    if (!hits?.length) return null;
+    let best = hits[0];
+    let bestScore = scoreArticleHit(best, parsed);
+    for (const hit of hits.slice(1)) {
+      const score = scoreArticleHit(hit, parsed);
+      if (score > bestScore) {
+        best = hit;
+        bestScore = score;
+      }
+    }
+    return bestScore >= 4 || !parsed.author && !parsed.issueDate ? best : (bestScore > 0 ? best : hits[0]);
+  }
+
   async function findArticle(parsed) {
-    const must = [
-      { range: { public_section_lang_access_level: { lte: 2 } } },
+    if (!parsed?.title) return null;
+
+    const access = { range: { public_section_lang_access_level: { lte: 2 } } };
+    const titleShould = [
       { match_phrase: { public_section_lang_title: parsed.title } },
+      { match: { public_section_lang_title: { query: parsed.title, operator: "and" } } },
     ];
 
-    let data = await esSearch({ size: 1, query: { bool: { must } } });
-    let hit = data.hits?.hits?.[0];
+    const sourceFields = [
+      "public_section_lang_title",
+      "public_section_lang_author_full_name",
+      "public_section_lang_author_id",
+      "public_section_lang_combined_date",
+      "public_section_lang_publication_name",
+      "public_section_lang_publication_type",
+      "public_section_lang_sub_index_id",
+      "public_section_lang_body_plain",
+    ];
 
-    if (!hit) {
-      const fuzzyMust = [
-        { range: { public_section_lang_access_level: { lte: 2 } } },
-        { match: { public_section_lang_title: { query: parsed.title, operator: "and" } } },
-      ];
-      if (parsed.issueDate) {
-        fuzzyMust.push({ range: { public_section_lang_combined_date: monthRange(parsed.issueDate) } });
-      }
-      data = await esSearch({ size: 1, query: { bool: { must: fuzzyMust } } });
-      hit = data.hits?.hits?.[0];
+    async function search(mustExtra = [], size = 8) {
+      const data = await esSearch({
+        size,
+        query: {
+          bool: {
+            must: [access, ...mustExtra],
+            should: titleShould,
+            minimum_should_match: 1,
+          },
+        },
+        _source: sourceFields,
+      });
+      return data.hits?.hits || [];
     }
 
-    if (!hit && parsed.issueDate) {
-      must.pop();
-      must.push({ match: { public_section_lang_title: { query: parsed.title, operator: "and" } } });
-      must.push({ range: { public_section_lang_combined_date: monthRange(parsed.issueDate) } });
-      data = await esSearch({ size: 1, query: { bool: { must } } });
-      hit = data.hits?.hits?.[0];
+    let hits = [];
+    if (parsed.issueDate) {
+      hits = await search([{ range: { public_section_lang_combined_date: monthRange(parsed.issueDate) } }]);
+    }
+    if (!hits.length) hits = await search();
+    if (!hits.length && parsed.author) {
+      const data = await esSearch({
+        size: 8,
+        query: {
+          bool: {
+            must: [
+              access,
+              { match: { public_section_lang_author_full_name: parsed.author } },
+              { match: { public_section_lang_title: { query: parsed.title, operator: "and" } } },
+            ],
+          },
+        },
+        _source: sourceFields,
+      });
+      hits = data.hits?.hits || [];
     }
 
-    return hit ?? null;
+    return pickBestHit(hits, parsed);
   }
 
   function parseArticleUrl(url) {
@@ -584,7 +661,7 @@
     let hit = null;
 
     if (article.title) {
-      const parsed = { title: article.title };
+      const parsed = { title: article.title, author: article.author || "" };
       if (article.date) {
         const ym = article.date.slice(0, 7);
         if (/^\d{4}-\d{2}$/.test(ym)) parsed.issueDate = ym;
