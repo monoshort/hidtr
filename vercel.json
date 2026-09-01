@@ -1,4 +1,6 @@
 {
+  "buildCommand": "node -e \"console.log('static site')\"",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "headers": [
     {
