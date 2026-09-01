@@ -236,7 +236,7 @@
 
     const pathPts = TAB_ORDER.map((tab) => ATLAS_POS[tab]).filter(Boolean);
     if (pathPts.length > 1) {
-      const d = pathPts.map((p, i) => `${i — "L" : "M"}${p.x},${p.y}`).join(" ");
+      const d = pathPts.map((p, i) => `${i ? "L" : "M"}${p.x},${p.y}`).join(" ");
       svg += `<path class="atlas-main-path" d="${d}"/>`;
     }
 
@@ -258,7 +258,7 @@
     ATLAS_NODES.forEach((n) => {
       const isActive = n.tab === activeTab;
       const isVisited = visited.has(n.tab);
-      svg += `<circle class="atlas-node-ring hub-${n.hub}${isActive — " is-active" : ""}${isVisited — " is-visited" : ""}" cx="${n.x}" cy="${n.y}" r="22"/>`;
+      svg += `<circle class="atlas-node-ring hub-${n.hub}${isActive ? " is-active" : ""}${isVisited ? " is-visited" : ""}" cx="${n.x}" cy="${n.y}" r="22"/>`;
     });
 
     svg += `</svg>`;
@@ -879,7 +879,7 @@
         <span class="bron-rail-primary-icon" aria-hidden="true">📖</span>
         <span class="bron-rail-primary-body">
           <strong>${escapeHtml(contextTopic.title)}</strong>
-          <span>${quoteCount} citaat${quoteCount === 1 — "" : "en"} · huidige context</span>
+          <span>${quoteCount} citaat${quoteCount === 1 ? "" : "en"} · huidige context</span>
         </span>
         <span class="bron-rail-primary-go" aria-hidden="true">→</span>
       </button>`;
@@ -893,7 +893,7 @@
           <span class="bron-rail-item-dot" style="background:${topic.color || "#818cf8"}"></span>
           <span class="bron-rail-item-body">
             <strong>${escapeHtml(topic.title)}</strong>
-            <span>${n} citaat${n === 1 — "" : "en"}</span>
+            <span>${n} citaat${n === 1 ? "" : "en"}</span>
           </span>
         </button>`;
       });
@@ -909,7 +909,7 @@
           <span class="bron-rail-item-dot" style="background:${topic.color || "#818cf8"}"></span>
           <span class="bron-rail-item-body">
             <strong>${escapeHtml(topic.title)}</strong>
-            <span>${tabLabel — `${escapeHtml(tabLabel)} · ` : ""}${n} citaat${n === 1 — "" : "en"}</span>
+            <span>${tabLabel ? `${escapeHtml(tabLabel)} · ` : ""}${n} citaat${n === 1 ? "" : "en"}</span>
           </span>
         </button>`;
       });
@@ -951,7 +951,7 @@
         html += `<button type="button" class="bron-rail-ht-item ht-article-open" ${htArticleDataAttrs(a)}>
           <strong>${escapeHtml(a.title)}</strong>
           <span>${escapeHtml([a.author, a.dateLabel].filter(Boolean).join(" · "))}</span>
-          ${excerpt — `<span class="bron-rail-ht-excerpt">${escapeHtml(excerpt)}${excerpt.length >= 100 ? "…" : ""}</span>` : ""}
+          ${excerpt ? `<span class="bron-rail-ht-excerpt">${escapeHtml(excerpt)}${excerpt.length >= 100 ? "…" : ""}</span>` : ""}
         </button>`;
       });
       html += `</div><a class="bron-rail-ht-more" href="${escapeHtml(window.HT_LINKS.buildSearchUrl(query))}" target="_blank" rel="noopener">Meer zoeken →</a></div>`;
@@ -1121,7 +1121,7 @@
 
   function snapKey(snap) {
     if (!snap) return "";
-    return `${snap.tab || "start"}|${snap.topic || ""}|${snap.panelOpen — snap.panelTopic || "" : ""}`;
+    return `${snap.tab || "start"}|${snap.topic || ""}|${snap.panelOpen ? snap.panelTopic || "" : ""}`;
   }
 
   function getNavLabel(snap) {
@@ -1528,7 +1528,7 @@
     if (!focusEl) focusEl = section.querySelector(".section-head") || section;
     const offset = (appBar?.offsetHeight || 0) + (navWrap?.offsetHeight || 0) + 12;
     const top = focusEl.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top: Math.max(0, top), behavior: smooth — "smooth" : "auto" });
+    window.scrollTo({ top: Math.max(0, top), behavior: smooth ? "smooth" : "auto" });
     focusEl.classList.remove("nav-flash");
     void focusEl.offsetWidth;
     focusEl.classList.add("nav-flash");
@@ -1646,15 +1646,15 @@
       .map((a) => {
         const meta = [a.author, a.dateLabel, a.publication].filter(Boolean).join(" · ");
         const badge = a.kind === "cite"
-          — `<span class="tp-ht-badge tp-ht-badge-cite">Bij dit citaat</span>`
+          ? `<span class="tp-ht-badge tp-ht-badge-cite">Bij dit citaat</span>`
           : a.isJos
-            — `<span class="tp-ht-badge">J.O. Smith / HT</span>`
+            ? `<span class="tp-ht-badge">J.O. Smith / HT</span>`
             : "";
         const citeNote = a.citeText
-          — `<p class="tp-ht-cite-note">"${escapeHtml(a.citeText)}${a.citeText.length >= 120 ? "…" : ""}"</p>`
+          ? `<p class="tp-ht-cite-note">"${escapeHtml(a.citeText)}${a.citeText.length >= 120 ? "…" : ""}"</p>`
           : "";
         const excerpt = a.excerpt
-          — `<p class="tp-ht-card-excerpt">${escapeHtml(a.excerpt)}</p>`
+          ? `<p class="tp-ht-card-excerpt">${escapeHtml(a.excerpt)}</p>`
           : "";
         return `<article class="tp-ht-card">
           <button type="button" class="tp-ht-card-link ht-article-open" ${htArticleDataAttrs(a)}>
@@ -1683,9 +1683,9 @@
       .map(({ step, article, stepIndex }) => {
         const meta = [article.author, article.dateLabel].filter(Boolean).join(" · ");
         const badge = article.kind === "cite"
-          — `<span class="tp-step-article-badge">Bij citaat</span>`
+          ? `<span class="tp-step-article-badge">Bij citaat</span>`
           : article.isJos
-            — `<span class="tp-step-article-badge">J.O. Smith / HT</span>`
+            ? `<span class="tp-step-article-badge">J.O. Smith / HT</span>`
             : `<span class="tp-step-article-badge">Artikel</span>`;
         return `<li class="tp-step-article-item" style="--step-i:${stepIndex}">
           <div class="tp-step-article-step">
@@ -1696,7 +1696,7 @@
             ${badge}
             <strong class="tp-step-article-title">${escapeHtml(article.title)}</strong>
             <p class="tp-step-article-excerpt">${escapeHtml(article.excerpt || "")}</p>
-            ${meta — `<span class="tp-step-article-meta">${escapeHtml(meta)}</span>` : ""}
+            ${meta ? `<span class="tp-step-article-meta">${escapeHtml(meta)}</span>` : ""}
             <span class="tp-step-article-action">Lees volledig artikel →</span>
           </button>
         </li>`;
@@ -1758,7 +1758,7 @@
     }
 
     try {
-      const size = window.HT_LINKS.isGranularTopic?.(topicId) — 6 : 4;
+      const size = window.HT_LINKS.isGranularTopic?.(topicId) ? 6 : 4;
       const articles = await window.HT_LINKS.findRelatedArticles(topic, quotes, topicId, { size });
       if (articles.length) {
         list.innerHTML = renderHtArticleCards(articles);
@@ -1850,7 +1850,7 @@
     if (sourceEl) sourceEl.classList.add("active-topic");
 
     const tab = tabForTopic(rawTopicId) || tabForTopic(panelTopic);
-    const hubId = tab — hubForTab(tab) : null;
+    const hubId = tab ? hubForTab(tab) : null;
     const related = RELATED_TOPICS[panelTopic] || RELATED_TOPICS[rawTopicId] || [];
 
     topicPageInner.innerHTML = window.renderTopicPage({
@@ -1881,7 +1881,7 @@
 
     if (updateUrl) {
       commitNavHistory({
-        tab: tab || (isOnStart() — "start" : getActiveTabId()),
+        tab: tab || (isOnStart() ? "start" : getActiveTabId()),
         topic: rawTopicId || panelTopic,
         panelOpen: true,
         panelTopic,
@@ -1970,7 +1970,7 @@
         <p>"${escapeHtml(q.text)}"</p>
         <div class="quote-meta">
           <strong>${escapeHtml(q.source)}</strong><br />
-          ${escapeHtml(q.author)}${q.date — ` · ${escapeHtml(q.date)}` : ""}
+          ${escapeHtml(q.author)}${q.date ? ` · ${escapeHtml(q.date)}` : ""}
         </div>
         <a class="quote-link quote-link-loading" href="#" data-source="${escapeHtml(q.source)}" target="_blank" rel="noopener">Zoeken op Verborgen Schatten…</a>
       </div>`;
@@ -2027,7 +2027,7 @@
     resolveQuoteLinks(topic.quotes);
 
     if (updateUrl) {
-      const destTab = tabForTopic(rawTopicId || topicId) || (isOnStart() — null : getActiveTabId());
+      const destTab = tabForTopic(rawTopicId || topicId) || (isOnStart() ? null : getActiveTabId());
       commitNavHistory({
         tab: destTab || "start",
         topic: rawTopicId || topicId,
@@ -2231,7 +2231,7 @@
     document.querySelectorAll(".gl-flow-label").forEach((el) => wireTopicElement(el, "geloof-verlichte-ogen"));
 
     document.querySelectorAll(".gl-god-arrows span").forEach((span, i) => {
-      wireTopicElement(span, i === 0 — "woord" : "geloof-geest");
+      wireTopicElement(span, i === 0 ? "woord" : "geloof-geest");
     });
 
     document.querySelectorAll(".vs-senses span").forEach((span) => wireTopicElement(span, "zintuigen"));
@@ -2474,8 +2474,8 @@
       head.prepend(crumb);
 
       const idx = TAB_ORDER.indexOf(tabId);
-      const prevTab = idx > 0 — TAB_ORDER[idx - 1] : null;
-      const nextTab = idx < TAB_ORDER.length - 1 — TAB_ORDER[idx + 1] : null;
+      const prevTab = idx > 0 ? TAB_ORDER[idx - 1] : null;
+      const nextTab = idx < TAB_ORDER.length - 1 ? TAB_ORDER[idx + 1] : null;
       const cross = TAB_CROSS_LINKS[tabId] || [];
 
       const nav = document.createElement("nav");
@@ -2509,8 +2509,8 @@
       if (!nav || nav.querySelector(".section-xref-visual")) return;
 
       const idx = TAB_ORDER.indexOf(tabId);
-      const prevTab = idx > 0 — TAB_ORDER[idx - 1] : null;
-      const nextTab = idx < TAB_ORDER.length - 1 — TAB_ORDER[idx + 1] : null;
+      const prevTab = idx > 0 ? TAB_ORDER[idx - 1] : null;
+      const nextTab = idx < TAB_ORDER.length - 1 ? TAB_ORDER[idx + 1] : null;
       const cross = TAB_CROSS_LINKS[tabId] || [];
       nav.innerHTML = buildSectionXrefHtml(tabId, prevTab, nextTab, cross);
     });
@@ -2727,7 +2727,7 @@
     lastSearchResults = results;
     searchActiveIndex = 0;
     if (!results.length) {
-      searchResults.innerHTML = `<p class="search-empty">${searchInput.value.trim() — "Geen resultaten" : "Typ om te zoeken in 190+ onderwerpen…"}</p>`;
+      searchResults.innerHTML = `<p class="search-empty">${searchInput.value.trim() ? "Geen resultaten" : "Typ om te zoeken in 190+ onderwerpen…"}</p>`;
       return;
     }
     searchResults.innerHTML = results
@@ -2737,9 +2737,9 @@
           <span class="search-item-dot" style="background:${r.color}"></span>
           <span class="search-item-body">
             <strong>${escapeHtml(r.title)}</strong>
-            <span>${escapeHtml(r.summary).slice(0, 120)}${r.summary.length > 120 — "…" : ""}</span>
+            <span>${escapeHtml(r.summary).slice(0, 120)}${r.summary.length > 120 ? "…" : ""}</span>
           </span>
-          ${r.tabLabel — `<span class="search-item-tab">${escapeHtml(r.tabLabel)}</span>` : ""}
+          ${r.tabLabel ? `<span class="search-item-tab">${escapeHtml(r.tabLabel)}</span>` : ""}
         </button>`
       )
       .join("");

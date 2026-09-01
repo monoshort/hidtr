@@ -7,7 +7,7 @@ window.HT_TOPICS = {
     quotes: [
       {
         text: "De drieledige natuur van de mens kan op deze 'weg' weer verenigd worden in God, doordat Gods Geest de menselijke geest leidt, de verlichte menselijke geest op zijn beurt de ziel leidt, zodat het lichaam als een werktuig gesteld wordt in dienst van de gerechtigheid.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       }
@@ -18,7 +18,7 @@ window.HT_TOPICS = {
   geest: {
     title: "Geest (pneuma)",
     color: "#3b82f6",
-    summary: "De menselijke geest is het hogere deel — Godsbewustzijn en contact met de geestelijke wereld. Na de val verduisterd; na verlossing dagelijks vernieuwd door de Heilige Geest.",
+    summary: "De menselijke geest is het hogere deel ? Godsbewustzijn en contact met de geestelijke wereld. Na de val verduisterd; na verlossing dagelijks vernieuwd door de Heilige Geest.",
     quotes: [
       {
         text: "De ziel staat tussen de geest en het lichaam in, want een directe verbinding tussen geest en vlees is onmogelijk.",
@@ -39,7 +39,7 @@ window.HT_TOPICS = {
   ziel: {
     title: "Ziel (psyche)",
     color: "#a78bfa",
-    summary: "Zelfbewustzijn en zetel van de persoonlijkheid. De ziel staat tussen geest en lichaam — ontmoetingsplaats waar gekozen wordt wie de hele mens beheerst.",
+    summary: "Zelfbewustzijn en zetel van de persoonlijkheid. De ziel staat tussen geest en lichaam ? ontmoetingsplaats waar gekozen wordt wie de hele mens beheerst.",
     quotes: [
       {
         text: "De ziel staat tussen de geest en het lichaam in, want een directe verbinding tussen geest en vlees is onmogelijk.",
@@ -49,7 +49,7 @@ window.HT_TOPICS = {
       },
       {
         text: "De ziel die een beeld van hemzelf is, is een slaaf van het vlees en het aardse leven geworden, in plaats van een dienaar van de Geest.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       },
@@ -66,7 +66,7 @@ window.HT_TOPICS = {
   verstand: {
     title: "Verstand",
     color: "#f59e0b",
-    summary: "Verwerkt wat de vijf zintuigen binnenbrengen. Hier komt verzoeking binnen — gericht op kennis, trots en 'gij zult als God zijn'.",
+    summary: "Verwerkt wat de vijf zintuigen binnenbrengen. Hier komt verzoeking binnen ? gericht op kennis, trots en 'gij zult als God zijn'.",
     quotes: [
       {
         text: "Maar die werd gericht tot het verstand en was gebaseerd op een geoorloofd verlangen om vooruit te komen in kennis en macht in een onbekend koninkrijk van een andere wereld. 'Gij zult als God zijn,' zei de Slang.",
@@ -85,9 +85,9 @@ window.HT_TOPICS = {
   },
 
   fantasie: {
-    title: "Fantasie — innerlijk zien",
+    title: "Fantasie ? innerlijk zien",
     color: "#06b6d4",
-    summary: "Fantasie is een faculteit van de ziel — naast verstand, gedachten, wil en gevoelens. Hier vorm je beelden 'voor je ogen' die niet fysiek aanwezig zijn: herinneringen, verlangens, of wat Satan plant. Zintuigen — verstand — fantasie — hart — wil.",
+    summary: "Fantasie is een faculteit van de ziel ? naast verstand, gedachten, wil en gevoelens. Hier vorm je beelden 'voor je ogen' die niet fysiek aanwezig zijn: herinneringen, verlangens, of wat Satan plant. Zintuigen ? verstand ? fantasie ? hart ? wil.",
     quotes: [
       {
         text: "De ziel met haar verstand, fantasie, gedachten, wil en overgave wordt geleid door het leven van de eerste Adam, die gevallen en verdorven is, en lichaam en ziel zijn daardoor in al hun delen ontvankelijk voor het vergif van de slang.",
@@ -97,7 +97,7 @@ window.HT_TOPICS = {
       },
       {
         text: "We hebben gezien dat de ziel het verstand en de gevoelens omvat, evenals de centrale persoonlijkheid die haar tot zetel van het zelfbewustzijn maakt.",
-        source: "Skjulte Skatter 1927-05 — Ziel en geest",
+        source: "Skjulte Skatter 1927-05 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-05-01"
       },
@@ -112,30 +112,30 @@ window.HT_TOPICS = {
   },
 
   "fantasie-gevaar": {
-    title: "Ziels fantasie — niet nuttig",
+    title: "Ziels fantasie ? niet nuttig",
     color: "#ef4444",
-    summary: "Zelf beelden opwekken of in denkbeelden verliezen is gevaarlijk. Het grootste gevaar is de buitensporige activiteit van de ziel. Boze geesten werken op het zielenleven — ook via fantasie.",
+    summary: "Zelf beelden opwekken of in denkbeelden verliezen is gevaarlijk. Het grootste gevaar is de buitensporige activiteit van de ziel. Boze geesten werken op het zielenleven ? ook via fantasie.",
     quotes: [
       {
         text: "Paulus was door de doop met de Geest en het spreken in tongen niet buiten zijn zinnen geraakt, zodat hij in een roes kwam en in zijn fantasie zich in denkbeeldige situaties verloor. Nee, hij zag en erkende een andere wet in zijn leden.",
-        source: "Skjulte Skatter 1931-12 — Het genadewerk van de heiligmaking",
+        source: "Skjulte Skatter 1931-12 ? Het genadewerk van de heiligmaking",
         author: "Johan O. Smith",
         date: "1931-12-01"
       },
       {
         text: "Het grootste gevaar voor de gemeente of voor ieder afzonderlijk is de buitensporige activiteit van de ziel met haar kracht vanuit de gedachten en de wil.",
-        source: "Skjulte Skatter 1927-07 — Ziel en geest",
+        source: "Skjulte Skatter 1927-07 ? Ziel en geest",
         author: "Johan O. Smith (citaat Andrew Murray)",
         date: "1927-07-01"
       },
       {
         text: "Laten we met dit voor ogen bezien, hoe de boze geesten inwerken op het zielenleven in al zijn ontwikkelingsfasen.",
-        source: "Skjulte Skatter 1927-07 — Ziel en geest",
+        source: "Skjulte Skatter 1927-07 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-07-01"
       },
       {
-        text: "Ze werd verlokt en getrokken door haar eigen begeerte — die in haar geplant was door de slang.",
+        text: "Ze werd verlokt en getrokken door haar eigen begeerte ? die in haar geplant was door de slang.",
         source: "Hebben de heiligen zonde?",
         author: "Johan O. Smith",
         date: "1922-05-01"
@@ -145,7 +145,7 @@ window.HT_TOPICS = {
   },
 
   "fantasie-geest": {
-    title: "Geestelijk — fantasie verlicht",
+    title: "Geestelijk ? fantasie verlicht",
     color: "#22c55e",
     summary: "Niet zelf visualiseren of beelden opwekken, maar geloof door het Woord. Als de menselijke geest door de Heilige Geest leidt, worden ook verstand en gevoelens (die nog ziels kunnen zijn) geleidelijk verlicht.",
     quotes: [
@@ -174,7 +174,7 @@ window.HT_TOPICS = {
   hart: {
     title: "Hart",
     color: "#dc2626",
-    summary: "Het diepste binnenste — overleggingen en gedachten. Het Woord Gods dringt hier door en scheidt ziel en geest (Hebr. 4:12).",
+    summary: "Het diepste binnenste ? overleggingen en gedachten. Het Woord Gods dringt hier door en scheidt ziel en geest (Hebr. 4:12).",
     quotes: [
       {
         text: "Weest daarom waakzaam ten aanzien van de overleggingen van uw hart.",
@@ -184,7 +184,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Dan moeten we teruggaan naar de verborgen overleggingen en gedachten van het hart. Hebr. 4:11-12. In elk hart zijn overleggingen. Als God de gedachten van ons hart openbaart, overleggen we of we Gods wil of onze eigen wil zullen doen.",
-        source: "Skjulte Skatter 1951-07 — De eerste liefde",
+        source: "Skjulte Skatter 1951-07 ? De eerste liefde",
         author: "Johan O. Smith",
         date: "1951-07-01"
       },
@@ -201,10 +201,10 @@ window.HT_TOPICS = {
   wil: {
     title: "Wil / gezindheid",
     color: "#7c3aed",
-    summary: "Kiest wie de hele mens beheerst: geest of vlees. Instemt of weerstaat — bepaalt of zonde volgroeit tot bewuste zondige werking.",
+    summary: "Kiest wie de hele mens beheerst: geest of vlees. Instemt of weerstaat ? bepaalt of zonde volgroeit tot bewuste zondige werking.",
     quotes: [
       {
-        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden — maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
+        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden ? maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
         source: "Je verlustigen in Gods wet",
         author: "Trygve Sandvik",
         date: "1966-04-01"
@@ -222,10 +222,10 @@ window.HT_TOPICS = {
   zintuigen: {
     title: "De vijf zintuigen",
     color: "#94a3b8",
-    summary: "Zien, horen, ruiken, proeven, voelen — het lichaam brengt indrukken van de buitenwereld binnen tot het verstand van de ziel.",
+    summary: "Zien, horen, ruiken, proeven, voelen ? het lichaam brengt indrukken van de buitenwereld binnen tot het verstand van de ziel.",
     quotes: [
       {
-        text: "De val begon met indrukken via de zintuigen — de Slang sprak tot Eva en het verstand werd verleid.",
+        text: "De val begon met indrukken via de zintuigen ? de Slang sprak tot Eva en het verstand werd verleid.",
         source: "De val van de mens",
         author: "Johan O. Smith",
         date: "1927-04-01"
@@ -237,26 +237,26 @@ window.HT_TOPICS = {
   lichaam: {
     title: "Lichaam (soma / sarx)",
     color: "#fb923c",
-    summary: "Zintuiglijk bewustzijn — contact met de buitenwereld. J.O. Smith onderscheidt verschillende 'lichamen' en werkingen; verwar ze niet.",
+    summary: "Zintuiglijk bewustzijn ? contact met de buitenwereld. J.O. Smith onderscheidt verschillende 'lichamen' en werkingen; verwar ze niet.",
     quotes: [
       {
         text: "Er is sprake van het lichaam der zonde en het lichaam des vlezes, werkingen des lichaams en werken van het vlees, de oude mens en de nieuwe mens. Als we die dingen niet kunnen onderscheiden, worden allerlei begrippen erg wazig.",
-        source: "Hoofdstuk 4 — De oude mens afleggen",
+        source: "Hoofdstuk 4 ? De oude mens afleggen",
         author: "Johan O. Smith",
         date: ""
       }
     ],
-    refs: ["Rom. 6–8", "Kol. 2:11"]
+    refs: ["Rom. 6?8", "Kol. 2:11"]
   },
 
   "lichaam-vlezes": {
     title: "Lichaam des vlezes",
     color: "#ef4444",
-    summary: "Het lichaam dat diende als werktuig voor de zonde. Wordt afgelegd in de besnijdenis van Christus — met Hem begraven in de doop.",
+    summary: "Het lichaam dat diende als werktuig voor de zonde. Wordt afgelegd in de besnijdenis van Christus ? met Hem begraven in de doop.",
     quotes: [
       {
         text: "Bij de wedergeboorte wordt het lichaam des vlezes afgelegd, in de besnijdenis van Christus. Dit lichaam des vlezes wordt met Hem begraven in de doop. Kol. 2:11-12. Het lichaam des vlezes dat afgelegd wordt moet in geen geval worden verward met het lichaam der zonde.",
-        source: "Hoofdstuk 4 — De oude mens afleggen",
+        source: "Hoofdstuk 4 ? De oude mens afleggen",
         author: "Johan O. Smith",
         date: ""
       },
@@ -294,7 +294,7 @@ window.HT_TOPICS = {
   "lichaam-doods": {
     title: "Lichaam des doods",
     color: "#64748b",
-    summary: "Het sterfelijke vlees en bloed dat wij nu dragen — tot de dood of tot Christus komt en ons lichaam verandert.",
+    summary: "Het sterfelijke vlees en bloed dat wij nu dragen ? tot de dood of tot Christus komt en ons lichaam verandert.",
     quotes: [
       {
         text: "Het lichaam des doods is in de allereerste plaats het lichaam dat een natuurlijke dood zal sterven, als Jezus niet voor die tijd komt en ons sterfelijke lichaam verandert.",
@@ -313,9 +313,9 @@ window.HT_TOPICS = {
   },
 
   leden: {
-    title: "Leden — de andere wet",
+    title: "Leden ? de andere wet",
     color: "#f97316",
-    summary: "In de leden zit een andere wet — de wet der zonde. Gelovigen moeten en kunnen heersen over de zonde; ongelovigen leven ernaar.",
+    summary: "In de leden zit een andere wet ? de wet der zonde. Gelovigen moeten en kunnen heersen over de zonde; ongelovigen leven ernaar.",
     quotes: [
       {
         text: "Paulus diende Gods wet met zijn verstand; maar hij zag een andere wet in zijn leden, Rom. 7:23.",
@@ -336,7 +336,7 @@ window.HT_TOPICS = {
   "werkingen-lichaam": {
     title: "Werkingen des lichaams",
     color: "#f59e0b",
-    summary: "Komen op tegen beter weten — vaak onbewust waar nog geen licht is. Geen veroordeling als ze door de Geest gedood worden; wij moeten ze zelf doden.",
+    summary: "Komen op tegen beter weten ? vaak onbewust waar nog geen licht is. Geen veroordeling als ze door de Geest gedood worden; wij moeten ze zelf doden.",
     quotes: [
       {
         text: "En er is evenmin veroordeling voor de werkingen des lichaams, als die door de Geest gedood worden. Maar wij moeten deze zelf doden. Het is niet zo, zoals dikwijls gezegd wordt, dat de Geest de werkingen des lichaams doodt.",
@@ -357,7 +357,7 @@ window.HT_TOPICS = {
   "zondige-werking": {
     title: "Zondige werking / werken van het vlees",
     color: "#ef4444",
-    summary: "Bewuste zonde: de gezindheid stemt in met begeerte. Van de werken van het vlees moet afwassing plaats vinden — zondevergeving en bekering.",
+    summary: "Bewuste zonde: de gezindheid stemt in met begeerte. Van de werken van het vlees moet afwassing plaats vinden ? zondevergeving en bekering.",
     quotes: [
       {
         text: "Van de werken van het vlees moet een afwassing plaats vinden, zondevergeving. De voorhuid van het vlees moet worden afgesneden.",
@@ -367,7 +367,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Wat voor de wet onmogelijk was, krachteloos als zij was door het vlees, dat heeft God gedaan: Hij heeft Zijn eigen Zoon gezonden in een gedaante gelijk aan het zondige vlees en de zonde veroordeeld in het vlees. Rom. 8:3.",
-        source: "Skjulte Skatter 1928-04 — Weersta de begeerte in het lichaam",
+        source: "Skjulte Skatter 1928-04 ? Weersta de begeerte in het lichaam",
         author: "Johan O. Smith",
         date: "1928-04-01"
       }
@@ -378,7 +378,7 @@ window.HT_TOPICS = {
   "wet-geest": {
     title: "Wet van de Geest des levens",
     color: "#22c55e",
-    summary: "Maakt vrij van de wet der zonde en des doods. Ligt in de Geest — is niet hetzelfde als de Heilige Geest, maar werkt door Hem.",
+    summary: "Maakt vrij van de wet der zonde en des doods. Ligt in de Geest ? is niet hetzelfde als de Heilige Geest, maar werkt door Hem.",
     quotes: [
       {
         text: "Hier zijn drie wetten: 1) De wet van de Geest des levens, 2) de wet der zonde en 3) de wet des doods.",
@@ -399,7 +399,7 @@ window.HT_TOPICS = {
   "wet-zonde": {
     title: "Wet der zonde",
     color: "#ef4444",
-    summary: "Ontstaan door de zondeval. Dwingt tot zondigen — de andere wet in de leden. Vrijgemaakt door de wet van de Geest des levens.",
+    summary: "Ontstaan door de zondeval. Dwingt tot zondigen ? de andere wet in de leden. Vrijgemaakt door de wet van de Geest des levens.",
     quotes: [
       {
         text: "In tegenstelling tot de wet der zonde, die ontstaan is door de zondeval, is Jezus Christus gekomen met 'de wet van de Geest des levens'. In deze wet krijgen wij kracht om de wet der zonde te overwinnen.",
@@ -435,7 +435,7 @@ window.HT_TOPICS = {
   "gevallen-zintuigen": {
     title: "Gevallen: zintuigen",
     color: "#ef4444",
-    summary: "Indrukken van de buitenwereld komen via de zintuigen binnen — de eerste stap op het pad van de val.",
+    summary: "Indrukken van de buitenwereld komen via de zintuigen binnen ? de eerste stap op het pad van de val.",
     quotes: [
       {
         text: "De verzoeking werd gericht tot het verstand en was gebaseerd op een geoorloofd verlangen om vooruit te komen in kennis en macht.",
@@ -450,7 +450,7 @@ window.HT_TOPICS = {
   "gevallen-verstand": {
     title: "Gevallen: verstand",
     color: "#ef4444",
-    summary: "Verzoeking via kennis en trots — 'gij zult als God zijn'.",
+    summary: "Verzoeking via kennis en trots ? 'gij zult als God zijn'.",
     quotes: [
       {
         text: "'Gij zult als God zijn,' zei de Slang. De verzoeking was gericht tot het verstand.",
@@ -465,11 +465,11 @@ window.HT_TOPICS = {
   "gevallen-hart": {
     title: "Gevallen: hart",
     color: "#ef4444",
-    summary: "Overleggingen worden boos — het hart keert zich af van God.",
+    summary: "Overleggingen worden boos ? het hart keert zich af van God.",
     quotes: [
       {
         text: "De ziel die een beeld van hemzelf is, is een slaaf van het vlees en het aardse leven geworden, in plaats van een dienaar van de Geest.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       }
@@ -480,7 +480,7 @@ window.HT_TOPICS = {
   "gevallen-gezindheid": {
     title: "Gevallen: gezindheid",
     color: "#ef4444",
-    summary: "De wil stemt in met begeerte — de ziel wordt slaaf van het vlees.",
+    summary: "De wil stemt in met begeerte ? de ziel wordt slaaf van het vlees.",
     quotes: [
       {
         text: "De ziel is een slaaf van het vlees geworden, in plaats van dienstknecht van de geest.",
@@ -495,7 +495,7 @@ window.HT_TOPICS = {
   "gevallen-lichaam": {
     title: "Gevallen: lichaam",
     color: "#ef4444",
-    summary: "Zondige werking — bewuste zonde door instemming van de gezindheid.",
+    summary: "Zondige werking ? bewuste zonde door instemming van de gezindheid.",
     quotes: [
       {
         text: "Het lichaam des vlezes doet werken des vlezes, dat is overtreding van de wet.",
@@ -540,11 +540,11 @@ window.HT_TOPICS = {
   "verlost-geest": {
     title: "Verlost: geest vernieuwd",
     color: "#22c55e",
-    summary: "De Heilige Geest werkt in de innerlijke mens — de menselijke geest wordt verlicht.",
+    summary: "De Heilige Geest werkt in de innerlijke mens ? de menselijke geest wordt verlicht.",
     quotes: [
       {
         text: "Gods Geest de menselijke geest leidt, de verlichte menselijke geest op zijn beurt de ziel leidt, zodat het lichaam als een werktuig gesteld wordt in dienst van de gerechtigheid.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       }
@@ -555,11 +555,11 @@ window.HT_TOPICS = {
   "verlost-hart": {
     title: "Verlost: hart",
     color: "#22c55e",
-    summary: "Het hart ontvangt het oordeel van het Woord — echte bekering.",
+    summary: "Het hart ontvangt het oordeel van het Woord ? echte bekering.",
     quotes: [
       {
         text: "Als God de gedachten van ons hart openbaart, overleggen we of we Gods wil of onze eigen wil zullen doen.",
-        source: "Skjulte Skatter 1951-07 — De eerste liefde",
+        source: "Skjulte Skatter 1951-07 ? De eerste liefde",
         author: "Johan O. Smith",
         date: "1951-07-01"
       }
@@ -570,7 +570,7 @@ window.HT_TOPICS = {
   "verlost-gezindheid": {
     title: "Verlost: gezindheid",
     color: "#22c55e",
-    summary: "Dient de wet Gods — met de gezindheid aan Gods kant.",
+    summary: "Dient de wet Gods ? met de gezindheid aan Gods kant.",
     quotes: [
       {
         text: "Met mijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
@@ -585,7 +585,7 @@ window.HT_TOPICS = {
   "verlost-lichaam": {
     title: "Verlost: lichaam",
     color: "#22c55e",
-    summary: "Werkingen des lichaams worden door de Geest gedood — wandel in de Geest.",
+    summary: "Werkingen des lichaams worden door de Geest gedood ? wandel in de Geest.",
     quotes: [
       {
         text: "Het doden van de werkingen des lichaams moet ik zelf verrichten, door de Geest. Rom. 8:13.",
@@ -600,7 +600,7 @@ window.HT_TOPICS = {
   "verlost-gevolg": {
     title: "Verlost: gevolg",
     color: "#22c55e",
-    summary: "Geen veroordeling — vrucht des Geestes. Volwassen in Christus.",
+    summary: "Geen veroordeling ? vrucht des Geestes. Volwassen in Christus.",
     quotes: [
       {
         text: "Een discipel staat niet boven zijn meester, maar al wie volleerd is zal zijn als zijn meester.",
@@ -621,11 +621,11 @@ window.HT_TOPICS = {
   "cmp-vlezes": {
     title: "Lichaam des vlezes",
     color: "#ef4444",
-    summary: "Afgelegd in Christus bij bekering — niet verwarren met lichaam der zonde.",
+    summary: "Afgelegd in Christus bij bekering ? niet verwarren met lichaam der zonde.",
     quotes: [
       {
         text: "Het lichaam des vlezes dat afgelegd wordt moet in geen geval worden verward met het lichaam der zonde.",
-        source: "Hoofdstuk 4 — De oude mens afleggen",
+        source: "Hoofdstuk 4 ? De oude mens afleggen",
         author: "Johan O. Smith",
         date: ""
       }
@@ -636,7 +636,7 @@ window.HT_TOPICS = {
   "cmp-zonde": {
     title: "Lichaam der zonde",
     color: "#a855f7",
-    summary: "Teniet doen — oude mens gekruisigd, actieve strijd.",
+    summary: "Teniet doen ? oude mens gekruisigd, actieve strijd.",
     quotes: [
       {
         text: "Onze oude mens medegekruisigd is, opdat aan het lichaam der zonde zijn kracht zou ontnomen worden. Rom. 6:6.",
@@ -651,7 +651,7 @@ window.HT_TOPICS = {
   "cmp-doods": {
     title: "Lichaam des doods",
     color: "#64748b",
-    summary: "Dragen tot de dood — sterfelijk vlees.",
+    summary: "Dragen tot de dood ? sterfelijk vlees.",
     quotes: [
       {
         text: "Het lichaam des doods is het lichaam dat een natuurlijke dood zal sterven.",
@@ -666,10 +666,10 @@ window.HT_TOPICS = {
   "cmp-werkingen": {
     title: "Werkingen des lichaams",
     color: "#f59e0b",
-    summary: "Doden door de Geest — tegen beter weten, onbewust.",
+    summary: "Doden door de Geest ? tegen beter weten, onbewust.",
     quotes: [
       {
-        text: "Wij moeten de werkingen des lichaams zelf doden — door de Geest.",
+        text: "Wij moeten de werkingen des lichaams zelf doden ? door de Geest.",
         source: "Gods woord maakt scheiding",
         author: "Johan O. Smith",
         date: "1922-04-01"
@@ -681,7 +681,7 @@ window.HT_TOPICS = {
   "cmp-vlees-werken": {
     title: "Werken van het vlees",
     color: "#ef4444",
-    summary: "Bewuste zonde — kruis, bekering.",
+    summary: "Bewuste zonde ? kruis, bekering.",
     quotes: [
       {
         text: "Van de werken van het vlees moet een afwassing plaats vinden, zondevergeving.",
@@ -696,7 +696,7 @@ window.HT_TOPICS = {
   "cmp-zielse": {
     title: "Zielse christen",
     color: "#f59e0b",
-    summary: "Gevoelens en opwekking zonder geestelijke groei — natuurlijke mens.",
+    summary: "Gevoelens en opwekking zonder geestelijke groei ? natuurlijke mens.",
     quotes: [
       {
         text: "Een natuurlijk mens (ziels mens) aanvaardt niet hetgeen van de Geest Gods is, omdat het slechts geestelijk te beoordelen is. 1 Kor. 2:14.",
@@ -717,7 +717,7 @@ window.HT_TOPICS = {
   "cmp-geestelijk": {
     title: "Geestelijke mens",
     color: "#22c55e",
-    summary: "Geest regeert ziel en lichaam — volwassen in Christus.",
+    summary: "Geest regeert ziel en lichaam ? volwassen in Christus.",
     quotes: [
       {
         text: "Het is de scheiding tussen ziel en geest, die ons tot geestelijke mensen maakt.",
@@ -730,7 +730,7 @@ window.HT_TOPICS = {
   },
 
   woord: {
-    title: "Het Woord — sleutel tot scheiding",
+    title: "Het Woord ? sleutel tot scheiding",
     color: "#22c55e",
     summary: "Christus als hogepriester neemt het offermes ter hand en scheidt het zieleleven van oude verbindingen.",
     quotes: [
@@ -768,7 +768,7 @@ window.HT_TOPICS = {
   "woord-instem": {
     title: "2. Stem in",
     color: "#22c55e",
-    summary: "Gezindheid aan Gods kant — nee zeggen tegen begeerte.",
+    summary: "Gezindheid aan Gods kant ? nee zeggen tegen begeerte.",
     quotes: [
       {
         text: "Wij krijgen kracht om nee te zeggen tegen de begeerten.",
@@ -783,7 +783,7 @@ window.HT_TOPICS = {
   "woord-doen": {
     title: "3. Doe het",
     color: "#22c55e",
-    summary: "Dood werkingen des lichaams — wandel in de Geest.",
+    summary: "Dood werkingen des lichaams ? wandel in de Geest.",
     quotes: [
       {
         text: "Het doden van de werkingen des lichaams moet ik zelf verrichten, door de Geest.",
@@ -817,9 +817,9 @@ window.HT_TOPICS = {
   },
 
   "vz-bron": {
-    title: "Satan — de verzoeker",
+    title: "Satan ? de verzoeker",
     color: "#b91c1c",
-    summary: "Satan plant ideeën in de geest van de mens. Bij Eva was de slang al heengegaan toen zij zondigde — wat hij geplant had, bevatte genoeg kracht om te zondigen.",
+    summary: "Satan plant idee?n in de geest van de mens. Bij Eva was de slang al heengegaan toen zij zondigde ? wat hij geplant had, bevatte genoeg kracht om te zondigen.",
     quotes: [
       {
         text: "'Gij zult als God zijn,' zei de Slang. Het was de 'kennis' die in verzoeking bracht en waarschijnlijk dezelfde kennis die God op zijn tijd van plan was te geven.",
@@ -828,14 +828,14 @@ window.HT_TOPICS = {
         date: "1927-04-01"
       },
       {
-        text: "De satan was al heengegaan toen zij van de boom nam. Wat hij in haar geplant had was genoeg kracht om te zondigen. Ze werd verlokt en getrokken door haar eigen begeerte — die in haar geplant was door de slang.",
+        text: "De satan was al heengegaan toen zij van de boom nam. Wat hij in haar geplant had was genoeg kracht om te zondigen. Ze werd verlokt en getrokken door haar eigen begeerte ? die in haar geplant was door de slang.",
         source: "Hebben de heiligen zonde?",
         author: "Johan O. Smith",
         date: "1922-05-01"
       },
       {
         text: "Om ons rein te kunnen bewaren en een overwinningsleven te kunnen leiden, gaat het erom onze verbeten tegenstander in het oog te houden.",
-        source: "Skjulte Skatter 1932-08 — Verslag conferentie Nesbyen",
+        source: "Skjulte Skatter 1932-08 ? Verslag conferentie Nesbyen",
         author: "Johan O. Smith",
         date: "1932-08-01"
       }
@@ -846,7 +846,7 @@ window.HT_TOPICS = {
   "vz-wereld": {
     title: "Buitenwereld",
     color: "#3b82f6",
-    summary: "Indrukken van de wereld komen via de zintuigen binnen — woorden, beelden, verleidelijke dingen.",
+    summary: "Indrukken van de wereld komen via de zintuigen binnen ? woorden, beelden, verleidelijke dingen.",
     quotes: [
       {
         text: "De val kwam het eerst tot uiting in het verstand van de ziel, want er werd tot Eva gezegd, dat de boom begeerlijk was om daardoor verstandig te worden, Gen. 3:6.",
@@ -874,9 +874,9 @@ window.HT_TOPICS = {
   },
 
   "vz-verstand": {
-    title: "Stap 2: Verstand — eerste uiting",
+    title: "Stap 2: Verstand ? eerste uiting",
     color: "#f59e0b",
-    summary: "Hier komt verzoeking eerst tot uiting — in het verstand van de ziel, via kennis, trots en 'als God zijn'.",
+    summary: "Hier komt verzoeking eerst tot uiting ? in het verstand van de ziel, via kennis, trots en 'als God zijn'.",
     quotes: [
       {
         text: "De val kwam het eerst tot uiting in het verstand van de ziel, want er werd tot Eva gezegd, dat de boom begeerlijk was om daardoor verstandig te worden, Gen. 3:6.",
@@ -897,7 +897,7 @@ window.HT_TOPICS = {
   "vz-fantasie": {
     title: "Verzoeking: innerlijk zien",
     color: "#06b6d4",
-    summary: "Na het verstand vormt de fantasie beelden — Eva zag dat de boom begeerlijk was. Satan plant; de begeerte in het lichaam trekt mee.",
+    summary: "Na het verstand vormt de fantasie beelden ? Eva zag dat de boom begeerlijk was. Satan plant; de begeerte in het lichaam trekt mee.",
     quotes: [
       {
         text: "De val kwam het eerst tot uiting in het verstand van de ziel, want er werd tot Eva gezegd, dat de boom begeerlijk was om daardoor verstandig te worden, Gen. 3:6.",
@@ -906,7 +906,7 @@ window.HT_TOPICS = {
         date: "1927-04-01"
       },
       {
-        text: "Ze werd verlokt en getrokken door haar eigen begeerte — die in haar geplant was door de slang.",
+        text: "Ze werd verlokt en getrokken door haar eigen begeerte ? die in haar geplant was door de slang.",
         source: "Hebben de heiligen zonde?",
         author: "Johan O. Smith",
         date: "1922-05-01"
@@ -927,7 +927,7 @@ window.HT_TOPICS = {
         date: "1928-04-01"
       },
       {
-        text: "Ze werd verlokt en getrokken door haar eigen begeerte — die in haar geplant was door de slang.",
+        text: "Ze werd verlokt en getrokken door haar eigen begeerte ? die in haar geplant was door de slang.",
         source: "Hebben de heiligen zonde?",
         author: "Johan O. Smith",
         date: "1922-05-01"
@@ -945,16 +945,16 @@ window.HT_TOPICS = {
   "vz-hart": {
     title: "Stap 3: Hart",
     color: "#dc2626",
-    summary: "Overleggingen en gedachten — getrokken door eigen begeerte.",
+    summary: "Overleggingen en gedachten ? getrokken door eigen begeerte.",
     quotes: [
       {
         text: "Dan moeten we teruggaan naar de verborgen overleggingen en gedachten van het hart. Als God de gedachten van ons hart openbaart, overleggen we of we Gods wil of onze eigen wil zullen doen.",
-        source: "Skjulte Skatter 1951-07 — De eerste liefde",
+        source: "Skjulte Skatter 1951-07 ? De eerste liefde",
         author: "Johan O. Smith",
         date: "1951-07-01"
       },
       {
-        text: "Ze werd verlokt en getrokken door haar eigen begeerte — die in haar geplant was door de slang.",
+        text: "Ze werd verlokt en getrokken door haar eigen begeerte ? die in haar geplant was door de slang.",
         source: "Hebben de heiligen zonde?",
         author: "Johan O. Smith",
         date: "1922-05-01"
@@ -964,9 +964,9 @@ window.HT_TOPICS = {
   },
 
   "vz-gezindheid": {
-    title: "Stap 4: Gezindheid — het keerpunt",
+    title: "Stap 4: Gezindheid ? het keerpunt",
     color: "#eab308",
-    summary: "Verzoeking is nog geen zonde — pas wanneer de gezindheid toegeeft. Onmiddellijk nee zeggen.",
+    summary: "Verzoeking is nog geen zonde ? pas wanneer de gezindheid toegeeft. Onmiddellijk nee zeggen.",
     quotes: [
       {
         text: "Dit is verzocht worden; maar er komt geen zonde eer de gezindheid aan de verzoeking toegeeft.",
@@ -991,9 +991,9 @@ window.HT_TOPICS = {
   },
 
   "vz-toegeven": {
-    title: "Toegeven — zondige werking",
+    title: "Toegeven ? zondige werking",
     color: "#ef4444",
-    summary: "Gezindheid stemt in — bewuste zonde volgt.",
+    summary: "Gezindheid stemt in ? bewuste zonde volgt.",
     quotes: [
       {
         text: "Er komt geen zonde eer de gezindheid aan de verzoeking toegeeft. Wat de verzoeking bewerkt, is de zonde in het vlees.",
@@ -1012,7 +1012,7 @@ window.HT_TOPICS = {
   },
 
   "vz-weerstaan": {
-    title: "Weerstaan — overwinnen",
+    title: "Weerstaan ? overwinnen",
     color: "#22c55e",
     summary: "Door Woord en Geest nee zeggen op het beslissende ogenblik.",
     quotes: [
@@ -1041,7 +1041,7 @@ window.HT_TOPICS = {
   "geloof-overzicht": {
     title: "Wat is geloof?",
     color: "#6366f1",
-    summary: "Geloof is geen zielse opwekking of menselijk verstand. Het hoort wat de Geest zegt, heeft gezalfde ogen, neemt het Woord in de geest aan, en werkt uit in gehoorzaamheid — werken des geloofs.",
+    summary: "Geloof is geen zielse opwekking of menselijk verstand. Het hoort wat de Geest zegt, heeft gezalfde ogen, neemt het Woord in de geest aan, en werkt uit in gehoorzaamheid ? werken des geloofs.",
     quotes: [
       {
         text: "Het geloof hoort wat de Geest tot de gemeente zegt; het geloof heeft gezalfde ogen, het grijpt het goud dat in het vuur gelouterd is. Zonder geloof is het onmogelijk om God welgevallig te zijn; maar door het geloof onderzoeken we zelfs de diepten Gods.",
@@ -1060,7 +1060,7 @@ window.HT_TOPICS = {
   },
 
   "geloof-god-spreekt": {
-    title: "God spreekt — bron van geloof",
+    title: "God spreekt ? bron van geloof",
     color: "#818cf8",
     summary: "Geloof komt door het horen van Gods Woord en de Geest. God sprak als eerste in de Geest van geloof: Er zij licht.",
     quotes: [
@@ -1083,11 +1083,11 @@ window.HT_TOPICS = {
   "geloof-geest": {
     title: "Geloof woont in de geest",
     color: "#3b82f6",
-    summary: "Geloof is geestelijk — niet zielse. Het hoort de Geest, ziet met gezalfde ogen, en onderzoekt Gods diepten. De zielse mens kan geestelijke dingen niet aanvaarden.",
+    summary: "Geloof is geestelijk ? niet zielse. Het hoort de Geest, ziet met gezalfde ogen, en onderzoekt Gods diepten. De zielse mens kan geestelijke dingen niet aanvaarden.",
     quotes: [
       {
         text: "Het geloof hoort wat de Geest tot de gemeente zegt; het geloof heeft gezalfde ogen. Door het geloof onderzoeken we in de geest zelfs de diepere dingen in God.",
-        source: "Skjulte Skatter 1928-01 — Het geloof",
+        source: "Skjulte Skatter 1928-01 ? Het geloof",
         author: "Johan O. Smith",
         date: "1928-01-01"
       },
@@ -1108,9 +1108,9 @@ window.HT_TOPICS = {
   },
 
   "geloof-hoort": {
-    title: "Geestelijk oor — geloof hoort",
+    title: "Geestelijk oor ? geloof hoort",
     color: "#3b82f6",
-    summary: "Openb. 2:7: 'Wie een oor heeft, die hore wat de Geest tot de gemeente zegt.' Dit is geen lichamelijk oor maar het geestelijk oor van het geloof — in de geest. Het hoort wat de Geest zegt wanneer het Woord verkondigd wordt; niet eigen gedachten, zielse gevoelens of menselijke overleggingen.",
+    summary: "Openb. 2:7: 'Wie een oor heeft, die hore wat de Geest tot de gemeente zegt.' Dit is geen lichamelijk oor maar het geestelijk oor van het geloof ? in de geest. Het hoort wat de Geest zegt wanneer het Woord verkondigd wordt; niet eigen gedachten, zielse gevoelens of menselijke overleggingen.",
     quotes: [
       {
         text: "Het geloof hoort wat de Geest tot de gemeente zegt.",
@@ -1120,7 +1120,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Het geloof hoort wat de Geest tegen de gemeente zegt; het geloof heeft gezalfde ogen, het grijpt goud dat in het vuur gelouterd is.",
-        source: "Skjulte Skatter 1928-01 — Het geloof",
+        source: "Skjulte Skatter 1928-01 ? Het geloof",
         author: "Johan O. Smith",
         date: "1928-01-01"
       },
@@ -1143,7 +1143,7 @@ window.HT_TOPICS = {
   "geloof-ziet": {
     title: "Gezalfde ogen (in de geest)",
     color: "#3b82f6",
-    summary: "Geloof in de geest heeft gezalfde ogen — ziet wat het natuurlijke verstand en de ziels-fantasie niet zien. Het grijpt het goud dat in het vuur gelouterd is. Dit is niet zelf beelden opwekken, maar geestelijk zien door geloof.",
+    summary: "Geloof in de geest heeft gezalfde ogen ? ziet wat het natuurlijke verstand en de ziels-fantasie niet zien. Het grijpt het goud dat in het vuur gelouterd is. Dit is niet zelf beelden opwekken, maar geestelijk zien door geloof.",
     quotes: [
       {
         text: "Het geloof heeft gezalfde ogen, het grijpt het goud dat in het vuur gelouterd is.",
@@ -1153,7 +1153,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Het geloof brengt zichtbare dingen te voorschijn vanuit het onzichtbare.",
-        source: "Skjulte Skatter 1928-01 — Het geloof",
+        source: "Skjulte Skatter 1928-01 ? Het geloof",
         author: "Johan O. Smith",
         date: "1928-01-01"
       }
@@ -1164,7 +1164,7 @@ window.HT_TOPICS = {
   "geloof-verlichte-ogen": {
     title: "Verlichte ogen des harte",
     color: "#dc2626",
-    summary: "Ef. 1:18: Paulus bidt dat de Efezi?rs verlichte ogen des harte krijgen — om de hoop van Gods roeping, de rijke erfenis en zijn overweldigende kracht te begrijpen. Dit zit in het hart (overleggingen en gedachten), geopend door de Geest van wijsheid en openbaring. Het hart moet niet alleen oren hebben maar ook ogen.",
+    summary: "Ef. 1:18: Paulus bidt dat de Efezi?rs verlichte ogen des harte krijgen ? om de hoop van Gods roeping, de rijke erfenis en zijn overweldigende kracht te begrijpen. Dit zit in het hart (overleggingen en gedachten), geopend door de Geest van wijsheid en openbaring. Het hart moet niet alleen oren hebben maar ook ogen.",
     quotes: [
       {
         text: "Het klinkt misschien merkwaardig, dat men met het hart moet horen, maar toch is het zo. Het hart moet echter niet alleen oren hebben, maar ook ogen; verlichte ogen uws harten, zodat gij weet welke hoop zijn roeping wekt. Ef. 1:18. Wie een oor heeft, die hore, wat de Geest tot de gemeenten zegt.",
@@ -1173,7 +1173,7 @@ window.HT_TOPICS = {
         date: "1912-04-01"
       },
       {
-        text: "Hoop hebben is én ding, de hoop kennen is iets anders. Door de geest van wijsheid en openbaring in combinatie met verlichte ogen van ons hart zullen we de hoop kennen.",
+        text: "Hoop hebben is ?n ding, de hoop kennen is iets anders. Door de geest van wijsheid en openbaring in combinatie met verlichte ogen van ons hart zullen we de hoop kennen.",
         source: "Hoofdstuk 1 - De hoop kennen",
         author: "Johan O. Smith",
         date: ""
@@ -1197,7 +1197,7 @@ window.HT_TOPICS = {
   "geloof-onderzoekt": {
     title: "Geloof onderzoekt",
     color: "#3b82f6",
-    summary: "Door geloof onderzoeken we zelfs de diepten Gods — verder dan het zielse verstand kan komen.",
+    summary: "Door geloof onderzoeken we zelfs de diepten Gods ? verder dan het zielse verstand kan komen.",
     quotes: [
       {
         text: "Zonder geloof is het onmogelijk om God welgevallig te zijn; maar door het geloof onderzoeken we zelfs de diepten Gods.",
@@ -1233,7 +1233,7 @@ window.HT_TOPICS = {
   "geloof-geestelijk": {
     title: "Wel: geest van geloof",
     color: "#22c55e",
-    summary: "Het echte geloof is de Geest van geloof — rein hart, vaste geest, gehoorzaamheid, overwinning.",
+    summary: "Het echte geloof is de Geest van geloof ? rein hart, vaste geest, gehoorzaamheid, overwinning.",
     quotes: [
       {
         text: "Het sterke fundament van het geloof is een rein hart en een vaste geest. Dan kunnen we gerechtigheid handhaven en alle macht van de vijand overwinnen.",
@@ -1254,7 +1254,7 @@ window.HT_TOPICS = {
   "geloof-woord": {
     title: "Stap 1: Woord in de geest",
     color: "#6366f1",
-    summary: "Geloof neemt het Woord in de geest aan — dan oordeelt het woord de overleggingen des harten.",
+    summary: "Geloof neemt het Woord in de geest aan ? dan oordeelt het woord de overleggingen des harten.",
     quotes: [
       {
         text: "Neemt u door geloof het woord in uw geest aan, dan oordeelt het woord de overleggingen en gedachten des harten.",
@@ -1275,7 +1275,7 @@ window.HT_TOPICS = {
   "geloof-hart": {
     title: "Stap 2: Het hart",
     color: "#dc2626",
-    summary: "Het Woord dringt door tot het hart en moet er met geloof in samensmelten. Hier krijg je verlichte ogen des harte (Ef. 1:18) — om Gods roeping, erfenis en kracht te begrijpen. Rein hart is fundament van vast geloof.",
+    summary: "Het Woord dringt door tot het hart en moet er met geloof in samensmelten. Hier krijg je verlichte ogen des harte (Ef. 1:18) ? om Gods roeping, erfenis en kracht te begrijpen. Rein hart is fundament van vast geloof.",
     quotes: [
       {
         text: "We moeten het woord met zachtmoedigheid aannemen en het vasthouden met een goed en vroom hart.",
@@ -1302,7 +1302,7 @@ window.HT_TOPICS = {
   "geloof-gezindheid": {
     title: "Stap 3: Gezindheid",
     color: "#eab308",
-    summary: "Geloof en Woord moeten samensmelten in het hart — de gezindheid stemt in met Gods wil.",
+    summary: "Geloof en Woord moeten samensmelten in het hart ? de gezindheid stemt in met Gods wil.",
     quotes: [
       {
         text: "Het woord der prediking was hun niet van nut, omdat het niet met geloof samensmolt in hun hart.",
@@ -1317,7 +1317,7 @@ window.HT_TOPICS = {
   "geloof-gehoorzaamheid": {
     title: "Stap 4: Gehoorzaamheid des geloofs",
     color: "#22c55e",
-    summary: "Geloof zonder werken is dood. Werken des geloofs zijn wat God in ons bewerkt — gehoorzaamheid, niet werken der wet.",
+    summary: "Geloof zonder werken is dood. Werken des geloofs zijn wat God in ons bewerkt ? gehoorzaamheid, niet werken der wet.",
     quotes: [
       {
         text: "Als we tot Hem zijn gekomen, dan zal het geloof van Christus zich werkzaam tonen door onze werken. Deze werken verschijnen als vrucht van gehoorzaamheid des geloofs.",
@@ -1354,7 +1354,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Het geloof overwint niet alleen de wereld, het overwint ook de begeerten in het lichaam en het lichaam zelf.",
-        source: "Skjulte Skatter 1928-01 — Het geloof",
+        source: "Skjulte Skatter 1928-01 ? Het geloof",
         author: "Johan O. Smith",
         date: "1928-01-01"
       },
@@ -1371,11 +1371,11 @@ window.HT_TOPICS = {
   "geloof-vlees": {
     title: "Geloof overwint het vlees",
     color: "#34d399",
-    summary: "Door geloof en de Geest doden we de werkingen des lichaams — niet door eigen kracht.",
+    summary: "Door geloof en de Geest doden we de werkingen des lichaams ? niet door eigen kracht.",
     quotes: [
       {
         text: "Het geloof overwint ook de begeerten in het lichaam en het lichaam zelf, dat als een offer wordt voor de gehoorzaamheid van het geloof.",
-        source: "Skjulte Skatter 1928-01 — Het geloof",
+        source: "Skjulte Skatter 1928-01 ? Het geloof",
         author: "Johan O. Smith",
         date: "1928-01-01"
       },
@@ -1407,7 +1407,7 @@ window.HT_TOPICS = {
   "vs-overzicht": {
     title: "Wat is het verstand?",
     color: "#f59e0b",
-    summary: "Het verstand is een faculteit van de ziel — naast fantasie, gevoelens en wil. Het lichaam biedt de vijf zintuigen; de ziel geeft verstand en hulp bij de indrukken die van de zintuigen komen. De geest is het hogere deel waardoor we God begrijpen.",
+    summary: "Het verstand is een faculteit van de ziel ? naast fantasie, gevoelens en wil. Het lichaam biedt de vijf zintuigen; de ziel geeft verstand en hulp bij de indrukken die van de zintuigen komen. De geest is het hogere deel waardoor we God begrijpen.",
     quotes: [
       {
         text: "Het lichaam biedt ons het gebruik van de vijf zintuigen, de ziel geeft ons verstand en aanhoudende hulp bij de indrukken die van de zintuigen komen, terwijl de geest het hogere deel is, waardoor wij in directe verbinding met God komen en waardoor wij Hem kunnen begrijpen en aanbidden.",
@@ -1417,7 +1417,7 @@ window.HT_TOPICS = {
       },
       {
         text: "We hebben gezien dat de ziel het verstand en de gevoelens omvat, evenals de centrale persoonlijkheid die haar tot zetel van het zelfbewustzijn maakt.",
-        source: "Skjulte Skatter 1927-05 — Ziel en geest",
+        source: "Skjulte Skatter 1927-05 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-05-01"
       }
@@ -1426,9 +1426,9 @@ window.HT_TOPICS = {
   },
 
   "vs-zintuigen": {
-    title: "Zintuigen — ingang tot het verstand",
+    title: "Zintuigen ? ingang tot het verstand",
     color: "#ea580c",
-    summary: "Via zien, horen, ruiken, proeven en voelen brengt het lichaam indrukken van de buitenwereld binnen — tot het verstand van de ziel. Zo begon ook de val: de Slang sprak tot Eva.",
+    summary: "Via zien, horen, ruiken, proeven en voelen brengt het lichaam indrukken van de buitenwereld binnen ? tot het verstand van de ziel. Zo begon ook de val: de Slang sprak tot Eva.",
     quotes: [
       {
         text: "Het lichaam biedt ons het gebruik van de vijf zintuigen, de ziel geeft ons verstand en aanhoudende hulp bij de indrukken die van de zintuigen komen.",
@@ -1437,19 +1437,19 @@ window.HT_TOPICS = {
         date: "1927-04-01"
       },
       {
-        text: "De val begon met indrukken via de zintuigen — de Slang sprak tot Eva en het verstand werd verleid.",
+        text: "De val begon met indrukken via de zintuigen ? de Slang sprak tot Eva en het verstand werd verleid.",
         source: "De val van de mens",
         author: "Johan O. Smith",
         date: "1927-04-01"
       }
     ],
-    refs: ["Gen. 3:1–6"]
+    refs: ["Gen. 3:1?6"]
   },
 
   "vs-plaats": {
     title: "Waar woont het verstand?",
     color: "#f59e0b",
-    summary: "Het verstand woont in de ziel — niet in de geest. De ziel is het vat van zelfbewustzijn met verstand, fantasie, gevoelens en wil. Pas wanneer ziel en geest gescheiden zijn, kan de Geest het vat van de ziel vullen en leiden.",
+    summary: "Het verstand woont in de ziel ? niet in de geest. De ziel is het vat van zelfbewustzijn met verstand, fantasie, gevoelens en wil. Pas wanneer ziel en geest gescheiden zijn, kan de Geest het vat van de ziel vullen en leiden.",
     quotes: [
       {
         text: "Andrew Murray is het hiermee eens, wanneer hij schrijft: 'De gaven, waarmede de ziel was uitgerust toen de mens een levende ziel werd, waren een bewuste zelfbeschikking, of: verstand en wil.' Maar dit is ook weer alleen maar een vorm en vat, waarin het geestelijk leven opgenomen kan worden.",
@@ -1459,7 +1459,7 @@ window.HT_TOPICS = {
       },
       {
         text: "En op hun beurt kunnen deze leden niet geestelijk worden, voordat ze de scheiding tussen ziel en geest vatten, zodat de geest geheel en al met de opgestane Christus Jezus verenigd wordt en het vat van de ziel met zijn verstand en andere intellectuele eigenschappen gevuld en geleid wordt door de Geest.",
-        source: "Skjulte Skatter 1927-11 — Ziel en geest",
+        source: "Skjulte Skatter 1927-11 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-11-01"
       }
@@ -1470,11 +1470,11 @@ window.HT_TOPICS = {
   "vs-verwerkt": {
     title: "Verstand verwerkt indrukken",
     color: "#f59e0b",
-    summary: "Het verstand verwerkt wat de zintuigen binnenbrengen — houdt indrukken vast en helpt beoordelen. Hier komt verzoeking als eerste tot uiting, nog v↑↓r fantasie en hart.",
+    summary: "Het verstand verwerkt wat de zintuigen binnenbrengen ? houdt indrukken vast en helpt beoordelen. Hier komt verzoeking als eerste tot uiting, nog v??r fantasie en hart.",
     quotes: [
       {
         text: "De val kwam het eerst tot uiting in het verstand van de ziel, want er werd tot Eva gezegd, dat de boom begeerlijk was om daardoor verstandig te worden, Gen. 3:6.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       },
@@ -1485,17 +1485,17 @@ window.HT_TOPICS = {
         date: "1927-04-01"
       }
     ],
-    refs: ["Gen. 3:5–6"]
+    refs: ["Gen. 3:5?6"]
   },
 
   "vs-zelfbewust": {
     title: "Verstand en zelfbewustzijn",
     color: "#a78bfa",
-    summary: "De ziel omvat verstand en gevoelens, en is de zetel van het zelfbewustzijn — de centrale persoonlijkheid waar je 'ik' ervaart.",
+    summary: "De ziel omvat verstand en gevoelens, en is de zetel van het zelfbewustzijn ? de centrale persoonlijkheid waar je 'ik' ervaart.",
     quotes: [
       {
         text: "We hebben gezien dat de ziel het verstand en de gevoelens omvat, evenals de centrale persoonlijkheid die haar tot zetel van het zelfbewustzijn maakt.",
-        source: "Skjulte Skatter 1927-05 — Ziel en geest",
+        source: "Skjulte Skatter 1927-05 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-05-01"
       }
@@ -1506,7 +1506,7 @@ window.HT_TOPICS = {
   "vs-oordeelt": {
     title: "Verstand oordeelt",
     color: "#f59e0b",
-    summary: "In het hart wordt overlegd overeenkomstig gevoel en verstand. Het Woord kan die overleggingen beoordelen — als het met geloof in de geest wordt aangenomen.",
+    summary: "In het hart wordt overlegd overeenkomstig gevoel en verstand. Het Woord kan die overleggingen beoordelen ? als het met geloof in de geest wordt aangenomen.",
     quotes: [
       {
         text: "In het hart wordt overlegd overeenkomstig ons gevoel en verstand; maar als ik God ben gaan zoeken, open ik mij voor Gods woord.",
@@ -1527,7 +1527,7 @@ window.HT_TOPICS = {
   "vs-gevallen": {
     title: "Gevallen verstand",
     color: "#f87171",
-    summary: "In de val richtte Satan zich tot het verstand — kennis, trots, als God zijn. De zielse mens kan niet verder dan zijn natuurlijke verstand.",
+    summary: "In de val richtte Satan zich tot het verstand ? kennis, trots, als God zijn. De zielse mens kan niet verder dan zijn natuurlijke verstand.",
     quotes: [
       {
         text: "De zielse mens kan niet anders dan zijn natuurlijke verstand gebruiken. Hij kan niet verder doordringen dan het verstand hem toelaat.",
@@ -1548,7 +1548,7 @@ window.HT_TOPICS = {
   "vs-verlicht": {
     title: "Verlicht verstand",
     color: "#34d399",
-    summary: "Wie in geloof wandelt, wandelt eerst in de duisternis van het verstand — maar als de werken in geloof verricht zijn, wordt het verstand verlicht. Geloof heeft te maken met een verlicht verstand.",
+    summary: "Wie in geloof wandelt, wandelt eerst in de duisternis van het verstand ? maar als de werken in geloof verricht zijn, wordt het verstand verlicht. Geloof heeft te maken met een verlicht verstand.",
     quotes: [
       {
         text: "Wie in geloof wandelt, wandelt in de duisternis van het verstand, maar als de werken in geloof zijn verricht, wordt het verstand verlicht. Het geloof eigent zich het verstand van God toe en zet het eigen verstand aan de kant.",
@@ -1569,11 +1569,11 @@ window.HT_TOPICS = {
   "vs-fantasie": {
     title: "Na verstand: fantasie",
     color: "#06b6d4",
-    summary: "Na het verstand volgt de fantasie — innerlijk zien. Eva zag dat de boom begeerlijk was. Zintuigen — verstand — fantasie — hart — wil.",
+    summary: "Na het verstand volgt de fantasie ? innerlijk zien. Eva zag dat de boom begeerlijk was. Zintuigen ? verstand ? fantasie ? hart ? wil.",
     quotes: [
       {
         text: "De val kwam het eerst tot uiting in het verstand van de ziel, want er werd tot Eva gezegd, dat de boom begeerlijk was om daardoor verstandig te worden, Gen. 3:6.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       }
@@ -1599,11 +1599,11 @@ window.HT_TOPICS = {
   "vs-geest-leidt": {
     title: "Geest leidt het verstand",
     color: "#60a5fa",
-    summary: "Het verstand blijft in de ziel, maar kan door de Geest gevuld en geleid worden — samen met fantasie en andere intellectuele eigenschappen.",
+    summary: "Het verstand blijft in de ziel, maar kan door de Geest gevuld en geleid worden ? samen met fantasie en andere intellectuele eigenschappen.",
     quotes: [
       {
         text: "En op hun beurt kunnen deze leden niet geestelijk worden, voordat ze de scheiding tussen ziel en geest vatten, zodat de geest geheel en al met de opgestane Christus Jezus verenigd wordt en het vat van de ziel met zijn verstand en andere intellectuele eigenschappen gevuld en geleid wordt door de Geest.",
-        source: "Skjulte Skatter 1927-11 — Ziel en geest",
+        source: "Skjulte Skatter 1927-11 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-11-01"
       },
@@ -1620,11 +1620,11 @@ window.HT_TOPICS = {
   "vs-eerste-uiting": {
     title: "Eerste uiting: verstand",
     color: "#f59e0b",
-    summary: "De val en verzoeking kwamen het eerst tot uiting in het verstand van de ziel — begeerlijk om verstandig te worden.",
+    summary: "De val en verzoeking kwamen het eerst tot uiting in het verstand van de ziel ? begeerlijk om verstandig te worden.",
     quotes: [
       {
         text: "De val kwam het eerst tot uiting in het verstand van de ziel, want er werd tot Eva gezegd, dat de boom begeerlijk was om daardoor verstandig te worden, Gen. 3:6.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       },
@@ -1635,13 +1635,13 @@ window.HT_TOPICS = {
         date: "1927-04-01"
       }
     ],
-    refs: ["Gen. 3:5–6", "Jak. 1:14–15"]
+    refs: ["Gen. 3:5?6", "Jak. 1:14?15"]
   },
 
   "vs-dient-wet": {
     title: "Verstand dient Gods wet",
     color: "#fbbf24",
-    summary: "Paulus diende Gods wet met zijn verstand — zijn innerlijke mens was op Gods kant. Maar hij zag een andere wet in zijn leden.",
+    summary: "Paulus diende Gods wet met zijn verstand ? zijn innerlijke mens was op Gods kant. Maar hij zag een andere wet in zijn leden.",
     quotes: [
       {
         text: "Paulus diende Gods wet met zijn verstand; maar hij zag een andere wet in zijn leden, Rom. 7:23.",
@@ -1650,7 +1650,7 @@ window.HT_TOPICS = {
         date: "1914-10-01"
       }
     ],
-    refs: ["Rom. 7:22–25"]
+    refs: ["Rom. 7:22?25"]
   },
 
   "vs-geloof-verstand": {
@@ -1677,13 +1677,13 @@ window.HT_TOPICS = {
         date: "1935-03-26"
       }
     ],
-    refs: ["1 Kor. 2:16", "Jes. 55:8–9"]
+    refs: ["1 Kor. 2:16", "Jes. 55:8?9"]
   },
 
   "gw-overzicht": {
     title: "Wat is het geweten?",
     color: "#fb7185",
-    summary: "Het geweten is Gods oordeel over zonde dat je innerlijk voelt — gevormd door het licht dat je hebt ontvangen. Het getuigt of je leeft naar dat licht. Zonder goed geweten geen vrede met God; met een rein geweten bewaar je het geheimenis des geloofs.",
+    summary: "Het geweten is Gods oordeel over zonde dat je innerlijk voelt ? gevormd door het licht dat je hebt ontvangen. Het getuigt of je leeft naar dat licht. Zonder goed geweten geen vrede met God; met een rein geweten bewaar je het geheimenis des geloofs.",
     quotes: [
       {
         text: "Op deze pasgeboren zonde rust Gods oordeel in het geweten. Dezelfde gezindheid die toegaf aan de begeerte, voelt nu het oordeel.",
@@ -1693,7 +1693,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Het geweten wordt door de verkondiging gevormd. Het controleert ook of iemand leeft naar het licht dat hij heeft.",
-        source: "Wandelen in het licht — en niet zondigen",
+        source: "Wandelen in het licht ? en niet zondigen",
         author: "Trygve Sandvik",
         date: "1977-06-01"
       },
@@ -1710,11 +1710,11 @@ window.HT_TOPICS = {
   "gw-licht": {
     title: "Licht vormt het geweten",
     color: "#fbbf24",
-    summary: "Het geweten wordt gevormd door Gods Woord en de verkondiging. Het licht dat je hebt ontvangen is de maatstaf — het geweten controleert of je daarnaar leeft.",
+    summary: "Het geweten wordt gevormd door Gods Woord en de verkondiging. Het licht dat je hebt ontvangen is de maatstaf ? het geweten controleert of je daarnaar leeft.",
     quotes: [
       {
         text: "Het geweten wordt door de verkondiging gevormd. Het controleert ook of iemand leeft naar het licht dat hij heeft.",
-        source: "Wandelen in het licht — en niet zondigen",
+        source: "Wandelen in het licht ? en niet zondigen",
         author: "Trygve Sandvik",
         date: "1977-06-01"
       },
@@ -1726,7 +1726,7 @@ window.HT_TOPICS = {
       },
       {
         text: "In het licht heeft men een goed geweten wat betreft alle bewuste zonde.",
-        source: "Wandelen in het licht — en niet zondigen",
+        source: "Wandelen in het licht ? en niet zondigen",
         author: "Trygve Sandvik",
         date: "1977-06-01"
       }
@@ -1737,7 +1737,7 @@ window.HT_TOPICS = {
   "gw-plaats": {
     title: "Waar woont het geweten?",
     color: "#fb7185",
-    summary: "Het geweten woont in het hart — daar rust Gods oordeel over zonde. God schrijft zijn wetten in het hart. Tegelijk getuigt het geweten over de hele mens: geest, ziel en lichaam moeten onberispelijk blijven.",
+    summary: "Het geweten woont in het hart ? daar rust Gods oordeel over zonde. God schrijft zijn wetten in het hart. Tegelijk getuigt het geweten over de hele mens: geest, ziel en lichaam moeten onberispelijk blijven.",
     quotes: [
       {
         text: "Op deze pasgeboren zonde rust Gods oordeel in het geweten. Dezelfde gezindheid die toegaf aan de begeerte, voelt nu het oordeel.",
@@ -1764,7 +1764,7 @@ window.HT_TOPICS = {
   "gw-oordeelt": {
     title: "Geweten oordeelt",
     color: "#fb7185",
-    summary: "Bij zonde voel je Gods oordeel in het geweten. Ook al verdwijnt dat oordeel ogenschijnlijk als je niet meteen bekert — Gods oordeel zelf is niet weg.",
+    summary: "Bij zonde voel je Gods oordeel in het geweten. Ook al verdwijnt dat oordeel ogenschijnlijk als je niet meteen bekert ? Gods oordeel zelf is niet weg.",
     quotes: [
       {
         text: "Op deze pasgeboren zonde rust Gods oordeel in het geweten. Dezelfde gezindheid die toegaf aan de begeerte, voelt nu het oordeel.",
@@ -1791,7 +1791,7 @@ window.HT_TOPICS = {
   "gw-waarschuwt": {
     title: "Geweten waarschuwt",
     color: "#f472b6",
-    summary: "Het geweten waarschuwt v↑↓r je verder afdwaalt — zolang het nog wakker is. Bij herhaalde zonde zonder bekering kan het verlamd raken.",
+    summary: "Het geweten waarschuwt v??r je verder afdwaalt ? zolang het nog wakker is. Bij herhaalde zonde zonder bekering kan het verlamd raken.",
     quotes: [
       {
         text: "Het geweten is als verlamd voor deze zonde en niet ontvankelijk voor oordeel. De volgende keer gaat de mens een stap verder in zonde en goddeloosheid. Het geweten is wakker voor deze nieuwe zonde, en men voelt zich veroordeeld.",
@@ -1806,7 +1806,7 @@ window.HT_TOPICS = {
   "gw-getuigt": {
     title: "Geweten getuigt",
     color: "#fb7185",
-    summary: "Het geweten getuigt over de hele innerlijke mens — geest, ziel en lichaam. Vleeselijke begeerten strijden tegen de ziel; het geweten gaat ons oordelen.",
+    summary: "Het geweten getuigt over de hele innerlijke mens ? geest, ziel en lichaam. Vleeselijke begeerten strijden tegen de ziel; het geweten gaat ons oordelen.",
     quotes: [
       {
         text: "Als onze geest, ziel en lichaam onder dit levensproces voor ons geweten niet onberispelijk bewaard blijven, dan is dat het bewijs ervan dat het vlees de overhand heeft gekregen, en dat wij iets hebben gedaan wat een oordeel op ons geweten heeft gelegd.",
@@ -1827,7 +1827,7 @@ window.HT_TOPICS = {
   "gw-slecht": {
     title: "Slecht of verlamd geweten",
     color: "#f87171",
-    summary: "Zonde maakt het geweten onrein. Herhaalde zonde zonder bekering verlamt het — het oordeel verdwijnt ogenschijnlijk. De wet des doods verlamt het geweten en brengt veroordeling.",
+    summary: "Zonde maakt het geweten onrein. Herhaalde zonde zonder bekering verlamt het ? het oordeel verdwijnt ogenschijnlijk. De wet des doods verlamt het geweten en brengt veroordeling.",
     quotes: [
       {
         text: "Het geweten is als verlamd voor deze zonde en niet ontvankelijk voor oordeel. De volgende keer gaat de mens een stap verder in zonde en goddeloosheid.",
@@ -1854,11 +1854,11 @@ window.HT_TOPICS = {
   "gw-rein": {
     title: "Rein geweten",
     color: "#34d399",
-    summary: "In het licht heb je een goed geweten over alle bewuste zonde. Rein geweten is voorwaarde om het geheimenis des geloofs te bewaren — en om de ziel uit te gieten in dienstbaarheid aan Gods wet.",
+    summary: "In het licht heb je een goed geweten over alle bewuste zonde. Rein geweten is voorwaarde om het geheimenis des geloofs te bewaren ? en om de ziel uit te gieten in dienstbaarheid aan Gods wet.",
     quotes: [
       {
         text: "In het licht heeft men een goed geweten wat betreft alle bewuste zonde.",
-        source: "Wandelen in het licht — en niet zondigen",
+        source: "Wandelen in het licht ? en niet zondigen",
         author: "Trygve Sandvik",
         date: "1977-06-01"
       },
@@ -1881,7 +1881,7 @@ window.HT_TOPICS = {
   "gw-hele-mens": {
     title: "Geweten over geest, ziel en lichaam",
     color: "#a78bfa",
-    summary: "Het geweten getuigt niet alleen over losse daden — geest, ziel en lichaam moeten samen onberispelijk blijven voor God en mensen.",
+    summary: "Het geweten getuigt niet alleen over losse daden ? geest, ziel en lichaam moeten samen onberispelijk blijven voor God en mensen.",
     quotes: [
       {
         text: "Als onze geest, ziel en lichaam onder dit levensproces voor ons geweten niet onberispelijk bewaard blijven, dan is dat het bewijs ervan dat het vlees de overhand heeft gekregen.",
@@ -1902,7 +1902,7 @@ window.HT_TOPICS = {
   "gw-hart-wetten": {
     title: "Wetten in het hart",
     color: "#fb7185",
-    summary: "God schrijft zijn wetten in het hart. Zonde is het breken van die wetten — dan wordt het geweten onrein.",
+    summary: "God schrijft zijn wetten in het hart. Zonde is het breken van die wetten ? dan wordt het geweten onrein.",
     quotes: [
       {
         text: "Het geweten wordt onrein als je begint te zondigen. En wat is zonde? Zonde is wetteloosheid. Namelijk het breken van de wetten die God in mijn hart heeft gegeven!",
@@ -1912,7 +1912,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Het woord van God is levend en krachtig en scherper dan enig tweesnijdend zwaard, en het dringt door tot op de scheiding van ziel en geest, van gewrichten en merg, en het oordeelt de overleggingen en gedachten van het hart.",
-        source: "Skjulte Skatter 1927-07 — Ziel en geest",
+        source: "Skjulte Skatter 1927-07 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-07-01"
       }
@@ -1923,7 +1923,7 @@ window.HT_TOPICS = {
   "gw-gezindheid": {
     title: "Gezindheid en geweten",
     color: "#eab308",
-    summary: "De gezindheid die toegaf aan begeerte voelt daarna het oordeel in het geweten. Met rein geweten dient de gezindheid Gods wet — Rom. 7:25.",
+    summary: "De gezindheid die toegaf aan begeerte voelt daarna het oordeel in het geweten. Met rein geweten dient de gezindheid Gods wet ? Rom. 7:25.",
     quotes: [
       {
         text: "Op deze pasgeboren zonde rust Gods oordeel in het geweten. Dezelfde gezindheid die toegaf aan de begeerte, voelt nu het oordeel.",
@@ -1965,7 +1965,7 @@ window.HT_TOPICS = {
   "gw-geloof": {
     title: "Geweten en geloof",
     color: "#a5b4fc",
-    summary: "Het geheimenis des geloofs wordt bewaard in een rein geweten — 1 Tim. 3:9. Zonder rein geweten lijdt het geloof schipbreuk.",
+    summary: "Het geheimenis des geloofs wordt bewaard in een rein geweten ? 1 Tim. 3:9. Zonder rein geweten lijdt het geloof schipbreuk.",
     quotes: [
       {
         text: "Een voorwaarde om te kunnen geloven is dat je een rein en goed geweten hebt.",
@@ -1986,7 +1986,7 @@ window.HT_TOPICS = {
   "gw-vrede": {
     title: "Geweten en vrede",
     color: "#6ee7b7",
-    summary: "Zonder goed geweten geen vrede met God. Een goed geweten is het minste wat je nodig hebt — maar vrede op het fundament van licht en waarheid.",
+    summary: "Zonder goed geweten geen vrede met God. Een goed geweten is het minste wat je nodig hebt ? maar vrede op het fundament van licht en waarheid.",
     quotes: [
       {
         text: "Heeft iemand geen goed geweten, dan heeft hij geen vrede en is hij een zondaar. Een goed geweten is wel het minste wat men moet hebben om vrede met God te hebben.",
@@ -2013,7 +2013,7 @@ window.HT_TOPICS = {
   "gw-levende-god": {
     title: "Niet alleen het geweten dienen",
     color: "#60a5fa",
-    summary: "Een goed geweten is nodig, maar wie alleen het geweten als maatstaf heeft, is geen dienaar van God. We dienen de levende God — niet onze eigen gewetensvorming.",
+    summary: "Een goed geweten is nodig, maar wie alleen het geweten als maatstaf heeft, is geen dienaar van God. We dienen de levende God ? niet onze eigen gewetensvorming.",
     quotes: [
       {
         text: "Een goed geweten is wel het minste wat men moet hebben om vrede met God te hebben. Maar wie enkel het geweten als maatstaf en richtsnoer heeft, is geen dienaar van God.",
@@ -2034,11 +2034,11 @@ window.HT_TOPICS = {
   "gv-overzicht": {
     title: "Wat is gevoel?",
     color: "#ec4899",
-    summary: "Gevoelens zijn een faculteit van de ziel — naast verstand, fantasie en wil. Hier ervaar je stemming, onrust, blijdschap en verdriet: 'ik voel me zo'. De ziel omvat verstand en gevoelens en is de zetel van het zelfbewustzijn.",
+    summary: "Gevoelens zijn een faculteit van de ziel ? naast verstand, fantasie en wil. Hier ervaar je stemming, onrust, blijdschap en verdriet: 'ik voel me zo'. De ziel omvat verstand en gevoelens en is de zetel van het zelfbewustzijn.",
     quotes: [
       {
         text: "We hebben gezien dat de ziel het verstand en de gevoelens omvat, evenals de centrale persoonlijkheid die haar tot zetel van het zelfbewustzijn maakt.",
-        source: "Skjulte Skatter 1927-05 — Ziel en geest",
+        source: "Skjulte Skatter 1927-05 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-05-01"
       },
@@ -2053,9 +2053,9 @@ window.HT_TOPICS = {
   },
 
   "gv-ik-voel": {
-    title: "'Ik voel me zo' — waar komt dat vandaan?",
+    title: "'Ik voel me zo' ? waar komt dat vandaan?",
     color: "#f472b6",
-    summary: "'Ik voel me down', 'ik voel me niet op mijn gemak', 'ik voel aan dat die persoon mij niet mag' — dat is zielse taal. Gevoelens horen bij de ziel; je kunt er niet blind op vertrouwen.",
+    summary: "'Ik voel me down', 'ik voel me niet op mijn gemak', 'ik voel aan dat die persoon mij niet mag' ? dat is zielse taal. Gevoelens horen bij de ziel; je kunt er niet blind op vertrouwen.",
     quotes: [
       {
         text: "Je kunt b.v. niet op je gevoelens vertrouwen. 'Ik voel aan dat die-en-die mij niet mag.' Zulke gevoelens horen ook bij de wereld van leugen waarvan wij ons moeten reinigen.",
@@ -2076,11 +2076,11 @@ window.HT_TOPICS = {
   "gv-plaats": {
     title: "Waar woont gevoel?",
     color: "#ec4899",
-    summary: "Gevoelens wonen in de ziel — niet in de geest. De ziel staat tussen geest en lichaam; gevoelens kunnen door begeerte in het lichaam en door verstand worden bewogen.",
+    summary: "Gevoelens wonen in de ziel ? niet in de geest. De ziel staat tussen geest en lichaam; gevoelens kunnen door begeerte in het lichaam en door verstand worden bewogen.",
     quotes: [
       {
         text: "We hebben gezien dat de ziel het verstand en de gevoelens omvat, evenals de centrale persoonlijkheid die haar tot zetel van het zelfbewustzijn maakt.",
-        source: "Skjulte Skatter 1927-05 — Ziel en geest",
+        source: "Skjulte Skatter 1927-05 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-05-01"
       },
@@ -2097,7 +2097,7 @@ window.HT_TOPICS = {
   "gv-voelt": {
     title: "De ziel voelt",
     color: "#ec4899",
-    summary: "Blijdschap, verdriet, onrust, welbehagen — de ziel kan zeer bedroefd zijn of juist opgewonden. Dat is niet hetzelfde als geestelijk geloof.",
+    summary: "Blijdschap, verdriet, onrust, welbehagen ? de ziel kan zeer bedroefd zijn of juist opgewonden. Dat is niet hetzelfde als geestelijk geloof.",
     quotes: [
       {
         text: "De ziel omvat niet alleen het verstand en het gevoel, maar vanuit de Schrift kunnen we zien, dat de ziel de zetel is van de persoonlijkheid in zijn overgave, blijdschap en verdriet enz. Zo staat er geschreven: 'Mijn ziel is zeer bedroefd'. Matt. 26:38.",
@@ -2137,9 +2137,9 @@ window.HT_TOPICS = {
   },
 
   "gv-beweegt": {
-    title: "Brandende ziel — gevoelens in beweging",
+    title: "Brandende ziel ? gevoelens in beweging",
     color: "#e879f9",
-    summary: "Een 'brandende' of 'vurige' ziel kan zielse gevoelens bij anderen in beweging zetten — opwekking zonder Gods kracht. Geloof en wijsheid staan dan onder invloed van de persoon, niet van God.",
+    summary: "Een 'brandende' of 'vurige' ziel kan zielse gevoelens bij anderen in beweging zetten ? opwekking zonder Gods kracht. Geloof en wijsheid staan dan onder invloed van de persoon, niet van God.",
     quotes: [
       {
         text: "Iemand kan van nature een 'brandende ziel' bezitten en door deze brandende ziel de zielse gevoelens bij anderen in beweging zetten. Maar hun geloof en wijsheid staan dan onder invloed van de persoon, die ze in beweging gebracht heeft, en niet onder de kracht van God.",
@@ -2148,13 +2148,13 @@ window.HT_TOPICS = {
         date: "1927-07-01"
       }
     ],
-    refs: ["1 Kor. 2:4–5", "Gal. 3:3"]
+    refs: ["1 Kor. 2:4?5", "Gal. 3:3"]
   },
 
   "gv-lichaam-trigger": {
     title: "Lichaam wekt gevoel",
     color: "#ea580c",
-    summary: "Begeerte ligt in het lichaam en laait op; zintuigen brengen indrukken binnen. De ziel — met haar gevoelens — wordt daardoor bewogen.",
+    summary: "Begeerte ligt in het lichaam en laait op; zintuigen brengen indrukken binnen. De ziel ? met haar gevoelens ? wordt daardoor bewogen.",
     quotes: [
       {
         text: "Zij zetelt in het vlees, en van daaruit laat zij zich gelden door een beroep te doen op de gezindheid, om die mee te trekken in haar begeerten.",
@@ -2175,7 +2175,7 @@ window.HT_TOPICS = {
   "gv-hart-overleg": {
     title: "Gevoel en hart",
     color: "#f87171",
-    summary: "In het hart wordt overlegd overeenkomstig gevoel en verstand. Het Woord kan die overleggingen beoordelen — als het met geloof in de geest wordt aangenomen.",
+    summary: "In het hart wordt overlegd overeenkomstig gevoel en verstand. Het Woord kan die overleggingen beoordelen ? als het met geloof in de geest wordt aangenomen.",
     quotes: [
       {
         text: "In het hart wordt overlegd overeenkomstig ons gevoel en verstand; maar als ik God ben gaan zoeken, open ik mij voor Gods woord.",
@@ -2196,7 +2196,7 @@ window.HT_TOPICS = {
   "gv-zielse": {
     title: "Zielse gevoelens",
     color: "#f87171",
-    summary: "Zielse gevoelens en opwekking zijn niet geloof. De zielse mens leeft in de natuurlijke sfeer van gevoel en verstand — niet in de Geest.",
+    summary: "Zielse gevoelens en opwekking zijn niet geloof. De zielse mens leeft in de natuurlijke sfeer van gevoel en verstand ? niet in de Geest.",
     quotes: [
       {
         text: "Geloof is geen zielse opwekking of menselijk verstand. Zielse gevoelens, opwekking en natuurlijk verstand zijn niet geloof.",
@@ -2217,7 +2217,7 @@ window.HT_TOPICS = {
   "gv-geestelijk": {
     title: "Gevoel geleid door Geest",
     color: "#34d399",
-    summary: "Als de Geest in de geest woont, kunnen verstand en gevoelens — die nog ziels kunnen zijn — geleidelijk verlicht worden. Dan leef je niet naar gevoelens, maar naar Gods wil.",
+    summary: "Als de Geest in de geest woont, kunnen verstand en gevoelens ? die nog ziels kunnen zijn ? geleidelijk verlicht worden. Dan leef je niet naar gevoelens, maar naar Gods wil.",
     quotes: [
       {
         text: "De Heilige Geest kan in zijn geest wonen en hem in staat stellen de werkingen van het lichaam te doden, hoewel zijn verstand en gevoelens nog ziels zijn.",
@@ -2238,7 +2238,7 @@ window.HT_TOPICS = {
   "gv-gezindheid": {
     title: "Gevoel en gezindheid",
     color: "#eab308",
-    summary: "Gevoelens trekken mee, maar de gezindheid beslist. Verzoeking wordt zonde pas als de gezindheid toegeeft — niet alleen omdat je iets voelt.",
+    summary: "Gevoelens trekken mee, maar de gezindheid beslist. Verzoeking wordt zonde pas als de gezindheid toegeeft ? niet alleen omdat je iets voelt.",
     quotes: [
       {
         text: "Dit is verzocht worden; maar er komt geen zonde eer de gezindheid aan de verzoeking toegeeft.",
@@ -2247,7 +2247,7 @@ window.HT_TOPICS = {
         date: "1927-07-01"
       }
     ],
-    refs: ["Rom. 6:12", "Jak. 1:14–15"]
+    refs: ["Rom. 6:12", "Jak. 1:14?15"]
   },
 
   "gv-uitgieten": {
@@ -2263,7 +2263,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Ja, het heeft zelfs het zielse leven in het gedachteleven en de gevoelens afgescheiden, zodat men kan onderkennen wat van de ziel komt en wat van de Geest.",
-        source: "Skjulte Skatter 1927-08 — Ziel en geest",
+        source: "Skjulte Skatter 1927-08 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-08-01"
       }
@@ -2274,7 +2274,7 @@ window.HT_TOPICS = {
   "gv-niet-geloof": {
     title: "Gevoel is niet geloof",
     color: "#a5b4fc",
-    summary: "Warme gevoelens bij een samenkomst zijn geen bewijs van geestelijk geloof. Geloof hoort de Geest — niet je stemming.",
+    summary: "Warme gevoelens bij een samenkomst zijn geen bewijs van geestelijk geloof. Geloof hoort de Geest ? niet je stemming.",
     quotes: [
       {
         text: "Het geloof hoort wat de Geest tot de gemeente zegt; het geloof heeft gezalfde ogen. Zonder geloof is het onmogelijk om God welgevallig te zijn.",
@@ -2295,7 +2295,7 @@ window.HT_TOPICS = {
   "gv-niet-vertrouwen": {
     title: "Niet op gevoel vertrouwen",
     color: "#fb923c",
-    summary: "Je kunt niet op je gevoelens vertrouwen — 'ik voel aan dat?' is geen maatstaf. Reinig je ziel van zulke gevoelens.",
+    summary: "Je kunt niet op je gevoelens vertrouwen ? 'ik voel aan dat?' is geen maatstaf. Reinig je ziel van zulke gevoelens.",
     quotes: [
       {
         text: "Je kunt b.v. niet op je gevoelens vertrouwen. 'Ik voel aan dat die-en-die mij niet mag.' Zulke gevoelens horen ook bij de wereld van leugen waarvan wij ons moeten reinigen.",
@@ -2310,7 +2310,7 @@ window.HT_TOPICS = {
   "gv-reinigen": {
     title: "Ziel reinigen",
     color: "#6ee7b7",
-    summary: "Reinig je ziel in gehoorzaamheid aan de waarheid — niet leven naar gevoelens, maar naar Gods Woord.",
+    summary: "Reinig je ziel in gehoorzaamheid aan de waarheid ? niet leven naar gevoelens, maar naar Gods Woord.",
     quotes: [
       {
         text: "Reinigt uw zielen in gehoorzaamheid aan de waarheid tot ongeveinsde broederliefde...",
@@ -2331,7 +2331,7 @@ window.HT_TOPICS = {
   "tg-overzicht": {
     title: "Wat is er speciaal aan de tong?",
     color: "#f97316",
-    summary: "De tong is een klein lichaamsdeel met enorme macht — Jakobus noemt haar een vuur en de wereld der ongerechtigheid. Ze besmet het hele lichaam. Wie in zijn spreken niet struikelt, is een volmaakt man die zelfs zijn gehele lichaam in toom kan houden.",
+    summary: "De tong is een klein lichaamsdeel met enorme macht ? Jakobus noemt haar een vuur en de wereld der ongerechtigheid. Ze besmet het hele lichaam. Wie in zijn spreken niet struikelt, is een volmaakt man die zelfs zijn gehele lichaam in toom kan houden.",
     quotes: [
       {
         text: "Ook de tong is een vuur, zij is de wereld der ongerechtigheid; de tong neemt haar plaats in onder onze leden als iets dat het gehele lichaam bezoedelt en het rad der geboorte in vlam zet, terwijl zij zelf in vlam gezet wordt door de hel.",
@@ -2346,13 +2346,13 @@ window.HT_TOPICS = {
         date: "1990-06-01"
       }
     ],
-    refs: ["Jak. 3:2–6", "Spr. 18:21"]
+    refs: ["Jak. 3:2?6", "Spr. 18:21"]
   },
 
   "tg-plaats": {
     title: "Waar woont de tong?",
     color: "#fb923c",
-    summary: "De tong is een lichaamsdeel — onder de leden. Ze is de uitgang waarmee wat in hart en ziel leeft, naar buiten komt. Geest en ziel ontmoeten het lichaam; de tong spreekt wat het bewustzijn toestaat.",
+    summary: "De tong is een lichaamsdeel ? onder de leden. Ze is de uitgang waarmee wat in hart en ziel leeft, naar buiten komt. Geest en ziel ontmoeten het lichaam; de tong spreekt wat het bewustzijn toestaat.",
     quotes: [
       {
         text: "De tong neemt haar plaats in onder onze leden als iets dat het gehele lichaam bezoedelt.",
@@ -2373,7 +2373,7 @@ window.HT_TOPICS = {
   "tg-vuur": {
     title: "Tong als vuur",
     color: "#ef4444",
-    summary: "Zie hoe weinig vuur een groot bos in brand steekt — zo is de tong. Een wereld van ongerechtigheid, door de hel in vlam gezet.",
+    summary: "Zie hoe weinig vuur een groot bos in brand steekt ? zo is de tong. Een wereld van ongerechtigheid, door de hel in vlam gezet.",
     quotes: [
       {
         text: "Zie, hoe weinig vuur een groot bos in brand steekt!",
@@ -2382,19 +2382,19 @@ window.HT_TOPICS = {
         date: "1990-06-01"
       },
       {
-        text: "Ook de tong is een vuur — een wereld van ongerechtigheid. Zo staat het met de tong onder onze lichaamsdelen. Ze besmet het hele lichaam, en zet onze levensloop vanaf het begin in vlam, en ze wordt zelf door de hel in vlam gezet.",
+        text: "Ook de tong is een vuur ? een wereld van ongerechtigheid. Zo staat het met de tong onder onze lichaamsdelen. Ze besmet het hele lichaam, en zet onze levensloop vanaf het begin in vlam, en ze wordt zelf door de hel in vlam gezet.",
         source: "Ook de tong is een vuur",
         author: "Gunnar Gangs?",
         date: "2025-03-01"
       }
     ],
-    refs: ["Jak. 3:5–6"]
+    refs: ["Jak. 3:5?6"]
   },
 
   "tg-hele-lichaam": {
     title: "Tong en heel lichaam",
     color: "#f97316",
-    summary: "Wie de tong in toom houdt, houdt het hele lichaam in toom. Omgekeerd kan één verkeerd woord grote schade aanrichten — als vuur in een bos.",
+    summary: "Wie de tong in toom houdt, houdt het hele lichaam in toom. Omgekeerd kan ??n verkeerd woord grote schade aanrichten ? als vuur in een bos.",
     quotes: [
       {
         text: "Wie in zijn spreken niet struikelt, is een volmaakt man, in staat zelfs zijn gehele lichaam in toom te houden.",
@@ -2415,7 +2415,7 @@ window.HT_TOPICS = {
   "tg-gedachten": {
     title: "Gedachten en tong",
     color: "#a78bfa",
-    summary: "In het hart zijn overleggingen; de tong geeft ze uit. Kwaadspreken en kwaad schrijven zijn hetzelfde — je laat het kwade je bewustzijn passeren.",
+    summary: "In het hart zijn overleggingen; de tong geeft ze uit. Kwaadspreken en kwaad schrijven zijn hetzelfde ? je laat het kwade je bewustzijn passeren.",
     quotes: [
       {
         text: "We kunnen onze tong weigeren zondige gedachten uit te spreken. Kwaadspreken en kwaad schrijven komt op hetzelfde neer, omdat men het kwade toestaat het bewustzijn te passeren, waarmee men de wet van God zou moeten dienen. Rom. 7:25.",
@@ -2436,7 +2436,7 @@ window.HT_TOPICS = {
   "tg-weigeren": {
     title: "Tong weigeren",
     color: "#34d399",
-    summary: "Je kunt de tong weigeren zondige gedachten uit te spreken — net als je gezindheid kan weerstaan. Niet alles wat je denkt of voelt mag naar buiten.",
+    summary: "Je kunt de tong weigeren zondige gedachten uit te spreken ? net als je gezindheid kan weerstaan. Niet alles wat je denkt of voelt mag naar buiten.",
     quotes: [
       {
         text: "We kunnen onze tong weigeren zondige gedachten uit te spreken.",
@@ -2457,10 +2457,10 @@ window.HT_TOPICS = {
   "tg-spreekt": {
     title: "Tong spreekt naar buiten",
     color: "#fb923c",
-    summary: "De tong is de uitgang van het innerlijke leven naar anderen. Woorden kunnen leven geven of verderf zaaien — scheppende kracht of vuur.",
+    summary: "De tong is de uitgang van het innerlijke leven naar anderen. Woorden kunnen leven geven of verderf zaaien ? scheppende kracht of vuur.",
     quotes: [
       {
-        text: "Gods woord heeft scheppende kracht. De woorden van Jezus werden ook de woorden van de discipelen — zij konden ze doorgeven als woorden Gods en met gezag spreken.",
+        text: "Gods woord heeft scheppende kracht. De woorden van Jezus werden ook de woorden van de discipelen ? zij konden ze doorgeven als woorden Gods en met gezag spreken.",
         source: "Gods woord, Jezus' woorden en onze woorden",
         author: "Sigurd Bratlie",
         date: "1974-11-01"
@@ -2478,7 +2478,7 @@ window.HT_TOPICS = {
   "tg-besmet": {
     title: "Tong besmet het lichaam",
     color: "#ef4444",
-    summary: "De tong besmet het gehele lichaam. Beschuldiging en kwaadspreken komen van een geest — de tong is wereld der ongerechtigheid.",
+    summary: "De tong besmet het gehele lichaam. Beschuldiging en kwaadspreken komen van een geest ? de tong is wereld der ongerechtigheid.",
     quotes: [
       {
         text: "Als we inzien dat beschuldiging afkomstig is van een geest, kunnen we ook Jakobus begrijpen als hij zegt: 'De tong is een vuur; zij is de wereld van ongerechtigheid.'",
@@ -2499,7 +2499,7 @@ window.HT_TOPICS = {
   "tg-kwaad": {
     title: "Kwaad spreken",
     color: "#f87171",
-    summary: "Kwaadspreken = kwaad schrijven. Het kwade mag het bewustzijn niet passeren. Tong door hel in vlam — haat en minachting.",
+    summary: "Kwaadspreken = kwaad schrijven. Het kwade mag het bewustzijn niet passeren. Tong door hel in vlam ? haat en minachting.",
     quotes: [
       {
         text: "Kwaadspreken en kwaad schrijven komt op hetzelfde neer, omdat men het kwade toestaat het bewustzijn te passeren, waarmee men de wet van God zou moeten dienen.",
@@ -2514,7 +2514,7 @@ window.HT_TOPICS = {
         date: "2025-03-01"
       }
     ],
-    refs: ["Jak. 3:9–10", "Ef. 4:31"]
+    refs: ["Jak. 3:9?10", "Ef. 4:31"]
   },
 
   "tg-goed": {
@@ -2541,7 +2541,7 @@ window.HT_TOPICS = {
   "tg-geest-kracht": {
     title: "Kracht van God voor de tong",
     color: "#60a5fa",
-    summary: "Geen mens kan de tong bedwingen — enorme kracht van God is nodig. Het beheersen van de tong is niet een aspect, maar de zaak zelf.",
+    summary: "Geen mens kan de tong bedwingen ? enorme kracht van God is nodig. Het beheersen van de tong is niet een aspect, maar de zaak zelf.",
     quotes: [
       {
         text: "Want voor het kunnen besturen van onze tong is zo'n enorme kracht van God nodig dat ik, als ik die van God gekregen heb, ook ten volle in staat ben om al zijn geboden te houden, welke dan ook. Het beheersen van onze tong is dus eigenlijk niet een aspect, maar de zaak zelf.",
@@ -2562,7 +2562,7 @@ window.HT_TOPICS = {
   "tg-mild": {
     title: "Milde tong",
     color: "#86efac",
-    summary: "Milde woorden komen uit een rein, goed hart. Een milde tong gaat mooie muziek te boven en kan beenderen breken — kracht van God in zachte woorden.",
+    summary: "Milde woorden komen uit een rein, goed hart. Een milde tong gaat mooie muziek te boven en kan beenderen breken ? kracht van God in zachte woorden.",
     quotes: [
       {
         text: "Fluit en harp brengen een lieflijke melodie voort, maar een milde tong gaat beide te boven. Een milde tong overtreft de mooiste muziek en kan veel meer uitrichten om de mensen te helpen.",
@@ -2589,7 +2589,7 @@ window.HT_TOPICS = {
   "tg-god-woorden": {
     title: "Woorden spreken als van God",
     color: "#a5b4fc",
-    summary: "In de gemeente spreekt men woorden als van God — niet menselijke woorden. Gods woord heeft scheppende kracht.",
+    summary: "In de gemeente spreekt men woorden als van God ? niet menselijke woorden. Gods woord heeft scheppende kracht.",
     quotes: [
       {
         text: "Daarom moet ieder die in de gemeente spreekt, woorden spreken als van God.",
@@ -2619,13 +2619,13 @@ window.HT_TOPICS = {
         date: "1947-10-01"
       }
     ],
-    refs: ["1 Pet. 3:10–11", "Ps. 34:12–13"]
+    refs: ["1 Pet. 3:10?11", "Ps. 34:12?13"]
   },
 
   "om-overzicht": {
     title: "Wat is ootmoed?",
     color: "#14b8a6",
-    summary: "Ootmoed is niet een jammerende toon of schijn voor mensen — het is Gods wil kiezen in plaats van de eigen wil. Elias Aslaksen noemt het de grondwet voor verlossing; Aksel Smith: de enige weg tot heiligmaking. God schrijft de wet der ootmoed in hart en verstand.",
+    summary: "Ootmoed is niet een jammerende toon of schijn voor mensen ? het is Gods wil kiezen in plaats van de eigen wil. Elias Aslaksen noemt het de grondwet voor verlossing; Aksel Smith: de enige weg tot heiligmaking. God schrijft de wet der ootmoed in hart en verstand.",
     quotes: [
       {
         text: "Ootmoed is de gemakkelijkste, de kortste, ja de enige weg tot alle verdere vooruitgang en heiligmaking. Jezus Christus, die de volmaaktheid zelf is, is ook in ootmoed en nederigheid ons ten voorbeeld.",
@@ -2652,7 +2652,7 @@ window.HT_TOPICS = {
   "om-wat": {
     title: "Erkennen en plaats innemen",
     color: "#14b8a6",
-    summary: "Ootmoed is niet fraaie volzinnen of een buiging voor mensen. Het is erkennen wat je bent en de plaats innemen die daarmee overeenkomt — voor God, in het binnenste van het hart.",
+    summary: "Ootmoed is niet fraaie volzinnen of een buiging voor mensen. Het is erkennen wat je bent en de plaats innemen die daarmee overeenkomt ? voor God, in het binnenste van het hart.",
     quotes: [
       {
         text: "Het zit niet in een jammerende toon of in fraaie volzinnen. Het is erkennen wat je bent en de plaats innemen die daarmee overeenkomt. Als een jongere zich b.v. onderwerpt aan een oudere, is hij nederig.",
@@ -2673,7 +2673,7 @@ window.HT_TOPICS = {
   "om-plaats": {
     title: "Waar zit ootmoed?",
     color: "#14b8a6",
-    summary: "Ootmoed woont in het hart en het verstand — niet als uiterlijke schijn. God schrijft de wet der ootmoed in het hart; door dat genadewerk worden we van trots en hoogmoed vrij. De keuze wordt gemaakt in de gezindheid/wil.",
+    summary: "Ootmoed woont in het hart en het verstand ? niet als uiterlijke schijn. God schrijft de wet der ootmoed in het hart; door dat genadewerk worden we van trots en hoogmoed vrij. De keuze wordt gemaakt in de gezindheid/wil.",
     quotes: [
       {
         text: "De wet der ootmoed schrijft God in 't hart en diep in ons verstand. Door dit genadewerk worden wij van trots en hoogmoed vrij.",
@@ -2694,7 +2694,7 @@ window.HT_TOPICS = {
   "om-hoogmoed": {
     title: "Tegenpool: hoogmoed",
     color: "#ef4444",
-    summary: "Hoogmoed is de tegenpool van ootmoed — eigen wil, trots, hoge gedachten over jezelf. De slang verzoekt tot hoogmoed: 'Gij zult als God zijn.' Alles wat we denken, zeggen en doen gaat door ootmoed of door hoogmoed.",
+    summary: "Hoogmoed is de tegenpool van ootmoed ? eigen wil, trots, hoge gedachten over jezelf. De slang verzoekt tot hoogmoed: 'Gij zult als God zijn.' Alles wat we denken, zeggen en doen gaat door ootmoed of door hoogmoed.",
     quotes: [
       {
         text: "Alles wat we denken, alles wat we zeggen, alles wat we doen, alles wat we verzuimen te doen komt of door ootmoed of door hoogmoed, trots, eigenwijsheid, hoge gedachten over onszelf.",
@@ -2721,7 +2721,7 @@ window.HT_TOPICS = {
   "om-valse": {
     title: "Geen valse nederigheid",
     color: "#f59e0b",
-    summary: "Er is gewilde of valse nederigheid — voor het aangezicht van mensen, om eer te krijgen (Kol. 2:18). Ware ootmoed heeft verbinding met het Hoofd Christus en richt zich naar wat Hij zegt, niet naar wat anderen denken.",
+    summary: "Er is gewilde of valse nederigheid ? voor het aangezicht van mensen, om eer te krijgen (Kol. 2:18). Ware ootmoed heeft verbinding met het Hoofd Christus en richt zich naar wat Hij zegt, niet naar wat anderen denken.",
     quotes: [
       {
         text: "In deze gewilde nederigheid ben je afhankelijk van wat anderen van je vinden en denken. De ware ootmoed heeft verbinding met het hoofd, Jezus Christus, en richt zich naar wat Hij zegt.",
@@ -2736,13 +2736,13 @@ window.HT_TOPICS = {
         date: "2010-05-01"
       }
     ],
-    refs: ["Kol. 2:18", "Matt. 6:1–2"]
+    refs: ["Kol. 2:18", "Matt. 6:1?2"]
   },
 
   "om-jezus": {
     title: "Voorbeeld: Jezus",
     color: "#14b8a6",
-    summary: "Jezus is in ootmoed en nederigheid ons voorbeeld. Hij had altijd de Vader voor ogen en deed in alles diens wil — tot de dood des kruises.",
+    summary: "Jezus is in ootmoed en nederigheid ons voorbeeld. Hij had altijd de Vader voor ogen en deed in alles diens wil ? tot de dood des kruises.",
     quotes: [
       {
         text: "En in zijn uiterlijk als een mens bevonden, heeft Hij Zich vernederd en is gehoorzaam geworden tot de dood, ja, tot de dood des kruises. Juist dit is ootmoed.",
@@ -2757,13 +2757,13 @@ window.HT_TOPICS = {
         date: "1930-12-01"
       }
     ],
-    refs: ["Fil. 2:5–8", "Joh. 5:30"]
+    refs: ["Fil. 2:5?8", "Joh. 5:30"]
   },
 
   "om-genade": {
     title: "Waarom belangrijk: genade en groei",
     color: "#22c55e",
-    summary: "God keert Zich tegen de hoogmoedigen, maar geeft genade aan de nederigen. Zonder ootmoed geen verdere heiligmaking, geen ware groei — met ootmoed opent de weg naar genade, vooruitgang en vrijheid van trots.",
+    summary: "God keert Zich tegen de hoogmoedigen, maar geeft genade aan de nederigen. Zonder ootmoed geen verdere heiligmaking, geen ware groei ? met ootmoed opent de weg naar genade, vooruitgang en vrijheid van trots.",
     quotes: [
       {
         text: "Hij echter geeft des te meer genade. Daarom zegt de Schrift: God keert Zich tegen de hoogmoedigen, maar aan de nederigen geeft Hij genade.",
@@ -2800,7 +2800,7 @@ window.HT_TOPICS = {
       },
       {
         text: "De ziel die een beeld van hemzelf is, is een slaaf van het vlees en het aardse leven geworden, in plaats van een dienaar van de Geest.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       }
@@ -2811,7 +2811,7 @@ window.HT_TOPICS = {
   "om-gezindheid": {
     title: "Keuze in de gezindheid",
     color: "#eab308",
-    summary: "Ootmoed en hoogmoed komen tot uiting in de gezindheid — de wil die instemt met God of met eigen begeerte. Hier kiest de hele mens: dienaar van de Geest of slaaf van trots.",
+    summary: "Ootmoed en hoogmoed komen tot uiting in de gezindheid ? de wil die instemt met God of met eigen begeerte. Hier kiest de hele mens: dienaar van de Geest of slaaf van trots.",
     quotes: [
       {
         text: "Alles wat we denken, alles wat we zeggen, alles wat we doen, alles wat we verzuimen te doen komt of door ootmoed of door hoogmoed, trots, eigenwijsheid, hoge gedachten over onszelf.",
@@ -2826,13 +2826,13 @@ window.HT_TOPICS = {
         date: "2020-06-01"
       }
     ],
-    refs: ["Rom. 8:6–7", "Fil. 2:5"]
+    refs: ["Rom. 8:6?7", "Fil. 2:5"]
   },
 
   "om-gods-wil": {
     title: "Gods wil boven de eigen wil",
     color: "#818cf8",
-    summary: "Ootmoed begint bij God: Zijn wil zien en kiezen. Jezus deed niet zijn eigen wil maar die des Vaders — dat is het tegenovergestelde van de slang-route.",
+    summary: "Ootmoed begint bij God: Zijn wil zien en kiezen. Jezus deed niet zijn eigen wil maar die des Vaders ? dat is het tegenovergestelde van de slang-route.",
     quotes: [
       {
         text: "Jezus Christus is in ootmoed en nederigheid ons ten voorbeeld. Hij had altijd de Vader voor ogen en deed in alles diens wil.",
@@ -2853,7 +2853,7 @@ window.HT_TOPICS = {
   "kr-overzicht": {
     title: "Wat is het kruis?",
     color: "#e11d48",
-    summary: "Twee kruisen: Christus aan het kruishout heeft de oude mens medegekruisigd (Rom. 6:6). Jezus' discipel neemt dagelijks zijn kruis op, verloochent zichzelf en volgt Hem (Luk. 9:23). Het kruis is de enige plaats waar het ik past — eigen wil genageld, Gods wil gedaan.",
+    summary: "Twee kruisen: Christus aan het kruishout heeft de oude mens medegekruisigd (Rom. 6:6). Jezus' discipel neemt dagelijks zijn kruis op, verloochent zichzelf en volgt Hem (Luk. 9:23). Het kruis is de enige plaats waar het ik past ? eigen wil genageld, Gods wil gedaan.",
     quotes: [
       {
         text: "Hij zeide tot allen: Indien iemand achter Mij wil komen, die verloochene zichzelf en neme dagelijks zijn kruis op en volge Mij.",
@@ -2880,7 +2880,7 @@ window.HT_TOPICS = {
   "kr-christus": {
     title: "Kruis van Christus",
     color: "#be123c",
-    summary: "Christus is voor onze zonden gestorven en de zonde is in het vlees veroordeeld (Rom. 8:3). Door geloof zijn wij met Christus gekruisigd — de oude mens medegekruisigd, opdat de zonde in het vlees teniet wordt gedaan.",
+    summary: "Christus is voor onze zonden gestorven en de zonde is in het vlees veroordeeld (Rom. 8:3). Door geloof zijn wij met Christus gekruisigd ? de oude mens medegekruisigd, opdat de zonde in het vlees teniet wordt gedaan.",
     quotes: [
       {
         text: "Dit weten wij immers, dat onze oude mens medegekruisigd is, opdat aan het lichaam der zonde zijn kracht zou ontnomen worden en wij niet langer slaven der zonde zouden zijn.",
@@ -2907,7 +2907,7 @@ window.HT_TOPICS = {
   "kr-oude-mens": {
     title: "Oude mens medegekruisigd",
     color: "#f43f5e",
-    summary: "De oude mens is met Christus gekruisigd — niet langer slaven der zonde. Als het vlees gekruisigd is, houdt strijd en onvrede uit eigen begeerte op (Jak. 4:1). Paulus was gekruisigd voor de wereld en het vlees met al zijn hartstochten.",
+    summary: "De oude mens is met Christus gekruisigd ? niet langer slaven der zonde. Als het vlees gekruisigd is, houdt strijd en onvrede uit eigen begeerte op (Jak. 4:1). Paulus was gekruisigd voor de wereld en het vlees met al zijn hartstochten.",
     quotes: [
       {
         text: "Op die manier is de oude mens met Hem gekruisigd en de zonde in het vlees wordt te niet gedaan, zodat we niet langer de zonde dienen.",
@@ -2934,7 +2934,7 @@ window.HT_TOPICS = {
   "kr-dagelijks": {
     title: "Dagelijks kruis opnemen",
     color: "#e11d48",
-    summary: "Jezus sprak over het kruis lang v↑↓r Golgotha. De discipel moet dagelijks zijn kruis opnemen — niet eenmalig, maar elke dag opnieuw. Dit is de smalle weg; weinigen vinden hem.",
+    summary: "Jezus sprak over het kruis lang v??r Golgotha. De discipel moet dagelijks zijn kruis opnemen ? niet eenmalig, maar elke dag opnieuw. Dit is de smalle weg; weinigen vinden hem.",
     quotes: [
       {
         text: "Hij zeide tot allen: Indien iemand achter Mij wil komen, die verloochene zichzelf en neme dagelijks zijn kruis op en volge Mij.",
@@ -2961,7 +2961,7 @@ window.HT_TOPICS = {
   "kr-wat": {
     title: "Wat is jouw kruis?",
     color: "#fb7185",
-    summary: "Jouw kruis is waar de eigen wil genageld wordt. Zolang wij in dit lichaam verkeren, is de grote vraag wat wij met onze eigen wil doen — die gaat tegen Gods wil in. Aan het kruis verlies je zelfleven en eigen wil.",
+    summary: "Jouw kruis is waar de eigen wil genageld wordt. Zolang wij in dit lichaam verkeren, is de grote vraag wat wij met onze eigen wil doen ? die gaat tegen Gods wil in. Aan het kruis verlies je zelfleven en eigen wil.",
     quotes: [
       {
         text: "Zolang wij hier in dit lichaam verkeren, is en blijft het de grote vraag wat wij met onze eigen wil doen. Daar hangt alles van af!",
@@ -2988,10 +2988,10 @@ window.HT_TOPICS = {
   "kr-verloochenen": {
     title: "Jezelf verloochenen",
     color: "#f97316",
-    summary: "Verloochenen is je eigen wil opgeven, offeren of kruisigen — je leven inzetten en verliezen om Christus' wil te doen. Het is niet vanzelfsprekend Jezus te volgen, ook al ben je bekeerd.",
+    summary: "Verloochenen is je eigen wil opgeven, offeren of kruisigen ? je leven inzetten en verliezen om Christus' wil te doen. Het is niet vanzelfsprekend Jezus te volgen, ook al ben je bekeerd.",
     quotes: [
       {
-        text: "Je eigen wil opgeven, verloochenen of offeren — dat wil dus zeggen: je leven inzetten, je leven verliezen.",
+        text: "Je eigen wil opgeven, verloochenen of offeren ? dat wil dus zeggen: je leven inzetten, je leven verliezen.",
         source: "15. Je leven verliezen om Christus' wil",
         author: "Elias Aslaksen",
         date: ""
@@ -3042,7 +3042,7 @@ window.HT_TOPICS = {
   "kr-waar": {
     title: "Waar draag je het kruis?",
     color: "#eab308",
-    summary: "Aan het kruis — in de gezindheid waar eigen wil en Gods wil botsen. In elke dagelijkse beproeving die je inhoud openbaart: tong, relaties, begeerte in de leden. Niet ergens anders dan in het echte leven.",
+    summary: "Aan het kruis ? in de gezindheid waar eigen wil en Gods wil botsen. In elke dagelijkse beproeving die je inhoud openbaart: tong, relaties, begeerte in de leden. Niet ergens anders dan in het echte leven.",
     quotes: [
       {
         text: "Doe ik mijn wil, dan verbreek ik Gods wil. Doe ik Gods wil, dan heb ik mijn eigen wil ook verbroken, of verloochend, of gekruisigd.",
@@ -3069,7 +3069,7 @@ window.HT_TOPICS = {
   "kr-hoe": {
     title: "Hoe draag je het kruis?",
     color: "#e11d48",
-    summary: "Door jezelf te verloochenen, dagelijks je kruis op te nemen en Jezus te volgen in zijn voetsporen. De waarheid onder ogen zien, gehoorzaam zijn, en naar de Geest wandelen — dan kan de eis der wet vervuld worden.",
+    summary: "Door jezelf te verloochenen, dagelijks je kruis op te nemen en Jezus te volgen in zijn voetsporen. De waarheid onder ogen zien, gehoorzaam zijn, en naar de Geest wandelen ? dan kan de eis der wet vervuld worden.",
     quotes: [
       {
         text: "Als wij onze eigen wil prijsgeven, ons verloochenen, ons kruis opnemen en Hem volgen, dan is Jezus Christus onze broeder, dan wandelen wij in de voetsporen waarin Hij gewandeld heeft.",
@@ -3123,7 +3123,7 @@ window.HT_TOPICS = {
   "kr-kruisweg": {
     title: "Heerlijke kruisweg",
     color: "#22c55e",
-    summary: "Jezus ging dagelijks voort op de kruisweg — een smalle weg. Wie bittere vruchten heeft geoogst door eigen wil, kan met vrijmoedigheid verder op deze weg. Paulus eerde het kruis en wilde niet roemen in iets anders.",
+    summary: "Jezus ging dagelijks voort op de kruisweg ? een smalle weg. Wie bittere vruchten heeft geoogst door eigen wil, kan met vrijmoedigheid verder op deze weg. Paulus eerde het kruis en wilde niet roemen in iets anders.",
     quotes: [
       {
         text: "Jezus is dagelijks voortgegaan op een weg en het was zijn innigst verlangen navolgers te krijgen op deze weg. Het is een smalle weg en weinigen zijn er die hem vinden.",
@@ -3150,7 +3150,7 @@ window.HT_TOPICS = {
   "kr-valse": {
     title: "Valse vrijheid zonder kruis",
     color: "#64748b",
-    summary: "Alle vrijheid, liefde en blijdschap zonder dagelijks kruis opnemen is vals. Men loopt om het kruis heen als zelfverloochening te zwaar is. Genade begenadigt, maar neemt het oordeel niet weg — de waarheid maakt vrij.",
+    summary: "Alle vrijheid, liefde en blijdschap zonder dagelijks kruis opnemen is vals. Men loopt om het kruis heen als zelfverloochening te zwaar is. Genade begenadigt, maar neemt het oordeel niet weg ? de waarheid maakt vrij.",
     quotes: [
       {
         text: "Alle vrijheid zonder het dagelijks opnemen van je kruis is valse vrijheid. Alle liefde zonder kruis is valse liefde. Alle blijdschap zonder kruis is valse blijdschap.",
@@ -3204,7 +3204,7 @@ window.HT_TOPICS = {
   "od-overzicht": {
     title: "Wat is het oordeel?",
     color: "#f59e0b",
-    summary: "Oordeel is Gods waarheid over zonde en je innerlijk leven: gehoord in het geweten, uitgeoefend door het licht en het Woord. Zelf oordelen is instemmen met Gods oordeel in je geweten — niet anderen beoordelen (1 Kor. 11:31; Mat. 7:1-2).",
+    summary: "Oordeel is Gods waarheid over zonde en je innerlijk leven: gehoord in het geweten, uitgeoefend door het licht en het Woord. Zelf oordelen is instemmen met Gods oordeel in je geweten ? niet anderen beoordelen (1 Kor. 11:31; Mat. 7:1-2).",
     quotes: [
       {
         text: "Op deze pasgeboren zonde rust Gods oordeel in het geweten. Dezelfde gezindheid die toegaf aan de begeerte, voelt nu het oordeel.",
@@ -3220,7 +3220,7 @@ window.HT_TOPICS = {
       },
       {
         text: "En is er al een oordeel geveld in je geweten, stem dan in met het oordeel, dan zal het rechtvaardig zijn.",
-        source: "1920 — Boek: Het boek Ruth (niet gepubliceerd in Skjulte Skatter)",
+        source: "1920 ? Boek: Het boek Ruth (niet gepubliceerd in Skjulte Skatter)",
         author: "Johan O. Smith",
         date: ""
       }
@@ -3231,7 +3231,7 @@ window.HT_TOPICS = {
   "od-geweten": {
     title: "Gods oordeel in het geweten",
     color: "#fb7185",
-    summary: "Het geweten is Gods oordeel over zonde dat je innerlijk voelt — gevormd door het licht dat je hebt. Bij zonde voel je het oordeel; ook als het ogenschijnlijk weg is, blijft Gods oordeel bestaan.",
+    summary: "Het geweten is Gods oordeel over zonde dat je innerlijk voelt ? gevormd door het licht dat je hebt. Bij zonde voel je het oordeel; ook als het ogenschijnlijk weg is, blijft Gods oordeel bestaan.",
     quotes: [
       {
         text: "Het geweten bestaat uit het licht dat iemand heeft.",
@@ -3246,7 +3246,7 @@ window.HT_TOPICS = {
         date: "1915-12-01"
       },
       {
-        text: "Het geweten woont in het hart — daar rust Gods oordeel over zonde.",
+        text: "Het geweten woont in het hart ? daar rust Gods oordeel over zonde.",
         source: "Wat is het geweten?",
         author: "Johan O. Smith",
         date: ""
@@ -3258,7 +3258,7 @@ window.HT_TOPICS = {
   "od-woord": {
     title: "Het Woord oordeelt het hart",
     color: "#818cf8",
-    summary: "Het levende Woord is scherper dan een zwaard en oordeelt de overleggingen en gedachten des harten — als het met geloof in de geest wordt aangenomen. Het hart ontvangt dit oordeel — echte bekering.",
+    summary: "Het levende Woord is scherper dan een zwaard en oordeelt de overleggingen en gedachten des harten ? als het met geloof in de geest wordt aangenomen. Het hart ontvangt dit oordeel ? echte bekering.",
     quotes: [
       {
         text: "Het woord van God is levend en krachtig en scherper dan enig tweesnijdend zwaard, en het dringt door tot op de scheiding van ziel en geest, van gewrichten en merg, en het oordeelt de overleggingen en gedachten van het hart.",
@@ -3306,7 +3306,7 @@ window.HT_TOPICS = {
   "od-zelf": {
     title: "Zelf oordelen",
     color: "#34d399",
-    summary: "Indien wij onszelf beoordelen, zullen wij niet onder het oordeel komen (1 Kor. 11:31). Zelf oordelen is instemmen met Gods oordeel in het geweten en je laten tuchtigen tot bekering — niet jezelf verdedigen.",
+    summary: "Indien wij onszelf beoordelen, zullen wij niet onder het oordeel komen (1 Kor. 11:31). Zelf oordelen is instemmen met Gods oordeel in het geweten en je laten tuchtigen tot bekering ? niet jezelf verdedigen.",
     quotes: [
       {
         text: "Indien wij echter onszelf beoordelen, zullen wij niet onder het oordeel komen.",
@@ -3316,7 +3316,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Sta je zuiver in je zaak, dan kun je tegen het oordeel roemen. En is er al een oordeel geveld in je geweten, stem dan in met het oordeel.",
-        source: "1920 — Boek: Het boek Ruth (niet gepubliceerd in Skjulte Skatter)",
+        source: "1920 ? Boek: Het boek Ruth (niet gepubliceerd in Skjulte Skatter)",
         author: "Johan O. Smith",
         date: ""
       },
@@ -3333,7 +3333,7 @@ window.HT_TOPICS = {
   "od-anderen": {
     title: "Niet anderen oordelen",
     color: "#ef4444",
-    summary: "Het is onrechtvaardig om anderen te oordelen in plaats van jezelf (Mat. 7:1-2; 1 Kor. 11:31). Ook onrecht in ons oordeel over anderen moet worden uitgeroeid — tong, beschuldiging, kwaadspreken.",
+    summary: "Het is onrechtvaardig om anderen te oordelen in plaats van jezelf (Mat. 7:1-2; 1 Kor. 11:31). Ook onrecht in ons oordeel over anderen moet worden uitgeroeid ? tong, beschuldiging, kwaadspreken.",
     quotes: [
       {
         text: "Het is onrechtvaardig om anderen te oordelen in plaats van jezelf. Mat. 7:1-2 en 1 Kor. 11:31-32.",
@@ -3348,7 +3348,7 @@ window.HT_TOPICS = {
         date: "2006-04-01"
       },
       {
-        text: "Beschuldiging en kwaadspreken komen van een geest — de tong is wereld der ongerechtigheid.",
+        text: "Beschuldiging en kwaadspreken komen van een geest ? de tong is wereld der ongerechtigheid.",
         source: "Beschuldigingen",
         author: "Aksel Smith",
         date: "1916-12-01"
@@ -3360,7 +3360,7 @@ window.HT_TOPICS = {
   "rv-overzicht": {
     title: "Gerechtvaardigd door geloof",
     color: "#60a5fa",
-    summary: "Wij worden gerechtvaardigd door geloof, zonder werken der wet (Rom. 3:28). Vergeving komt door Christus' volbrachte werk — niet door eigen prestaties. Daarna verlossing door zijn leven: werken des geloofs, waarbij de eis der wet in ons vervuld wordt (Rom. 8:4).",
+    summary: "Wij worden gerechtvaardigd door geloof, zonder werken der wet (Rom. 3:28). Vergeving komt door Christus' volbrachte werk ? niet door eigen prestaties. Daarna verlossing door zijn leven: werken des geloofs, waarbij de eis der wet in ons vervuld wordt (Rom. 8:4).",
     quotes: [
       {
         text: "Wij worden gerechtvaardigd door geloof, zonder werken der wet. Rom. 3:28. Door geloof in Jezus Christus krijgen wij vergeving voor onze zonden.",
@@ -3387,7 +3387,7 @@ window.HT_TOPICS = {
   "rv-rechtvaardiging": {
     title: "Gerechtvaardigd door zijn bloed",
     color: "#3b82f6",
-    summary: "Gerechtvaardigd worden = vergeving en verzoening door de dood van Gods Zoon, toen wij nog vijanden waren. Het volbrachte werk van Christus — niet ons eigen werk uit het vlees.",
+    summary: "Gerechtvaardigd worden = vergeving en verzoening door de dood van Gods Zoon, toen wij nog vijanden waren. Het volbrachte werk van Christus ? niet ons eigen werk uit het vlees.",
     quotes: [
       {
         text: "Het is niet mijn werken, maar het volbrachte werk van Jezus Christus en zijn verzoenend sterven op Golgotha, dat mij vergeving van zonden schenkt.",
@@ -3414,7 +3414,7 @@ window.HT_TOPICS = {
   "rv-verlossing": {
     title: "Verlost door zijn leven",
     color: "#22d3ee",
-    summary: "Na verzoening volgt verlossing door het leven van Jezus: Hij leeft door de Geest in ons en bewerkt gehoorzaamheid. Vergeving is geen weg — Jezus is de Weg. Wandelen in het licht na vergeving.",
+    summary: "Na verzoening volgt verlossing door het leven van Jezus: Hij leeft door de Geest in ons en bewerkt gehoorzaamheid. Vergeving is geen weg ? Jezus is de Weg. Wandelen in het licht na vergeving.",
     quotes: [
       {
         text: "Hoeveel meer zullen wij dan niet, nu wij verzoend zijn, verlost worden door zijn leven. Rom. 5:10.",
@@ -3441,7 +3441,7 @@ window.HT_TOPICS = {
   "rv-werken-wet": {
     title: "Werken der wet",
     color: "#f87171",
-    summary: "Werken der wet komen voort als ik in mijn vlees God wil behagen met mijn werken. Religieuze mensen leven in de schaduw — ze zien in Jezus' offer alleen bevrijding van schuld, zonder lichaam om echte werken te doen.",
+    summary: "Werken der wet komen voort als ik in mijn vlees God wil behagen met mijn werken. Religieuze mensen leven in de schaduw ? ze zien in Jezus' offer alleen bevrijding van schuld, zonder lichaam om echte werken te doen.",
     quotes: [
       {
         text: "Werken der wet komen daaruit voort, dat ik in mijn vlees God wil behagen met mijn werken. De wet heeft niets van doen met geloof.",
@@ -3457,7 +3457,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Natuurlijk de opvatting dat iemand gerechtvaardigd wordt door werken der wet. Als dat zo was, dan moest je het oude leven alleen maar oplappen.",
-        source: "Wettisch — wetteloos",
+        source: "Wettisch ? wetteloos",
         author: "K?re J. Smith",
         date: ""
       }
@@ -3468,7 +3468,7 @@ window.HT_TOPICS = {
   "rv-werken-geloof": {
     title: "Werken des geloofs",
     color: "#4ade80",
-    summary: "Werken des geloofs doe ik als ik hulpeloos ben en overgeef om te doen wat God in mij bewerkt. Dit worden geen werken der wet maar werken uit het geloof — de eis der wet vervuld in ons die naar de Geest wandelen.",
+    summary: "Werken des geloofs doe ik als ik hulpeloos ben en overgeef om te doen wat God in mij bewerkt. Dit worden geen werken der wet maar werken uit het geloof ? de eis der wet vervuld in ons die naar de Geest wandelen.",
     quotes: [
       {
         text: "Werken des geloofs doe ik, als ik volledig hulpeloos ben, en mij dan overgeef om alleen maar te doen wat God in mij bewerkt.",
@@ -3520,9 +3520,9 @@ window.HT_TOPICS = {
   },
 
   "rv-wet-schaduw": {
-    title: "Moza?sche wet — schaduw",
+    title: "Moza?sche wet ? schaduw",
     color: "#94a3b8",
-    summary: "De wet van Mozes is een schaduw der toekomstige goederen, niet de gestalte zelf (Hebr. 10:1). Tuchtmeester tot Christus. Offerdienst weggehaald — ingesteld: het doen van Gods wil.",
+    summary: "De wet van Mozes is een schaduw der toekomstige goederen, niet de gestalte zelf (Hebr. 10:1). Tuchtmeester tot Christus. Offerdienst weggehaald ? ingesteld: het doen van Gods wil.",
     quotes: [
       {
         text: "Want daar de wet slechts een schaduw heeft der toekomstige goederen, niet de gestalte der dingen zelf, is zij nimmer in staat degenen die toetreden te volmaken.",
@@ -3543,7 +3543,7 @@ window.HT_TOPICS = {
   "rv-wet-hart": {
     title: "Wet in hart en verstand",
     color: "#f472b6",
-    summary: "God schrijft zijn wet in het hart en verstand. Het geweten bestaat uit het licht dat je hebt. Door de Geest houd je die wet — dan zijn het werken des geloofs, geen werken der wet uit het vlees.",
+    summary: "God schrijft zijn wet in het hart en verstand. Het geweten bestaat uit het licht dat je hebt. Door de Geest houd je die wet ? dan zijn het werken des geloofs, geen werken der wet uit het vlees.",
     quotes: [
       {
         text: "Om die wet te houden, die is geschreven in ons hart en verstand.",
@@ -3564,7 +3564,7 @@ window.HT_TOPICS = {
   "rv-wet-leden": {
     title: "Wet der zonde in de leden",
     color: "#f97316",
-    summary: "Paulus zag een andere wet in zijn leden — de wet der zonde. Die strijdt tegen Gods wil. Door geloof overwint de wet van het geloof de wet der zonde en des doods.",
+    summary: "Paulus zag een andere wet in zijn leden ? de wet der zonde. Die strijdt tegen Gods wil. Door geloof overwint de wet van het geloof de wet der zonde en des doods.",
     quotes: [
       {
         text: "Paulus diende Gods wet met zijn verstand; maar hij zag een andere wet in zijn leden, Rom. 7:23.",
@@ -3585,7 +3585,7 @@ window.HT_TOPICS = {
   "rv-wet-geest": {
     title: "Wet van de Geest des levens",
     color: "#a855f7",
-    summary: "De wet van de Geest des levens maakt vrij van de wet der zonde en des doods. Wie naar de Geest wandelt, vervult de eis der wet — gerechtigheid die werkelijkheid wordt, niet alleen toegerekend.",
+    summary: "De wet van de Geest des levens maakt vrij van de wet der zonde en des doods. Wie naar de Geest wandelt, vervult de eis der wet ? gerechtigheid die werkelijkheid wordt, niet alleen toegerekend.",
     quotes: [
       {
         text: "Want de wet van de Geest des levens heeft u in Christus Jezus vrijgemaakt van de wet der zonde en des doods.",
@@ -3606,7 +3606,7 @@ window.HT_TOPICS = {
   "rv-abraham": {
     title: "Geloof van Abraham",
     color: "#38bdf8",
-    summary: "Abraham geloofde Gods belofte van een zoon uit zijn eigen lichaam — niet in eigen mogelijkheden maar in God die de doden levend maakt. Het was rechtvaardig te geloven; het werd hem tot gerechtigheid gerekend — en was werkelijk rechtvaardig.",
+    summary: "Abraham geloofde Gods belofte van een zoon uit zijn eigen lichaam ? niet in eigen mogelijkheden maar in God die de doden levend maakt. Het was rechtvaardig te geloven; het werd hem tot gerechtigheid gerekend ? en was werkelijk rechtvaardig.",
     quotes: [
       {
         text: "Abraham geloofde God en het werd hem tot gerechtigheid gerekend.",
@@ -3631,9 +3631,9 @@ window.HT_TOPICS = {
   },
 
   "rv-abraham-isaak": {
-    title: "Abraham en Isaak — geloof volmaakt",
+    title: "Abraham en Isaak ? geloof volmaakt",
     color: "#2dd4bf",
-    summary: "Gen. 15: gerechtvaardigd door geloof zonder werken. Gen. 22: geloof werkt met werken — Isaak offeren, ziel uitgieten. Jakobus: Abraham werd uit werken gerechtvaardigd toen hij Isaak offerde — geloof werd volmaakt.",
+    summary: "Gen. 15: gerechtvaardigd door geloof zonder werken. Gen. 22: geloof werkt met werken ? Isaak offeren, ziel uitgieten. Jakobus: Abraham werd uit werken gerechtvaardigd toen hij Isaak offerde ? geloof werd volmaakt.",
     quotes: [
       {
         text: "Allen hebben wij een Isaak te offeren door gehoorzaamheid des geloofs.",
@@ -3660,7 +3660,7 @@ window.HT_TOPICS = {
   "wp-overzicht": {
     title: "De wijnpers treden",
     color: "#c026d3",
-    summary: "Jezus trad de wijnpers alleen — niemand kon Hem op het laatste stuk volgen. Ieder moet zijn eigen wijnpers alleen treden: als enkeling het lijden van Christus doorstaan, gelijkvormig worden aan zijn dood, en opstaan.",
+    summary: "Jezus trad de wijnpers alleen ? niemand kon Hem op het laatste stuk volgen. Ieder moet zijn eigen wijnpers alleen treden: als enkeling het lijden van Christus doorstaan, gelijkvormig worden aan zijn dood, en opstaan.",
     quotes: [
       {
         text: "Hij trad de wijnpers alleen en niemand was bij Hem.",
@@ -3687,7 +3687,7 @@ window.HT_TOPICS = {
   "wp-alleen": {
     title: "Alleen met Jezus",
     color: "#d946ef",
-    summary: "Abraham liet de knechten achter — alleen hij en Isaak gingen verder. Zo moest Christus de wijnpers alleen treden. Gemeenschap is altijd: de enkeling en Jezus — zoals Jezus en de Vader.",
+    summary: "Abraham liet de knechten achter ? alleen hij en Isaak gingen verder. Zo moest Christus de wijnpers alleen treden. Gemeenschap is altijd: de enkeling en Jezus ? zoals Jezus en de Vader.",
     quotes: [
       {
         text: "Hij moest de wijnpers alleen treden. Datzelfde moesten ook Abraham en Isaak doen, die een beeld zijn van de Vader en de Zoon.",
@@ -3714,7 +3714,7 @@ window.HT_TOPICS = {
   "wp-isaak": {
     title: "Jouw Isaak offeren",
     color: "#e879f9",
-    summary: "Allen hebben wij een Isaak te offeren door gehoorzaamheid des geloofs — wat God in jouw leven aanwijst. Abraham en Isaak kwamen overeen bij het altaar; zo ook Vader en Zoon.",
+    summary: "Allen hebben wij een Isaak te offeren door gehoorzaamheid des geloofs ? wat God in jouw leven aanwijst. Abraham en Isaak kwamen overeen bij het altaar; zo ook Vader en Zoon.",
     quotes: [
       {
         text: "Allen hebben wij een Isaak te offeren door gehoorzaamheid des geloofs.",
@@ -3741,7 +3741,7 @@ window.HT_TOPICS = {
   "wp-ziel": {
     title: "Ziel uitgieten",
     color: "#a21caf",
-    summary: "Uw ziel uitgieten is uw Isaak offeren — dan krijgt u sterken als buit (Jes. 53:12). Niet je zelfleven behouden maar offeren waar God om vraagt.",
+    summary: "Uw ziel uitgieten is uw Isaak offeren ? dan krijgt u sterken als buit (Jes. 53:12). Niet je zelfleven behouden maar offeren waar God om vraagt.",
     quotes: [
       {
         text: "Uw ziel uitgieten, is uw Isaak offeren, en dan krijgt u sterken als buit.",
@@ -3762,7 +3762,7 @@ window.HT_TOPICS = {
   "wp-waar": {
     title: "Waar tred je de wijnpers in",
     color: "#eab308",
-    summary: "In gezindheid en hart waar eigen wil en Gods wil botsen — in elke dagelijkse beproeving die je inhoud openbaart. In het lichaam: het stervens- en lijdensproces. Niet ergens anders dan in je echte leven.",
+    summary: "In gezindheid en hart waar eigen wil en Gods wil botsen ? in elke dagelijkse beproeving die je inhoud openbaart. In het lichaam: het stervens- en lijdensproces. Niet ergens anders dan in je echte leven.",
     quotes: [
       {
         text: "Dagelijks overkomen ons grotere of kleinere beproevingen, die onze inhoud openbaar maken.",
@@ -3787,7 +3787,7 @@ window.HT_TOPICS = {
   },
 
   "wp-hoe": {
-    title: "Hoe — niet mentaal vechten",
+    title: "Hoe ? niet mentaal vechten",
     color: "#7c3aed",
     summary: "Niet een techniek of fantasie-strijd in je hoofd, maar gehoorzaamheid des geloofs: Gods wil doen koste wat het kost, vleselijke begeerten verloochenen, het lijden met Christus doorstaan tot je ermee afgerekend hebt.",
     quotes: [
@@ -3816,7 +3816,7 @@ window.HT_TOPICS = {
   "wp-niet": {
     title: "Geen mentale strijd",
     color: "#64748b",
-    summary: "De wijnpers is geen innerlijk worstelen met beelden of technieken. Er is wel strijd in hart en gezindheid — maar de keuze is praktisch: eigen wil of Gods wil, in tong, relaties, begeerte — niet in fantasie.",
+    summary: "De wijnpers is geen innerlijk worstelen met beelden of technieken. Er is wel strijd in hart en gezindheid ? maar de keuze is praktisch: eigen wil of Gods wil, in tong, relaties, begeerte ? niet in fantasie.",
     quotes: [
       {
         text: "De zielse mens kan niet anders dan zijn natuurlijke verstand gebruiken. Hij kan niet verder doordringen dan het verstand hem toelaat.",
@@ -3837,7 +3837,7 @@ window.HT_TOPICS = {
   "wp-vrucht": {
     title: "Vruchten verbrijzeld",
     color: "#22c55e",
-    summary: "Vruchten van de Geest moeten in de wijnpers worden verbrijzeld — daarvan genieten we niet hier; aan gene zijde ontvangen we nieuwe wijn. Als het Woord hard lijkt, gaan goede vruchten de wijnpers.",
+    summary: "Vruchten van de Geest moeten in de wijnpers worden verbrijzeld ? daarvan genieten we niet hier; aan gene zijde ontvangen we nieuwe wijn. Als het Woord hard lijkt, gaan goede vruchten de wijnpers.",
     quotes: [
       {
         text: "Zo is het ook met de vruchten van de Geest; die moeten in de wijnpers worden verbrijzeld. Daarvan mogen we niet hier genieten; maar aan gene zijde ontvangen we die terug als nieuwe wijn.",
@@ -3968,7 +3968,7 @@ window.HT_TOPICS = {
     summary: "Bekering is meer dan spijt: het hart ontvangt het oordeel van het Woord. Echte bekering keert om van zonde en richt de gezindheid naar God.",
     quotes: [
       {
-        text: "Het hart ontvangt het oordeel van het Woord — echte bekering.",
+        text: "Het hart ontvangt het oordeel van het Woord ? echte bekering.",
         source: "De val van de mens",
         author: "Johan O. Smith",
         date: "1927-01-01"
@@ -4005,9 +4005,9 @@ window.HT_TOPICS = {
   },
 
   "dw-doop": {
-    title: "Stap 4: Doop — lichaam des vlezes afgelegd",
+    title: "Stap 4: Doop ? lichaam des vlezes afgelegd",
     color: "#38bdf8",
-    summary: "In de doop wordt het lichaam des vlezes afgelegd in de besnijdenis van Christus — met Hem begraven. Dit is geen uiterlijk teken alleen, maar het afleggen van het oude werktuig voor de zonde.",
+    summary: "In de doop wordt het lichaam des vlezes afgelegd in de besnijdenis van Christus ? met Hem begraven. Dit is geen uiterlijk teken alleen, maar het afleggen van het oude werktuig voor de zonde.",
     quotes: [
       {
         text: "In Kol. 2 staat over de doop: In Hem zijt gij ook met een besnijdenis, die geen werk van mensenhanden is, besneden door het afleggen van het lichaam des vlezes, in de besnijdenis van Christus, daar gij met Hem begraven zijt in de doop.",
@@ -4049,10 +4049,10 @@ window.HT_TOPICS = {
   "dw-overwinning": {
     title: "Stap 6: Overwinning",
     color: "#34d399",
-    summary: "Overwinning is dat Christus door de Heilige Geest zegeviert over het ik. Door geloof overwinnen we de wereld en de begeerten in het lichaam — in voortdurende overwinning over bewuste zonde.",
+    summary: "Overwinning is dat Christus door de Heilige Geest zegeviert over het ik. Door geloof overwinnen we de wereld en de begeerten in het lichaam ? in voortdurende overwinning over bewuste zonde.",
     quotes: [
       {
-        text: "Christus te laten zegevieren over het 'ik', door de Heilige Geest — dat is overwinning!",
+        text: "Christus te laten zegevieren over het 'ik', door de Heilige Geest ? dat is overwinning!",
         source: "Overwinning", author: "Sigurd Bratlie", date: "1963-10-01"
       },
       {
@@ -4074,7 +4074,7 @@ window.HT_TOPICS = {
   "dw-heiligmaking": {
     title: "Stap 7: Heiligmaking",
     color: "#a78bfa",
-    summary: "Heiligmaking is het doden van de zonde waarover je licht krijgt, door te wandelen in de Geest op de nieuwe weg. Van licht tot licht, van kracht tot kracht — voortdurend aan Christus' dood overgeleverd.",
+    summary: "Heiligmaking is het doden van de zonde waarover je licht krijgt, door te wandelen in de Geest op de nieuwe weg. Van licht tot licht, van kracht tot kracht ? voortdurend aan Christus' dood overgeleverd.",
     quotes: [
       {
         text: "Heiligmaking is het doden van de zonde, waarover je licht krijgt door naar de Geest te wandelen op de nieuwe en levende weg door het vlees.",
@@ -4089,7 +4089,7 @@ window.HT_TOPICS = {
         date: ""
       },
       {
-        text: "Zolang onze heiligmaking nog niet voltooid is — zolang de discipel niet is geworden als de meester, Jezus — moeten we van licht tot licht gaan en dan worden we geleidelijk gereinigd in het bloed van Jezus.",
+        text: "Zolang onze heiligmaking nog niet voltooid is ? zolang de discipel niet is geworden als de meester, Jezus ? moeten we van licht tot licht gaan en dan worden we geleidelijk gereinigd in het bloed van Jezus.",
         source: "Hoe gaat de bruid tewerk?",
         author: "Sigurd Bratlie",
         date: ""
@@ -4101,7 +4101,7 @@ window.HT_TOPICS = {
   "dw-doel": {
     title: "Einddoel: gelijk aan Christus",
     color: "#fcd34d",
-    summary: "Het doel van de weg is dat de discipel wordt als zijn Meester — mannelijke rijpheid in Christus, volmaakte discipel. Dit is Gods voornemen: gelijkvormig aan Zijn Zoon.",
+    summary: "Het doel van de weg is dat de discipel wordt als zijn Meester ? mannelijke rijpheid in Christus, volmaakte discipel. Dit is Gods voornemen: gelijkvormig aan Zijn Zoon.",
     quotes: [
       {
         text: "Een discipel staat niet boven zijn meester, maar al wie volleerd is zal zijn als zijn meester.",
@@ -4125,7 +4125,7 @@ window.HT_TOPICS = {
   "dw-dagelijks": {
     title: "Dagelijkse praktijk op de weg",
     color: "#fbbf24",
-    summary: "Hidden Treasures beschrijft geen vast ochtendritueel, maar drie dingen die elke dag samen horen: bidden uit nood, het Woord vasthouden als het je raakt, en gehoorzaam zijn in echte situaties — niet visualiseren of mentaal vechten.",
+    summary: "Hidden Treasures beschrijft geen vast ochtendritueel, maar drie dingen die elke dag samen horen: bidden uit nood, het Woord vasthouden als het je raakt, en gehoorzaam zijn in echte situaties ? niet visualiseren of mentaal vechten.",
     quotes: [
       {
         text: "De weg van het gebed is de weg des levens, want 'een ieder, die bidt, ontvangt.' Lucas 11:5-13 en 18:1-8.",
@@ -4144,9 +4144,9 @@ window.HT_TOPICS = {
   },
 
   "dw-gebed": {
-    title: "Gebed — uit nood, niet lege woorden",
+    title: "Gebed ? uit nood, niet lege woorden",
     color: "#67e8f9",
-    summary: "Bidden is de weg des levens. Bid om de Heilige Geest en om wijsheid. Echt gebed komt uit nood en honger in het hart — niet opgedreunde, lege woorden.",
+    summary: "Bidden is de weg des levens. Bid om de Heilige Geest en om wijsheid. Echt gebed komt uit nood en honger in het hart ? niet opgedreunde, lege woorden.",
     quotes: [
       {
         text: "De weg van het gebed is de weg des levens, want 'een ieder, die bidt, ontvangt.'",
@@ -4167,7 +4167,7 @@ window.HT_TOPICS = {
   "dw-woord": {
     title: "Woord vasthouden",
     color: "#c4b5fd",
-    summary: "Het Woord grijpen en vasthouden op het moment dat het je raakt — dat geeft richting in gedachten en situaties. Geloof komt door het horen van Gods Woord.",
+    summary: "Het Woord grijpen en vasthouden op het moment dat het je raakt ? dat geeft richting in gedachten en situaties. Geloof komt door het horen van Gods Woord.",
     quotes: [
       {
         text: "Het Woord dringt door tot het hart en moet er met geloof in samensmelten.",
@@ -4188,7 +4188,7 @@ window.HT_TOPICS = {
   "dw-gehoorzaam": {
     title: "Gehoorzaamheid in het echte leven",
     color: "#6ee7b7",
-    summary: "Gehoorzaamheid des geloofs is de weg: nee zeggen tegen de eigen wil en ja tegen Gods wil — in echte situaties, niet in fantasie of mentale strijd.",
+    summary: "Gehoorzaamheid des geloofs is de weg: nee zeggen tegen de eigen wil en ja tegen Gods wil ? in echte situaties, niet in fantasie of mentale strijd.",
     quotes: [
       {
         text: "Door de gehoorzaamheid des geloofs onderwerpen wij onszelf aan de wet Gods in ons hart.",
@@ -4209,7 +4209,7 @@ window.HT_TOPICS = {
   "dw-licht": {
     title: "Van licht tot licht",
     color: "#fde68a",
-    summary: "Op de nieuwe weg ga je van licht tot licht — geleidelijk gereinigd in het bloed van Jezus. Zorg dat wat licht in je is, geen duisternis wordt.",
+    summary: "Op de nieuwe weg ga je van licht tot licht ? geleidelijk gereinigd in het bloed van Jezus. Zorg dat wat licht in je is, geen duisternis wordt.",
     quotes: [
       {
         text: "Ziet dan toe dat wat licht in u is, niet duisternis zij. Luc. 11:35.",
@@ -4263,7 +4263,7 @@ window.HT_TOPICS = {
   "bp-vs-verzoeking": {
     title: "Beproeving vs verzoeking",
     color: "#f59e0b",
-    summary: "Verzoeking is de innerlijke drang in de ziel (verstand, fantasie, hart) — nog geen zonde v↑↓r instemming. Beproeving is de situatie in het echte leven die test of je geloof standhoudt. Verzoeking is beproeving van ons geloof.",
+    summary: "Verzoeking is de innerlijke drang in de ziel (verstand, fantasie, hart) ? nog geen zonde v??r instemming. Beproeving is de situatie in het echte leven die test of je geloof standhoudt. Verzoeking is beproeving van ons geloof.",
     quotes: [
       {
         text: "Houdt het voor enkel vreugde, mijn broeders, wanneer gij in velerlei verzoekingen valt, want gij weet dat de beproefdheid van uw geloof volharding uitwerkt. Verzoeking is beproeving van ons geloof.",
@@ -4272,7 +4272,7 @@ window.HT_TOPICS = {
         date: "1946-05-01"
       },
       {
-        text: "Verzoeking is nog geen zonde — pas als de gezindheid toegeeft, volgt zondige werking.",
+        text: "Verzoeking is nog geen zonde ? pas als de gezindheid toegeeft, volgt zondige werking.",
         source: "De val van de mens",
         author: "Johan O. Smith",
         date: "1927-01-01"
@@ -4287,7 +4287,7 @@ window.HT_TOPICS = {
     summary: "Beproeving is een proef in het echte leven: mensen, omstandigheden, teleurstelling, onrecht, ziekte, vernedering. Het vuur der beproeving toont wat er in je leeft wanneer druk komt.",
     quotes: [
       {
-        text: "Ik weet, geliefde broer, dat de beproeving — het vuur der beproeving — jou te wachten staat; wees niet versaagd wanneer je door Hem getuchtigd wordt, want Hij kastijdt iedere zoon die Hij aanneemt.",
+        text: "Ik weet, geliefde broer, dat de beproeving ? het vuur der beproeving ? jou te wachten staat; wees niet versaagd wanneer je door Hem getuchtigd wordt, want Hij kastijdt iedere zoon die Hij aanneemt.",
         source: "Horten, 9 november 1905",
         author: "Johan O. Smith",
         date: "1905-11-09"
@@ -4305,7 +4305,7 @@ window.HT_TOPICS = {
   "bp-waar": {
     title: "Waar vindt beproeving plaats?",
     color: "#eab308",
-    summary: "In gezindheid en hart, in elke dagelijkse situatie: tong, relaties, werk, leden. Niet ergens anders dan in je echte leven — daar draag je je kruis.",
+    summary: "In gezindheid en hart, in elke dagelijkse situatie: tong, relaties, werk, leden. Niet ergens anders dan in je echte leven ? daar draag je je kruis.",
     quotes: [
       {
         text: "Dagelijks overkomen ons grotere of kleinere beproevingen, die onze inhoud openbaar maken.",
@@ -4332,7 +4332,7 @@ window.HT_TOPICS = {
   "bp-inhoud": {
     title: "Inhoud wordt openbaar",
     color: "#f97316",
-    summary: "In beproeving zie je wat er werkelijk in je leeft: het ik of Christus. De dag der beproeving openbaart of je oprecht bent — niet alleen wat je zegt te geloven.",
+    summary: "In beproeving zie je wat er werkelijk in je leeft: het ik of Christus. De dag der beproeving openbaart of je oprecht bent ? niet alleen wat je zegt te geloven.",
     quotes: [
       {
         text: "Dagelijks overkomen ons grotere of kleinere beproevingen, die onze inhoud openbaar maken. Dan komt of ons eigen leven, het ik, of het leven van Jezus, de deugden, aan het licht.",
@@ -4353,7 +4353,7 @@ window.HT_TOPICS = {
   "bp-ik": {
     title: "Het ik komt aan het licht",
     color: "#f87171",
-    summary: "Als het ik regeert, zie je trots, ongeduld, eigen wil, klagen. Dan is het alsof het Woord weggeblazen is en gedraag je je als gewone mensen — verbinding met God valt weg.",
+    summary: "Als het ik regeert, zie je trots, ongeduld, eigen wil, klagen. Dan is het alsof het Woord weggeblazen is en gedraag je je als gewone mensen ? verbinding met God valt weg.",
     quotes: [
       {
         text: "Als de beproeving komt, is het alsof ze nog nooit iets hebben gehoord en niets weten. Dan is het net alsof het Woord van God is weggeblazen, en de zonde in het vlees werkt zo krachtig, dat ze zich gedragen als gewone mensen.",
@@ -4374,7 +4374,7 @@ window.HT_TOPICS = {
   "bp-christus": {
     title: "Christus komt aan het licht",
     color: "#34d399",
-    summary: "Als Christus door de Geest regeert, zie je Zijn deugden: liefde, geduld, ootmoed, dankbaarheid — ook bij belediging en teleurstelling. Dan grijp je het eeuwige leven.",
+    summary: "Als Christus door de Geest regeert, zie je Zijn deugden: liefde, geduld, ootmoed, dankbaarheid ? ook bij belediging en teleurstelling. Dan grijp je het eeuwige leven.",
     quotes: [
       {
         text: "Dan komt of ons eigen leven, het ik, of het leven van Jezus, de deugden, aan het licht.",
@@ -4401,7 +4401,7 @@ window.HT_TOPICS = {
   "bp-geloof": {
     title: "Beproeving van het geloof",
     color: "#a78bfa",
-    summary: "Verzoeking is beproeving van ons geloof. Beproefd worden is grote genade — de proef werkt volharding uit. Geloof dat standhoudt wordt tot lof en eer bij Christus' openbaring.",
+    summary: "Verzoeking is beproeving van ons geloof. Beproefd worden is grote genade ? de proef werkt volharding uit. Geloof dat standhoudt wordt tot lof en eer bij Christus' openbaring.",
     quotes: [
       {
         text: "Verzoeking is beproeving van ons geloof. Beproefd worden is grote genade van God.",
@@ -4455,7 +4455,7 @@ window.HT_TOPICS = {
   "bp-doorstaan": {
     title: "Doorstaan in beproeving",
     color: "#22d3ee",
-    summary: "Doorstaan betekent: eigen wil verloochenen, kruis opnemen, Gods wil doen in de situatie. Houd het voor vreugde — na de proef schiet je minder tekort op de weg naar volkomenheid.",
+    summary: "Doorstaan betekent: eigen wil verloochenen, kruis opnemen, Gods wil doen in de situatie. Houd het voor vreugde ? na de proef schiet je minder tekort op de weg naar volkomenheid.",
     quotes: [
       {
         text: "Een nieuwe beproeving betekent een stuk verder op de weg naar volkomen worden. Nadat je de beproeving hebt doorstaan, schiet je in minder tekort. Daarom moeten wij het voor enkel vreugde houden, als er een nieuwe beproeving komt.",
@@ -4476,10 +4476,10 @@ window.HT_TOPICS = {
   "bp-vuur": {
     title: "Het vuur der beproeving",
     color: "#ef4444",
-    summary: "Beproeving is als vuur dat zuivert. God kastijdt iedere zoon die Hij aanneemt — wees niet versaagd. Het vuur maakt zichtbaar wat goud of hooi is.",
+    summary: "Beproeving is als vuur dat zuivert. God kastijdt iedere zoon die Hij aanneemt ? wees niet versaagd. Het vuur maakt zichtbaar wat goud of hooi is.",
     quotes: [
       {
-        text: "Ik weet, geliefde broer, dat de beproeving — het vuur der beproeving — jou te wachten staat; wees niet versaagd wanneer je door Hem getuchtigd wordt, want Hij kastijdt iedere zoon die Hij aanneemt.",
+        text: "Ik weet, geliefde broer, dat de beproeving ? het vuur der beproeving ? jou te wachten staat; wees niet versaagd wanneer je door Hem getuchtigd wordt, want Hij kastijdt iedere zoon die Hij aanneemt.",
         source: "Horten, 9 november 1905",
         author: "Johan O. Smith",
         date: "1905-11-09"
@@ -4497,7 +4497,7 @@ window.HT_TOPICS = {
   "bp-kroon": {
     title: "Kroon na doorstaan",
     color: "#fcd34d",
-    summary: "Wie de proef doorstaat, ontvangt de kroon des levens. Beproeving is niet het einde — het is een stap verder, minder tekort schieten, dichter bij volmaaktheid.",
+    summary: "Wie de proef doorstaat, ontvangt de kroon des levens. Beproeving is niet het einde ? het is een stap verder, minder tekort schieten, dichter bij volmaaktheid.",
     quotes: [
       {
         text: "Zalig is de man die in verzoeking volhardt, want, wanneer hij de proef heeft doorstaan, zal hij de kroon des levens ontvangen, die Hij beloofd heeft aan wie Hem liefhebben.",
@@ -4518,7 +4518,7 @@ window.HT_TOPICS = {
   "gs-overzicht": {
     title: "Christus als gekruisigd geschilderd",
     color: "#e11d48",
-    summary: "Gal. 3:1: Paulus schilderde Christus gekruisigd niet als martelaarsbeeld voor het gevoel, maar predikte het kruis zodat de Galaten zichzelf als gekruisigd zagen — oude mens dood, niet meer voor zichzelf leven. De kracht zit in het woord des kruises, niet in visuele of emotionele beelden.",
+    summary: "Gal. 3:1: Paulus schilderde Christus gekruisigd niet als martelaarsbeeld voor het gevoel, maar predikte het kruis zodat de Galaten zichzelf als gekruisigd zagen ? oude mens dood, niet meer voor zichzelf leven. De kracht zit in het woord des kruises, niet in visuele of emotionele beelden.",
     quotes: [
       {
         text: "Je hoort predikers vandaag vaak Jezus als gekruisigde schilderen, maar zij doen dat op een wel heel andere manier dan Paulus. Zij schilderen Jezus als martelaar, om daardoor op hun gevoel te werken en hen op die manier tot bekering te brengen. Die methode treffen wij niet aan bij de apostelen.",
@@ -4566,7 +4566,7 @@ window.HT_TOPICS = {
   "gs-wel": {
     title: "Wel: woord des kruises in geloof",
     color: "#34d399",
-    summary: "Paulus schilderde zo af dat de Galaten zichzelf als met Christus gestorven zagen — opdat zij niet meer voor zichzelf zouden leven maar voor Hem die voor hen gestorven is.",
+    summary: "Paulus schilderde zo af dat de Galaten zichzelf als met Christus gestorven zagen ? opdat zij niet meer voor zichzelf zouden leven maar voor Hem die voor hen gestorven is.",
     quotes: [
       {
         text: "Als de Galaten Christus als gekruisigde zagen, zagen zij ook Paulus als gekruisigd en dan zagen ze ook zichzelf als gekruisigd.",
@@ -4587,7 +4587,7 @@ window.HT_TOPICS = {
   "gs-oude-mens": {
     title: "Oude mens medegekruisigd",
     color: "#fb7185",
-    summary: "Paulus schilderde Christus gekruisigd zo af dat de Galaten wisten: onze oude mens is medegekruisigd — kracht van het lichaam der zonde ontnomen.",
+    summary: "Paulus schilderde Christus gekruisigd zo af dat de Galaten wisten: onze oude mens is medegekruisigd ? kracht van het lichaam der zonde ontnomen.",
     quotes: [
       {
         text: "Dit weten wij immers, dat onze oude mens medegekruisigd is, opdat aan het lichaam der zonde zijn kracht zou ontnomen worden en wij niet langer slaven der zonde zouden zijn.",
@@ -4602,7 +4602,7 @@ window.HT_TOPICS = {
   "gs-vlees": {
     title: "Vlees gekruisigd",
     color: "#a855f7",
-    summary: "Wie Christus Jezus toebehoren, hebben het vlees met hartstochten en begeerten gekruisigd — niet door de wet, maar door in geloof met Christus gekruisigd te zijn.",
+    summary: "Wie Christus Jezus toebehoren, hebben het vlees met hartstochten en begeerten gekruisigd ? niet door de wet, maar door in geloof met Christus gekruisigd te zijn.",
     quotes: [
       {
         text: "Want wie Christus Jezus toebehoren, hebben het vlees met zijn hartstochten en begeerten gekruisigd.",
@@ -4623,7 +4623,7 @@ window.HT_TOPICS = {
   "gs-wereld": {
     title: "Wereld gekruisigd",
     color: "#818cf8",
-    summary: "Paulus roemde in het kruis waardoor de wereld voor hem gekruisigd was en hij voor de wereld — niet alleen vergeving, maar het dagelijkse gekruisigde leven.",
+    summary: "Paulus roemde in het kruis waardoor de wereld voor hem gekruisigd was en hij voor de wereld ? niet alleen vergeving, maar het dagelijkse gekruisigde leven.",
     quotes: [
       {
         text: "Maar ik moge ervoor bewaard blijven te roemen anders dan in het kruis van onze Here Jezus, door wie de wereld mij gekruisigd is en ik der wereld.",
@@ -4638,7 +4638,7 @@ window.HT_TOPICS = {
   "r7-overzicht": {
     title: "Hoe Rom. 7 werkt",
     color: "#fbbf24",
-    summary: "Paulus beschrijft niet twee verschillende mensen, maar één mens met twee wetten: verstand en gezindheid dienen Gods wet, terwijl de wet der zonde in de leden trekt. J.O. Smith leert dat de man in Rom. 7 buiten de volle genade stond — maar de strijd illustreert hoe zonde in het vlees werkt.",
+    summary: "Paulus beschrijft niet twee verschillende mensen, maar ??n mens met twee wetten: verstand en gezindheid dienen Gods wet, terwijl de wet der zonde in de leden trekt. J.O. Smith leert dat de man in Rom. 7 buiten de volle genade stond ? maar de strijd illustreert hoe zonde in het vlees werkt.",
     quotes: [
       {
         text: "Maar dit nieuwe boek zegt dat de man in Rom. 7 daar onbeschut stond buiten de genade en buiten de verzoening.",
@@ -4653,19 +4653,19 @@ window.HT_TOPICS = {
         date: "1921-04-01"
       },
       {
-        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden — maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
+        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden ? maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
         source: "Je verlustigen in Gods wet",
         author: "Trygve Sandvik",
         date: "1966-04-01"
       }
     ],
-    refs: ["Rom. 7:14–25", "Rom. 8:2"]
+    refs: ["Rom. 7:14?25", "Rom. 8:2"]
   },
 
   "r7-man": {
     title: "De man in Rom. 7",
     color: "#94a3b8",
-    summary: "De man die Paulus beschrijft stond onder de wet, maar nog buiten de bescherming van genade en verzoening. Rom. 7 is geen eindstation — het wijst door naar de bevrijding in Rom. 8 door de Geest.",
+    summary: "De man die Paulus beschrijft stond onder de wet, maar nog buiten de bescherming van genade en verzoening. Rom. 7 is geen eindstation ? het wijst door naar de bevrijding in Rom. 8 door de Geest.",
     quotes: [
       {
         text: "Maar dit nieuwe boek zegt dat de man in Rom. 7 daar onbeschut stond buiten de genade en buiten de verzoening.",
@@ -4675,7 +4675,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Paulus was door de doop met de Geest en het spreken in tongen niet buiten zijn zinnen geraakt, zodat hij in een roes kwam en in zijn fantasie zich in denkbeeldige situaties verloor. Nee, hij zag en erkende een andere wet in zijn leden.",
-        source: "Skjulte Skatter 1931-12 — Het genadewerk van de heiligmaking",
+        source: "Skjulte Skatter 1931-12 ? Het genadewerk van de heiligmaking",
         author: "Johan O. Smith",
         date: "1931-12-01"
       }
@@ -4684,7 +4684,7 @@ window.HT_TOPICS = {
   },
 
   "r7-bekering": {
-    title: "Geweten wakker — wet werkt",
+    title: "Geweten wakker ? wet werkt",
     color: "#f472b6",
     summary: "Eerst na vergeving en de besnijdenis van Christus wordt het geweten zover wakker dat de wet als wet kan werken. Dan ontstaat de ervaring van Rom. 7: goed willen, maar door het vlees tegengehouden worden.",
     quotes: [
@@ -4695,7 +4695,7 @@ window.HT_TOPICS = {
         date: "1917-02-01"
       },
       {
-        text: "Het hart ontvangt het oordeel van het Woord — echte bekering.",
+        text: "Het hart ontvangt het oordeel van het Woord ? echte bekering.",
         source: "De val van de mens",
         author: "Johan O. Smith",
         date: "1927-01-01"
@@ -4707,7 +4707,7 @@ window.HT_TOPICS = {
   "r7-verstand": {
     title: "Verstand dient Gods wet",
     color: "#f59e0b",
-    summary: "Paulus diende de wet van God met zijn verstand — hij kende en erkende Gods wil. Maar hij zag tegelijk een andere wet in zijn leden die tegen die erkenning in stribbelde.",
+    summary: "Paulus diende de wet van God met zijn verstand ? hij kende en erkende Gods wil. Maar hij zag tegelijk een andere wet in zijn leden die tegen die erkenning in stribbelde.",
     quotes: [
       {
         text: "Paulus diende Gods wet met zijn verstand; maar hij zag een andere wet in zijn leden, Rom. 7:23.",
@@ -4716,19 +4716,19 @@ window.HT_TOPICS = {
         date: "1914-10-01"
       },
       {
-        text: "Het verstand is een faculteit van de ziel — het verwerkt wat de zintuigen binnenbrengen en kan door de Geest geleid worden.",
+        text: "Het verstand is een faculteit van de ziel ? het verwerkt wat de zintuigen binnenbrengen en kan door de Geest geleid worden.",
         source: "Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-07-01"
       }
     ],
-    refs: ["Rom. 7:22–23", "Rom. 7:25"]
+    refs: ["Rom. 7:22?23", "Rom. 7:25"]
   },
 
   "r7-innerlijk": {
     title: "Innerlijke mens verblijd in Gods wet",
     color: "#a78bfa",
-    summary: "Naar de innerlijke mens verblijdt Paulus zich in de wet van God. Dat is geen tegenstelling met de strijd in het vlees — juist omdat de geest en het innerlijk bij God staan, voelt men de spanning met de leden.",
+    summary: "Naar de innerlijke mens verblijdt Paulus zich in de wet van God. Dat is geen tegenstelling met de strijd in het vlees ? juist omdat de geest en het innerlijk bij God staan, voelt men de spanning met de leden.",
     quotes: [
       {
         text: "Want naar de innerlijke mens verblijd ik mij in de wet van God.",
@@ -4749,7 +4749,7 @@ window.HT_TOPICS = {
   "r7-gezindheid": {
     title: "Gezindheid dienstbaar aan Gods wet",
     color: "#7c3aed",
-    summary: "Met rein geweten kan de gezindheid dienstbaar zijn aan Gods wet — ook terwijl het vlees nog trekt. De gezindheid kiest: instemmen met God of met begeerte.",
+    summary: "Met rein geweten kan de gezindheid dienstbaar zijn aan Gods wet ? ook terwijl het vlees nog trekt. De gezindheid kiest: instemmen met God of met begeerte.",
     quotes: [
       {
         text: "We gieten onze ziel uit als we met een rein geweten met onze gezindheid dienstbaar zijn aan Gods wet, Rom. 7:25, en dan de andere wet in de leden zien en door de Geest de werkingen des lichaams doden.",
@@ -4758,7 +4758,7 @@ window.HT_TOPICS = {
         date: "2016-11-01"
       },
       {
-        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden — maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
+        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden ? maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
         source: "Je verlustigen in Gods wet",
         author: "Trygve Sandvik",
         date: "1966-04-01"
@@ -4770,7 +4770,7 @@ window.HT_TOPICS = {
   "r7-zonde-vlees": {
     title: "Zonde woont in het vlees",
     color: "#a855f7",
-    summary: "Rom. 7:17 en 7:20: het is niet meer ik die het doe, maar de zonde die in mij woont. Zonde is inwonend in het vlees — niet de geestelijke mens zelf, maar iets dat in het lichaam der zonde werkt.",
+    summary: "Rom. 7:17 en 7:20: het is niet meer ik die het doe, maar de zonde die in mij woont. Zonde is inwonend in het vlees ? niet de geestelijke mens zelf, maar iets dat in het lichaam der zonde werkt.",
     quotes: [
       {
         text: "Nu dan, niet meer ik doe het, maar de zonde die in mij woont.",
@@ -4797,7 +4797,7 @@ window.HT_TOPICS = {
   "r7-strijd": {
     title: "Goed willen, niet doen",
     color: "#f97316",
-    summary: "Rom. 7:15–19: wat ik haat, dat doe ik; wat ik wil, doe ik niet. Dit is de ervaring van iemand die Gods wet kent, maar nog niet in de volle vrijheid van Rom. 8 wandelt — de strijd tussen twee wetten in één mens.",
+    summary: "Rom. 7:15?19: wat ik haat, dat doe ik; wat ik wil, doe ik niet. Dit is de ervaring van iemand die Gods wet kent, maar nog niet in de volle vrijheid van Rom. 8 wandelt ? de strijd tussen twee wetten in ??n mens.",
     quotes: [
       {
         text: "Want het goede dat ik wil, doe ik niet; maar het kwade dat ik niet wil, dat doe ik.",
@@ -4812,13 +4812,13 @@ window.HT_TOPICS = {
         date: "1915-11-01"
       }
     ],
-    refs: ["Rom. 7:15–19", "Rom. 7:24"]
+    refs: ["Rom. 7:15?19", "Rom. 7:24"]
   },
 
   "r7-leden": {
     title: "Andere wet in de leden",
     color: "#ea580c",
-    summary: "Paulus zag een andere wet in zijn leden — de wet der zonde — die tegen de wet van zijn verstand streed en hem gevangen nam. Die wet dwingt niet tot bewuste zonde alleen; het is de kracht die in het vlees werkt.",
+    summary: "Paulus zag een andere wet in zijn leden ? de wet der zonde ? die tegen de wet van zijn verstand streed en hem gevangen nam. Die wet dwingt niet tot bewuste zonde alleen; het is de kracht die in het vlees werkt.",
     quotes: [
       {
         text: "Paulus diende Gods wet met zijn verstand; maar hij zag een andere wet in zijn leden, Rom. 7:23.",
@@ -4839,10 +4839,10 @@ window.HT_TOPICS = {
   "r7-vlees": {
     title: "Vlees dienstbaar aan wet der zonde",
     color: "#ef4444",
-    summary: "Rom. 7:25: met het vlees dienstbaar aan de wet der zonde. Het vlees is het hoofdkwartier van begeerte en hartstochten — niet de geestelijke mens, maar wat nog in de leden werkt tot het door de Geest wordt gedood.",
+    summary: "Rom. 7:25: met het vlees dienstbaar aan de wet der zonde. Het vlees is het hoofdkwartier van begeerte en hartstochten ? niet de geestelijke mens, maar wat nog in de leden werkt tot het door de Geest wordt gedood.",
     quotes: [
       {
-        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden — maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
+        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden ? maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
         source: "Je verlustigen in Gods wet",
         author: "Trygve Sandvik",
         date: "1966-04-01"
@@ -4860,7 +4860,7 @@ window.HT_TOPICS = {
   "r7-lichaam-doods": {
     title: "Lichaam des doods",
     color: "#64748b",
-    summary: "Rom. 7:24: ellendig mens — wie zal mij verlossen uit dit lichaam des doods? Paulus roept niet om sterfelijkheid op te geven, maar om bevrijding van de wet der zonde die het lichaam gevangen houdt.",
+    summary: "Rom. 7:24: ellendig mens ? wie zal mij verlossen uit dit lichaam des doods? Paulus roept niet om sterfelijkheid op te geven, maar om bevrijding van de wet der zonde die het lichaam gevangen houdt.",
     quotes: [
       {
         text: "Ik ellendig mens! Wie zal mij verlossen uit het lichaam dezes doods? Rom. 7:24.",
@@ -4879,12 +4879,12 @@ window.HT_TOPICS = {
   },
 
   "r7-twee-wetten": {
-    title: "Twee wetten — Rom. 7:25",
+    title: "Twee wetten ? Rom. 7:25",
     color: "#fcd34d",
-    summary: "De samenvatting van Rom. 7: met de gezindheid dienstbaar aan Gods wet, met het vlees aan de wet der zonde. Twee wetten in één mens — niet verdeeld in twee personen, maar de werkelijke strijd tot de bevrijding in Christus.",
+    summary: "De samenvatting van Rom. 7: met de gezindheid dienstbaar aan Gods wet, met het vlees aan de wet der zonde. Twee wetten in ??n mens ? niet verdeeld in twee personen, maar de werkelijke strijd tot de bevrijding in Christus.",
     quotes: [
       {
-        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden — maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
+        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde, de andere wet in zijn leden ? maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
         source: "Je verlustigen in Gods wet",
         author: "Trygve Sandvik",
         date: "1966-04-01"
@@ -4902,7 +4902,7 @@ window.HT_TOPICS = {
   "r7-naar-rom8": {
     title: "Door naar Rom. 8",
     color: "#22c55e",
-    summary: "Rom. 7 eindigt met dankzegging en wijst naar Rom. 8: de wet van de Geest des levens maakt vrij. Wie naar de Geest wandelt, vervult de eis der wet — niet door eigen kracht, maar door Christus in ons.",
+    summary: "Rom. 7 eindigt met dankzegging en wijst naar Rom. 8: de wet van de Geest des levens maakt vrij. Wie naar de Geest wandelt, vervult de eis der wet ? niet door eigen kracht, maar door Christus in ons.",
     quotes: [
       {
         text: "Want de wet van de Geest des levens heeft u in Christus Jezus vrijgemaakt van de wet der zonde en des doods.",
@@ -4929,7 +4929,7 @@ window.HT_TOPICS = {
   "zg-overzicht": {
     title: "De zeven Geesten Gods",
     color: "#6366f1",
-    summary: "De zeven Geesten Gods zijn de volheid van de Heilige Geest — niet zeven aparte goden, maar zeven kanten van één Geest. Jesaja 11:2 profeteert dat zij op de Messias rusten; de Openbaring toont zeven vurige fakkels voor de troon en zeven ogen op het Lam (Openb. 4:5; 5:6). J.O. Smith leert: zij rustten op de Meester, Jezus Christus.",
+    summary: "De zeven Geesten Gods zijn de volheid van de Heilige Geest ? niet zeven aparte goden, maar zeven kanten van ??n Geest. Jesaja 11:2 profeteert dat zij op de Messias rusten; de Openbaring toont zeven vurige fakkels voor de troon en zeven ogen op het Lam (Openb. 4:5; 5:6). J.O. Smith leert: zij rustten op de Meester, Jezus Christus.",
     quotes: [
       {
         text: "De Geest des Heren draagt alle zeven Geesten Gods en de zeven vuurfakkels in zich. Openb. 4:5: en zeven vurige fakkels brandden voor de troon; dit zijn de zeven Geesten Gods.",
@@ -4956,7 +4956,7 @@ window.HT_TOPICS = {
   "zg-christus": {
     title: "Zeven Geesten op Christus",
     color: "#818cf8",
-    summary: "Op Hem zal de Geest des Heren rusten — de volheid van de Geest rustte op Jezus. Het Lam met zeven horens en zeven ogen zijn de zeven Geesten Gods, uitgezonden over de gehele aarde (Openb. 5:6). Christus draagt de Geest; wij ontvangen van zijn volheid.",
+    summary: "Op Hem zal de Geest des Heren rusten ? de volheid van de Geest rustte op Jezus. Het Lam met zeven horens en zeven ogen zijn de zeven Geesten Gods, uitgezonden over de gehele aarde (Openb. 5:6). Christus draagt de Geest; wij ontvangen van zijn volheid.",
     quotes: [
       {
         text: "En op Hem zal de Geest des Heren rusten, de Geest van wijsheid en verstand, de Geest van raad en sterkte, de Geest van kennis en vreze des Heren; ja, zijn lust zal zijn in de vreze des Heren.",
@@ -4965,7 +4965,7 @@ window.HT_TOPICS = {
         date: "1940-02-01"
       },
       {
-        text: "En het Lam dat geslacht is, dat zeven horens heeft en zeven ogen — dat zijn de zeven Geesten Gods, die uitgezonden zijn over de gehele aarde.",
+        text: "En het Lam dat geslacht is, dat zeven horens heeft en zeven ogen ? dat zijn de zeven Geesten Gods, die uitgezonden zijn over de gehele aarde.",
         source: "De zeven zegels",
         author: "Johan O. Smith",
         date: "1940-02-01"
@@ -4977,7 +4977,7 @@ window.HT_TOPICS = {
   "zg-heren": {
     title: "Geest des Heren",
     color: "#4f46e5",
-    summary: "De hoofdgeest waaronder de andere zes rusten — de Heilige Geest zelf, de Geest van de Here. Op Christus rustte deze Geest volledig; door geloof ontvangen wij dezelfde Geest.",
+    summary: "De hoofdgeest waaronder de andere zes rusten ? de Heilige Geest zelf, de Geest van de Here. Op Christus rustte deze Geest volledig; door geloof ontvangen wij dezelfde Geest.",
     quotes: [
       {
         text: "En op Hem zal de Geest des Heren rusten, de Geest van wijsheid en verstand, de Geest van raad en sterkte, de Geest van kennis en vreze des Heren.",
@@ -4992,10 +4992,10 @@ window.HT_TOPICS = {
   "zg-wijsheid": {
     title: "Geest van wijsheid",
     color: "#6366f1",
-    summary: "Goddelijke wijsheid — niet menselijke schranderheid of zielse opwekking. Paulus bidt om de geest van wijsheid en openbaring, opdat verlichte ogen des harte de hoop en Gods kracht begrijpen (Ef. 1:17-18).",
+    summary: "Goddelijke wijsheid ? niet menselijke schranderheid of zielse opwekking. Paulus bidt om de geest van wijsheid en openbaring, opdat verlichte ogen des harte de hoop en Gods kracht begrijpen (Ef. 1:17-18).",
     quotes: [
       {
-        text: "Hoop hebben is én ding, de hoop kennen is iets anders. Door de geest van wijsheid en openbaring in combinatie met verlichte ogen van ons hart zullen we de hoop kennen.",
+        text: "Hoop hebben is ?n ding, de hoop kennen is iets anders. Door de geest van wijsheid en openbaring in combinatie met verlichte ogen van ons hart zullen we de hoop kennen.",
         source: "Hoofdstuk 1 - De hoop kennen",
         author: "K?re J. Smith",
         date: ""
@@ -5013,7 +5013,7 @@ window.HT_TOPICS = {
   "zg-verstand": {
     title: "Geest van verstand",
     color: "#7c3aed",
-    summary: "Geestelijk inzicht en begrip — niet het gevallen verstand dat verzoeking binnenlaat via kennis en trots. De Geest verlicht het verstand zodat het Gods wil begrijpt.",
+    summary: "Geestelijk inzicht en begrip ? niet het gevallen verstand dat verzoeking binnenlaat via kennis en trots. De Geest verlicht het verstand zodat het Gods wil begrijpt.",
     quotes: [
       {
         text: "En op Hem zal de Geest des Heren rusten, de Geest van wijsheid en verstand, de Geest van raad en sterkte, de Geest van kennis en vreze des Heren.",
@@ -5022,7 +5022,7 @@ window.HT_TOPICS = {
         date: "1919-02-01"
       },
       {
-        text: "Geloof zet eigen verstand opzij — neemt Gods verstand aan. Het verstand wordt verlicht.",
+        text: "Geloof zet eigen verstand opzij ? neemt Gods verstand aan. Het verstand wordt verlicht.",
         source: "De val van de mens",
         author: "Johan O. Smith",
         date: "1927-01-01"
@@ -5034,7 +5034,7 @@ window.HT_TOPICS = {
   "zg-raad": {
     title: "Geest van raad",
     color: "#8b5cf6",
-    summary: "Goddelijk bestuur en leiding — de Geest wijst de weg in echte situaties. Niet eigen plannen of zielse impulsen, maar raad uit de hemel voor het dagelijkse leven.",
+    summary: "Goddelijk bestuur en leiding ? de Geest wijst de weg in echte situaties. Niet eigen plannen of zielse impulsen, maar raad uit de hemel voor het dagelijkse leven.",
     quotes: [
       {
         text: "En op Hem zal de Geest des Heren rusten, de Geest van wijsheid en verstand, de Geest van raad en sterkte, de Geest van kennis en vreze des Heren.",
@@ -5055,7 +5055,7 @@ window.HT_TOPICS = {
   "zg-sterkte": {
     title: "Geest van sterkte",
     color: "#a855f7",
-    summary: "Kracht om de weg te gaan — niet eigen wilskracht, maar Gods kracht in zwakheid. Met hulp van de zeven Geesten Gods slaagt het door zijn genade.",
+    summary: "Kracht om de weg te gaan ? niet eigen wilskracht, maar Gods kracht in zwakheid. Met hulp van de zeven Geesten Gods slaagt het door zijn genade.",
     quotes: [
       {
         text: "Ja, dierbare broeders en zusters, met hulp van de zeven horens en de zeven ogen zal het door Gods genade slagen! Door de hulp van de zeven Geesten Gods!",
@@ -5076,7 +5076,7 @@ window.HT_TOPICS = {
   "zg-kennis": {
     title: "Geest van kennis",
     color: "#c084fc",
-    summary: "Kennis van God — niet kennis die hoogmoed voedt (als bij Eva), maar erkenning van God en zijn wil. Door geloof onderzoeken we zelfs de diepten Gods.",
+    summary: "Kennis van God ? niet kennis die hoogmoed voedt (als bij Eva), maar erkenning van God en zijn wil. Door geloof onderzoeken we zelfs de diepten Gods.",
     quotes: [
       {
         text: "En op Hem zal de Geest des Heren rusten, de Geest van wijsheid en verstand, de Geest van raad en sterkte, de Geest van kennis en vreze des Heren.",
@@ -5086,7 +5086,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Door het geloof onderzoeken we in de geest zelfs de diepere dingen in God.",
-        source: "Skjulte Skatter 1928-01 — Het geloof",
+        source: "Skjulte Skatter 1928-01 ? Het geloof",
         author: "Johan O. Smith",
         date: "1928-01-01"
       }
@@ -5097,7 +5097,7 @@ window.HT_TOPICS = {
   "zg-vreze": {
     title: "Geest van vreze des Heren",
     color: "#e879f9",
-    summary: "Eerbied en ontzag voor God — geen slavische angst, maar lust in de vreze des Heren (Jes. 11:3). Het 'ik' heeft geen besef van vreze en voelt zich rein temidden van dwaasheden.",
+    summary: "Eerbied en ontzag voor God ? geen slavische angst, maar lust in de vreze des Heren (Jes. 11:3). Het 'ik' heeft geen besef van vreze en voelt zich rein temidden van dwaasheden.",
     quotes: [
       {
         text: "Op Hem zal de Geest des Heren rusten, de Geest van wijsheid en verstand, de Geest van raad en sterkte, de Geest van kennis en vreze des Heren. Het ik heeft geen besef van vreze, en het voelt zich rein, overwinnend en sterk temidden van de grootste dwaasheden.",
@@ -5118,7 +5118,7 @@ window.HT_TOPICS = {
   "zg-voor-ons": {
     title: "Zeven Geesten voor ons",
     color: "#22d3ee",
-    summary: "De zeven Geesten Gods zijn niet alleen voor Christus: zij kunnen ons hart en denken vervullen. Bid om de Heilige Geest en wijsheid; wandel in de Geest — dan werkt de volheid van Gods Geest in de discipel.",
+    summary: "De zeven Geesten Gods zijn niet alleen voor Christus: zij kunnen ons hart en denken vervullen. Bid om de Heilige Geest en wijsheid; wandel in de Geest ? dan werkt de volheid van Gods Geest in de discipel.",
     quotes: [
       {
         text: "Dan zullen de zeven Geesten Gods ons hart en denken kunnen vervullen.",
@@ -5133,7 +5133,7 @@ window.HT_TOPICS = {
         date: ""
       },
       {
-        text: "Laten wij God bidden om de geringste dingen — in de Geest. Hij zal onze gebeden verhoren en ons geloof om in het gebed dank te zeggen, doen toenemen.",
+        text: "Laten wij God bidden om de geringste dingen ? in de Geest. Hij zal onze gebeden verhoren en ons geloof om in het gebed dank te zeggen, doen toenemen.",
         source: "Gebed met dankzegging",
         author: "Johan O. Smith",
         date: "1920-07-01"
@@ -5145,7 +5145,7 @@ window.HT_TOPICS = {
   "gst-overzicht": {
     title: "Hoe God tot een mens spreekt",
     color: "#818cf8",
-    summary: "God spreekt tot de mens door het Woord én door de Geest — niet via zielse gevoelens of eigen beelden. Het geestelijk oor hoort wat de Geest zegt wanneer het Woord verkondigd wordt (Openb. 2:7; Rom. 10:17). Het Woord dringt door tot het hart, scheidt ziel en geest, en werkt uit in gehoorzaamheid.",
+    summary: "God spreekt tot de mens door het Woord ?n door de Geest ? niet via zielse gevoelens of eigen beelden. Het geestelijk oor hoort wat de Geest zegt wanneer het Woord verkondigd wordt (Openb. 2:7; Rom. 10:17). Het Woord dringt door tot het hart, scheidt ziel en geest, en werkt uit in gehoorzaamheid.",
     quotes: [
       {
         text: "Het geloof hoort wat de Geest tot de gemeente zegt.",
@@ -5178,7 +5178,7 @@ window.HT_TOPICS = {
   "hm-overzicht": {
     title: "Met God in de hemel geplaatst",
     color: "#a78bfa",
-    summary: "Door geloof zijn we met Christus opgewekt en in de hemel geplaatst (Ef. 2:6). De oude mens heeft geen plaats in de hemel — die is aan het kruis. Wat w?l in de hemel geplaatst is: hart en gezindheid. Ons leven is verborgen met Christus in God (Kol. 3:3) — en dat werkt praktisch uit op aarde.",
+    summary: "Door geloof zijn we met Christus opgewekt en in de hemel geplaatst (Ef. 2:6). De oude mens heeft geen plaats in de hemel ? die is aan het kruis. Wat w?l in de hemel geplaatst is: hart en gezindheid. Ons leven is verborgen met Christus in God (Kol. 3:3) ? en dat werkt praktisch uit op aarde.",
     quotes: [
       {
         text: "Nog minder heeft onze oude mens een plaats in de hemel gekregen. Nee, dat is heel terecht en praktisch aan het kruis gebracht. Wat is er dan wel in de hemel geplaatst? Ons hart en onze gezindheid!",
@@ -5194,7 +5194,7 @@ window.HT_TOPICS = {
       },
       {
         text: "Zijn leven in het geloof dat hij was opgewekt en in de hemel geplaatst met Christus Jezus, gaf zijn hele leven een rijkdom aan sterkte en kracht.",
-        source: "Skjulte Skatter 1915-03 — In memoriam Christian Johan Smith",
+        source: "Skjulte Skatter 1915-03 ? In memoriam Christian Johan Smith",
         author: "Johan O. Smith",
         date: "1915-03-01"
       }
@@ -5205,7 +5205,7 @@ window.HT_TOPICS = {
   "hm-christus": {
     title: "Christus in de hemel",
     color: "#818cf8",
-    summary: "Christus is opgewekt en gezeten aan de rechterhand des Vaders. Met Hem zijn wij opgewekt en in de hemelse gewesten geplaatst — niet lichamelijk weg van de aarde, maar in geloof verbonden met waar Hij is.",
+    summary: "Christus is opgewekt en gezeten aan de rechterhand des Vaders. Met Hem zijn wij opgewekt en in de hemelse gewesten geplaatst ? niet lichamelijk weg van de aarde, maar in geloof verbonden met waar Hij is.",
     quotes: [
       {
         text: "En Hij heeft ons met Hem opgewekt en met Hem in de hemelse gewesten gezet.",
@@ -5230,9 +5230,9 @@ window.HT_TOPICS = {
   },
 
   "hm-oude-mens": {
-    title: "Oude mens — niet in de hemel",
+    title: "Oude mens ? niet in de hemel",
     color: "#f87171",
-    summary: "De oude mens heeft geen plaats in de hemel — die is terecht aan het kruis gebracht. Wat uit het vlees komt, hoort niet boven maar aan het kruis. Alleen wat uit God is, leeft in verbinding met de hemel.",
+    summary: "De oude mens heeft geen plaats in de hemel ? die is terecht aan het kruis gebracht. Wat uit het vlees komt, hoort niet boven maar aan het kruis. Alleen wat uit God is, leeft in verbinding met de hemel.",
     quotes: [
       {
         text: "Nog minder heeft onze oude mens een plaats in de hemel gekregen. Nee, dat is heel terecht en praktisch aan het kruis gebracht.",
@@ -5253,7 +5253,7 @@ window.HT_TOPICS = {
   "hm-hart": {
     title: "Hart geplaatst in de hemel",
     color: "#f472b6",
-    summary: "Het hart — overleggingen en gedachten — hoort in de hemel geplaatst te zijn. Daar smelt het Woord met geloof samen; daar woont het verborgen leven met Christus in God.",
+    summary: "Het hart ? overleggingen en gedachten ? hoort in de hemel geplaatst te zijn. Daar smelt het Woord met geloof samen; daar woont het verborgen leven met Christus in God.",
     quotes: [
       {
         text: "Wat is er dan wel in de hemel geplaatst? Ons hart en onze gezindheid!",
@@ -5274,7 +5274,7 @@ window.HT_TOPICS = {
   "hm-gezindheid": {
     title: "Gezindheid geplaatst in de hemel",
     color: "#eab308",
-    summary: "De gezindheid — de wil — moet in de hemel staan: instemmen met Gods wil, niet met eigen begeerte. Zo dienstbaar aan Gods wet, ook terwijl het vlees nog trekt.",
+    summary: "De gezindheid ? de wil ? moet in de hemel staan: instemmen met Gods wil, niet met eigen begeerte. Zo dienstbaar aan Gods wet, ook terwijl het vlees nog trekt.",
     quotes: [
       {
         text: "Wat is er dan wel in de hemel geplaatst? Ons hart en onze gezindheid!",
@@ -5283,7 +5283,7 @@ window.HT_TOPICS = {
         date: "1955-12-01"
       },
       {
-        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde — maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
+        text: "Paulus was met zijn vlees dienstbaar aan de wet der zonde ? maar met zijn gezindheid dienstbaar aan de wet Gods. Rom. 7:25.",
         source: "Je verlustigen in Gods wet",
         author: "Trygve Sandvik",
         date: "1966-04-01"
@@ -5295,7 +5295,7 @@ window.HT_TOPICS = {
   "hm-verborgen": {
     title: "Verborgen leven met Christus in God",
     color: "#c4b5fd",
-    summary: "Gij zijt gestorven en uw leven is verborgen met Christus in God. Dit is geen uiterlijke schijn maar een verborgen leven in het hart — waar alleen God het volle oordeel ziet.",
+    summary: "Gij zijt gestorven en uw leven is verborgen met Christus in God. Dit is geen uiterlijke schijn maar een verborgen leven in het hart ? waar alleen God het volle oordeel ziet.",
     quotes: [
       {
         text: "Het leven van een discipel is het verborgen leven met Christus in God.",
@@ -5320,7 +5320,7 @@ window.HT_TOPICS = {
   },
 
   "hm-aarde": {
-    title: "Op aarde — praktisch uitwerken",
+    title: "Op aarde ? praktisch uitwerken",
     color: "#34d399",
     summary: "In de hemel geplaatst zijn is geen vlucht van de aarde. Zoek wat boven is; leef als behorende tot het lichaam van Christus. Door de Geest leidt de verlichte geest ziel en lichaam in dienst van gerechtigheid.",
     quotes: [
@@ -5332,7 +5332,7 @@ window.HT_TOPICS = {
       },
       {
         text: "De drieledige natuur van de mens kan op deze 'weg' weer verenigd worden in God, doordat Gods Geest de menselijke geest leidt, de verlichte menselijke geest op zijn beurt de ziel leidt, zodat het lichaam als een werktuig gesteld wordt in dienst van de gerechtigheid.",
-        source: "Skjulte Skatter 1927-04 — Ziel en geest",
+        source: "Skjulte Skatter 1927-04 ? Ziel en geest",
         author: "Johan O. Smith",
         date: "1927-04-01"
       },
@@ -5349,7 +5349,7 @@ window.HT_TOPICS = {
   "bz-overzicht": {
     title: "Bezoedeling des vleses en des geestes",
     color: "#f472b6",
-    summary: "2 Kor. 7:1: omdat we Gods beloften bezitten, moeten we ons reinigen van alle bezoedeling des vleses en des geestes, en zo onze heiligheid volmaken in de vreze Gods. Het gaat om de hele mens — lichaam én innerlijk — niet alleen om uiterlijke zonde.",
+    summary: "2 Kor. 7:1: omdat we Gods beloften bezitten, moeten we ons reinigen van alle bezoedeling des vleses en des geestes, en zo onze heiligheid volmaken in de vreze Gods. Het gaat om de hele mens ? lichaam �n innerlijk ? niet alleen om uiterlijke zonde.",
     quotes: [
       {
         text: "Daar wij nu deze beloften bezitten, geliefden, laten wij ons reinigen van alle bezoedeling des vleses en des geestes, en zo onze heiligheid volmaken in de vreze Gods.",
@@ -5358,7 +5358,7 @@ window.HT_TOPICS = {
         date: ""
       },
       {
-        text: "God heeft ons tot heiligmaking geroepen. 1 Thess. 4:7. — laten wij ons reinigen van alle bezoedeling des geestes en des vleses, en zo onze heiligheid verwezenlijken in de vreze Gods.",
+        text: "God heeft ons tot heiligmaking geroepen. 1 Thess. 4:7. ? laten wij ons reinigen van alle bezoedeling des geestes en des vleses, en zo onze heiligheid verwezenlijken in de vreze Gods.",
         source: "69. De weg van de heiligmaking",
         author: "Elias Aslaksen",
         date: ""
@@ -5428,9 +5428,9 @@ window.HT_TOPICS = {
   },
 
   "bz-ongelijk-span": {
-    title: "Ongelijk span — vlees",
+    title: "Ongelijk span ? vlees",
     color: "#f97316",
-    summary: "2 Kor. 6:14-18: wat vereniging heeft licht met duisternis? Een ongelijk span met ongelovigen of wereldse mensen bezoedelt het vlees — je wordt besmet door wat je omarmt.",
+    summary: "2 Kor. 6:14-18: wat vereniging heeft licht met duisternis? Een ongelijk span met ongelovigen of wereldse mensen bezoedelt het vlees ? je wordt besmet door wat je omarmt.",
     quotes: [
       {
         text: "Bezoedeling van het vlees krijgt men door een ongelijk span te vormen met goddelozen, die voordeel zoeken in de wereld.",
@@ -5451,7 +5451,7 @@ window.HT_TOPICS = {
   "bz-tong": {
     title: "Tong en lichaam bezoedelen",
     color: "#ef4444",
-    summary: "De tong woont onder de leden en kan het gehele lichaam bezoedelen — een vuur, de wereld der ongerechtigheid. Vleselijke bezoedeling uit zich ook in woorden en daden van het lichaam.",
+    summary: "De tong woont onder de leden en kan het gehele lichaam bezoedelen ? een vuur, de wereld der ongerechtigheid. Vleselijke bezoedeling uit zich ook in woorden en daden van het lichaam.",
     quotes: [
       {
         text: "Ook de tong is een vuur, zij is de wereld der ongerechtigheid; de tong neemt haar plaats in onder onze leden als iets dat het gehele lichaam bezoedelt en het rad der geboorte in vlam zet, terwijl zij zelf in vlam gezet wordt door de hel.",
@@ -5472,7 +5472,7 @@ window.HT_TOPICS = {
   "bz-leer": {
     title: "Afdrijven in vreemde leer",
     color: "#8b5cf6",
-    summary: "Bezoedeling des geestes kan betekenen dat je geestelijk af drijft — vreemde leer, verkeerde invloeden, een geest die niet meer bij de waarheid blijft maar mensen wil behagen.",
+    summary: "Bezoedeling des geestes kan betekenen dat je geestelijk af drijft ? vreemde leer, verkeerde invloeden, een geest die niet meer bij de waarheid blijft maar mensen wil behagen.",
     quotes: [
       {
         text: "Door bezoedeling van de geest drijf je af in een vreemde leer. Je wilt als het ware goed en lief zijn voor alle mensen.",
@@ -5491,7 +5491,7 @@ window.HT_TOPICS = {
   },
 
   "bz-leugen": {
-    title: "Wereld van leugen — geest",
+    title: "Wereld van leugen ? geest",
     color: "#22d3ee",
     summary: "Ook innerlijke onreinheid hoort bij bezoedeling des geestes: verkeerde gevoelens, achterdocht, leugen en alles waarvan de ziel zich moet reinigen in gehoorzaamheid aan de waarheid.",
     quotes: [
@@ -5514,7 +5514,7 @@ window.HT_TOPICS = {
   "bz-reinigen": {
     title: "Zo reinigen we ons",
     color: "#6ee7b7",
-    summary: "Reinigen is actief: haten wat onrein is, ons laten tuchtigen tot bekering, zelf oordelen, wandelen in het licht, en heiligmaking volmaken in de vreze Gods — niet alleen vergeving zoeken.",
+    summary: "Reinigen is actief: haten wat onrein is, ons laten tuchtigen tot bekering, zelf oordelen, wandelen in het licht, en heiligmaking volmaken in de vreze Gods ? niet alleen vergeving zoeken.",
     quotes: [
       {
         text: "Daar wij nu deze beloften bezitten, geliefden, laten wij ons reinigen van alle bezoedeling des vleses en des geestes, en zo onze heiligheid volmaken in de vreze Gods.",
@@ -5523,7 +5523,7 @@ window.HT_TOPICS = {
         date: ""
       },
       {
-        text: "Zolang onze heiligmaking nog niet voltooid is — zolang de discipel niet is geworden als de meester, Jezus — moeten we van licht tot licht gaan en dan worden we geleidelijk gereinigd in het bloed van Jezus.",
+        text: "Zolang onze heiligmaking nog niet voltooid is ? zolang de discipel niet is geworden als de meester, Jezus ? moeten we van licht tot licht gaan en dan worden we geleidelijk gereinigd in het bloed van Jezus.",
         source: "Hoe gaat de bruid tewerk?",
         author: "Sigurd Bratlie",
         date: ""
