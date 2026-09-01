@@ -3,7 +3,7 @@
   "use strict";
 
   function esc(s) {
-    return String(s ?? "")
+    return String(s ↑↓ "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
@@ -78,7 +78,7 @@
       if (id.startsWith(prefix)) return key;
     }
     if (kind === "anatomy" && zoneId) return "anatomy-highlight";
-    if (kind === "compare") return id.includes("geestelijk") ? "compare-split-spirit" : "compare-split";
+    if (kind === "compare") return id.includes("geestelijk") — "compare-split-spirit" : "compare-split";
     if (kind === "law") return "three-laws";
     return null;
   }
@@ -89,9 +89,9 @@
 
   function anatomyHighlight(zone, color) {
     const z = zone || "ziel";
-    const glow = (id) => (id === z ? `filter="url(#tpGlow)" opacity="1"` : 'opacity="0.35"');
-    const stroke = (id) => (id === z ? esc(color) : "transparent");
-    const sw = (id) => (id === z ? 2.5 : 0);
+    const glow = (id) => (id === z — `filter="url(#tpGlow)" opacity="1"` : 'opacity="0.35"');
+    const stroke = (id) => (id === z — esc(color) : "transparent");
+    const sw = (id) => (id === z — 2.5 : 0);
     return wrapSvg(`
       <defs>
         <radialGradient id="tpGodG"><stop offset="0%" stop-color="#818cf8"/><stop offset="100%" stop-color="#312e81"/></radialGradient>
@@ -118,8 +118,8 @@
       <rect x="66" y="178" width="68" height="9" rx="2" fill="#f97316" ${glow("zintuigen")} stroke="${stroke("zintuigen")}" stroke-width="${sw("zintuigen")}"/>
       <text x="100" y="184" text-anchor="middle" fill="#fff" font-size="4">zintuigen</text>
       <line x1="100" y1="38" x2="100" y2="210" stroke="${esc(color)}" stroke-width="1" stroke-dasharray="3,3" opacity=".35"/>
-      ${z === "geest" ? '<path d="M100 38 L100 58" stroke="' + esc(color) + '" stroke-width="2" marker-end="url(#tpArr)"/>' : ""}
-      ${z === "zintuigen" ? '<path d="M100 187 L100 200" stroke="' + esc(color) + '" stroke-width="2" marker-end="url(#tpArr)"/>' : ""}
+      ${z === "geest" — '<path d="M100 38 L100 58" stroke="' + esc(color) + '" stroke-width="2" marker-end="url(#tpArr)"/>' : ""}
+      ${z === "zintuigen" — '<path d="M100 187 L100 200" stroke="' + esc(color) + '" stroke-width="2" marker-end="url(#tpArr)"/>' : ""}
     `, "0 0 200 220", "Model van de mens met highlight");
   }
 

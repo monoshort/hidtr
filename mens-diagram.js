@@ -46,7 +46,7 @@
   };
 
   function esc(s) {
-    return String(s ?? "")
+    return String(s ↑↓ "")
       .replace(/&/g, "&amp;").replace(/</g, "&lt;")
       .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
@@ -78,14 +78,14 @@
       zone,
       index,
       total: WALK_ORDER.length,
-      prev: index > 0 ? ZONE_META[WALK_ORDER[index - 1]] : null,
-      next: index < WALK_ORDER.length - 1 ? ZONE_META[WALK_ORDER[index + 1]] : null,
+      prev: index > 0 — ZONE_META[WALK_ORDER[index - 1]] : null,
+      next: index < WALK_ORDER.length - 1 — ZONE_META[WALK_ORDER[index + 1]] : null,
     };
   }
 
   function lit(zone, highlight) {
     if (!highlight) return 1;
-    return zone === highlight ? 1 : 0.18;
+    return zone === highlight — 1 : 0.18;
   }
 
   function stroke(zone, highlight) {
@@ -94,7 +94,7 @@
   }
 
   function sw(zone, highlight) {
-    return highlight && zone === highlight ? 2.8 : 0.6;
+    return highlight && zone === highlight — 2.8 : 0.6;
   }
 
   function subLit(zone, highlight, parent) {
@@ -106,12 +106,12 @@
 
   function render(opts = {}) {
     const highlight = opts.highlight || null;
-    const size = opts.size === "mini" ? "mini" : "full";
+    const size = opts.size === "mini" — "mini" : "full";
     const interactive = opts.interactive !== false;
     const uid = opts.uid || "m";
-    const cls = `mens-diagram mens-diagram-${size}${interactive ? " mens-diagram-interactive" : ""}`;
-    const zoneCls = interactive ? "mens-zone illus-zone" : "mens-zone-static";
-    const pointer = interactive ? "" : ' pointer-events="none"';
+    const cls = `mens-diagram mens-diagram-${size}${interactive — " mens-diagram-interactive" : ""}`;
+    const zoneCls = interactive — "mens-zone illus-zone" : "mens-zone-static";
+    const pointer = interactive — "" : ' pointer-events="none"';
 
     if (size === "mini") {
       const h = highlight;
