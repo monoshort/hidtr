@@ -66,7 +66,7 @@
     if (ANATOMY_ZONE[id] || ANATOMY_ZONE[panelId]) return "anatomy";
     if (id.startsWith("cmp-")) return "compare";
     if (id.endsWith("-overzicht")) return "overview";
-    if (/^(vz-|dw-|r7-|gst-|gl-|om-|kr-|bz-|hm-|gv-|gw-|tg-|vs-)/.test(id)) return "journey";
+    if (/^(vz-|dw-|r7-|gst-|gl-|om-|kr-|bz-|hm-|gv-|gw-|tg-|vs-|pijlers-)/.test(id)) return "journey";
     if (id.startsWith("wet-")) return "law";
     return "concept";
   }

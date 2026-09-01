@@ -309,7 +309,7 @@
         <header class="model-atlas-head">
           <div class="model-atlas-head-text">
             <h2 id="model-atlas-title">Modelkaart</h2>
-            <p>Alle 14 onderdelen · gekleurde lijn = hoofdroute · stippellijn = kruisverwijzing</p>
+            <p>Alle onderdelen · gekleurde lijn = hoofdroute · stippellijn = kruisverwijzing</p>
           </div>
           <button type="button" class="model-atlas-close" id="model-atlas-close" aria-label="Sluiten">&times;</button>
         </header>
@@ -409,6 +409,11 @@
     "dw-heiligmaking": ["bz-overzicht", "hm-overzicht", "dw-doel"],
     "gw-hele-mens": ["bz-overzicht", "bz-reinigen", "od-zelf"],
     "tg-overzicht": ["bz-tong", "bz-vlees", "od-anderen"],
+    "pijlers-overzicht": ["pijlers-geloof", "pijlers-hoop", "pijlers-liefde", "pijlers-gemeente", "geloof-overzicht"],
+    "pijlers-geloof": ["pijlers-overzicht", "pijlers-hoop", "geloof-overzicht"],
+    "pijlers-hoop": ["pijlers-overzicht", "pijlers-geloof", "pijlers-liefde"],
+    "pijlers-liefde": ["pijlers-overzicht", "pijlers-gemeente", "geloof-overzicht"],
+    "pijlers-gemeente": ["pijlers-overzicht", "pijlers-liefde", "dw-overzicht"],
   };
 
   const TAB_ICONS = {
@@ -423,6 +428,7 @@
     verschil: "⇄",
     woord: "✦",
     geloof: "✧",
+    pijlers: "△",
     ootmoed: "▽",
     kruis: "✝",
     weg: "→",
@@ -442,6 +448,7 @@
     verschil: ".compare-wrap",
     woord: ".gst-scene, .wp-scene",
     geloof: ".gl-scene",
+    pijlers: ".pijlers-scene",
     ootmoed: ".om-scene",
     kruis: ".kr-scene",
     weg: ".dw-scene, .bz-scene, .hm-scene",
@@ -479,6 +486,11 @@
     "dw-overzicht": { tab: "weg", focus: ".dw-scene" },
     "dw-heiligmaking": { tab: "weg", focus: ".bz-scene, .dw-jstep[data-topic='dw-heiligmaking']" },
     "geloof-overzicht": { tab: "geloof", focus: ".gl-scene" },
+    "pijlers-overzicht": { tab: "pijlers", focus: ".pijlers-scene" },
+    "pijlers-geloof": { tab: "pijlers", focus: "[data-topic='pijlers-geloof']" },
+    "pijlers-hoop": { tab: "pijlers", focus: "[data-topic='pijlers-hoop']" },
+    "pijlers-liefde": { tab: "pijlers", focus: "[data-topic='pijlers-liefde']" },
+    "pijlers-gemeente": { tab: "pijlers", focus: "[data-topic='pijlers-gemeente']" },
     "vz-overzicht": { tab: "verzoeking", focus: ".vz-scene" },
     "vs-overzicht": { tab: "verstand", focus: ".vs-scene" },
     "gw-overzicht": { tab: "geweten", focus: ".gw-scene" },
@@ -564,7 +576,7 @@
 
   const MODEL_FLOW_TABS = new Set([
     "proces", "rom7", "verschil",
-    "verzoeking", "verstand", "geweten", "gevoel", "tong", "woord", "geloof", "ootmoed", "kruis", "weg",
+    "verzoeking", "verstand", "geweten", "gevoel", "tong", "woord", "geloof", "pijlers", "ootmoed", "kruis", "weg",
   ]);
 
   let activeVisualTopic = null;
@@ -579,6 +591,7 @@
     ["tg-", "tong"],
     ["gl-", "geloof"],
     ["geloof-", "geloof"],
+    ["pijlers-", "pijlers"],
     ["rv-", "geloof"],
     ["om-", "ootmoed"],
     ["kr-", "kruis"],
@@ -1457,6 +1470,10 @@
     goToHub("weg", { tab: "weg" });
   });
 
+  document.getElementById("hero-pijlers")?.addEventListener("click", () => {
+    goToHub("geloof", { tab: "pijlers" });
+  });
+
   function escapeHtml(text) {
     return String(text)
       .replace(/&/g, "&amp;")
@@ -1597,6 +1614,12 @@
     const hasVisual = !!getVisualNav(topicId);
 
     if (hasTopicPage) markVisited(panelTopic);
+
+    if (hasTopicPage && (el?.dataset.open === "page" || el?.closest?.("[data-open='page']"))) {
+      if (e?.type === "click" && e.clientX && el) ripple(e, el);
+      openTopicPage(topicId, el, e);
+      return;
+    }
 
     if (hasTopicPage && wantsCitePanel(e)) {
       if (e?.type === "click" && e.clientX && el) ripple(e, el);
@@ -2525,7 +2548,7 @@
 
   function shouldHaveCiteBtn(el) {
     if (el.classList.contains("wire-tap")) return false;
-    if (el.matches(".layer, .ziel-box, .outcome, .law, .body-row, .process-card, .vz-step-card, .dw-triad-card, .dw-hub, .dw-daily-key, .human-viz-diagram .mens-zone, .illus-zone, .mens-zone, .r7-zone, .zg-block, .hm-aside-card")) {
+    if (el.matches(".layer, .ziel-box, .outcome, .law, .body-row, .process-card, .vz-step-card, .dw-triad-card, .dw-hub, .dw-daily-key, .human-viz-diagram .mens-zone, .illus-zone, .mens-zone, .r7-zone, .zg-block, .hm-aside-card, .pijler-col, .pijlers-key, .pijlers-gemeente")) {
       return topicHasQuotes(el.dataset.topic);
     }
     if (el.matches(".chip, .ziel-flow-node, .hero-pill, .section-cross-chip, .section-xref-spoke, .model-flow-chip, .model-zone, .connector-label, .layer-badge, .scene-divider, .journey-step, .hub-card, .start-chip, .vz-fork-label, .gst-merge-label, .gst-pierce-label, .gl-flow-label, .gl-god-arrows span, .vs-senses span, .gw-light-tags span, .r7-zone-badge")) return false;
@@ -2885,7 +2908,7 @@
     { threshold: 0.06, rootMargin: "0px 0px -40px 0px" }
   );
 
-  document.querySelectorAll(".layer, .process-card, .outcome, .law, .hub-card, .illus-panel, .vz-scene, .r7-scene, .zg-block, .gst-scene, .hm-scene, .bz-scene, .highlight-box, .gl-scene, .vs-scene, .gw-scene, .gv-scene, .tg-scene, .om-scene, .kr-scene, .dw-scene, .bp-scene, .gs-scene, .od-key, .rv-key, .wp-key, #structuur .reveal").forEach((el) => {
+  document.querySelectorAll(".layer, .process-card, .outcome, .law, .hub-card, .illus-panel, .vz-scene, .r7-scene, .zg-block, .gst-scene, .hm-scene, .bz-scene, .highlight-box, .gl-scene, .vs-scene, .gw-scene, .gv-scene, .tg-scene, .om-scene, .kr-scene, .dw-scene, .bp-scene, .gs-scene, .od-key, .rv-key, .wp-key, .pijlers-scene, #structuur .reveal").forEach((el) => {
     el.classList.add("reveal");
     revealObserver.observe(el);
   });

@@ -1,3 +1,24 @@
+/* Tabs zitten in .page, niet als kind van body — anders blijven alle secties open. */
+.page > section {
+  display: none;
+  padding: 2.5rem 1.25rem 4.5rem;
+  max-width: min(52rem, calc(100vw - 2rem));
+  margin-inline: auto;
+  scroll-margin-top: calc(var(--app-bar-h, 3.25rem) + var(--nav-h, 3rem) + 0.75rem);
+}
+.page > section.active {
+  display: block;
+}
+.page > section#structuur {
+  max-width: min(68rem, calc(100vw - 2rem));
+}
+.page > section#pijlers {
+  max-width: min(56rem, calc(100vw - 2rem));
+}
+body:not(.view-start) .hero {
+  display: none;
+}
+
 /* Visuele gids: het model vult het scherm, tekst is bijzaak. */
 
 body.visual-first {
@@ -314,6 +335,18 @@ body.visual-first .illus-panel {
 .pijler-col:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.35);
   transform: translateY(-4px);
+}
+.pijler-col.has-cite,
+.pijlers-key.has-cite,
+.pijlers-gemeente.has-cite {
+  position: relative;
+}
+.pijlers-key.has-cite .cite-btn,
+.pijler-col.has-cite .cite-btn,
+.pijlers-gemeente.has-cite .cite-btn {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
 }
 .pijlers-gemeente {
   margin-top: 1rem;
