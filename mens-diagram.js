@@ -26,7 +26,7 @@
   const PREFIX_ZONE = [
     ["gw-", "geweten"], ["gv-", "gevoel"], ["tg-", "tong"], ["vs-", "verstand"],
     ["vz-", "zintuigen"], ["r7-", "leden"], ["kr-", "wil"], ["om-", "wil"],
-    ["gl-", "geest"], ["gst-", "geest"], ["geloof-", "geest"], ["woord", "geest"],
+    ["gl-", "geest"], ["gst-", "geest"], ["geloof-", "geest"], ["pijlers-", "geest"], ["woord", "geest"],
     ["bz-", "hart"], ["hm-", "geest"], ["dw-", "wil"], ["cmp-", "ziel"],
     ["wet-geest", "geest"], ["wet-zonde", "lichaam"], ["wet-doods", "geweten"],
     ["gevallen-", "zintuigen"], ["verlost-", "geest"], ["lichaam-", "lichaam"],
@@ -40,7 +40,10 @@
     gevoel: "gevoel", "gv-plaats": "gevoel", tong: "tong", "tg-plaats": "tong",
     zintuigen: "zintuigen", lichaam: "lichaam", leden: "leden",
     "lichaam-vlezes": "lichaam", "lichaam-zonde": "lichaam", "lichaam-doods": "lichaam",
-    woord: "geest", geloof: "geest", "geloof-overzicht": "geest", kruis: "wil", ootmoed: "wil",
+    woord: "geest", geloof: "geest", "geloof-overzicht": "geest",
+    "pijlers-overzicht": "geest", "pijlers-geloof": "geest", "pijlers-hoop": "hart",
+    "pijlers-liefde": "hart", "pijlers-gemeente": "geest",
+    kruis: "wil", ootmoed: "wil",
     weg: "wil", structuur: "ziel", "vz-overzicht": "zintuigen", "r7-overzicht": "leden",
     "gevallen-zintuigen": "zintuigen", "cmp-geestelijk": "geest",
   };

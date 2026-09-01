@@ -41,6 +41,11 @@
     "gst-overzicht": "word-flow",
     woord: "word-flow",
     "geloof-overzicht": "faith-light",
+    "pijlers-overzicht": "three-pillars",
+    "pijlers-geloof": "three-pillars",
+    "pijlers-hoop": "three-pillars",
+    "pijlers-liefde": "three-pillars",
+    "pijlers-gemeente": "three-pillars",
     "kr-overzicht": "cross-daily",
     "dw-overzicht": "disciple-path",
     "bz-overzicht": "purification",
@@ -60,6 +65,7 @@
     ["gst-", "word-flow"],
     ["gl-", "faith-light"],
     ["geloof-", "faith-light"],
+    ["pijlers-", "three-pillars"],
     ["gv-", "inner-faculty"],
     ["gw-", "inner-faculty"],
     ["tg-", "inner-faculty"],
@@ -278,6 +284,20 @@
     `, "0 0 200 195", "God spreekt door het Woord");
   }
 
+  function threePillars(color, rawId) {
+    const lit = rawId?.includes("hoop") ? "hoop" : rawId?.includes("liefde") || rawId?.includes("gemeente") ? "liefde" : rawId?.includes("geloof") ? "geloof" : "all";
+    const op = (id) => (lit === "all" || lit === id ? 1 : 0.28);
+    return wrapSvg(`
+      <rect x="18" y="${lit === "geloof" ? 36 : 52}" width="48" height="${lit === "geloof" ? 132 : 116}" rx="8" fill="rgba(34,211,238,0.18)" stroke="#22d3ee" stroke-width="2" opacity="${op("geloof")}"/>
+      <text x="42" y="198" text-anchor="middle" fill="#a5f3fc" font-size="7" font-weight="700">Geloof</text>
+      <rect x="76" y="${lit === "hoop" ? 28 : 44}" width="48" height="${lit === "hoop" ? 140 : 124}" rx="8" fill="rgba(251,191,36,0.16)" stroke="#fbbf24" stroke-width="2" opacity="${op("hoop")}"/>
+      <text x="100" y="198" text-anchor="middle" fill="#fde68a" font-size="7" font-weight="700">Hoop</text>
+      <rect x="134" y="${lit === "liefde" ? 16 : 32}" width="48" height="${lit === "liefde" ? 152 : 136}" rx="8" fill="rgba(244,114,182,0.18)" stroke="#f472b6" stroke-width="2.2" opacity="${op("liefde")}"/>
+      <text x="158" y="198" text-anchor="middle" fill="#f9a8d4" font-size="7" font-weight="700">Liefde</text>
+      <text x="100" y="18" text-anchor="middle" fill="${esc(color)}" font-size="6.5" font-weight="700">1 Kor. 13:13 — deze drie houden stand</text>
+    `, "0 0 200 210", "Geloof, hoop en liefde");
+  }
+
   function faithLight(color) {
     return wrapSvg(`
       <circle cx="100" cy="70" r="35" fill="rgba(251,191,36,0.08)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/>
@@ -440,6 +460,7 @@
     "senses-wheel": "De vijf zintuigen zijn de poort naar binnen",
     "inner-faculty": "Geweten, gevoel, hart en tong hangen samen in de ziel",
     "divine-source": "Alle leven en verlichting komt van God",
+    "three-pillars": "Geloof, hoop en liefde — deze drie houden stand in de gemeente",
   };
 
   const BUILDERS = {
@@ -461,6 +482,7 @@
     "senses-wheel": (o) => sensesWheel(o.color),
     "inner-faculty": (o) => innerFaculty(o.color, o.rawId),
     "divine-source": (o) => divineSource(o.color),
+    "three-pillars": (o) => threePillars(o.color, o.rawId),
   };
 
   window.TP_ILLUSTRATION = {

@@ -62,6 +62,7 @@
     verschil: "Onderscheid",
     woord: "Het Woord",
     geloof: "Geloof",
+    pijlers: "Pijlers",
     ootmoed: "Ootmoed",
     kruis: "Kruis",
     weg: "Weg",
@@ -71,7 +72,7 @@
     start: { label: "De mens", icon: "◎", tabs: [] },
     fundament: { label: "Verloop", icon: "◇", tabs: ["proces", "structuur", "rom7", "verschil"] },
     innerlijk: { label: "Verzoeking", icon: "◈", tabs: ["verzoeking", "verstand", "geweten", "gevoel", "tong"] },
-    geloof: { label: "Geloof", icon: "✧", tabs: ["woord", "geloof"] },
+    geloof: { label: "Geloof", icon: "✧", tabs: ["woord", "geloof", "pijlers"] },
     weg: { label: "Weg", icon: "→", tabs: ["ootmoed", "kruis", "weg"] },
   };
 
@@ -87,6 +88,7 @@
     tong: "tong",
     woord: "geest",
     geloof: "geest",
+    pijlers: "geest",
     ootmoed: "wil",
     kruis: "wil",
     weg: "wil",
@@ -95,7 +97,7 @@
   const TAB_ORDER = [
     "structuur", "proces", "rom7", "verschil",
     "verzoeking", "verstand", "geweten", "gevoel", "tong",
-    "woord", "geloof",
+    "woord", "geloof", "pijlers",
     "ootmoed", "kruis", "weg",
   ];
 
@@ -111,6 +113,7 @@
     tong: "tg-overzicht",
     woord: "gst-overzicht",
     geloof: "geloof-overzicht",
+    pijlers: "pijlers-overzicht",
     ootmoed: "om-overzicht",
     kruis: "kr-overzicht",
     weg: "dw-overzicht",
@@ -127,7 +130,8 @@
     gevoel: ["geweten", "tong", "geloof"],
     tong: ["gevoel", "geloof", "ootmoed"],
     woord: ["verstand", "geloof", "weg"],
-    geloof: ["woord", "structuur", "kruis"],
+    geloof: ["woord", "pijlers", "kruis"],
+    pijlers: ["geloof", "woord", "weg"],
     ootmoed: ["geloof", "kruis", "weg"],
     kruis: ["geloof", "ootmoed", "weg"],
     weg: ["geloof", "kruis", "woord"],

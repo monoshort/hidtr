@@ -222,3 +222,147 @@ body.visual-first .illus-panel {
     flex: 0 0 min(28rem, 42%);
   }
 }
+
+/* Drie pijlers: geloof, hoop, liefde */
+.pijlers-scene {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+.pijlers-key {
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(244, 114, 182, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+.pijlers-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+  min-height: min(52dvh, 420px);
+}
+.pijler-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  text-align: center;
+  padding: 1.1rem 0.7rem 1rem;
+  min-height: 16rem;
+  border: 0;
+  border-radius: 18px 18px 10px 10px;
+  background: rgba(15, 23, 42, 0.55);
+  color: inherit;
+  cursor: pointer;
+  overflow: hidden;
+}
+.pijler-col-main {
+  min-height: 18.5rem;
+}
+.pijler-shaft {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 42%;
+  height: 72%;
+  border-radius: 10px 10px 0 0;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.pijler-geloof { background: linear-gradient(180deg, #67e8f9, #0e7490); }
+.pijler-hoop { background: linear-gradient(180deg, #fde68a, #d97706); }
+.pijler-liefde { background: linear-gradient(180deg, #f9a8d4, #be185d); }
+.pijler-cap {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.12);
+}
+.pijler-col h3 {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-display, Fraunces, serif);
+  font-size: 1.25rem;
+}
+.pijler-col p {
+  position: relative;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--muted, #94a3b8);
+}
+.pijler-ref {
+  position: relative;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #c7d2fe;
+}
+.pijler-col:hover,
+.pijler-col:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.35);
+  transform: translateY(-4px);
+}
+.pijlers-gemeente {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(244, 114, 182, 0.28);
+  background: rgba(190, 24, 93, 0.12);
+  color: inherit;
+  cursor: pointer;
+}
+.pijlers-gemeente-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f9a8d4;
+}
+.pijlers-gemeente-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+.pijlers-gemeente-sub {
+  font-size: 0.85rem;
+  color: var(--muted, #94a3b8);
+}
+@media (max-width: 720px) {
+  .pijlers-row {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .pijler-col,
+  .pijler-col-main {
+    min-height: 0;
+  }
+  .pijler-shaft {
+    height: 100%;
+    width: 8px;
+    left: 0.55rem;
+    transform: none;
+    border-radius: 8px;
+  }
+  .pijler-col {
+    text-align: left;
+    padding-left: 1.6rem;
+  }
+  .pijler-cap { align-self: flex-start; }
+}

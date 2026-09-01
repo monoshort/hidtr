@@ -6095,5 +6095,162 @@ window.HT_TOPICS = {
       "1 Kor. 11:31",
       "1 Joh. 1:7"
     ]
+  },
+  "pijlers-overzicht": {
+    "title": "Geloof, hoop en liefde",
+    "color": "#f472b6",
+    "summary": "Deze drie houden stand in de gemeente: geloof, hoop en liefde. Zonder hen verlies je in de beproeving; met hen houd je stand. De meeste is de liefde.",
+    "quotes": [
+      {
+        "text": "Zo houden dan stand: Geloof, hoop en liefde, deze drie, maar de meeste van deze is de liefde.",
+        "source": "Zij houden stand",
+        "author": "Aksel J. Smith",
+        "date": "1980-03-01"
+      },
+      {
+        "text": "Zonder deze drie kunnen we niet anders dan verliezers zijn in de vele beproevingen des levens, maar met deze drie kunnen we niet anders dan standhouden.",
+        "source": "Zij houden stand",
+        "author": "Aksel J. Smith",
+        "date": "1980-03-01"
+      },
+      {
+        "text": "Met geloof, hoop en liefde houden we stand!",
+        "source": "Zij houden stand",
+        "author": "Aksel J. Smith",
+        "date": "1980-03-01"
+      }
+    ],
+    "refs": [
+      "1 Kor. 13:13",
+      "Ef. 6:13",
+      "1 Pet. 1:5"
+    ]
+  },
+  "pijlers-geloof": {
+    "title": "Pijler: geloof",
+    "color": "#22d3ee",
+    "summary": "Zonder geloof kan God geen welgevallen in je hebben. Geloof dat werkt baart leven, en dat leven bergt hoop in zich.",
+    "quotes": [
+      {
+        "text": "Zonder geloof kunnen we God niet welgevallig zijn, en zonder de liefde zijn wij niets.",
+        "source": "Zij houden stand",
+        "author": "Aksel J. Smith",
+        "date": "1980-03-01"
+      },
+      {
+        "text": "Als het geloof bevrucht is, baart zij werken, en als de werken volkomen worden, brengen zij leven voort. Dit leven bergt hoop in zich.",
+        "source": "Geloof en hoop",
+        "author": "Johan O. Smith",
+        "date": "1914-07-01"
+      },
+      {
+        "text": "Het geloof, dat werkzaam is door daden, voedt de hoop omwille waarvan men graag offers brengt, omdat men weet dat men in het eeuwige leven honderdvoudig aan heerlijkheden terug ontvangt.",
+        "source": "Geloof en hoop",
+        "author": "Johan O. Smith",
+        "date": "1914-07-01"
+      }
+    ],
+    "refs": [
+      "Hebr. 11:6",
+      "Jak. 2:14",
+      "Rom. 1:5"
+    ]
+  },
+  "pijlers-hoop": {
+    "title": "Pijler: hoop",
+    "color": "#fbbf24",
+    "summary": "Hoop hebben is één ding, de hoop kennen is iets anders. Christus in je is de hoop der heerlijkheid. Zonder geloof en liefde is er geen hoop.",
+    "quotes": [
+      {
+        "text": "Hoop hebben is één ding, de hoop kennen is iets anders. Door de geest van wijsheid en openbaring in combinatie met verlichte ogen van ons hart zullen we de hoop kennen.",
+        "source": "Hoofdstuk 1 - De hoop kennen",
+        "author": "Johan O. Smith",
+        "date": ""
+      },
+      {
+        "text": "Christus onder u, de hoop der heerlijkheid.",
+        "source": "Hoofdstuk 1 - De hoop kennen",
+        "author": "Johan O. Smith",
+        "date": ""
+      },
+      {
+        "text": "Zonder geloof en liefde hebben we geen hoop. Maar met geloof en liefde kunnen wij ons altijd verblijden in een levende hoop, waarin we nooit beschaamd zullen uitkomen.",
+        "source": "Zij houden stand",
+        "author": "Aksel J. Smith",
+        "date": "1980-03-01"
+      }
+    ],
+    "refs": [
+      "Kol. 1:27",
+      "Ef. 1:18",
+      "Ef. 4:4",
+      "Rom. 5:5"
+    ]
+  },
+  "pijlers-liefde": {
+    "title": "Pijler: liefde",
+    "color": "#f472b6",
+    "summary": "De meeste van deze drie. Zonder liefde ben je niets. Liefde is geen zoet gevoel: zij is geloof dat geeft, lankmoedig is, en naar buiten stroomt.",
+    "quotes": [
+      {
+        "text": "Dat zijn gevoelens, maar liefde is geloof.",
+        "source": "Geloof houdt de liefde warm",
+        "author": "Sigurd Bratlie",
+        "date": "1970-09-01"
+      },
+      {
+        "text": "Als wij de liefde niet hebben, zijn wij niets!",
+        "source": "Geloof houdt de liefde warm",
+        "author": "Sigurd Bratlie",
+        "date": "1970-09-01"
+      },
+      {
+        "text": "De liefde Gods is in onze harten uitgestort door de Heilige Geest. Deze liefde maakt ons deelachtig aan zichzelf, zodat wij zelf tot heer worden en overal personen vinden om goedheid aan te bewijzen.",
+        "source": "Wat is liefde?",
+        "author": "Johan O. Smith",
+        "date": "1917-09-01"
+      },
+      {
+        "text": "Alle goedheid stroomt naar buiten; niets is te goed om weg te geven.",
+        "source": "Wat is liefde?",
+        "author": "Johan O. Smith",
+        "date": "1917-09-01"
+      }
+    ],
+    "refs": [
+      "1 Kor. 13:13",
+      "1 Joh. 4:7",
+      "Rom. 5:5"
+    ]
+  },
+  "pijlers-gemeente": {
+    "title": "In de gemeente",
+    "color": "#e879f9",
+    "summary": "Het fundament is gelegd. In de gemeente bouwt men verder met geloof, hoop en liefde — tot een stad waar niemand zichzelf zoekt.",
+    "quotes": [
+      {
+        "text": "Dat is gelegd en is dus in orde, en ze bouwen vol ijver verder met geloof, hoop en liefde.",
+        "source": "“Zonder opnieuw het fundament te leggen”",
+        "author": "Elias Aslaksen",
+        "date": "1962-04-01"
+      },
+      {
+        "text": "Zie, er groeit een heerlijke stad, vol van leven en overvloed. Geen enkele burger van deze stad zoekt zichzelf. In plaats van eigen voordeel, zoekt ieder het beste voor de ander.",
+        "source": "De gemeente – stad van de liefde",
+        "author": "Peter Zürcher",
+        "date": "2012-06-01"
+      },
+      {
+        "text": "Met geloof, hoop en liefde houden we stand!",
+        "source": "Zij houden stand",
+        "author": "Aksel J. Smith",
+        "date": "1980-03-01"
+      }
+    ],
+    "refs": [
+      "1 Kor. 13:13",
+      "1 Kor. 3:11",
+      "Ps. 133:1"
+    ]
   }
 };
