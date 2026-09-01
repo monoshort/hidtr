@@ -1,0 +1,224 @@
+/* Visuele gids: het model vult het scherm, tekst is bijzaak. */
+
+body.visual-first {
+  --vf-diagram-h: min(78dvh, 720px);
+}
+
+/* Hero: geen 72vh-muur meer — compacte balk boven het model */
+body.visual-first .hero {
+  min-height: 0;
+  justify-content: flex-start;
+  padding: calc(0.55rem + var(--app-bar-h, 3.25rem)) 1rem 0.35rem;
+  text-align: left;
+}
+body.visual-first .hero-inner {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.85rem;
+  max-width: 72rem;
+}
+body.visual-first .hero-portrait {
+  width: 3.25rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+body.visual-first .hero-portrait img {
+  width: 3.25rem;
+  height: 4.4rem;
+  object-fit: cover;
+  border-radius: 0.45rem;
+}
+body.visual-first .hero-portrait figcaption,
+body.visual-first .hero-lead,
+body.visual-first .hero-pills,
+body.visual-first .hero-preview,
+body.visual-first .scroll-cue,
+body.visual-first .hero-eyebrow {
+  display: none;
+}
+body.visual-first .hero h1 {
+  font-size: clamp(1.15rem, 3.2vw, 1.65rem);
+  margin: 0;
+  line-height: 1.2;
+}
+body.visual-first .hero-actions {
+  margin-top: 0.45rem;
+  gap: 0.4rem;
+}
+body.visual-first .hero-btn {
+  padding: 0.38rem 0.75rem;
+  font-size: 0.82rem;
+}
+
+/* Start: diagram eerst, groot */
+body.visual-first .section-head-start {
+  margin: 0.25rem auto 0.5rem;
+  padding: 0 1rem;
+}
+body.visual-first .section-head-start .section-eyebrow {
+  display: none;
+}
+body.visual-first .section-head-start .section-title {
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  margin: 0;
+}
+body.visual-first .section-head-start .section-sub {
+  margin: 0.25rem 0 0;
+  font-size: 0.88rem;
+  max-width: 36rem;
+}
+
+body.visual-first .mens-home-layout {
+  max-width: min(72rem, 100%);
+  gap: 1.1rem;
+  padding: 0 0.75rem 1.25rem;
+}
+body.visual-first .mens-diagram-stage,
+body.visual-first .mens-diagram-card {
+  max-width: min(28rem, 96vw);
+  width: 100%;
+}
+body.visual-first .mens-diagram-card {
+  padding: 0.5rem 0.4rem 0.35rem;
+}
+body.visual-first .mens-home-diagram-wrap .mens-diagram {
+  width: auto;
+  max-width: none;
+  height: var(--vf-diagram-h);
+  margin-inline: auto;
+  display: block;
+}
+body.visual-first .mens-diagram-caption {
+  margin-top: 0.35rem;
+  font-size: 0.68rem;
+}
+
+body.visual-first .mens-home-aside {
+  gap: 0.65rem;
+}
+body.visual-first .mens-zone-hint {
+  min-height: 0;
+  padding: 0.7rem 0.85rem;
+}
+body.visual-first .mens-flows-sub {
+  display: none;
+}
+body.visual-first .mens-themes-collapsed {
+  max-width: 44rem;
+  margin: 0.5rem auto 1rem;
+}
+
+@media (min-width: 960px) {
+  body.visual-first .mens-home-layout {
+    display: grid;
+    grid-template-columns: minmax(22rem, 1.15fr) minmax(16rem, 0.85fr);
+    align-items: center;
+    max-width: 68rem;
+    margin-inline: auto;
+  }
+  body.visual-first .mens-diagram-stage,
+  body.visual-first .mens-diagram-card {
+    max-width: 32rem;
+  }
+  body.visual-first .mens-home-aside {
+    text-align: left;
+  }
+  body.visual-first .mens-home-aside .mens-hint-inner {
+    align-items: flex-start;
+    text-align: left;
+  }
+  body.visual-first .mens-home-aside .mens-flow-chips,
+  body.visual-first .mens-home-aside .mens-situatie-chips {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  body.visual-first {
+    --vf-diagram-h: min(68dvh, 580px);
+  }
+  body.visual-first .hero-inner {
+    flex-direction: row;
+    text-align: left;
+  }
+  body.visual-first .hero-actions {
+    justify-content: flex-start;
+  }
+  body.visual-first .hero-btn-ghost {
+    display: none;
+  }
+  body.visual-first .mens-home-diagram-wrap .mens-diagram {
+    max-width: none;
+    height: var(--vf-diagram-h);
+  }
+  body.visual-first .mens-diagram-card,
+  body.visual-first .mens-diagram-stage {
+    max-width: min(22rem, 96vw);
+  }
+}
+
+/* Onderwerp-pagina's: plaatje eerst en groter */
+body.visual-first .tp-article {
+  max-width: 56rem;
+}
+body.visual-first .tp-hero {
+  padding: 0.75rem 0 0.6rem;
+  margin-bottom: 0;
+}
+body.visual-first .tp-lead {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  max-width: 40rem;
+}
+body.visual-first .tp-visual-section .tp-section-title {
+  display: none;
+}
+body.visual-first .tp-visual-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+body.visual-first .tp-visual-main {
+  order: -1;
+  padding: 0.75rem;
+}
+body.visual-first .tp-illus-svg,
+body.visual-first .tp-anatomy-svg {
+  width: 100%;
+  max-width: min(36rem, 94vw);
+  min-height: min(42dvh, 420px);
+  height: auto;
+}
+body.visual-first .tp-mens-context {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+body.visual-first .tp-mens-mini .mens-diagram {
+  width: 72px;
+  height: auto;
+}
+body.visual-first .illus-svg {
+  width: 100%;
+  max-width: min(36rem, 94vw);
+  min-height: min(40dvh, 380px);
+}
+body.visual-first .illus-row {
+  display: flex;
+  flex-direction: column;
+}
+body.visual-first .illus-panel {
+  order: -1;
+}
+
+@media (min-width: 900px) {
+  body.visual-first .illus-row {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+  body.visual-first .illus-panel {
+    flex: 0 0 min(28rem, 42%);
+  }
+}

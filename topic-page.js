@@ -322,21 +322,20 @@
           ${tabLabel ? `<span class="tp-tab-pill">${escapeHtml(tabIcon || "")} ${escapeHtml(tabLabel)}</span>` : ""}
         </div>` : ""}
         <h1 class="tp-title">${escapeHtml(topic.title)}</h1>
-        <p class="tp-lead">${escapeHtml(lead)}</p>
       </header>
 
       <div class="tp-body">
-        ${walkNav}
-        ${mensContext}
         <section class="tp-visual-section" aria-label="Visuele uitleg">
-          <h2 class="tp-section-title">Hoe het werkt</h2>
           <div class="tp-visual-grid">
             <div class="tp-visual-main tp-visual-${kind}">${visualMain}</div>
             <div class="tp-steps-wrap">
+              ${mensContext}
+              <p class="tp-lead">${escapeHtml(lead)}</p>
               <ol class="tp-step-list">${stepItems}</ol>
             </div>
           </div>
         </section>
+        ${walkNav}
 
         <section class="tp-step-articles-section" id="tp-step-articles-section" aria-label="Uitleg per onderdeel in artikelen">
           <h2 class="tp-section-title">Verder uitgelegd in artikelen</h2>
